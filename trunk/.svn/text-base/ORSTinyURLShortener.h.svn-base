@@ -1,0 +1,21 @@
+//
+//  ORSTinyURLShortener.h
+//  URL Shorteners
+//
+//  Created by Nicholas Toumpelis on 16/04/2008.
+//  Copyright 2008 Ocean Road Software. All rights reserved.
+//
+//  0.2 - 16/04/2008
+//  0.5 - 03/10/2008
+//  0.6 - 18/10/2008
+
+#import <Cocoa/Cocoa.h>
+#import "ORSShortener.h"
+
+@interface ORSTinyURLShortener : NSObject < ORSShortener > {
+
+}
+
+- (NSString *) generateURLFrom:(NSString *)originalURL;
+
+@end

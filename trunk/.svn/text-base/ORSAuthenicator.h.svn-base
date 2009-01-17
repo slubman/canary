@@ -1,0 +1,37 @@
+//
+//  ORSAuthenticator.h
+//  Canary
+//
+//  Created by Nicholas Toumpelis on 18/03/2008.
+//  Copyright 2008 Ocean Road Software. All rights reserved.
+//
+//  0.2 - 16/04/2008
+//  0.5 - 03/10/2008
+//  0.6 - 18/10/2008
+
+#import <Cocoa/Cocoa.h>
+#import <Security/Security.h>
+
+#define APP_CNAME "Canary"
+#define APP_CNAME_LENGTH 6
+
+@interface ORSAuthenicator : NSObject {
+
+@private
+	UInt32 passwordLength;
+	void *passwordData;
+	SecKeychainItemRef loginItem;
+	NSString *lastCheckedUsername;
+
+}
+
+- (BOOL) hasPasswordForUser:(NSString *)username;
+- (NSString *) passwordForUser:(NSString *)username;
+- (BOOL) addPassword:(NSString *)password
+			 forUser:(NSString *)username;
+- (BOOL) setPassword:(NSString *)password
+			 forUser:(NSString *)username;
+- (NSString *) fetchedPassword;
+- (void) freeBuffer;
+
+@end

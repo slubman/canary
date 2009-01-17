@@ -1,0 +1,17 @@
+//
+//  ORSShortener.h
+//  URL Shorteners
+//
+//  Created by Nicholas Toumpelis on 18/10/2008.
+//  Copyright 2008 Ocean Road Software. All rights reserved.
+//
+//  0.6 - 18/10/2008
+
+#import <Cocoa/Cocoa.h>
+
+@protocol ORSShortener
+
+@required
+- (NSString *) generateURLFrom:(NSString *)originalURL;
+
+@end
