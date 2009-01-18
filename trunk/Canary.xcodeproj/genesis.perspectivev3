@@ -337,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0587B1FB0F23B03900AE2EE8</string>
+										<string>0587B2050F23B10100AE2EE8</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -405,7 +405,6 @@
 											<string>05171D280F1A71E200CA9812</string>
 											<string>05171DCF0F1A974100CA9812</string>
 											<string>05171DFA0F1BED4F00CA9812</string>
-											<string>05171E0B0F1BF1F200CA9812</string>
 											<string>05171E0D0F1BF1F200CA9812</string>
 											<string>05171E0E0F1BF1F200CA9812</string>
 											<string>05858D3F0F1BF9F000A13DC4</string>
@@ -429,8 +428,9 @@
 											<string>0587B1690F234C4E00AE2EE8</string>
 											<string>0587B16A0F234C4E00AE2EE8</string>
 											<string>0587B16B0F234C4E00AE2EE8</string>
-											<string>0587B16C0F234C4E00AE2EE8</string>
-											<string>0587B1DE0F23A5C000AE2EE8</string>
+											<string>0587B1FD0F23B10100AE2EE8</string>
+											<string>0587B1FE0F23B10100AE2EE8</string>
+											<string>0587B1FF0F23B10100AE2EE8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -607,6 +607,11 @@
 											<string>0587B1780F234C4E00AE2EE8</string>
 											<string>0587B1790F234C4E00AE2EE8</string>
 											<string>0587B17A0F234C4E00AE2EE8</string>
+											<string>0587B2000F23B10100AE2EE8</string>
+											<string>0587B2010F23B10100AE2EE8</string>
+											<string>0587B2020F23B10100AE2EE8</string>
+											<string>0587B2030F23B10100AE2EE8</string>
+											<string>0587B2040F23B10100AE2EE8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -915,7 +920,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0587B1B20F23910200AE2EE8</string>
 		<string>0587B1B30F23910200AE2EE8</string>
 		<string>0587B1B40F23910200AE2EE8</string>
 		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
