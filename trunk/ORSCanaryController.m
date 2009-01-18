@@ -241,11 +241,11 @@ sender {
 
 // Action: allows the user to change the active timeline
 - (IBAction) changeTimeline:sender {
-	if (([[timelineButton titleOfSelectedItem] isEqualToString:[self 
+	if (([timelineButton.titleOfSelectedItem isEqualToString:[self
 			previousTimeline]]) && [sender isEqualTo:timelineButton]) {
 		return;
 	}
-	if ([[timelineButton titleOfSelectedItem] isEqualToString:@"Friends"]) {
+	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
 			[sentDMsScrollView setHidden:YES];
@@ -254,7 +254,7 @@ sender {
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
 		[self getFriendsTimeline];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.archiveStatusCache count] > 0) {
@@ -264,7 +264,7 @@ sender {
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
 		[self getUserTimeline];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.publicStatusCache count] > 0) {
@@ -274,7 +274,7 @@ sender {
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
 		[self getPublicTimeline];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.repliesStatusCache count] > 0) {
@@ -284,7 +284,7 @@ sender {
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
 		[self getReplies];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.favoritesStatusCache count] > 0) {
@@ -294,7 +294,7 @@ sender {
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
 		[self getFavorites];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[[cacheManager receivedMessagesCache] count] > 0) {
@@ -308,7 +308,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Sent messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.sentMessagesCache count] > 0) {
@@ -326,23 +326,22 @@ sender {
 - (void) scrollToTop {
     NSPoint newScrollOrigin;
 	NSScrollView *scrollView;
-	if ([[timelineButton titleOfSelectedItem] 
-		 isEqualToString:@"Received messages"]) {
+	if ([timelineButton.titleOfSelectedItem 
+				isEqualToString:@"Received messages"]) {
 		scrollView = receivedDMsScrollView;
-	} else if ([[timelineButton titleOfSelectedItem] 
-		 isEqualToString:@"Sent messages"]) {
+	} else if ([timelineButton.titleOfSelectedItem 
+				isEqualToString:@"Sent messages"]) {
 		scrollView = sentDMsScrollView;
 	} else {
 		scrollView = mainTimelineScrollView;
 	}
-    if ([[scrollView documentView] isFlipped]) {
+    if ([scrollView.documentView isFlipped]) {
         newScrollOrigin = NSMakePoint(0.0,0.0);
     } else {
         newScrollOrigin = NSMakePoint(0.0,
-			NSMaxY([[scrollView documentView] frame]) - NSHeight([[scrollView 
-					contentView] bounds]));
+			NSMaxY([scrollView.documentView frame]) - NSHeight(scrollView.contentView.bounds));
     }
-    [[scrollView documentView] scrollPoint:newScrollOrigin];
+    [scrollView.documentView scrollPoint:newScrollOrigin];
 }
 
 // Updates the current timer (according to the user's settings)
@@ -353,36 +352,36 @@ sender {
 	if (![backgroundReceivedDMTimer isValid])
 		[self setupReceivedDMTimer];
 	if (refreshPeriod > -1.0) {
-		if ([[timelineButton titleOfSelectedItem] isEqualToString:@"Friends"]) {
+		if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod 
 				target:self selector:@selector(getFriendsTimeline) userInfo:nil 
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 					target:self selector:@selector(getUserTimeline) userInfo:nil 
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Public"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getPublicTimeline) userInfo:nil
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 					target:self selector:@selector(getReplies) userInfo:nil 
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getFavorites) userInfo:nil 
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Received messages"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getReceivedMessages) userInfo:nil 
 														   repeats:YES];
-		} else if ([[timelineButton titleOfSelectedItem] 
+		} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 			refreshTimer = [NSTimer scheduledTimerWithTimeInterval:refreshPeriod
 				target:self selector:@selector(getSentMessages) userInfo:nil 
@@ -394,6 +393,7 @@ sender {
 // Sets up the timer for background tracking of direct messages
 - (void) setupReceivedDMTimer {
 	[backgroundReceivedDMTimer invalidate];
+	backgroundReceivedDMTimer = nil;
 	backgroundReceivedDMTimer = [NSTimer scheduledTimerWithTimeInterval:300.0
 		target:self selector:@selector(getReceivedMessages) 
 								userInfo:nil repeats:YES];
@@ -426,50 +426,49 @@ sender {
 		connectionErrorShown = NO;
 	}
 	
-	NSPoint oldScrollOrigin = [[mainTimelineScrollView contentView] 
-							   bounds].origin;
-	if ([[timelineButton titleOfSelectedItem] isEqualToString:@"Friends"]) {
+	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
+	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 										   withNotification:note]];
 		[self postStatusUpdatesReceived:note];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
 		[self setStatuses:[cacheManager 
 			setStatusesForTimelineCache:ORSArchiveTimelineCacheType
 						 withNotification:note]];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Public"]) {
 		[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSPublicTimelineCacheType
 							 withNotification:note]];
 		[self postStatusUpdatesReceived:note];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 		[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSRepliesTimelineCacheType
 											withNotification:note]];
 		[self postRepliesReceived:note];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 		[self setStatuses:[cacheManager 
 			setStatusesForTimelineCache:ORSFavoritesTimelineCacheType 
 						   withNotification:note]];
 	}
 	[indicator stopAnimation:self];
-	[[mainTimelineScrollView documentView] scrollPoint:oldScrollOrigin];
+	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	[charsLeftIndicator setHidden:NO];
 	[receivedDMsScrollView setHidden:YES];
 	[sentDMsScrollView setHidden:YES];
 	[mainTimelineScrollView setHidden:NO];
 	
-	if (![[timelineButton titleOfSelectedItem] isEqualToString:[self
+	if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 														previousTimeline]]) {
 		[self scrollToTop];
 	}
-	previousTimeline = [timelineButton titleOfSelectedItem];
+	previousTimeline = timelineButton.titleOfSelectedItem;
 	
-	if ([[newStatusTextField stringValue] isEqualToString:@"d "]) {
+	if ([newStatusTextField.stringValue isEqualToString:@"d "]) {
 		[newStatusTextField setStringValue:@""];
 	}
 }
@@ -484,11 +483,10 @@ sender {
 		connectionErrorShown = NO;
 	}
 	
-	NSPoint oldScrollOrigin = [[mainTimelineScrollView contentView] 
-							   bounds].origin;
+	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
-	[[mainTimelineScrollView documentView] scrollPoint:oldScrollOrigin];
+	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 }
 
 // Sets the DMs asynchronously
@@ -501,10 +499,9 @@ sender {
 	}
 	
 	NSPoint oldScrollOrigin;
-	if ([[timelineButton titleOfSelectedItem] 
+	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Received messages"]) {
-		oldScrollOrigin = [[receivedDMsScrollView contentView] 
-								   bounds].origin;
+		oldScrollOrigin = receivedDMsScrollView.contentView.bounds.origin;
 		[self setReceivedDirectMessages:[cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note]];
@@ -512,47 +509,43 @@ sender {
 		[mainTimelineScrollView setHidden:YES];
 		[sentDMsScrollView setHidden:YES];
 		[receivedDMsScrollView setHidden:NO];
-		[[receivedDMsScrollView documentView] scrollPoint:oldScrollOrigin];
+		[receivedDMsScrollView.documentView scrollPoint:oldScrollOrigin];
 		
-		if (![[timelineButton titleOfSelectedItem] isEqualToString:[self
+		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
 			[self scrollToTop];
 		}
 		previousTimeline = [timelineButton titleOfSelectedItem];
-		if ([[newStatusTextField stringValue] length] == 0) {
+		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
-		oldScrollOrigin = [[sentDMsScrollView contentView] 
-						   bounds].origin;
+		oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
 		[self setSentDirectMessages:[cacheManager
 		setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
 									 withNotification:note]];	
 		[mainTimelineScrollView setHidden:YES];
 		[receivedDMsScrollView setHidden:YES];
 		[sentDMsScrollView setHidden:NO];
-		[[sentDMsScrollView documentView] scrollPoint:oldScrollOrigin];
+		[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
 		
-		if (![[timelineButton titleOfSelectedItem] isEqualToString:[self
+		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
 			[self scrollToTop];
 		}
-		previousTimeline = [timelineButton titleOfSelectedItem];
-		if ([[newStatusTextField stringValue] length] == 0) {
+		previousTimeline = timelineButton.titleOfSelectedItem;
+		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
 	} else {
-		if ([(NSArray *)[note object] count] > 0) {
+		if (((NSArray *)note.object).count > 0) {
 			if (firstBackgroundReceivedDMRetrieval) {
 				NSString *lastExecutionID = [self 
-											 receivedDMIDSinceLastExecution];
-				NSString *currentExecutionID = [[(NSArray *)[note 
-											object] objectAtIndex:0] ID];
-				//NSLog(@"lastExecutionID: %@", lastExecutionID);
-				//NSLog(@"currentExecutionID: %@", currentExecutionID);
-				if ([lastExecutionID intValue] < [currentExecutionID 
-													 intValue]) {
+					receivedDMIDSinceLastExecution];
+				NSString *currentExecutionID = [[(NSArray *)note.object
+												 objectAtIndex:0] ID];
+				if (lastExecutionID.intValue < currentExecutionID.intValue) {
 					[statusBarTextField 
 						setStringValue:@"New direct message received"];
 					[statusBarTextField setHidden:NO];
@@ -569,12 +562,8 @@ sender {
 			} else {
 				NSString *lastExecutionID = [self 
 											 receivedDMIDSinceLastExecution];
-				NSString *currentExecutionID = [[(NSArray *)[note 
-									object] objectAtIndex:0] ID];
-				//NSLog(@"lastExecutionID: %@", lastExecutionID);
-				//NSLog(@"currentExecutionID: %@", currentExecutionID);
-				if ([lastExecutionID intValue] < [currentExecutionID 
-												  intValue]) {
+				NSString *currentExecutionID = [[(NSArray *)note.object objectAtIndex:0] ID];
+				if (lastExecutionID.intValue < currentExecutionID.intValue) {
 					[statusBarTextField 
 						setStringValue:@"New direct message received"];
 					[statusBarTextField setHidden:NO];
@@ -605,14 +594,14 @@ sender {
 		connectionErrorShown = NO;
 	}
 	
-	if ([[timelineButton titleOfSelectedItem] isEqualToString:@"Friends"]
-		|| [[timelineButton titleOfSelectedItem] isEqualToString:@"Archive"] ) {
-		NSPoint oldScrollOrigin = [[mainTimelineScrollView contentView] 
-								   bounds].origin;
-		NSMutableArray *cache = [NSMutableArray arrayWithArray:[self statuses]];
-		[cache insertObject:[note object] atIndex:0];
+	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]
+		|| [timelineButton.titleOfSelectedItem isEqualToString:@"Archive"] ) {
+		NSPoint oldScrollOrigin = 
+			mainTimelineScrollView.contentView.bounds.origin;
+		NSMutableArray *cache = [NSMutableArray arrayWithArray:self.statuses];
+		[cache insertObject:note.object atIndex:0];
 		[self setStatuses:cache];
-		[[mainTimelineScrollView documentView] scrollPoint:oldScrollOrigin];
+		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	}
 	
 	NSString *msg = [NSString stringWithFormat:@"Update sent"];
@@ -637,19 +626,18 @@ sender {
 		connectionErrorShown = NO;
 	}
 	
-	if ([[timelineButton titleOfSelectedItem] 
+	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Sent Messages"]) {		
-		NSPoint oldScrollOrigin = [[sentDMsScrollView contentView] 
-								   bounds].origin;
+		NSPoint oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
 		NSMutableArray *cache = [NSMutableArray 
-							 arrayWithArray:[self sentDirectMessages]];
+							 arrayWithArray:self.sentDirectMessages];
 	
-		[cache insertObject:[note object] atIndex:0];
+		[cache insertObject:note.object atIndex:0];
 		[self setSentDirectMessages:cache];
 		[mainTimelineScrollView setHidden:YES];
 		[receivedDMsScrollView setHidden:YES];
 		[sentDMsScrollView setHidden:NO];
-		[[sentDMsScrollView documentView] scrollPoint:oldScrollOrigin];
+		[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
 		[indicator stopAnimation:self];
 		[charsLeftIndicator setHidden:NO];
 	}
@@ -666,7 +654,7 @@ sender {
 
 // Gets the friends timeline
 - (void) getFriendsTimeline {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFollowingCall) {
@@ -680,11 +668,11 @@ sender {
 
 // Gets the user timeline
 - (void) getUserTimeline {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstArchiveCall) {
-			[twitterEngine getUserTimelineForUser:[twitterEngine sessionUserID]];
+			[twitterEngine getUserTimelineForUser:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
 			 getUserTimelineSinceStatus:cacheManager.lastArchiveStatusID];
@@ -694,7 +682,7 @@ sender {
 
 // Gets the public timeline
 - (void) getPublicTimeline {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstPublicCall) {
@@ -708,7 +696,7 @@ sender {
 
 // Gets the replies
 - (void) getReplies {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstRepliesCall) {
@@ -722,11 +710,11 @@ sender {
 
 // Gets the favorites
 - (void) getFavorites {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstFavoriteCall) {
-			[twitterEngine getFavoritesForUser:[twitterEngine sessionUserID]];
+			[twitterEngine getFavoritesForUser:twitterEngine.sessionUserID];
 		} else {
 			[twitterEngine 
 			 getFavoritesSinceStatus:cacheManager.lastFavoriteStatusID];
@@ -736,7 +724,7 @@ sender {
 
 // Gets the received messages
 - (void) getReceivedMessages {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstReceivedMessagesCall) {
@@ -750,7 +738,7 @@ sender {
 
 // Gets the sent messages
 - (void) getSentMessages {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 		if (cacheManager.firstSentMessagesCall) {
@@ -769,10 +757,10 @@ sender {
 
 // Action: Called when the user wants to autotype the user id to reply to.
 - (IBAction) typeUserID:sender {
-	NSTextView *fieldEditor = (NSTextView *)[[self window] fieldEditor:YES 
+	NSTextView *fieldEditor = (NSTextView *)[self.window fieldEditor:YES 
 										   forObject:newStatusTextField];
-	[[self window] makeFirstResponder:newStatusTextField];
-	[[self window] makeFirstResponder:fieldEditor];
+	[self.window makeFirstResponder:newStatusTextField];
+	[self.window makeFirstResponder:fieldEditor];
 	
 	NSString *username = [NSString stringWithFormat:@"@%@ ", sender];
 	
@@ -787,13 +775,12 @@ sender {
 // message to.
 - (IBAction) dmUserID:sender {
 	[newStatusTextField setStringValue:@""];
-	NSTextView *fieldEditor = (NSTextView *)[[self window] fieldEditor:YES 
+	NSTextView *fieldEditor = (NSTextView *)[self.window fieldEditor:YES 
 											forObject:newStatusTextField];
-	[[self window] makeFirstResponder:newStatusTextField];
-	[[self window] makeFirstResponder:fieldEditor];
+	[self.window makeFirstResponder:newStatusTextField];
+	[self.window makeFirstResponder:fieldEditor];
 	
-	NSString *username = username = [NSString stringWithFormat:@"d %@ ", 
-									 sender];
+	NSString *username = [NSString stringWithFormat:@"d %@ ", sender];
 	
 	[fieldEditor setSelectedRange:self.realSelectedRange];
 	[fieldEditor insertText:username];
@@ -804,14 +791,15 @@ sender {
 
 // Action: This shortens the given URL using a shortener service.
 - (IBAction) shortenURL:sender {
-	NSText *editor = [newStatusTextField currentEditor];
-	NSRange selectedRange = [(NSTextView *)editor selectedRange];
-	if ([[[(NSTextView *)editor attributedSubstringFromRange:selectedRange]
-		  string] hasPrefix:@"http://"]) {
+	NSText *editor = newStatusTextField.currentEditor;
+	NSRange selectedRange = ((NSTextView *)editor).selectedRange;
+	if ([[(NSTextView *)editor 
+		  attributedSubstringFromRange:selectedRange].string 
+				hasPrefix:@"http://"]) {
 		[editor copy:self];
-		[editor replaceCharactersInRange:[editor selectedRange] 
-			withString:[urlShortener generateURLFrom:[[editor string] 
-								substringWithRange:[editor selectedRange]]]];
+		[editor replaceCharactersInRange:editor.selectedRange 
+			withString:[urlShortener generateURLFrom:[editor.string 
+								substringWithRange:editor.selectedRange]]];
 		[self controlTextDidChange:nil];
 	}
 }
@@ -824,13 +812,13 @@ sender {
 
 // Delegate: This is called whenever the application terminates
 - (void) applicationWillTerminate:(NSNotification *)notification {
-	[defaults setFloat:[[self window] frame].origin.x
+	[defaults setFloat:self.window.frame.origin.x
 				forKey:@"CanaryWindowX"];
-	[defaults setFloat:[[self window] frame].origin.y
+	[defaults setFloat:self.window.frame.origin.y
 				forKey:@"CanaryWindowY"];
-	[defaults setFloat:[[self window] frame].size.width
+	[defaults setFloat:self.window.frame.size.width
 				forKey:@"CanaryWindowWidth"];
-	[defaults setFloat:[[self window] frame].size.height
+	[defaults setFloat:self.window.frame.size.height
 				forKey:@"CanaryWindowHeight"];
 	[self saveLastIDs];
 	[twitterEngine endSession];
@@ -846,14 +834,14 @@ sender {
 			[defaults dictionaryForKey:@"CanaryLastFollowingStatusID"]]) {
 			if (twitterEngine.sessionUserID != nil) {
 				[followingStatusIDs setValue:cacheManager.lastFollowingStatusID 
-								  forKey:[twitterEngine sessionUserID]];
+								  forKey:twitterEngine.sessionUserID];
 				[defaults setObject:followingStatusIDs 
 						 forKey:@"CanaryLastFollowingStatusID"];
 			}
 		} else {
 			followingStatusIDs = [NSMutableDictionary dictionaryWithCapacity:1];
 			[followingStatusIDs setValue:cacheManager.lastFollowingStatusID 
-								  forKey:[twitterEngine sessionUserID]];
+								  forKey:twitterEngine.sessionUserID];
 			[defaults setObject:followingStatusIDs 
 						 forKey:@"CanaryLastFollowingStatusID"];
 		}
@@ -866,14 +854,14 @@ sender {
 			[defaults dictionaryForKey:@"CanaryLastReceivedDMID"]]) {
 			if (twitterEngine.sessionUserID != nil) {
 				[lastReceivedDMIDs setValue:cacheManager.lastReceivedMessageID 
-								 forKey:[twitterEngine sessionUserID]];
+								 forKey:twitterEngine.sessionUserID];
 				[defaults setObject:lastReceivedDMIDs 
 						 forKey:@"CanaryLastReceivedDMID"];
 			}
 		} else {
 			lastReceivedDMIDs = [NSMutableDictionary dictionaryWithCapacity:1];
 			[lastReceivedDMIDs setValue:cacheManager.lastReceivedMessageID 
-								 forKey:[twitterEngine sessionUserID]];
+								 forKey:twitterEngine.sessionUserID];
 			[defaults setObject:lastReceivedDMIDs 
 						 forKey:@"CanaryLastReceivedDMID"];
 		}
@@ -885,7 +873,7 @@ sender {
 		fromUserWithID:(NSString *)userID {
 	NSString *message = [NSString stringWithFormat:@"Retweeting from @%@: %@", 
 						 userID, statusText];
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setIntValue:0];
 		[updateDispatcher addMessage:message];
 		
@@ -900,10 +888,10 @@ sender {
 
 // Delegate: Changes the green bar and enables/disables the tweet button.
 - (void) controlTextDidChange:(NSNotification *)aNotification {
-	NSText *fieldEditor = [newStatusTextField currentEditor];
-	self.realSelectedRange = [fieldEditor selectedRange];
+	NSText *fieldEditor = newStatusTextField.currentEditor;
+	self.realSelectedRange = fieldEditor.selectedRange;
 	
-	int charsWritten = [[newStatusTextField stringValue] length];
+	int charsWritten = newStatusTextField.stringValue.length;
 	
 	// Counter readjustment
 	[charsLeftIndicator setMaxValue:(140*((charsWritten/140)+1))];
@@ -920,8 +908,8 @@ sender {
 	}
 	int charsLeft = 140 - charsWritten;
 	[charsLeftIndicator setIntValue:charsWritten];
-	if ([[newStatusTextField stringValue] hasPrefix:@"d "] ||
-			[[newStatusTextField stringValue] hasPrefix:@"D "]) {
+	if ([newStatusTextField.stringValue hasPrefix:@"d "] ||
+			[newStatusTextField.stringValue hasPrefix:@"D "]) {
 		[tweetButton setTitle:@"Message!"];
 		if (charsLeft < 0)
 			[tweetButton setEnabled:NO];
@@ -946,10 +934,10 @@ sender {
 
 // Delegate: Called when the selection range changes in a text view
 - (void) textDidEndEditing:(NSNotification *)notification {
-	NSText *fieldEditor = [newStatusTextField currentEditor];
-	self.realSelectedRange = [fieldEditor selectedRange];
+	NSText *fieldEditor = newStatusTextField.currentEditor;
+	self.realSelectedRange = fieldEditor.selectedRange;
 	
-	int charsWritten = [[newStatusTextField stringValue] length];
+	int charsWritten = newStatusTextField.stringValue.length;
 	
 	// Counter readjustment
 	[charsLeftIndicator setMaxValue:(140*((charsWritten/140)+1))];
@@ -957,8 +945,8 @@ sender {
 	[charsLeftIndicator setWarningValue:(140*((charsWritten/140)+1))-15];
 	
 	[charsLeftIndicator setToolTip:[NSString 
-									stringWithFormat:@"Characters written: %i\nCharacters left: %i",
-									charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
+		stringWithFormat:@"Characters written: %i\nCharacters left: %i",
+			charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
 	if (charsWritten > 0) {
 		[tweetButton setEnabled:YES];
 	} else {
@@ -966,8 +954,8 @@ sender {
 	}
 	int charsLeft = 140 - charsWritten;
 	[charsLeftIndicator setIntValue:charsWritten];
-	if ([[newStatusTextField stringValue] hasPrefix:@"d "] ||
-		[[newStatusTextField stringValue] hasPrefix:@"D "]) {
+	if ([newStatusTextField.stringValue hasPrefix:@"d "] ||
+		[newStatusTextField.stringValue hasPrefix:@"D "]) {
 		[tweetButton setTitle:@"Message!"];
 		if (charsLeft < 0)
 			[tweetButton setEnabled:NO];
@@ -1012,11 +1000,11 @@ sender {
 // or user.
 - (IBAction) invokeActionOnUser:sender {
 	NSString *userScreenName, *userURL;
-	if ([[timelineButton titleOfSelectedItem] 
-		 isEqualToString:@"Received messages"]) {
+	if ([timelineButton.titleOfSelectedItem 
+			isEqualToString:@"Received messages"]) {
 		userScreenName = [(NSXMLNode *)[sender toolTip] senderScreenName];
 		userURL = [(NSXMLNode *)[sender toolTip] senderURL];
-	} else if ([[timelineButton titleOfSelectedItem] 
+	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 		userScreenName = [(NSXMLNode *)[sender toolTip] recipientScreenName];
 		userURL = [(NSXMLNode *)[sender toolTip] recipientURL];
@@ -1094,25 +1082,25 @@ sender {
 - (IBAction) showAboutWindow:sender {
 	ORSCanaryAboutController *aboutController =
 		[[ORSCanaryAboutController alloc] initWithWindowNibName:@"About"];
-	[[aboutController window] makeKeyAndOrderFront:sender];
+	[aboutController.window makeKeyAndOrderFront:sender];
 }
 
 // Action: This is called when the preferences window needs to be shown.
 - (IBAction) showPreferencesWindow:sender {
 	ORSCanaryPreferencesController *preferencesController =
-	[[ORSCanaryPreferencesController alloc] 
+		[[ORSCanaryPreferencesController alloc] 
 			initWithWindowNibName:@"Preferences"];
-	[[preferencesController window] makeKeyAndOrderFront:sender];
+	[preferencesController.window makeKeyAndOrderFront:sender];
 }
 
 // Action: This is called when the login window needs to be shown.
 - (IBAction) showLoginWindow:sender {
-	prevUserID = [twitterEngine sessionUserID];
-	prevPassword = [twitterEngine sessionPassword];
+	prevUserID = twitterEngine.sessionUserID;
+	prevPassword = twitterEngine.sessionPassword;
 	
 	ORSCanaryLoginController *loginController = 
-	[[ORSCanaryLoginController alloc] initWithWindowNibName:@"LoginWindow"];
-	[NSApp beginSheet:[loginController window]
+		[[ORSCanaryLoginController alloc] initWithWindowNibName:@"LoginWindow"];
+	[NSApp beginSheet:loginController.window
 	   modalForWindow:[NSApp mainWindow]
 		modalDelegate:loginController
 	   didEndSelector:@selector(didEndUserManagerSheet:returnCode:contextInfo:)
@@ -1124,7 +1112,7 @@ sender {
 // This is called when the new user window needs to be shown.
 - (void) showNewUserWindow {
 	[NSApp beginSheet:newUserWindow
-	   modalForWindow:[self window]
+	   modalForWindow:self.window
 		modalDelegate:self
 	   didEndSelector:@selector(didEndNewUserSheet:returnCode:contextInfo:)
 		  contextInfo:nil];
@@ -1140,21 +1128,24 @@ sender {
 // clicked
 - (IBAction) loginCall:sender {
 	[newUserWindow orderOut:sender];
-	[NSApp endSheet:newUserWindow returnCode:1];
+	[NSApp endSheet:newUserWindow 
+		 returnCode:1];
 }
 
 // Action: This is called when the "Close" button in the new user sheet is
 // clicked
 - (IBAction) closeCall:sender {
 	[newUserWindow orderOut:sender];
-	[NSApp endSheet:newUserWindow returnCode:2];
+	[NSApp endSheet:newUserWindow 
+		 returnCode:2];
 }
 
 // Action: This is called when the "Quit" button in the new user sheet is
 // clicked
 - (IBAction) quitCall:sender {
 	[newUserWindow orderOut:sender];
-	[NSApp endSheet:newUserWindow returnCode:3];
+	[NSApp endSheet:newUserWindow
+		 returnCode:3];
 }
 
 // This method is called when the sheet closes
@@ -1213,20 +1204,20 @@ sender {
 	ORSTwitPicDispatcher *twitPicDispatcher = [[ORSTwitPicDispatcher alloc]
 											   init];
 	NSString *twitPicURLString = [twitPicDispatcher uploadData:imageData
-		withUsername:[twitterEngine sessionUserID]
-			password:[twitterEngine sessionPassword]
+		withUsername:twitterEngine.sessionUserID
+			password:twitterEngine.sessionPassword
 				filename:filename];
 	
-	NSText *fieldEditor = [[self window] fieldEditor:YES 
-										   forObject:newStatusTextField];
-	int location = [fieldEditor selectedRange].location;
-	[[self window] makeFirstResponder:nil];
-	[[self window] makeFirstResponder:newStatusTextField];
-	[fieldEditor setSelectedRange:[fieldEditor selectedRange]];
+	NSText *fieldEditor = [self.window fieldEditor:YES 
+										forObject:newStatusTextField];
+	int location = fieldEditor.selectedRange.location;
+	[self.window makeFirstResponder:nil];
+	[self.window makeFirstResponder:newStatusTextField];
+	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
 	NSMutableString *statusString = [NSMutableString 
-									 stringWithString:[newStatusTextField stringValue]];
+		stringWithString:newStatusTextField.stringValue];
 	NSCharacterSet *whitespaceCharset = 
-	[NSCharacterSet whitespaceAndNewlineCharacterSet];
+		[NSCharacterSet whitespaceAndNewlineCharacterSet];
 	NSString *string;
 	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString characterAtIndex:location-1]]))
 		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
@@ -1252,22 +1243,23 @@ sender {
 	ORSTwitPicDispatcher *twitPicDispatcher = [[ORSTwitPicDispatcher alloc]
 											   init];
 	NSString *twitPicURLString = [twitPicDispatcher uploadData:imageData
-		withUsername:[twitterEngine sessionUserID]
-			password:[twitterEngine sessionPassword]
+		withUsername:twitterEngine.sessionUserID
+			password:twitterEngine.sessionPassword
 				filename:@"user_selection.jpeg"];
 	
-	NSText *fieldEditor = [[self window] fieldEditor:YES 
-										   forObject:newStatusTextField];
-	int location = [fieldEditor selectedRange].location;
-	[[self window] makeFirstResponder:nil];
-	[[self window] makeFirstResponder:newStatusTextField];
-	[fieldEditor setSelectedRange:[fieldEditor selectedRange]];
+	NSText *fieldEditor = [self.window fieldEditor:YES 
+										 forObject:newStatusTextField];
+	int location = fieldEditor.selectedRange.location;
+	[self.window makeFirstResponder:nil];
+	[self.window makeFirstResponder:newStatusTextField];
+	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
 	NSMutableString *statusString = [NSMutableString 
-									 stringWithString:[newStatusTextField stringValue]];
+		stringWithString:newStatusTextField.stringValue];
 	NSCharacterSet *whitespaceCharset = 
-	[NSCharacterSet whitespaceAndNewlineCharacterSet];
+		[NSCharacterSet whitespaceAndNewlineCharacterSet];
 	NSString *string;
-	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString characterAtIndex:location-1]]))
+	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString 
+			characterAtIndex:location-1]]))
 		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
 	else
 		string = [NSString stringWithFormat:@" %@ ", twitPicURLString];
@@ -1275,7 +1267,7 @@ sender {
 	[statusString insertString:string atIndex:location];
 	[newStatusTextField setStringValue:statusString];
 	[self controlTextDidChange:nil];
-	[fieldEditor setSelectedRange:NSMakeRange(location+[string length], 0)];
+	[fieldEditor setSelectedRange:NSMakeRange(location+string.length, 0)];
 	[fieldEditor setNeedsDisplay:YES];
 	NSString *msg = [NSString 
 		stringWithFormat:@"Picture has been sent to Twitpic"];
@@ -1305,8 +1297,8 @@ sender {
 		return;
 	}
 
-	NSHTTPURLResponse *response = (NSHTTPURLResponse *)[note object];
-	NSInteger statusCode = [response statusCode];
+	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
+	NSInteger statusCode = response.statusCode;
 	
 	if (statusCode != 200 && statusCode != 304) {
 		if (statusCode == 503) {
@@ -1383,7 +1375,7 @@ sender {
 // user clicks on the dock icon.
 - (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
 					 hasVisibleWindows:(BOOL)flag {
-	[[self window] makeKeyAndOrderFront:self];
+	[self.window makeKeyAndOrderFront:self];
 	return YES;
 }
 
@@ -1428,11 +1420,8 @@ sender {
 
 // Add user with given ID from friends list (following)
 - (void) createFriendshipWithUser:(NSString *)userID {
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine createFriendshipWithUser:userID];
-		//NSLog(@"CanaryController:: createFriendshipWithUser: %@", 
-		//	  result ? @"YES" : @"NO");
 		NSString *msg = [NSString stringWithFormat:@"%@ has been added",
 						 userID];
 		[statusBarTextField setStringValue:msg];
@@ -1444,11 +1433,8 @@ sender {
 
 // Remove user with given ID from friends list (following)
 - (void) destroyFriendshipWithUser:(NSString *)userID {
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine destroyFriendshipWithUser:userID];
-		//NSLog(@"CanaryController:: destroyFriendshipWithUser: %@", 
-		//	  result ? @"YES" : @"NO");
 		NSString *msg = [NSString stringWithFormat:@"%@ has been removed",
 						 userID];
 		[statusBarTextField setStringValue:msg];
@@ -1463,11 +1449,8 @@ sender {
 
 // Block the user owning the status
 - (void) blockUserWithID:(NSString *)userID { 
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine blockUser:userID];
-		//NSLog(@"CanaryController:: blockUserWithID: %@", 
-		//	result ? @"YES" : @"NO");
 		NSString *msg = [NSString stringWithFormat:@"%@ has been blocked",
 			userID];
 		[statusBarTextField setStringValue:msg];
@@ -1479,11 +1462,8 @@ sender {
 
 // Unblock the user owning the status
 - (void) unblockUserWithID:(NSString *)userID {
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine unblockUser:userID];
-		//NSLog(@"CanaryController:: unblockUserWithID: %@", 
-		//	result ? @"YES" : @"NO");
 		NSString *msg = [NSString stringWithFormat:@"%@ has been unblocked",
 			userID];
 		[statusBarTextField setStringValue:msg];
@@ -1498,21 +1478,15 @@ sender {
 
 // Follow the user owning the status
 - (void) followUserWithID:(NSString *)userID {
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine followUser:userID];
-		//NSLog(@"CanaryController:: followUserWithID: %@", 
-		//	  result ? @"YES" : @"NO");
 	}
 }
 
 // Leave the user owning the status
 - (void) leaveUserWithID:(NSString *)userID {
-	if ([twitterEngine sessionUserID]) {
-		//BOOL result = 
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine leaveUser:userID];
-		//NSLog(@"CanaryController:: leaveUserWithID: %@", 
-		//	  result ? @"YES" : @"NO");
 	}
 }
 
@@ -1521,7 +1495,7 @@ sender {
 
 // Favorite the selected status
 - (void) favoriteStatusWithID:(NSString *)statusID {
-	if ([twitterEngine sessionUserID]) {
+	if (twitterEngine.sessionUserID) {
 		[twitterEngine createBlindFavorite:statusID];
 		NSString *msg = [NSString 
 			stringWithFormat:@"A new favorite has been added", statusID];
@@ -1561,7 +1535,7 @@ sender {
 - (int) maxShownUpdates {
 	NSString *maxShownUpdatesString = (NSString *)[defaults 
 						objectForKey:@"CanaryMaxShownUpdates"];
-	return [maxShownUpdatesString integerValue];
+	return maxShownUpdatesString.integerValue;
 }
 
 // Returns the selected URL shortener
@@ -1591,8 +1565,8 @@ sender {
 	if (lastFollowingStatusIDs = 
 			[defaults dictionaryForKey:@"CanaryLastFollowingStatusID"]) {
 		NSString *statusID;
-		if (statusID = [lastFollowingStatusIDs valueForKey:[twitterEngine
-				sessionUserID]]) {
+		if (statusID = [lastFollowingStatusIDs 
+						valueForKey:twitterEngine.sessionUserID]) {
 			return statusID;
 		} else {
 			return NULL;
@@ -1608,8 +1582,8 @@ sender {
 	if (lastReceivedDMIDs = 
 		[defaults dictionaryForKey:@"CanaryLastReceivedDMID"]) {
 		NSString *messageID;
-		if (messageID = [lastReceivedDMIDs valueForKey:[twitterEngine
-															sessionUserID]]) {
+		if (messageID = [lastReceivedDMIDs 
+						 valueForKey:twitterEngine.sessionUserID]) {
 			return messageID;
 		} else {
 			return NULL;
@@ -1625,17 +1599,17 @@ sender {
 // Posts notifications that status updates have been received
 - (void) postStatusUpdatesReceived:(NSNotification *)note {
 	NSMutableArray *newStatuses = [[NSMutableArray alloc] init];
-	for (NSXMLNode *node in (NSArray *)[note object]) {
-		if ([[node ID] intValue] > 
-				[[self statusIDSinceLastExecution] intValue]) {
+	for (NSXMLNode *node in (NSArray *)note.object) {
+		if (node.ID.intValue > 
+				self.statusIDSinceLastExecution.intValue) {
 			[newStatuses addObject:node];
 		}
 	}
-	if ([newStatuses count] > 10) {
+	if (newStatuses.count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Status Updates Received"
 									description:[NSString 
 			stringWithFormat:@"%i status updates received", 
-						 [(NSArray *)[note object] count]]
+						 ((NSArray *)note.object).count]
 							   notificationName:@"Status Updates Received"
 									   iconData:nil
 									   priority:1
@@ -1643,8 +1617,8 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in newStatuses) {
-			[GrowlApplicationBridge notifyWithTitle:[node userName]
-										description:[node text]
+			[GrowlApplicationBridge notifyWithTitle:node.userName
+										description:node.text
 								   notificationName:@"Status Updates Received"
 										   iconData:nil
 										   priority:1
@@ -1656,19 +1630,19 @@ sender {
 
 // Posts notifications that replies have been received
 - (void) postRepliesReceived:(NSNotification *)note {
-	if ([(NSArray *)[note object] count] > 10) {
+	if (((NSArray *)note.object).count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Replies Received"
 			description:[NSString stringWithFormat:@"%i replies received", 
-										[(NSArray *)[note object] count]]
+										((NSArray *)note.object).count]
 							   notificationName:@"Replies Received"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
 	} else {
-		for (NSXMLNode *node in (NSArray *)[note object]) {
-			[GrowlApplicationBridge notifyWithTitle:[node userName]
-									description:[node text]
+		for (NSXMLNode *node in (NSArray *)note.object) {
+			[GrowlApplicationBridge notifyWithTitle:node.userName
+									description:node.text
 							   notificationName:@"Replies Received"
 									   iconData:nil
 									   priority:1
@@ -1680,20 +1654,20 @@ sender {
 
 // Posts notifications that messages have been received
 - (void) postDMsReceived:(NSNotification *)note {
-	if ([(NSArray *)[note object] count] > 10) {
+	if (((NSArray *)note.object).count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Direct Messages Received"
 									description:[NSString 
 							stringWithFormat:@"%i direct messages received", 
-										 [(NSArray *)[note object] count]]
+										 ((NSArray *)note.object).count]
 							   notificationName:@"Direct Messages Received"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
 	} else {
-		for (NSXMLNode *node in (NSArray *)[note object]) {
-			[GrowlApplicationBridge notifyWithTitle:[node senderScreenName]
-										description:[node text]
+		for (NSXMLNode *node in (NSArray *)note.object) {
+			[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
+										description:node.text
 								   notificationName:@"Direct Messages Received"
 										   iconData:nil
 										   priority:2
@@ -1709,8 +1683,8 @@ sender {
 				 afterID:(NSString *)messageID {
 	// This can be optimised
 	int count = 0;
-	for (NSXMLNode *node in (NSArray *)[note object]) {
-		if ([[node ID] intValue] > [messageID intValue]) {
+	for (NSXMLNode *node in (NSArray *)note.object) {
+		if (node.ID.intValue > messageID.intValue) {
 			count++;
 		}
 	}
@@ -1719,17 +1693,17 @@ sender {
 		[GrowlApplicationBridge notifyWithTitle:@"Direct Messages Received"
 									description:[NSString 
 							stringWithFormat:@"%i direct messages received", 
-										 [(NSArray *)[note object] count]]
+										 ((NSArray *)note.object).count]
 								notificationName:@"Direct Messages Received"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
 	} else {
-		for (NSXMLNode *node in (NSArray *)[note object]) {
-			if ([[node ID] intValue] > [messageID intValue]) {
-				[GrowlApplicationBridge notifyWithTitle:[node senderScreenName]
-											description:[node text]
+		for (NSXMLNode *node in (NSArray *)note.object) {
+			if (node.ID.intValue > messageID.intValue) {
+				[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
+											description:node.text
 									notificationName:@"Direct Messages Received"
 											   iconData:nil
 											   priority:2
@@ -1742,19 +1716,19 @@ sender {
 
 // Posts a notification that a status update has been sent
 - (void) postStatusUpdatesSent:(NSNotification *)note {
-	if ([(NSArray *)[note object] count] > 10) {
+	if (((NSArray *)note.object).count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Status Updates Sent"
 			description:[NSString stringWithFormat:@"%i status updates sent", 
-												 [(NSArray *)[note object] count]]
+										((NSArray *)note.object).count]
 							   notificationName:@"Status Updates Sent"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
 	} else {
-		for (NSXMLNode *node in (NSArray *)[note object]) {
-			[GrowlApplicationBridge notifyWithTitle:[node userName]
-										description:[node text]
+		for (NSXMLNode *node in (NSArray *)note.object) {
+			[GrowlApplicationBridge notifyWithTitle:node.userName
+										description:node.text
 								   notificationName:@"Status Updates Sent"
 										   iconData:nil
 										   priority:0
@@ -1766,19 +1740,19 @@ sender {
 
 // Posts a notification that a message has been sent
 - (void) postDMsSent:(NSNotification *)note {
-	if ([(NSArray *)[note object] count] > 10) {
+	if (((NSArray *)note.object).count > 10) {
 		[GrowlApplicationBridge notifyWithTitle:@"Direct Messages Sent"
 			description:[NSString stringWithFormat:@"%i direct messages sent", 
-											[(NSArray *)[note object] count]]
+											((NSArray *)note.object).count]
 							   notificationName:@"Direct Messages Sent"
 									   iconData:nil
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
 	} else {
-		for (NSXMLNode *node in (NSArray *)[note object]) {
-			[GrowlApplicationBridge notifyWithTitle:[node userName]
-										description:[node text]
+		for (NSXMLNode *node in (NSArray *)note.object) {
+			[GrowlApplicationBridge notifyWithTitle:node.userName
+										description:node.text
 								   notificationName:@"Direct Messages Sent"
 										   iconData:nil
 										   priority:0
