@@ -45,11 +45,15 @@ static ORSCanaryController *sharedCanaryController = nil;
 + (id) allocWithZone:(NSZone *)zone {
     @synchronized(self) {
         if (sharedCanaryController == nil) {
-            sharedCanaryController = [super allocWithZone:zone];
-            return sharedCanaryController;  
+			return [super allocWithZone:zone];
         }
     }
-    return nil;
+	return sharedCanaryController;
+}
+
+// copyWihtZone
+- (id) copyWithZone:(NSZone *)zone {
+	return self;
 }
 
 // Initialize
@@ -76,117 +80,111 @@ static ORSCanaryController *sharedCanaryController = nil;
 
 // Init
 - (id) init {
-	if (self = [super init]) {
-		[GrowlApplicationBridge setGrowlDelegate:@""];
-		connectionErrorShown = NO;
+	Class canaryControllerClass = [self class];
+	@synchronized(canaryControllerClass) {
+		if (sharedCanaryController == nil) {
+			if (self = [super init]) {
+				sharedCanaryController = self;
+				[GrowlApplicationBridge setGrowlDelegate:@""];
+				connectionErrorShown = NO;
 		
-		//defaults = [[NSUserDefaults standardUserDefaults] retain];
-		//authenticator = [[[ORSCredentialsManager alloc] init] retain];
-		//cacheManager = [[[ORSTimelineCacheManager alloc] init] retain];
+				defaults = [NSUserDefaults standardUserDefaults];
+				authenticator = [[ORSCredentialsManager alloc] init];
+				cacheManager = [[ORSTimelineCacheManager alloc] init];
 		
-		defaults = [NSUserDefaults standardUserDefaults];
-		authenticator = [[ORSCredentialsManager alloc] init];
-		cacheManager = [[ORSTimelineCacheManager alloc] init];
+				// NotificationCenter stuff -- need to determine a way to find
+				// which method to call
+				NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+				[nc addObserver:self
+					   selector:@selector(setStatusesAsynchronously:)
+						   name:@"OTEStatusesDidFinishLoading"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(setUsersAsynchronously:)
+						   name:@"OTEUsersDidFinishLoading"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(setDMsAsynchronously:)
+						   name:@"OTEDMsDidFinishLoading"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(addSentStatusAsynchronously:)
+						   name:@"OTEStatusDidFinishLoading"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(addSentDMsAsynchronously:)
+						   name:@"OTEDMDidFinishSending"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(showConnectionFailure:)
+						   name:@"OTEConnectionFailure"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(showReceivedResponse:)
+						   name:@"OTEReceivedResponse"
+						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(textDidEndEditing:)
+						   name:@"NSTextDidEndEditingNotification"
+						 object:nil];
 		
-		// NotificationCenter stuff -- need to determine a way to find
-		// which method to call
-		NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-		[nc addObserver:self
-			   selector:@selector(setStatusesAsynchronously:)
-				   name:@"OTEStatusesDidFinishLoading"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(setUsersAsynchronously:)
-				   name:@"OTEUsersDidFinishLoading"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(setDMsAsynchronously:)
-				   name:@"OTEDMsDidFinishLoading"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(addSentStatusAsynchronously:)
-				   name:@"OTEStatusDidFinishLoading"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(addSentDMsAsynchronously:)
-				   name:@"OTEDMDidFinishSending"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(showConnectionFailure:)
-				   name:@"OTEConnectionFailure"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(showReceivedResponse:)
-				   name:@"OTEReceivedResponse"
-				 object:nil];
-		[nc addObserver:self
-			   selector:@selector(textDidEndEditing:)
-				   name:@"NSTextDidEndEditingNotification"
-				 object:nil];
+				spokenCommands = [NSArray 
+					arrayWithObjects:@"Tweet", @"Home", @"Refresh", nil];
 		
-		spokenCommands = [NSArray 
-			arrayWithObjects:@"Tweet", @"Home", @"Refresh", nil];
-		
-		previousTimeline = @"";
+				previousTimeline = @"";
 				
-		[self updateMaxNoOfShownUpdates];
+				[self updateMaxNoOfShownUpdates];
 		
-		if ([defaults stringForKey:@"CanaryCurrentUserID"]) {
-			NSString *sessionUserID = 
-				[defaults stringForKey:@"CanaryCurrentUserID"];
-			NSString *sessionPassword = NULL;
-			if ([authenticator hasPasswordForUser:sessionUserID]) {
-				sessionPassword = [authenticator passwordForUser:sessionUserID];
-				// twitterEngine = [[[ORSTwitterEngine alloc] 
-											//initSynchronously:NO
-											   //withUserID:sessionUserID 
-										//andPassword:sessionPassword] retain];
-				
-				twitterEngine = [[ORSTwitterEngine alloc] initSynchronously:NO
-					withUserID:sessionUserID 
-						andPassword:sessionPassword];
-				
-				[self setVisibleUserID:[NSString stringWithFormat:@"  %@",
-					[twitterEngine sessionUserID]]];
-			} else {
-				//twitterEngine = [[[ORSTwitterEngine alloc] 
-						//initSynchronously:NO 
-								//withUserID:sessionUserID 
-										//andPassword:NULL] retain];
-				twitterEngine = [[ORSTwitterEngine alloc] initSynchronously:NO 
-					withUserID:sessionUserID 
-						andPassword:NULL];
+				if ([defaults stringForKey:@"CanaryCurrentUserID"]) {
+					NSString *sessionUserID = 
+						[defaults stringForKey:@"CanaryCurrentUserID"];
+					NSString *sessionPassword = NULL;
+					if ([authenticator hasPasswordForUser:sessionUserID]) {
+						sessionPassword = [authenticator 
+										   passwordForUser:sessionUserID];
+						twitterEngine = [[ORSTwitterEngine alloc] 
+							initSynchronously:NO
+								withUserID:sessionUserID 
+									andPassword:sessionPassword];
+						[self setVisibleUserID:[NSString 
+								stringWithFormat:@"  %@",
+									twitterEngine.sessionUserID]];
+					} else {
+						twitterEngine = [[ORSTwitterEngine alloc] 
+							initSynchronously:NO 
+								withUserID:sessionUserID 
+									andPassword:NULL];
+					}
+				} else {
+					loginItem = nil;
+					twitterEngine = [[ORSTwitterEngine alloc] 
+						initSynchronously:NO 
+							withUserID:NULL 
+								andPassword:NULL];
+					[self setVisibleUserID:@"  Click here to login"];
+				}
+				[self updateSelectedURLShortener];
+		
+				updateDispatcher = [[ORSUpdateDispatcher alloc] 
+										initWithEngine:twitterEngine];
+		
+				if ([self willRetrieveAllUpdates]) {
+					cacheManager.firstFollowingCall = NO;
+					cacheManager.lastFollowingStatusID = 
+						[self statusIDSinceLastExecution];
+				}
+		
+				firstBackgroundReceivedDMRetrieval = YES;
+		
+				NSString *lastExecutionID = [self 
+								receivedDMIDSinceLastExecution];
+				cacheManager.lastReceivedMessageID = lastExecutionID;
+		
+				betweenUsers = NO;
 			}
-		} else {
-			loginItem = nil;
-			//twitterEngine = [[[ORSTwitterEngine alloc] initSynchronously:NO 
-				//						   withUserID:NULL 
-				//						  andPassword:NULL] retain];
-			twitterEngine = [[ORSTwitterEngine alloc] initSynchronously:NO 
-															  withUserID:NULL 
-															 andPassword:NULL];
-			[self setVisibleUserID:@"  Click here to login"];
 		}
-		[self updateSelectedURLShortener];
-		//updateDispatcher = [[[ORSUpdateDispatcher alloc] 
-		//				 initWithEngine:twitterEngine] retain];
-		
-		updateDispatcher = [[ORSUpdateDispatcher alloc] 
-							 initWithEngine:twitterEngine];
-		
-		if ([self willRetrieveAllUpdates]) {
-			cacheManager.firstFollowingCall = NO;
-			cacheManager.lastFollowingStatusID = [self statusIDSinceLastExecution];
-		}
-		
-		firstBackgroundReceivedDMRetrieval = YES;
-		
-		NSString *lastExecutionID = [self receivedDMIDSinceLastExecution];
-		cacheManager.lastReceivedMessageID = lastExecutionID;
-		
-		betweenUsers = NO;
 	}
-	return self;
+	return sharedCanaryController;
 }
 
 // Awake From Nib
@@ -198,9 +196,6 @@ static ORSCanaryController *sharedCanaryController = nil;
 							[defaults floatForKey:@"CanaryWindowHeight"]);
 		[[self window] setFrame:newFrame display:YES];
 	}
-	
-	//ORSDateDifferenceFormatter *dateDiffFormatter = 
-	//	[[[ORSDateDifferenceFormatter alloc] init] retain];
 	
 	ORSDateDifferenceFormatter *dateDiffFormatter = 
 					[[ORSDateDifferenceFormatter alloc] init];
@@ -354,6 +349,7 @@ sender {
 - (void) updateTimer {
 	float refreshPeriod = [self timelineRefreshPeriod];
 	[refreshTimer invalidate];
+	refreshTimer = nil;
 	if (![backgroundReceivedDMTimer isValid])
 		[self setupReceivedDMTimer];
 	if (refreshPeriod > -1.0) {

@@ -105,6 +105,7 @@
 
 + (ORSCanaryController *) sharedController;
 + (id) allocWithZone:(NSZone *)zone;
+- (id) copyWithZone:(NSZone *)zone;
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification;
 - (IBAction) sendUpdate:sender;
 - (IBAction) changeTimeline:sender;

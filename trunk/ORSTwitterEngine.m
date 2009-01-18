@@ -36,13 +36,15 @@ static ORSTwitterEngine *sharedEngine = nil;
 + (id) allocWithZone:(NSZone *)zone {
     @synchronized(self) {
         if (sharedEngine == nil) {
-            sharedEngine = [super allocWithZone:zone];
+            //sharedEngine = [super allocWithZone:zone];
 			// assignment and return on first allocation
-            return sharedEngine;  
+            //return sharedEngine;  
+			return [super allocWithZone:zone];
         }
     }
 	// NSLog(@"CanaryController:: allocWithZone:");
-    return nil; //on subsequent allocation attempts return nil
+    //return nil; //on subsequent allocation attempts return nil
+	return sharedEngine;
 }
 
 // Initialiser for specifying the way the engine operates: synchrously or the
@@ -50,14 +52,27 @@ static ORSTwitterEngine *sharedEngine = nil;
 - (id) initSynchronously:(BOOL)synchr 
 			  withUserID:(NSString *)userID
 			 andPassword:(NSString *)password {
-	self = [super init];
-	if (self != nil) {
+	Class engineClass = [self class];
+	@synchronized(engineClass) {
+		if (sharedEngine == nil) {
+			if (self = [super init]) {
+				sharedEngine = self;
+	//self = [super init];
+	//if (self != nil) {
 		session = [[ORSSession alloc] initWithUserID:userID
 										  andPassword:password];
 		synchronously = synchr;
 		sessionQueue = [NSMutableArray arrayWithCapacity:4];
 	}
+	
+		}
+	}
 	// NSLog(@"ORSTwitterEngine:: initSynchronously:");
+	//return self;
+	return sharedEngine;
+}
+
+- (id) copyWithZone:(NSZone *)zone {
 	return self;
 }
 
