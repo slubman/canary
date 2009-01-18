@@ -17,14 +17,13 @@
 @synthesize statuses, receivedDirectMessages, sentDirectMessages, visibleUserID,
 			previousTimeline, authenticator, twitterEngine, urlShortener, 
 			updateDispatcher, cacheManager, aboutWindow, statusTextField, 
-			statusView, statusBox, dateDifferenceTextField,
-			mainTimelineCollectionView, mainTimelineScrollView, 
-			newStatusTextField, tweetButton, charsLeftIndicator, timelineButton, 
-			indicator, contentView, mainTimelineCollectionViewItem,
-			receivedDMsCollectionView, receivedDMsScrollView, 
+			statusView, statusBox, dateDifferenceTextField, indicator,
+			mainTimelineCollectionView, mainTimelineScrollView, tweetButton,
+			newStatusTextField, charsLeftIndicator, timelineButton, sentDMBox,
+			contentView, mainTimelineCollectionViewItem, sentDMTextField,
+			receivedDMsCollectionView, receivedDMsScrollView, sentDMView,
 			sentDMsCollectionView, sentDMsScrollView, receivedDMTextField, 
 			receivedDMView, receivedDMBox, receivedDMDateDifferenceTextField,
-			sentDMTextField, sentDMView, sentDMBox, 
 			sentDMDateDifferenceTextField, statusArrayController, defaults, 
 			refreshTimer, loginItem, prevUserID, prevPassword, spokenCommands,
 			recognizer, firstBackgroundReceivedDMRetrieval, betweenUsers,
@@ -1075,6 +1074,8 @@ sender {
 	[alert setInformativeText:@"Blocked users can be unblocked later."];
 	[alert setAlertStyle:NSInformationalAlertStyle];
 	
+	CFRetain(userScreenName);
+	
 	[alert beginSheetModalForWindow:self.window
 					  modalDelegate:self
 					 didEndSelector:@selector(
@@ -1086,9 +1087,11 @@ sender {
 - (void) blockUserAlertDidEnd:(NSAlert *)alert
 					   returnCode:(int)returnCode
 					  contextInfo:(void *)contextInfo {
+	id contextObject = (id)contextInfo;
 	if (returnCode == NSAlertFirstButtonReturn) {
 		[self blockUserWithID:(NSString *)contextInfo];
 	}
+	CFRelease(contextObject);
 }
 
 // Action: This is called when the about window needs to be shown.

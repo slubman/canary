@@ -10,6 +10,7 @@
 //  0.4 - 23/09/2008
 //  0.5 - 03/10/2008
 //  0.6 - 10/11/2008
+//  0.7 - 18/01/2008
 
 #import <Cocoa/Cocoa.h>
 #import <CoreFoundation/CoreFoundation.h>
