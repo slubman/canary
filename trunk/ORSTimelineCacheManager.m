@@ -22,33 +22,47 @@
 - (id) init {
 	if (self = [super init]) {
 		// Following cache
-		followingStatusCache = [[NSMutableArray array] retain];
+		//followingStatusCache = [[NSMutableArray array] retain];
+		followingStatusCache = [NSMutableArray array];
 		firstFollowingCall = YES;
-		lastFollowingStatusID = [[NSString string] retain];
+		//lastFollowingStatusID = [[NSString string] retain];
+		lastFollowingStatusID = [NSString string];
 		// Replies cache
-		repliesStatusCache = [[NSMutableArray array] retain];
+		//repliesStatusCache = [[NSMutableArray array] retain];
+		repliesStatusCache = [NSMutableArray array];
 		firstRepliesCall = YES;
-		lastReplyStatusID = [[NSString string] retain];
+		//lastReplyStatusID = [[NSString string] retain];
+		lastReplyStatusID = [NSString string];
 		// Public cache
-		publicStatusCache = [[NSMutableArray array] retain];
+		//publicStatusCache = [[NSMutableArray array] retain];
+		publicStatusCache = [NSMutableArray array];
 		firstPublicCall = YES;
-		lastPublicStatusID = [[NSString string] retain];
+		//lastPublicStatusID = [[NSString string] retain];
+		lastPublicStatusID = [NSString string];
 		// Archive cache
-		archiveStatusCache = [[NSMutableArray array] retain];
+		//archiveStatusCache = [[NSMutableArray array] retain];
+		archiveStatusCache = [NSMutableArray array];
 		firstArchiveCall = YES;
-		lastArchiveStatusID = [[NSString string] retain];
+		//lastArchiveStatusID = [[NSString string] retain];
+		lastArchiveStatusID = [NSString string];
 		// Received Messages cache
-		receivedMessagesCache = [[NSMutableArray array] retain];
+		//receivedMessagesCache = [[NSMutableArray array] retain];
+		receivedMessagesCache = [NSMutableArray array];
 		firstReceivedMessagesCall = YES;
-		lastReceivedMessageID = [[NSString string] retain];
+		//lastReceivedMessageID = [[NSString string] retain];
+		lastReceivedMessageID = [NSString string];
 		// Sent Messages cache
-		sentMessagesCache = [[NSMutableArray array] retain];
+		//sentMessagesCache = [[NSMutableArray array] retain];
+		sentMessagesCache = [NSMutableArray array];
 		firstSentMessagesCall = YES;
-		lastSentMessageID = [[NSString string] retain];
+		//lastSentMessageID = [[NSString string] retain];
+		lastSentMessageID = [NSString string];
 		// Favorites cache
-		favoritesStatusCache = [[NSMutableArray array] retain];
+		//favoritesStatusCache = [[NSMutableArray array] retain];
+		favoritesStatusCache = [NSMutableArray array];
 		firstFavoriteCall = YES;
-		lastFavoriteStatusID = [[NSString string] retain];
+		//lastFavoriteStatusID = [[NSString string] retain];
+		lastFavoriteStatusID = [NSString string];
 	}
 	return self;
 }

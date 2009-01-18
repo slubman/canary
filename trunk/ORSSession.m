@@ -18,10 +18,11 @@
 		  andPassword:(NSString *)newPassword {
 	self = [super init];
 	if (self != nil) {
-		userID = [newUserID retain];
-		password = [newPassword retain];
+		//userID = [newUserID retain];
+		//password = [newPassword retain];
+		userID = newUserID;
+		password = newPassword;
 	}
-	// NSLog(@"ORSSession:: initWithUserID: andPassword:");
 	return self;
 	
 }
@@ -46,8 +47,6 @@
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
 	
-		//NSLog(@"ORSSession:: requestURL: %@", requestURL);
-	
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:requestURL]
@@ -56,7 +55,8 @@
 	
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
-		[request addValue:@"0.6" forHTTPHeaderField:@"X-Twitter-Client-Version"];
+		[request addValue:@"0.6" 
+	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
 		[request addValue:@"http://macsphere.wordpress.com/" 
 			forHTTPHeaderField:@"X-Twitter-Client-URL"];
 	
@@ -73,10 +73,9 @@
 														 delegate:self];
 			if (mainConnection) {
 				// the data buffer
-				dataReceived = [[NSMutableData data] retain];
+				//dataReceived = [[NSMutableData data] retain];
+				dataReceived = [NSMutableData data];
 			} else {
-				//NSLog(@"ORSSession:: executeRequestOfType: atPath: synchronously:\
-					//  \nrequestURL: %@", requestURL);
 			}
 			return NULL;
 		} else { 
@@ -90,15 +89,11 @@
 			if (data) {
 				return data;
 			} else {
-				//NSLog(@"ORSSession:: executeRequestOfType: atPath: synchronously: \
-				//  %@ \nrequestURL: %@", error, requestURL);
 			}
 			return NULL;
 		}
 	}
 	return NULL;
-	//NSLog(@"ORSSession:: executeRequestAtPath: immediately:\n requestURL:%@",
-	//	requestURL);
 }
 
 // Executes any request both synchronously and asynchronously. Works like above
@@ -115,8 +110,6 @@
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
 	
-		// NSLog(@"ORSSession:: requestURL: %@", requestURL);
-	
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:requestURL]
@@ -125,7 +118,8 @@
 	
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
-		[request addValue:@"0.6" forHTTPHeaderField:@"X-Twitter-Client-Version"];
+		[request addValue:@"0.6" 
+	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
 		[request addValue:@"http://macsphere.wordpress.com/" 
 			forHTTPHeaderField:@"X-Twitter-Client-URL"];
 	
@@ -144,8 +138,6 @@
 			return;
 		}
 	}
-	//NSLog(@"ORSSession:: executeRequestAtPath: immediately:\n requestURL:%@",
-	//	  requestURL);
 }
 
 // Returns an XML document from the given data
@@ -172,8 +164,6 @@
 		// Error handling
 		NSLog(@"ORSSession:: getXMLDocumentFromData: L2: %@", error);
 	}
-	
-	//NSLog(@"ORSSession:: getXMLDocumentFromData:");
 	return xmlDocument;
 }
 
@@ -189,7 +179,6 @@
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses {
 	NSError *error = NULL;
 	NSXMLNode *root = [self getNodeFromData:statuses];
-	// NSLog(@"ORSSession:: getAllStatusesFromData:");
 	return [root nodesForXPath:@".//status" error:&error];
 }
 
@@ -198,7 +187,6 @@
 - (NSArray *) getAllUsersFromData:(NSData *)users {
 	NSError *error = NULL;
 	NSXMLNode *root = [self getNodeFromData:users];
-	// NSLog(@"ORSSession:: getAllUsersFromData:");
 	return [root nodesForXPath:@".//user" error:&error];
 }
 
@@ -207,7 +195,6 @@
 - (NSArray *) getAllDMsFromData:(NSData *)directMessages {
 	NSError *error = NULL;
 	NSXMLNode *root = [self getNodeFromData:directMessages];
-	// NSLog(@"ORSSession:: getAllDMsFromData:");
 	return [root nodesForXPath:@".//direct_message" error:&error];
 }
 

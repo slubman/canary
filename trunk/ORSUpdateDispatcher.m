@@ -14,7 +14,8 @@
 - (id) initWithEngine:(ORSTwitterEngine *)engine {
 	if (self = [super init]) {
 		twitterEngine = engine;
-		queueArray = [[NSMutableArray new] retain];
+		//queueArray = [[NSMutableArray new] retain];
+		queueArray = [NSMutableArray new];
 	}
 	// NSLog(@"ORSUpdateDispatcher:: initWithEngine:");
 	return self;

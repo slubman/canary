@@ -15,8 +15,10 @@
 - (id) initWithWindow:(NSWindow *)window {
 	if (self = [super initWithWindow:window]) {
 		twitterEngine = [ORSTwitterEngine sharedTwitterEngine];
-		defaults = [[NSUserDefaults standardUserDefaults] retain];
-		authenticator = [[[ORSCredentialsManager alloc] init] retain];
+		//defaults = [[NSUserDefaults standardUserDefaults] retain];
+		//authenticator = [[[ORSCredentialsManager alloc] init] retain];
+		defaults = [NSUserDefaults standardUserDefaults];
+		authenticator = [[ORSCredentialsManager alloc] init];
 	}
 	return self;
 }
