@@ -8,7 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1166,7 +1165,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="920621824">
+								<object class="NSMenuItem" id="51599072">
 									<reference key="NSMenu" ref="835318025"/>
 									<string key="NSTitle">Close Window</string>
 									<string key="NSKeyEquiv">w</string>
@@ -1716,7 +1715,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="196338544"/>
-									<reference key="NSNextKeyView" ref="73709233"/>
 									<reference key="NSDocView" ref="73709233"/>
 									<object class="NSColor" key="NSBGColor" id="837365368">
 										<int key="NSColorSpace">1</int>
@@ -1748,7 +1746,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="475840668"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="213564487"/>
 							<reference key="NSHScroller" ref="441622477"/>
@@ -1809,7 +1806,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="654286046"/>
-									<reference key="NSNextKeyView" ref="160011737"/>
 									<reference key="NSDocView" ref="160011737"/>
 									<reference key="NSBGColor" ref="837365368"/>
 									<int key="NScvFlags">6</int>
@@ -1838,7 +1834,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="820169938"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="847896143"/>
 							<reference key="NSHScroller" ref="576352292"/>
@@ -1879,7 +1874,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="784150499"/>
-									<reference key="NSNextKeyView" ref="452228602"/>
 									<reference key="NSDocView" ref="452228602"/>
 									<reference key="NSBGColor" ref="837365368"/>
 									<int key="NScvFlags">6</int>
@@ -1908,7 +1902,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="815988853"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="173945750"/>
 							<reference key="NSHScroller" ref="401456129"/>
@@ -2394,7 +2387,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													<object class="NSMenuItem" id="176861714">
 														<reference key="NSMenu" ref="845066380"/>
 														<string key="NSTitle">Go to Web page</string>
-														<string key="NSKeyEquiv">w</string>
+														<string key="NSKeyEquiv">y</string>
 														<int key="NSKeyEquivModMask">1048576</int>
 														<int key="NSMnemonicLoc">2147483647</int>
 														<reference key="NSOnImage" ref="3788936"/>
@@ -2483,6 +2476,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													</object>
 												</object>
 											</object>
+											<int key="NSSelectedIndex">4</int>
 											<bool key="NSPullDown">YES</bool>
 											<int key="NSPreferredEdge">2</int>
 											<bool key="NSUsesItemFromMenu">YES</bool>
@@ -2819,7 +2813,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													<object class="NSMenuItem" id="550065441">
 														<reference key="NSMenu" ref="665966599"/>
 														<string key="NSTitle">Go to Web page</string>
-														<string key="NSKeyEquiv">w</string>
+														<string key="NSKeyEquiv">s</string>
 														<int key="NSKeyEquivModMask">1048576</int>
 														<int key="NSMnemonicLoc">2147483647</int>
 														<reference key="NSOnImage" ref="3788936"/>
@@ -2908,6 +2902,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 													</object>
 												</object>
 											</object>
+											<int key="NSSelectedIndex">4</int>
 											<bool key="NSPullDown">YES</bool>
 											<int key="NSPreferredEdge">2</int>
 											<bool key="NSUsesItemFromMenu">YES</bool>
@@ -5224,7 +5219,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="575023229"/>
 							<reference ref="1011231497"/>
 							<reference ref="868174243"/>
-							<reference ref="920621824"/>
+							<reference ref="51599072"/>
 							<reference ref="648403112"/>
 						</object>
 						<reference key="parent" ref="713487014"/>
@@ -6803,7 +6798,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1810</int>
-						<reference key="object" ref="920621824"/>
+						<reference key="object" ref="51599072"/>
 						<reference key="parent" ref="835318025"/>
 					</object>
 				</object>
@@ -7312,7 +7307,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{899, 274}, {172, 186}}</string>
+					<string>{{658, 320}, {172, 186}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -7344,7 +7339,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>ORSCanaryTextFieldCell</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{900, 162}, {172, 186}}</string>
+					<string>{{658, 202}, {172, 186}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
