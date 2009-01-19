@@ -517,28 +517,39 @@ sender {
 													previousTimeline]]) {
 			[self scrollToTop];
 		}
-		previousTimeline = [timelineButton titleOfSelectedItem];
+		previousTimeline = timelineButton.titleOfSelectedItem;
 		if (newStatusTextField.stringValue.length == 0) {
 			[newStatusTextField setStringValue:@"d "];
 		}
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
-		oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
-		[self setSentDirectMessages:[cacheManager
-		setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
+		if ((([[[(NSArray *)note.object objectAtIndex:0] senderScreenName] 
+			 isEqualToString:twitterEngine.sessionUserID]) && 
+				!([[[(NSArray *)note.object objectAtIndex:0] 
+					recipientScreenName] 
+						isEqualToString:twitterEngine.sessionUserID])) ||
+			(([[[(NSArray *)note.object objectAtIndex:1] senderScreenName] 
+			   isEqualToString:twitterEngine.sessionUserID]) && 
+			 !([[[(NSArray *)note.object objectAtIndex:1] 
+				 recipientScreenName] 
+				isEqualToString:twitterEngine.sessionUserID]))) {
+			oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
+			[self setSentDirectMessages:[cacheManager
+				setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
 									 withNotification:note]];	
-		[mainTimelineScrollView setHidden:YES];
-		[receivedDMsScrollView setHidden:YES];
-		[sentDMsScrollView setHidden:NO];
-		[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
+			[mainTimelineScrollView setHidden:YES];
+			[receivedDMsScrollView setHidden:YES];
+			[sentDMsScrollView setHidden:NO];
+			[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
 		
-		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
+			if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
-			[self scrollToTop];
-		}
-		previousTimeline = timelineButton.titleOfSelectedItem;
-		if (newStatusTextField.stringValue.length == 0) {
-			[newStatusTextField setStringValue:@"d "];
+				[self scrollToTop];
+			}
+			previousTimeline = timelineButton.titleOfSelectedItem;
+			if (newStatusTextField.stringValue.length == 0) {
+				[newStatusTextField setStringValue:@"d "];
+			}
 		}
 	} else {
 		if (((NSArray *)note.object).count > 0) {
