@@ -584,6 +584,10 @@ sender {
 											 withNotification:note];
 					[self postDMsReceived:note
 								  afterID:lastExecutionID];
+					messageDurationTimer = [NSTimer 
+						scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+											userInfo:nil repeats:NO];
 				}
 				firstBackgroundReceivedDMRetrieval = NO;
 			} else {
@@ -601,6 +605,10 @@ sender {
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
 					[self postDMsReceived:note];
+					messageDurationTimer = [NSTimer 
+						scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+											userInfo:nil repeats:NO];
 				}
 			}
 			connectionErrorShown = NO;
@@ -636,6 +644,10 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"comment"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	
+	messageDurationTimer = [NSTimer scheduledTimerWithTimeInterval:60 
+		target:self selector:@selector(hideStatusBar) 
+			userInfo:nil repeats:NO];
 	
 	[self postStatusUpdatesSent:note];
 	[indicator stopAnimation:self];
@@ -677,6 +689,11 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
 }
 
 // Gets the friends timeline
@@ -910,6 +927,11 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"comments"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 
@@ -1262,6 +1284,11 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
 }
 
 // This method executes the call to twitpic and adds the resulting url in the
@@ -1302,6 +1329,11 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
 }
 
 // Shows that there is a connection problem
@@ -1311,6 +1343,10 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
 	[statusBarImageView setHidden:NO];
 	[statusBarButton setEnabled:NO];
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
 	connectionErrorShown = YES;
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
@@ -1359,6 +1395,10 @@ sender {
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 		[statusBarButton setEnabled:NO];
 		connectionErrorShown = YES;
 	}
@@ -1404,6 +1444,12 @@ sender {
 					 hasVisibleWindows:(BOOL)flag {
 	[self.window makeKeyAndOrderFront:self];
 	return YES;
+}
+
+// This hides the status bar message
+- (void) hideStatusBar {
+	[statusBarTextField setHidden:YES];
+	[statusBarImageView setHidden:YES];
 }
 
 // Speech-related methods
@@ -1455,6 +1501,10 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_add"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 
@@ -1468,6 +1518,10 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_delete"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 
@@ -1484,6 +1538,10 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_red"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 
@@ -1497,6 +1555,10 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_green"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 
@@ -1530,6 +1592,10 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"fave_star"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
 	}
 }
 

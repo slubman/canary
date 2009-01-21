@@ -85,6 +85,7 @@
 	
 	NSTimer *refreshTimer;
 	NSTimer *backgroundReceivedDMTimer;
+	NSTimer *messageDurationTimer;
 	SecKeychainItemRef loginItem;
 	NSString *visibleUserID;
 	
@@ -162,6 +163,12 @@
 - (void) showConnectionFailure:(NSNotification *)note;
 - (void) showReceivedResponse:(NSNotification *)note;
 - (IBAction) showPictureTaker:sender;
+- (void) pictureTakerDidEnd:(IKPictureTaker *)picker
+				 returnCode:(NSInteger)code
+				contextInfo:(void *)contextInfo;
+- (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
+					 hasVisibleWindows:(BOOL)flag;
+- (void) hideStatusBar;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender
