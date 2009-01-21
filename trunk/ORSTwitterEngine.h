@@ -11,6 +11,7 @@
 //  0.4 - 12/09/2008
 //  0.5 - 03/10/2008
 //  0.6 - 19/10/2008
+//  0.7 - 21/01/2009
 
 #import <Cocoa/Cocoa.h>
 #import "ORSSession.h"
@@ -89,9 +90,9 @@
 - (BOOL) blockUser:(NSString *)userID;
 - (BOOL) unblockUser:(NSString *)userID;
 
-@property(copy) NSMutableData *dataReceived;
+@property (copy) NSMutableData *dataReceived;
 @property BOOL synchronously;
-@property(copy) NSURLConnection *mainConnection;
+@property (copy) NSURLConnection *mainConnection;
 @property (retain) ORSSession *session;
 
 @end

@@ -6,6 +6,7 @@
 //  Copyright 2008 Ocean Road Software. All rights reserved.
 //
 //  0.6 - 19/10/2008
+//  0.7 - 21/01/2009
 
 #import <Cocoa/Cocoa.h>
 

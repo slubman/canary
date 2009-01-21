@@ -6,6 +6,7 @@
 //  Copyright 2008 Ocean Road Software. All rights reserved.
 //
 //  0.6 - 19/10/2008
+//  0.7 - 21/01/2009
 
 #import "ORSSession.h"
 
@@ -18,8 +19,6 @@
 		  andPassword:(NSString *)newPassword {
 	self = [super init];
 	if (self != nil) {
-		//userID = [newUserID retain];
-		//password = [newPassword retain];
 		userID = newUserID;
 		password = newPassword;
 	}
@@ -46,10 +45,14 @@
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
+		
+		// Correcting the encoding
+		NSString *encodedRequestURL = [requestURL 
+			stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
-			requestWithURL:[NSURL URLWithString:requestURL]
+			requestWithURL:[NSURL URLWithString:encodedRequestURL]
 				cachePolicy:NSURLRequestUseProtocolCachePolicy
 					timeoutInterval:48.0];
 	
@@ -73,7 +76,6 @@
 														 delegate:self];
 			if (mainConnection) {
 				// the data buffer
-				//dataReceived = [[NSMutableData data] retain];
 				dataReceived = [NSMutableData data];
 			} else {
 			}
@@ -109,10 +111,14 @@
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
+		
+		// Correcting the encoding
+		NSString *encodedRequestURL = [requestURL 
+					  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
-			requestWithURL:[NSURL URLWithString:requestURL]
+			requestWithURL:[NSURL URLWithString:encodedRequestURL]
 				cachePolicy:NSURLRequestUseProtocolCachePolicy
 					timeoutInterval:48.0];
 	
@@ -156,13 +162,11 @@
     if (xmlDocument == NULL)  {
         if (error) {
 			// Error handling
-			NSLog(@"ORSSession:: getXMLDocumentFromData: L1: %@", error);
 		}
         return NULL;
     }
     if (error) {
 		// Error handling
-		NSLog(@"ORSSession:: getXMLDocumentFromData: L2: %@", error);
 	}
 	return xmlDocument;
 }
@@ -170,7 +174,6 @@
 // Returns the node from the data received from the connection
 - (NSXMLNode *) getNodeFromData:(NSData *)data {
 	NSXMLDocument *xmlDocument = [self getXMLDocumentFromData:data];
-	// NSLog(@"ORSSession:: getNodeFromData:");
 	return [xmlDocument rootElement];
 }
 

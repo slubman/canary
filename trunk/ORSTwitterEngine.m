@@ -11,6 +11,7 @@
 //  0.4 - 12/09/2008
 //  0.5 - 03/10/2008
 //  0.6 - 19/10/2008
+//  0.7 - 21/01/2009
 
 #import "ORSTwitterEngine.h"
 #import "ORSCanaryController.h"
@@ -25,10 +26,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 + (ORSTwitterEngine *) sharedTwitterEngine {
     @synchronized(self) {
         if (sharedEngine == nil) {
-            [[self alloc] init]; // assignment not done here
+            [[self alloc] init];
         }
     }
-	// NSLog(@"CanaryController:: sharedController");
     return sharedEngine;
 }
 
@@ -36,14 +36,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 + (id) allocWithZone:(NSZone *)zone {
     @synchronized(self) {
         if (sharedEngine == nil) {
-            //sharedEngine = [super allocWithZone:zone];
-			// assignment and return on first allocation
-            //return sharedEngine;  
 			return [super allocWithZone:zone];
         }
     }
-	// NSLog(@"CanaryController:: allocWithZone:");
-    //return nil; //on subsequent allocation attempts return nil
 	return sharedEngine;
 }
 
@@ -57,18 +52,13 @@ static ORSTwitterEngine *sharedEngine = nil;
 		if (sharedEngine == nil) {
 			if (self = [super init]) {
 				sharedEngine = self;
-	//self = [super init];
-	//if (self != nil) {
-		session = [[ORSSession alloc] initWithUserID:userID
-										  andPassword:password];
-		synchronously = synchr;
-		sessionQueue = [NSMutableArray arrayWithCapacity:4];
-	}
-	
+				session = [[ORSSession alloc] initWithUserID:userID
+												 andPassword:password];
+				synchronously = synchr;
+				sessionQueue = [NSMutableArray arrayWithCapacity:4];
+			}
 		}
 	}
-	// NSLog(@"ORSTwitterEngine:: initSynchronously:");
-	//return self;
 	return sharedEngine;
 }
 
@@ -105,7 +95,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 	if ([sessionQueue count] > 4) {
 		[sessionQueue removeObjectAtIndex:0];
 	}
-	// NSLog(@"ORSTwitterEngine: executeRequestOfType: atPath: synchronously:");
 	return [tempSession executeRequestOfType:type 
 									 atPath:path
 							  synchronously:synchr];
@@ -115,9 +104,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 - (void) simpleExecuteRequestOfType:(NSString *)type
 							 atPath:(NSString *)path
 					  synchronously:(BOOL)synchr {
-	
-	// NSLog(@"ORSTwitterEngine: simpleExecuteRequestOfType: \
-		  atPath: synchronously:");
 	ORSSession *tempSession = (ORSSession *)[session copy];
 	[sessionQueue addObject:tempSession];
 	if ([sessionQueue count] > 4) {
@@ -130,34 +116,29 @@ static ORSTwitterEngine *sharedEngine = nil;
 
 // Returns an XML document from the given data
 - (NSXMLDocument *) getXMLDocumentFromData:(NSData *)data {
-	// NSLog(@"ORSTwitterEngine: getXMLDocumentFromData:");
 	return [session getXMLDocumentFromData:data];
 }
 
 // Returns the node from the data received from the connection
 - (NSXMLNode *) getNodeFromData:(NSData *)data {
-	// NSLog(@"ORSTwitterEngine:: getNodeFromData:");
 	return [session getNodeFromData:data];
 }
 
 // Returns all the statuses as an array from the data received from the
 // connection.
 - (NSArray *) getAllStatusesFromData:(NSData *)statuses {
-	// NSLog(@"ORSTwitterEngine:: getAllStatusesFromData:");
 	return [session getAllStatusesFromData:statuses];
 }
 
 // Returns all the users as an array from the data received from the
 // connection.
 - (NSArray *) getAllUsersFromData:(NSData *)users {
-	// NSLog(@"ORSTwitterEngine:: getAllUsersFromData:");
 	return [session getAllUsersFromData:users];
 }
 
 // Returns all the users as an array from the data received from the
 // connection.
 - (NSArray *) getAllDMsFromData:(NSData *)directMessages {
-	// NSLog(@"ORSTwitterEngine:: getAllDMsFromData:");
 	return [session getAllDMsFromData:directMessages];
 }
 
@@ -175,7 +156,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getPublicTimeline");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -200,7 +180,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getPublicTimelineSinceStatus");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -223,7 +202,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getFriendsTimeline");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -248,7 +226,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getFriendsTimelineSinceStatus");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -270,7 +247,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getUserTimeline");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -295,7 +271,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForUser:");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -320,7 +295,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getUserTimelineSinceStatus:");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -339,10 +313,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 				 inReplyTo:(NSString *)statusID {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"statuses/update.xml?status="];
-	NSString *statusText = [text 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	statusText = [statusText stringByReplacingOccurrencesOfString:@"&" 
-													   withString:@"%26"];
+	NSString *statusText = [text stringByReplacingOccurrencesOfString:@"&" 
+														   withString:@"%26"];
 	statusText = [statusText stringByReplacingOccurrencesOfString:@"+" 
 													   withString:@"%2B"];
 	[path appendString:statusText];
@@ -353,9 +325,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@"&source=canary"];
 	if (synchronously) {
 		NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"POST" atPath:path 
-						synchronously:synchronously]];
-		// NSLog(@"ORSTwitterEngine:: sendUpdate: inReplyTo:");
+			executeRequestOfType:@"POST" 
+						  atPath:path 
+				   synchronously:synchronously]];
 		if ([[node name] isEqualToString:@"status"]) {
 			return node;
 		} else {
@@ -377,7 +349,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getReplies");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -401,7 +372,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getRepliesSinceStatus:");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -428,7 +398,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getReceivedDMs");
 		if ([[node name] isEqualToString:@"direct-messages"]) {
 			return [self getAllDMsFromData:data];
 		} else {
@@ -453,7 +422,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getReceivedDMsSinceStatusID:");
 		if ([[node name] isEqualToString:@"direct-messages"]) {
 			return [self getAllDMsFromData:data];
 		} else {
@@ -475,7 +443,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getSentDMs:");
 		if ([[node name] isEqualToString:@"direct-messages"]) {
 			return [self getAllDMsFromData:data];
 		} else {
@@ -500,7 +467,6 @@ static ORSTwitterEngine *sharedEngine = nil;
 										   atPath:path 
 									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getSentDMsSinceStatusID:");
 		if ([[node name] isEqualToString:@"direct-messages"]) {
 			return [self getAllDMsFromData:data];
 		} else {
@@ -525,9 +491,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 							 stringWithString:@"friendships/create/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: createFriendshipWithUser:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -541,9 +507,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 		stringWithString:@"friendships/destroy/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: destroyFriendshipWithUser:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -558,10 +524,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:userIDA];
 	[path appendString:@"&user_b="];
 	[path appendString:userIDB];
-	NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"GET" atPath:path 
-							synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine:: user: isFriendWithUser:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET"
+				atPath:path 
+		 synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"friends"] &&
 		[[node stringValue] isEqualToString:@"true"]) {
 		return YES;
@@ -578,9 +543,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 // verifies the user credentials
 - (BOOL) verifyCredentials {
 	NSString *path = @"account/verify_credentials.xml";
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"GET" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: verifyCredentials");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -592,9 +557,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 - (BOOL) endSession {
 	NSString *path = @"account/end_session";
 	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"GET" atPath:path 
-				synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine:: logout");
+		executeRequestOfType:@"GET" 
+					  atPath:path 
+			   synchronously:synchronously]];
 	if (node) {
 		return YES;
 	} else {
@@ -612,9 +577,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSString *path = @"favorites.xml";
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
-										   atPath:path synchronously:synchronously];
+										   atPath:path 
+									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getFavorites");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -633,9 +598,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 		stringWithFormat:@"favorites.xml?since_id=%@", statusID];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET"
-										   atPath:path synchronously:synchronously];
+										   atPath:path 
+									synchronously:synchronously];
 		NSXMLNode *node = [self getNodeFromData:data];
-		// NSLog(@"ORSTwitterEngine:: getFavoritesSinceStatus:");
 		if ([[node name] isEqualToString:@"statuses"]) {
 			return [self getAllStatusesFromData:data];
 		} else {
@@ -643,7 +608,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 		}
 	} else {
 		[self executeRequestOfType:@"GET"
-							atPath:path synchronously:synchronously];
+							atPath:path 
+					 synchronously:synchronously];
 		return NULL;
 	}
 }
@@ -659,9 +625,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 		stringWithString:@"notifications/follow/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: followUserWithID:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -672,12 +638,12 @@ static ORSTwitterEngine *sharedEngine = nil;
 // leave the user with the specified id
 - (BOOL) leaveUser:(NSString *)userID {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"notifications/leave/"];
+		stringWithString:@"notifications/leave/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: followUserWithID:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -696,9 +662,9 @@ static ORSTwitterEngine *sharedEngine = nil;
 		 stringWithString:@"blocks/create/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: blockUserWithID:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -709,12 +675,12 @@ static ORSTwitterEngine *sharedEngine = nil;
 // unblocks the user with the specified id
 - (BOOL) unblockUser:(NSString *)userID {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"blocks/destroy/"];
+		stringWithString:@"blocks/destroy/"];
 	[path appendString:userID];
 	[path appendString:@".xml"];
-	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"POST" atPath:path synchronously:YES]];
-	// NSLog(@"ORSTwitterEngine:: unblockUserWithID:");
+	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
+																atPath:path 
+														 synchronously:YES]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {

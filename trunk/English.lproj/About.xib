@@ -8,6 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -44,7 +45,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="652800899">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -61,6 +62,29 @@
 										<object class="NSTextView" id="541845661">
 											<reference key="NSNextResponder" ref="1019171422"/>
 											<int key="NSvFlags">2322</int>
+											<object class="NSMutableSet" key="NSDragTypes">
+												<bool key="EncodedWithXMLCoder">YES</bool>
+												<object class="NSMutableArray" key="set.sortedObjects">
+													<bool key="EncodedWithXMLCoder">YES</bool>
+													<string>Apple HTML pasteboard type</string>
+													<string>Apple PDF pasteboard type</string>
+													<string>Apple PICT pasteboard type</string>
+													<string>Apple PNG pasteboard type</string>
+													<string>Apple URL pasteboard type</string>
+													<string>CorePasteboardFlavorType 0x6D6F6F76</string>
+													<string>CorePasteboardFlavorType 0x75726C20</string>
+													<string>NSColor pasteboard type</string>
+													<string>NSFilenamesPboardType</string>
+													<string>NSStringPboardType</string>
+													<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
+													<string>NeXT RTFD pasteboard type</string>
+													<string>NeXT Rich Text Format v1.0 pasteboard type</string>
+													<string>NeXT TIFF v4.0 pasteboard type</string>
+													<string>NeXT font pasteboard type</string>
+													<string>NeXT ruler pasteboard type</string>
+													<string>WebURLsWithTitlesPboardType</string>
+												</object>
+											</object>
 											<string key="NSFrameSize">{241, 559}</string>
 											<reference key="NSSuperview" ref="1019171422"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="459043301">
@@ -617,6 +641,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {241, 121}}</string>
 									<reference key="NSSuperview" ref="12079645"/>
+									<reference key="NSNextKeyView" ref="541845661"/>
 									<reference key="NSDocView" ref="541845661"/>
 									<reference key="NSBGColor" ref="728174033"/>
 									<object class="NSCursor" key="NSCursor">
@@ -649,6 +674,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 							</object>
 							<string key="NSFrame">{{211, 20}, {258, 123}}</string>
 							<reference key="NSSuperview" ref="652800899"/>
+							<reference key="NSNextKeyView" ref="1019171422"/>
 							<int key="NSsFlags">82</int>
 							<reference key="NSVScroller" ref="295780961"/>
 							<reference key="NSHScroller" ref="512425389"/>
@@ -725,7 +751,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="433610119">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Private beta.</string>
+								<string key="NSContents">Public beta.</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.300000e+01</double>
@@ -739,13 +765,13 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 						<object class="NSTextField" id="845419717">
 							<reference key="NSNextResponder" ref="652800899"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{314, 182}, {73, 22}}</string>
+							<string key="NSFrame">{{314, 182}, {90, 22}}</string>
 							<reference key="NSSuperview" ref="652800899"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="626411159">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string type="base64-UTF8" key="NSContents">zrIxICgwLjYpA</string>
+								<string type="base64-UTF8" key="NSContents">zrIxICgwLjYuMSk</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.800000e+01</double>
@@ -758,6 +784,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 						</object>
 					</object>
 					<string key="NSFrameSize">{489, 224}</string>
+					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
