@@ -177,6 +177,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				}
 		
 				firstBackgroundReceivedDMRetrieval = YES;
+				firstFollowingTimelineRun = YES;
 		
 				NSString *lastExecutionID = [self 
 								receivedDMIDSinceLastExecution];
@@ -430,10 +431,23 @@ sender {
 	
 	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
-		[self setStatuses:[cacheManager 
+		if ((firstFollowingTimelineRun) && [self willRetrieveAllUpdates]) {
+			NSArray *newStatuses = [cacheManager 
+				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
+									withNotification:note];
+			if ([newStatuses count] < 20) {
+				cacheManager.firstFollowingCall = YES;
+				[self getFriendsTimeline];
+			} else {
+				[self setStatuses:newStatuses];
+			}
+		} else {
+			[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 										   withNotification:note]];
-		[self postStatusUpdatesReceived:note];
+			[self postStatusUpdatesReceived:note];
+		}
+		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
 		[self setStatuses:[cacheManager 

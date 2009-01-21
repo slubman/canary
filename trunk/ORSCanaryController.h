@@ -101,6 +101,8 @@
 	
 	// Selected status update text field
 	NSRange realSelectedRange;
+	
+	BOOL firstFollowingTimelineRun;
 }
 
 + (ORSCanaryController *) sharedController;
