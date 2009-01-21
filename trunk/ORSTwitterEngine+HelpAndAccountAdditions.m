@@ -19,8 +19,9 @@
 - (BOOL) specifyLocation:(NSString *)location {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"account/update_location.xml?location="];
-	[path appendString:[location 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[location 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:location];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path
 				 synchronously:synchronously]];

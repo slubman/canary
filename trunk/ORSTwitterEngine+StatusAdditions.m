@@ -20,8 +20,9 @@
 - (NSArray *) getFriendsTimelineSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/friends_timeline.xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -93,8 +94,9 @@
 - (NSArray *) getUserTimelineSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 			stringWithString:@"statuses/user_timeline.xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -153,8 +155,9 @@
 							 stringWithString:@"statuses/user_timeline/"];
 	[path appendString:userID];
 	[path appendString:@".xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -247,8 +250,9 @@
 - (NSArray *) getRepliesSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString
 							 stringWithString:@"statuses/replies.xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];

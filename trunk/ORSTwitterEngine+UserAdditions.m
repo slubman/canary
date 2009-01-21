@@ -96,8 +96,9 @@
 - (NSArray *) getFriendsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"statuses/friends.xml?since="];
-	[path appendString:[date 
-			stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
@@ -152,8 +153,9 @@
 							 stringWithString:@"statuses/friends/"];
 	[path appendString:userID];
 	[path appendString:@".xml?since="];
-	[path appendString:[date 
-			stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];

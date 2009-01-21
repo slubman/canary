@@ -992,7 +992,7 @@ sender {
 }
 
 // Used for enabling/disabling menu items according to the controller state
-- (BOOL)validateMenuItem:(NSMenuItem *)item {
+- (BOOL) validateMenuItem:(NSMenuItem *)item {
 	NSText *fieldEditor = [newStatusTextField currentEditor];
 	NSRange selectedRange = [(NSTextView *)fieldEditor selectedRange];
     if ([item action] == @selector(shortenURL:)) {

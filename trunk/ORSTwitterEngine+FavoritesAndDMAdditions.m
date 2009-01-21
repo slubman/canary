@@ -121,8 +121,9 @@
 - (NSArray *) getReceivedDMsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"direct_messages.xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
@@ -155,8 +156,9 @@
 - (NSArray *) getSentDMsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"direct_messages/sent.xml?since="];
-	[path appendString:[date 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	//[path appendString:[date 
+	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
@@ -190,8 +192,7 @@
 							 stringWithString:@"direct_messages/new.xml?user="];
 	[path appendString:userID];
 	[path appendString:@"&text="];
-	[path appendString:[message 
-		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[path appendString:message];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"POST" atPath:path synchronously:synchronously]];
 	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: newDM: toUser:");
