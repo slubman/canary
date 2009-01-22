@@ -64,7 +64,6 @@
 	if (range.location != NSNotFound) {
 		NSString *substring = [string substringFromIndex:range.location];
 		NSRange charsetRange = [substring 
-			//rangeOfCharacterFromSet:[self fullDelimitingCharset]];
 			rangeOfCharacterFromSet:[self httpDelimitingCharset]];
 		if (charsetRange.location == NSNotFound) {
 			return substring;
@@ -139,7 +138,6 @@
 	NSString *username;
 	NSDictionary *linkAttr, *usernameAttr;
 	
-	//[self beginEditing];
 	scanner = [NSScanner scannerWithString:[self string]];
 	terminalCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 	
@@ -192,9 +190,7 @@
 			[self replaceCharactersInRange:newRange
 						   withAttributedString:[self emoticonStringWithName:@"Smile"]];
 		}*/
-		
 	}
-	//[self endEditing];
 }
 
 @end

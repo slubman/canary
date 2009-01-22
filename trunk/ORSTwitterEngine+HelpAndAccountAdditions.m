@@ -19,13 +19,10 @@
 - (BOOL) specifyLocation:(NSString *)location {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"account/update_location.xml?location="];
-	//[path appendString:[location 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:location];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path
 				 synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: specifyLocation:");
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -41,9 +38,6 @@
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"POST" atPath:path
 				 synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: \
-		  updateDeliveryDeviceWith:");
-	// What is the resulting node?
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -57,7 +51,6 @@
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path
 			synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: getRateLimitStatus:");
 	if (![[[node childAtIndex:0] name] isEqualToString:@"error"]) {
 		return node;
 	} else {
@@ -76,7 +69,6 @@
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path 
 			 synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: testTwitter:");
 	if ([[node name] isEqualToString:@"ok"]) {
 		return YES;
 	} else {
@@ -89,7 +81,6 @@
 	NSString *path = @"help/text.xml";
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: testTwitter:");
 	if ([[node name] isEqualToString:@"ok"]) {
 		return NULL;
 	} else {
@@ -102,7 +93,6 @@
 	NSString *path = @"help/downtime_schedule.xml";
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+HelpAndAccountAdditions:: getDowntimeSchedule:");
 	if (![[[node childAtIndex:0] name] isEqualToString:@"error"]) {
 		return node;
 	} else {

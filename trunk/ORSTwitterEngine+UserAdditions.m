@@ -21,7 +21,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriends");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -38,7 +37,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsOfUser:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -54,7 +52,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsForPage:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -68,7 +65,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsLite");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -84,7 +80,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsLiteAtPage: %@", path);
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -96,13 +91,10 @@
 - (NSArray *) getFriendsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"statuses/friends.xml?since="];
-	//[path appendString:[date 
-	//		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsSince:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -121,7 +113,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsOfUser: forPage:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -138,7 +129,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsLiteOfUser:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -153,13 +143,10 @@
 							 stringWithString:@"statuses/friends/"];
 	[path appendString:userID];
 	[path appendString:@".xml?since="];
-	//[path appendString:[date 
-	//		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFriendsOfUser: since:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -173,7 +160,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowers");
 	if ([[node name] isEqualToString:@"users"]) { 
 		return [self getAllUsersFromData:data];
 	} else {
@@ -190,7 +176,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowersOfUser:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -206,7 +191,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowersForPage:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -220,7 +204,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowersLite");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -239,7 +222,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowersOfUser: forPage:");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -256,7 +238,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFollowersLiteOfUser::");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -270,7 +251,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: getFeatured");
 	if ([[node name] isEqualToString:@"users"]) {
 		return [self getAllUsersFromData:data];
 	} else {
@@ -285,7 +265,6 @@
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: showUser:");
 	if ([[node name] isEqualToString:@"user"]) {
 		return node;
 	} else {
@@ -300,7 +279,6 @@
 	[path appendString:email];
 	NSXMLNode *node = [self getNodeFromData:[self
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+UserAdditions:: showUserWithEmail:");
 	if ([[node name] isEqualToString:@"user"]) {
 		return node;
 	} else {

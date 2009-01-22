@@ -129,6 +129,10 @@ static ORSCanaryController *sharedCanaryController = nil;
 					   selector:@selector(textDidEndEditing:)
 						   name:@"NSTextDidEndEditingNotification"
 						 object:nil];
+				[nc addObserver:self
+					   selector:@selector(printTwitPicURL:)
+						   name:@"OTEReceivedTwitPicResponse"
+						 object:nil];
 		
 				spokenCommands = [NSArray 
 					arrayWithObjects:@"Tweet", @"Home", @"Refresh", nil];
@@ -1242,7 +1246,7 @@ sender {
 										 file:nil
 										types:acceptableFileTypes];
 	if (result = NSOKButton) {
-		[self executeCallToTwitPicWithFile:[oPanel filename]];
+		[self executeAsyncCallToTwitPicWithFile:[oPanel filename]];
 	}
 }
 
@@ -1325,6 +1329,75 @@ sender {
 	[fieldEditor setNeedsDisplay:YES];
 	NSString *msg = [NSString 
 		stringWithFormat:@"Picture has been sent to Twitpic"];
+	[statusBarTextField setStringValue:msg];
+	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
+	[statusBarTextField setHidden:NO];
+	[statusBarImageView setHidden:NO];
+	
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
+}
+
+// This method executes the call to twitpic asynchronously and sends the given
+// file
+- (void) executeAsyncCallToTwitPicWithFile:(NSString *)filename {
+	[charsLeftIndicator setHidden:YES];
+	[indicator startAnimation:self];
+	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
+	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
+		[[ORSAsyncTwitPicDispatcher alloc] init];
+	[asyncTwitPicDispatcher uploadData:imageData
+		withUsername:twitterEngine.sessionUserID
+			password:twitterEngine.sessionPassword
+				filename:filename];
+}
+
+// This method executes the call to twitpic asynchronously and sends the given
+// data
+- (void) executeAsyncCallToTwitPicWithData:(NSData *)imageData {
+	[charsLeftIndicator setHidden:YES];
+	[indicator startAnimation:self];
+	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
+		[[ORSAsyncTwitPicDispatcher alloc] init];
+	[asyncTwitPicDispatcher uploadData:imageData
+		withUsername:twitterEngine.sessionUserID
+			password:twitterEngine.sessionPassword
+				filename:@"user_selection.jpeg"];
+}
+
+// Prints the TwitPic URL in the status text box (called asynchronously)
+- (void) printTwitPicURL:(NSNotification *)note {
+	NSString *twitPicURLString = (NSString *)[note object];
+	NSLog(@"twitPicURLString: %@", twitPicURLString);
+	NSText *fieldEditor = [self.window fieldEditor:YES 
+						   forObject:newStatusTextField];
+	int location = fieldEditor.selectedRange.location;
+	[self.window makeFirstResponder:nil];
+	[self.window makeFirstResponder:newStatusTextField];
+	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
+	NSMutableString *statusString = [NSMutableString 
+									 stringWithString:newStatusTextField.stringValue];
+	NSCharacterSet *whitespaceCharset = 
+	[NSCharacterSet whitespaceAndNewlineCharacterSet];
+	NSString *string;
+	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString characterAtIndex:location-1]]))
+		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
+	else
+		string = [NSString stringWithFormat:@" %@ ", twitPicURLString];
+	
+	[statusString insertString:string atIndex:location];
+	[newStatusTextField setStringValue:statusString];
+	[self controlTextDidChange:nil];
+	[fieldEditor setSelectedRange:NSMakeRange(location+[string length], 0)];
+	[fieldEditor setNeedsDisplay:YES];
+	
+	[indicator stopAnimation:self];
+	[charsLeftIndicator setHidden:NO];
+	
+	NSString *msg = [NSString 
+					 stringWithFormat:@"Picture has been sent to Twitpic"];
 	[statusBarTextField setStringValue:msg];
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
@@ -1434,7 +1507,7 @@ sender {
 									   imageRepWithData:dataTiffRep];
 		NSData *jpegData = [bitmapRep representationUsingType:NSJPEGFileType
 												   properties:nil];
-		[self executeCallToTwitPicWithData:jpegData];
+		[self executeAsyncCallToTwitPicWithData:jpegData];
 	}
 }
 

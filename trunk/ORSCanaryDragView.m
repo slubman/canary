@@ -73,7 +73,7 @@
 	if ([[pboard types] containsObject:NSFilenamesPboardType]) {
 		NSArray *files = [pboard propertyListForType:NSFilenamesPboardType];
 		NSString *filename = (NSString *)[files objectAtIndex:0];
-		[[ORSCanaryController sharedController] executeCallToTwitPicWithFile:filename];		
+		[[ORSCanaryController sharedController] executeAsyncCallToTwitPicWithFile:filename];		
 	}		
 	return YES;
 }

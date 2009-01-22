@@ -43,6 +43,7 @@
 		0573D7200DA66483002D1CCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0573D71E0DA66483002D1CCF /* InfoPlist.strings */; };
 		0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573D7330DA6650B002D1CCF /* Security.framework */; };
 		057875CA0EF58553006A7E89 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 057875C90EF58553006A7E89 /* error.png */; };
+		05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */; };
 		0591A9350EC8DFDE00BF3CAD /* bitly.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9340EC8DFDE00BF3CAD /* bitly.png */; };
 		0591A95B0EC8E25F00BF3CAD /* cligs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9580EC8E25F00BF3CAD /* cligs.png */; };
 		0591A95C0EC8E25F00BF3CAD /* isgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9590EC8E25F00BF3CAD /* isgd.png */; };
@@ -153,6 +154,8 @@
 		0573D71F0DA66483002D1CCF /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0573D7330DA6650B002D1CCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		057875C90EF58553006A7E89 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSAsyncTwitPicDispatcher.h; sourceTree = "<group>"; };
+		05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSAsyncTwitPicDispatcher.m; sourceTree = "<group>"; };
 		0591A9340EC8DFDE00BF3CAD /* bitly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitly.png; sourceTree = "<group>"; };
 		0591A9580EC8E25F00BF3CAD /* cligs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cligs.png; sourceTree = "<group>"; };
 		0591A9590EC8E25F00BF3CAD /* isgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isgd.png; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				0592E7810EA13701002AC429 /* ORSUpdateDispatcher.m */,
 				0507E6FE0EED88A000559018 /* ORSTwitPicDispatcher.h */,
 				0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */,
+				05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */,
+				05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */,
 			);
 			name = "Twitter Engine";
 			sourceTree = "<group>";
@@ -568,6 +573,7 @@
 				0507E9DB0EF07DA300559018 /* ORSCanaryDragView.m in Sources */,
 				0507EABF0EF2CA8400559018 /* ORSCanaryCollectionView.m in Sources */,
 				05A5D9B00F065A8200B596A9 /* ORSAbstractShortener.m in Sources */,
+				05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

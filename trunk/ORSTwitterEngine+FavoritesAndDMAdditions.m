@@ -23,7 +23,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getFavoritesForUser:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -39,7 +38,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getFavoritesAtPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -57,7 +55,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getFavoritesAtPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -74,7 +71,6 @@
 	NSXMLNode *node = [self getNodeFromData:[self 
 							executeRequestOfType:@"POST" atPath:path
 											 synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: createFavorite:");
 	if ([[node name] isEqualToString:@"status"]) {
 		return YES;
 	} else {
@@ -91,7 +87,6 @@
 	[self simpleExecuteRequestOfType:@"POST" 
 							  atPath:path
 					   synchronously:synchronously];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: createBlindFavorite:");
 }
 
 // unfavorites the specified status
@@ -101,9 +96,8 @@
 	[path appendString:statusID];
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self 
-											 executeRequestOfType:@"POST" atPath:path
+			executeRequestOfType:@"POST" atPath:path
 											 synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: destroyFavoriteWithID:");
 	if ([[node name] isEqualToString:@"status"]) {
 		return YES;
 	} else {
@@ -121,13 +115,10 @@
 - (NSArray *) getReceivedDMsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"direct_messages.xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getReceivedDMsSince:");
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {
@@ -143,7 +134,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getReceivedDMsForPage:");
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {
@@ -155,14 +145,11 @@
 // date
 - (NSArray *) getSentDMsSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"direct_messages/sent.xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+		stringWithString:@"direct_messages/sent.xml?since="];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getSentDMsSince:");
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {
@@ -173,12 +160,11 @@
 // returns the 20 next most recent DMs sent by the current user (page-based)
 - (NSArray *) getSentDMsAtPage:(NSString *)page {
 	NSMutableString *path = [NSMutableString 
-							 stringWithString:@"direct_messages/sent.xml?page="];
+			stringWithString:@"direct_messages/sent.xml?page="];
 	[path appendString:page]; 
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: getSentDMsForPage:");
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {
@@ -195,7 +181,6 @@
 	[path appendString:message];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"POST" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: newDM: toUser:");
 	if ([[node name] isEqualToString:@"direct_message"]) {
 		return YES;
 	} else {
@@ -211,7 +196,6 @@
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"POST" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+FavoritesAndDMAdditions:: destroyDM:");
 	if ([[node name] isEqualToString:@"direct_message"]) {
 		return YES;
 	} else {

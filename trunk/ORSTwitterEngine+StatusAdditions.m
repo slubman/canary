@@ -20,14 +20,11 @@
 - (NSArray *) getFriendsTimelineSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/friends_timeline.xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getFriendsTimelineSince:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -45,8 +42,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: \
-		  getFriendsTimelineWithNumberOfStatuses:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -63,7 +58,6 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getFriendsTimelineForPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -80,8 +74,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: \
-		  getUserTimelineWithNumberOfStatuses:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -94,14 +86,11 @@
 - (NSArray *) getUserTimelineSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString 
 			stringWithString:@"statuses/user_timeline.xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineSince:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -118,7 +107,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -138,8 +126,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForUser: \
-		withNumberOfStatuses:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -155,14 +141,11 @@
 							 stringWithString:@"statuses/user_timeline/"];
 	[path appendString:userID];
 	[path appendString:@".xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForUser: since:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -183,8 +166,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForUser: \
-		  sinceStatus:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -204,8 +185,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getUserTimelineForUser: \
-		  atPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -221,7 +200,6 @@
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"GET" 
 							atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: statusID:");
 	if ([[node name] isEqualToString:@"status"]) {
 		return node;
 	} else {
@@ -238,7 +216,6 @@
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getRepliesAtPage:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -250,14 +227,11 @@
 - (NSArray *) getRepliesSince:(NSString *)date {
 	NSMutableString *path = [NSMutableString
 							 stringWithString:@"statuses/replies.xml?since="];
-	//[path appendString:[date 
-	//	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[path appendString:date];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: getRepliesSince:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return [self getAllStatusesFromData:data];
 	} else {
@@ -273,7 +247,6 @@
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self 
 		executeRequestOfType:@"GET" atPath:path synchronously:synchronously]];
-	// NSLog(@"ORSTwitterEngine+StatusAdditions:: destroyStatus:");
 	if ([[node name] isEqualToString:@"statuses"]) {
 		return node;
 	} else {

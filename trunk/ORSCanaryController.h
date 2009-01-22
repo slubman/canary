@@ -30,6 +30,7 @@
 #import <Growl/GrowlApplicationBridge.h>
 #import "ORSCanaryLoginController.h"
 #import "ORSTwitPicDispatcher.h" 
+#import "ORSAsyncTwitPicDispatcher.h"
 
 @interface ORSCanaryController : NSWindowController {
 	// Fundamentals
@@ -160,6 +161,9 @@
 - (IBAction) sendImageToTwitPic:sender;
 - (void) executeCallToTwitPicWithFile:(NSString *)filename;
 - (void) executeCallToTwitPicWithData:(NSData *)imageData;
+- (void) executeAsyncCallToTwitPicWithFile:(NSString *)filename;
+- (void) executeAsyncCallToTwitPicWithData:(NSData *)imageData;
+- (void) printTwitPicURL:(NSNotification *)note;
 - (void) showConnectionFailure:(NSNotification *)note;
 - (void) showReceivedResponse:(NSNotification *)note;
 - (IBAction) showPictureTaker:sender;

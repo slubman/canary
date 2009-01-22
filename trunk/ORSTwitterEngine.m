@@ -62,6 +62,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	return sharedEngine;
 }
 
+// copyWithZone
 - (id) copyWithZone:(NSZone *)zone {
 	return self;
 }

@@ -15,8 +15,6 @@
 - (id) initWithWindow:(NSWindow *)window {
 	if (self = [super initWithWindow:window]) {
 		twitterEngine = [ORSTwitterEngine sharedTwitterEngine];
-		//defaults = [[NSUserDefaults standardUserDefaults] retain];
-		//authenticator = [[[ORSCredentialsManager alloc] init] retain];
 		defaults = [NSUserDefaults standardUserDefaults];
 		authenticator = [[ORSCredentialsManager alloc] init];
 	}
@@ -56,7 +54,6 @@
 				 forKey:@"CanaryCurrentUserID"];
 	[self.window orderOut:sender];
 	[NSApp endSheet:self.window returnCode:0];
-	//NSLog(@"ORSCanaryLoginController:: closeUserManagerSheet:");
 }
 
 // Action: calls the sheetDidEnd method with a return code of 1 (login)
@@ -80,7 +77,6 @@
 		[twitterEngine setSessionUserID:[canaryController prevUserID]];
 		[twitterEngine setSessionPassword:[canaryController prevPassword]];
 	}
-	//NSLog(@"ORSCanaryLoginController:: login:");
 }
 
 // sheetDidEnd: Determines the course of action depending on what the user 
@@ -89,7 +85,6 @@
 					 returnCode:(int)returnCode
 					contextInfo:(void *)contextInfo {
 	if (returnCode == 0) {
-		//NSLog(@"ORSCanaryLoginController:: didEndUserManagerSheet:... rc:0");
 		return;
 	} else if (returnCode == 1) {
 		ORSCanaryController *canaryController = [ORSCanaryController 
@@ -136,7 +131,6 @@
 		
 		[canaryController setupReceivedDMTimer];
 		[canaryController changeTimeline:nil];
-		//NSLog(@"ORSCanaryLoginController:: didEndUserManagerSheet:... rc:1");
 	}
 	[authenticator freeBuffer];
 }
@@ -146,7 +140,6 @@
 - (void) comboBoxSelectionDidChange:(NSNotification *)notification {
 	[authenticatedTextField setStringValue:@""];
 	[self fillPasswordTextField];
-	//NSLog(@"ORSCanaryLoginController:: comboBoxSelectionDidChange:");
 }
 
 // Fills the password text field with the password
@@ -159,7 +152,6 @@
 	} else {
 		[passwordSecureTextField setStringValue:@""];
 	}
-	//NSLog(@"ORSCanaryLoginController:: fillPasswordTextField");
 }
 
 @end

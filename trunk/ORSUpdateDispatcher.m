@@ -14,10 +14,8 @@
 - (id) initWithEngine:(ORSTwitterEngine *)engine {
 	if (self = [super init]) {
 		twitterEngine = engine;
-		//queueArray = [[NSMutableArray new] retain];
 		queueArray = [NSMutableArray new];
 	}
-	// NSLog(@"ORSUpdateDispatcher:: initWithEngine:");
 	return self;
 }
 
@@ -75,7 +73,6 @@
 			[self initiateStatusDispatch:nil];
 		}
 	}
-	// NSLog(@"ORSUpdateDispatcher:: addStatusMessage:");
 }
 
 - (void) initiateStatusDispatch:(NSNotification *)note {
@@ -89,7 +86,6 @@
 					   afterDelay:6.0];
 		}
 	}
-	// NSLog(@"ORSUpdateDispatcher:: initiateStatusDispatch:");
 }
 
 - (void) initiateDMDispatch:(NSNotification *)note {
@@ -102,7 +98,6 @@
 					   withObject:nil
 					   afterDelay:6.0];
 		}
-		// NSLog(@"ORSUpdateDispatcher:: initiateDMDispatch:");
 	}
 }
 
