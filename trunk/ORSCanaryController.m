@@ -1544,7 +1544,7 @@ sender {
 	[self.window makeFirstResponder:newStatusTextField];
 	[self.window makeFirstResponder:fieldEditor];
 	
-	NSString *token = [NSString stringWithFormat:@"%@ ", stringToken];
+	NSString *token = [NSString stringWithFormat:@"%@", stringToken];
 	
 	[fieldEditor setSelectedRange:self.realSelectedRange];
 	[fieldEditor insertText:token];
