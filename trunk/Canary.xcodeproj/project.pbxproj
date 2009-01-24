@@ -44,6 +44,8 @@
 		0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573D7330DA6650B002D1CCF /* Security.framework */; };
 		057875CA0EF58553006A7E89 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 057875C90EF58553006A7E89 /* error.png */; };
 		05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */; };
+		058530130F292B4F003DB512 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 058530120F292B4F003DB512 /* information.png */; };
+		058530D30F293A24003DB512 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058530D20F293A24003DB512 /* ScriptingBridge.framework */; };
 		0591A9350EC8DFDE00BF3CAD /* bitly.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9340EC8DFDE00BF3CAD /* bitly.png */; };
 		0591A95B0EC8E25F00BF3CAD /* cligs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9580EC8E25F00BF3CAD /* cligs.png */; };
 		0591A95C0EC8E25F00BF3CAD /* isgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 0591A9590EC8E25F00BF3CAD /* isgd.png */; };
@@ -156,6 +158,9 @@
 		057875C90EF58553006A7E89 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSAsyncTwitPicDispatcher.h; sourceTree = "<group>"; };
 		05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSAsyncTwitPicDispatcher.m; sourceTree = "<group>"; };
+		058530120F292B4F003DB512 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		058530B60F2933E4003DB512 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		058530D20F293A24003DB512 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScriptingBridge.framework; sourceTree = "<group>"; };
 		0591A9340EC8DFDE00BF3CAD /* bitly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitly.png; sourceTree = "<group>"; };
 		0591A9580EC8E25F00BF3CAD /* cligs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cligs.png; sourceTree = "<group>"; };
 		0591A9590EC8E25F00BF3CAD /* isgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isgd.png; sourceTree = "<group>"; };
@@ -210,6 +215,7 @@
 				05D6EEB40EDB439000CBC4B6 /* Growl.framework in Frameworks */,
 				0507EEA40EF45CAC00559018 /* Sparkle.framework in Frameworks */,
 				05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */,
+				058530D30F293A24003DB512 /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				057875C90EF58553006A7E89 /* error.png */,
+				058530120F292B4F003DB512 /* information.png */,
 				05B8B6D20F156F9A006B4B93 /* email.png */,
 				05B8B6E20F1571CF006B4B93 /* user_delete.png */,
 				05B8B6E30F1571CF006B4B93 /* user_add.png */,
@@ -349,6 +356,7 @@
 		05E2461C0EC22BC500410548 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				058530B60F2933E4003DB512 /* iTunes.h */,
 				0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */,
 				0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */,
 				056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */,
@@ -380,6 +388,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				058530D20F293A24003DB512 /* ScriptingBridge.framework */,
 				0507EEA30EF45CAC00559018 /* Sparkle.framework */,
 				05D6EEB30EDB439000CBC4B6 /* Growl.framework */,
 				0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */,
@@ -532,6 +541,7 @@
 				05171B6B0F16A84600CA9812 /* picture_link.png in Resources */,
 				05171B830F16AB8100CA9812 /* comments.png in Resources */,
 				05171B850F16AC4C00CA9812 /* comment.png in Resources */,
+				058530130F292B4F003DB512 /* information.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

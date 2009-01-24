@@ -31,6 +31,7 @@
 #import "ORSCanaryLoginController.h"
 #import "ORSTwitPicDispatcher.h" 
 #import "ORSAsyncTwitPicDispatcher.h"
+#import "iTunes.h"
 
 @interface ORSCanaryController : NSWindowController {
 	// Fundamentals
@@ -173,6 +174,13 @@
 - (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
 					 hasVisibleWindows:(BOOL)flag;
 - (void) hideStatusBar;
+- (IBAction) insertITunesCurrentTrackFull:sender;
+- (IBAction) insertITunesCurrentTrackName:sender;
+- (IBAction) insertITunesCurrentTrackAlbum:sender;
+- (IBAction) insertITunesCurrentTrackArtist:sender;
+- (IBAction) insertITunesCurrentTrackGenre:sender;
+- (IBAction) insertITunesCurrentTrackComposer:sender;
+- (void) insertStringTokenInNewStatusTextField:(NSString *)stringToken;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender

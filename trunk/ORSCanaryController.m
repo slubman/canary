@@ -805,36 +805,16 @@ sender {
 
 // Action: Called when the user wants to autotype the user id to reply to.
 - (IBAction) typeUserID:sender {
-	NSTextView *fieldEditor = (NSTextView *)[self.window fieldEditor:YES 
-										   forObject:newStatusTextField];
-	[self.window makeFirstResponder:newStatusTextField];
-	[self.window makeFirstResponder:fieldEditor];
-	
 	NSString *username = [NSString stringWithFormat:@"@%@ ", sender];
-	
-	[fieldEditor setSelectedRange:self.realSelectedRange];
-	[fieldEditor insertText:username];
-	
-	[fieldEditor setNeedsDisplay:YES];
-	[fieldEditor didChangeText];
+	[self insertStringTokenInNewStatusTextField:username];
 }
 
 // Action: Called when the user wants to autotype "d" + user id to send 
 // message to.
 - (IBAction) dmUserID:sender {
 	[newStatusTextField setStringValue:@""];
-	NSTextView *fieldEditor = (NSTextView *)[self.window fieldEditor:YES 
-											forObject:newStatusTextField];
-	[self.window makeFirstResponder:newStatusTextField];
-	[self.window makeFirstResponder:fieldEditor];
-	
 	NSString *username = [NSString stringWithFormat:@"d %@ ", sender];
-	
-	[fieldEditor setSelectedRange:self.realSelectedRange];
-	[fieldEditor insertText:username];
-	
-	[fieldEditor setNeedsDisplay:YES];
-	[fieldEditor didChangeText];
+	[self insertStringTokenInNewStatusTextField:username];
 }
 
 // Action: This shortens the given URL using a shortener service.
@@ -1043,10 +1023,22 @@ sender {
 		} else {
 			return NO;
 		}
-	} else {
+	} else if ((item.action == @selector(insertITunesCurrentTrackFull:)) ||
+			   (item.action == @selector(insertITunesCurrentTrackName:)) ||
+			   (item.action == @selector(insertITunesCurrentTrackAlbum:)) ||
+			   (item.action == @selector(insertITunesCurrentTrackArtist:)) ||
+			   (item.action == @selector(insertITunesCurrentTrackGenre:)) ||
+			   (item.action == @selector(insertITunesCurrentTrackComposer:))) {
+		iTunesApplication *iTunes = [SBApplication 
+			applicationWithBundleIdentifier:@"com.apple.iTunes"];
+		if ([iTunes isRunning]) {
+			return YES;
+		} else {
+			return NO;
+		}
+	} else  {
 		return YES;
 	}
-       
 }
 
 // Action: This is called whenever the user performs an action on a status
@@ -1261,27 +1253,8 @@ sender {
 			password:twitterEngine.sessionPassword
 				filename:filename];
 	
-	NSText *fieldEditor = [self.window fieldEditor:YES 
-										forObject:newStatusTextField];
-	int location = fieldEditor.selectedRange.location;
-	[self.window makeFirstResponder:nil];
-	[self.window makeFirstResponder:newStatusTextField];
-	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
-	NSMutableString *statusString = [NSMutableString 
-		stringWithString:newStatusTextField.stringValue];
-	NSCharacterSet *whitespaceCharset = 
-		[NSCharacterSet whitespaceAndNewlineCharacterSet];
-	NSString *string;
-	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString characterAtIndex:location-1]]))
-		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
-	else
-		string = [NSString stringWithFormat:@" %@ ", twitPicURLString];
+	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
-	[statusString insertString:string atIndex:location];
-	[newStatusTextField setStringValue:statusString];
-	[self controlTextDidChange:nil];
-	[fieldEditor setSelectedRange:NSMakeRange(location+[string length], 0)];
-	[fieldEditor setNeedsDisplay:YES];
 	NSString *msg = [NSString 
 					 stringWithFormat:@"Picture has been sent to Twitpic"];
 	[statusBarTextField setStringValue:msg];
@@ -1304,29 +1277,9 @@ sender {
 		withUsername:twitterEngine.sessionUserID
 			password:twitterEngine.sessionPassword
 				filename:@"user_selection.jpeg"];
+
+	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
-	NSText *fieldEditor = [self.window fieldEditor:YES 
-										 forObject:newStatusTextField];
-	int location = fieldEditor.selectedRange.location;
-	[self.window makeFirstResponder:nil];
-	[self.window makeFirstResponder:newStatusTextField];
-	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
-	NSMutableString *statusString = [NSMutableString 
-		stringWithString:newStatusTextField.stringValue];
-	NSCharacterSet *whitespaceCharset = 
-		[NSCharacterSet whitespaceAndNewlineCharacterSet];
-	NSString *string;
-	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString 
-			characterAtIndex:location-1]]))
-		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
-	else
-		string = [NSString stringWithFormat:@" %@ ", twitPicURLString];
-	
-	[statusString insertString:string atIndex:location];
-	[newStatusTextField setStringValue:statusString];
-	[self controlTextDidChange:nil];
-	[fieldEditor setSelectedRange:NSMakeRange(location+string.length, 0)];
-	[fieldEditor setNeedsDisplay:YES];
 	NSString *msg = [NSString 
 		stringWithFormat:@"Picture has been sent to Twitpic"];
 	[statusBarTextField setStringValue:msg];
@@ -1352,6 +1305,12 @@ sender {
 		withUsername:twitterEngine.sessionUserID
 			password:twitterEngine.sessionPassword
 				filename:filename];
+	NSString *msg = [NSString 
+					 stringWithFormat:@"Sending picture to Twitpic..."];
+	[statusBarTextField setStringValue:msg];
+	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
+	[statusBarTextField setHidden:NO];
+	[statusBarImageView setHidden:NO];
 }
 
 // This method executes the call to twitpic asynchronously and sends the given
@@ -1365,33 +1324,18 @@ sender {
 		withUsername:twitterEngine.sessionUserID
 			password:twitterEngine.sessionPassword
 				filename:@"user_selection.jpeg"];
+	NSString *msg = [NSString 
+					 stringWithFormat:@"Sending picture to Twitpic..."];
+	[statusBarTextField setStringValue:msg];
+	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
+	[statusBarTextField setHidden:NO];
+	[statusBarImageView setHidden:NO];
 }
 
 // Prints the TwitPic URL in the status text box (called asynchronously)
 - (void) printTwitPicURL:(NSNotification *)note {
 	NSString *twitPicURLString = (NSString *)[note object];
-	NSLog(@"twitPicURLString: %@", twitPicURLString);
-	NSText *fieldEditor = [self.window fieldEditor:YES 
-						   forObject:newStatusTextField];
-	int location = fieldEditor.selectedRange.location;
-	[self.window makeFirstResponder:nil];
-	[self.window makeFirstResponder:newStatusTextField];
-	[fieldEditor setSelectedRange:fieldEditor.selectedRange];
-	NSMutableString *statusString = [NSMutableString 
-									 stringWithString:newStatusTextField.stringValue];
-	NSCharacterSet *whitespaceCharset = 
-	[NSCharacterSet whitespaceAndNewlineCharacterSet];
-	NSString *string;
-	if ((location == 0) || ([whitespaceCharset characterIsMember:[statusString characterAtIndex:location-1]]))
-		string = [NSString stringWithFormat:@"%@ ", twitPicURLString];
-	else
-		string = [NSString stringWithFormat:@" %@ ", twitPicURLString];
-	
-	[statusString insertString:string atIndex:location];
-	[newStatusTextField setStringValue:statusString];
-	[self controlTextDidChange:nil];
-	[fieldEditor setSelectedRange:NSMakeRange(location+[string length], 0)];
-	[fieldEditor setNeedsDisplay:YES];
+	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
@@ -1524,6 +1468,91 @@ sender {
 	[statusBarTextField setHidden:YES];
 	[statusBarImageView setHidden:YES];
 }
+
+// This inserts the current iTunes full track info in the text field
+- (IBAction) insertITunesCurrentTrackFull:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *track = iTunes.currentTrack.name;
+		NSString *album = iTunes.currentTrack.album;
+		NSString *artist = iTunes.currentTrack.artist;
+		NSString *fullName = [NSString stringWithFormat:@"♬ %@ - %@: %@",
+			artist, album, track];
+		[self insertStringTokenInNewStatusTextField:fullName];
+	}
+}
+
+// This inserts the current iTunes track in the text field
+- (IBAction) insertITunesCurrentTrackName:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *trackName = [NSString stringWithFormat:@"♬ %@", iTunes.currentTrack.name];
+		[self insertStringTokenInNewStatusTextField:trackName];
+	}
+}
+		
+// This inserts the current iTunes album in the text field
+- (IBAction) insertITunesCurrentTrackAlbum:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *albumName = [NSString stringWithFormat:@"♬ %@", 
+			iTunes.currentTrack.album];
+		[self insertStringTokenInNewStatusTextField:albumName];
+	}
+}
+
+// This inserts the current iTunes artist in the text field
+- (IBAction) insertITunesCurrentTrackArtist:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *artistName = [NSString stringWithFormat:@"♬ %@", 
+			iTunes.currentTrack.artist];
+		[self insertStringTokenInNewStatusTextField:artistName];
+	}
+}
+
+// This inserts the current iTunes genre in the text field
+- (IBAction) insertITunesCurrentTrackGenre:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *genre = [NSString stringWithFormat:@"♬ %@", 
+									 iTunes.currentTrack.genre];
+		[self insertStringTokenInNewStatusTextField:genre];
+	}
+}
+
+// This inserts the current iTunes composer in the text field
+- (IBAction) insertITunesCurrentTrackComposer:sender {
+	iTunesApplication *iTunes = [SBApplication 
+		applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	if ([iTunes isRunning]) {
+		NSString *composer = [NSString stringWithFormat:@"♬ %@", 
+						   iTunes.currentTrack.composer];
+		[self insertStringTokenInNewStatusTextField:composer];
+	}
+}
+
+// Inserts the string to the new status text field
+- (void) insertStringTokenInNewStatusTextField:(NSString *)stringToken {
+	NSTextView *fieldEditor = (NSTextView *)[self.window fieldEditor:YES 
+											 forObject:newStatusTextField];
+	[self.window makeFirstResponder:newStatusTextField];
+	[self.window makeFirstResponder:fieldEditor];
+	
+	NSString *token = [NSString stringWithFormat:@"%@ ", stringToken];
+	
+	[fieldEditor setSelectedRange:self.realSelectedRange];
+	[fieldEditor insertText:token];
+	
+	[fieldEditor setNeedsDisplay:YES];
+	[fieldEditor didChangeText];
+}
+
 
 // Speech-related methods
 
