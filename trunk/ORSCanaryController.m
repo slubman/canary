@@ -239,7 +239,7 @@ sender {
 		[charsLeftIndicator setWarningValue:125];
 		
 		[updateDispatcher addMessage:[newStatusTextField stringValue]];
-		[tweetButton setTitle:@"Tweet!"];
+		//[tweetButton setTitle:@"Tweet!"];
 		
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];

@@ -15,9 +15,16 @@
 	[self setTransparent:NO];
 	[self setBordered:YES];
 }
+
 - (void) mouseExited:(NSEvent *)theEvent {
 	[self setTransparent:YES];
 	[self setBordered:NO];
+}
+
+- (void) highlight:(BOOL)flag 
+		 withFrame:(NSRect)cellFrame 
+			inView:(NSView *)controlView {
+	return;
 }
 
 @end
