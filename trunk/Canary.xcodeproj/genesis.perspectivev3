@@ -234,6 +234,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -319,8 +321,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -338,7 +338,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0550D50D0F2C9633002EA7AD</string>
+										<string>0550D5230F2C97CF002EA7AD</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -428,18 +428,18 @@
 											<string>0550D4040F2C7596002EA7AD</string>
 											<string>0550D4650F2C89CD002EA7AD</string>
 											<string>0550D4A20F2C8D3F002EA7AD</string>
-											<string>0550D4A30F2C8D3F002EA7AD</string>
 											<string>0550D4A40F2C8D3F002EA7AD</string>
-											<string>0550D4A50F2C8D3F002EA7AD</string>
 											<string>0550D4A60F2C8D3F002EA7AD</string>
 											<string>0550D4A70F2C8D3F002EA7AD</string>
 											<string>0550D4A80F2C8D3F002EA7AD</string>
 											<string>0550D4A90F2C8D3F002EA7AD</string>
-											<string>0550D4AA0F2C8D3F002EA7AD</string>
-											<string>0550D4AB0F2C8D3F002EA7AD</string>
 											<string>0550D4AC0F2C8D3F002EA7AD</string>
 											<string>0550D4AD0F2C8D3F002EA7AD</string>
-											<string>0550D4AE0F2C8D3F002EA7AD</string>
+											<string>0550D50E0F2C97CF002EA7AD</string>
+											<string>0550D50F0F2C97CF002EA7AD</string>
+											<string>0550D5100F2C97CF002EA7AD</string>
+											<string>0550D5110F2C97CF002EA7AD</string>
+											<string>0550D5120F2C97CF002EA7AD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -597,6 +597,22 @@
 											<string>0550D4C20F2C8D3F002EA7AD</string>
 											<string>0550D4C30F2C8D3F002EA7AD</string>
 											<string>0550D4C40F2C8D3F002EA7AD</string>
+											<string>0550D5130F2C97CF002EA7AD</string>
+											<string>0550D5140F2C97CF002EA7AD</string>
+											<string>0550D5150F2C97CF002EA7AD</string>
+											<string>0550D5160F2C97CF002EA7AD</string>
+											<string>0550D5170F2C97CF002EA7AD</string>
+											<string>0550D5180F2C97CF002EA7AD</string>
+											<string>0550D5190F2C97CF002EA7AD</string>
+											<string>0550D51A0F2C97CF002EA7AD</string>
+											<string>0550D51B0F2C97CF002EA7AD</string>
+											<string>0550D51C0F2C97CF002EA7AD</string>
+											<string>0550D51D0F2C97CF002EA7AD</string>
+											<string>0550D51E0F2C97CF002EA7AD</string>
+											<string>0550D51F0F2C97CF002EA7AD</string>
+											<string>0550D5200F2C97CF002EA7AD</string>
+											<string>0550D5210F2C97CF002EA7AD</string>
+											<string>0550D5220F2C97CF002EA7AD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
