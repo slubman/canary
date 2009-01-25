@@ -2222,18 +2222,26 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<object class="NSUserDefaultsController" id="1000155356">
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
+			<object class="NSMenuItem" id="202986670">
+				<string key="NSTitle">Shorten URL</string>
+				<string key="NSKeyEquiv"/>
+				<int key="NSMnemonicLoc">2147483647</int>
+				<reference key="NSOnImage" ref="3788936"/>
+				<reference key="NSMixedImage" ref="183080322"/>
+			</object>
+			<object class="NSMenuItem" id="763905139">
+				<bool key="NSIsDisabled">YES</bool>
+				<bool key="NSIsSeparator">YES</bool>
+				<string key="NSTitle"/>
+				<string key="NSKeyEquiv"/>
+				<int key="NSMnemonicLoc">2147483647</int>
+				<reference key="NSOnImage" ref="3788936"/>
+				<reference key="NSMixedImage" ref="183080322"/>
+			</object>
 			<object class="NSMenu" id="182109838">
 				<string key="NSTitle">New Status Edit Menu</string>
 				<object class="NSMutableArray" key="NSMenuItems">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="NSMenuItem" id="202986670">
-						<reference key="NSMenu" ref="182109838"/>
-						<string key="NSTitle">Shorten URL</string>
-						<string key="NSKeyEquiv"/>
-						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="3788936"/>
-						<reference key="NSMixedImage" ref="183080322"/>
-					</object>
 				</object>
 			</object>
 			<object class="NSArrayController" id="852300212">
@@ -3869,14 +3877,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">menu</string>
-						<reference key="source" ref="398739843"/>
-						<reference key="destination" ref="182109838"/>
-					</object>
-					<int key="connectionID">820</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">menu</string>
 						<reference key="source" ref="690620532"/>
 						<reference key="destination" ref="182109838"/>
 					</object>
@@ -5020,6 +5020,22 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<int key="connectionID">1831</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">shortenURLMenuItem</string>
+						<reference key="source" ref="690620532"/>
+						<reference key="destination" ref="202986670"/>
+					</object>
+					<int key="connectionID">1838</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">separatorMenuItem</string>
+						<reference key="source" ref="690620532"/>
+						<reference key="destination" ref="763905139"/>
+					</object>
+					<int key="connectionID">1840</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -5517,7 +5533,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="784150499"/>
 							<reference ref="171789693"/>
 							<reference ref="138444730"/>
-							<reference ref="398739843"/>
 							<reference ref="1050888507"/>
 							<reference ref="757472659"/>
 							<reference ref="867426069"/>
@@ -5526,6 +5541,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="3528295"/>
 							<reference ref="287917341"/>
 							<reference ref="233141795"/>
+							<reference ref="398739843"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -5585,21 +5601,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<string key="objectName">Status Updates Array Controller</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">425</int>
-						<reference key="object" ref="398739843"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="690620532"/>
-						</object>
-						<reference key="parent" ref="439893737"/>
-						<string key="objectName">New Status Update Text Field</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">426</int>
-						<reference key="object" ref="690620532"/>
-						<reference key="parent" ref="398739843"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">427</int>
 						<reference key="object" ref="1050888507"/>
 						<object class="NSMutableArray" key="children">
@@ -5651,15 +5652,9 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<reference key="object" ref="182109838"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="202986670"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 						<string key="objectName">New Status Edit Menu</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">815</int>
-						<reference key="object" ref="202986670"/>
-						<reference key="parent" ref="182109838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1154</int>
@@ -6713,6 +6708,9 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<object class="IBObjectRecord">
 						<int key="objectID">1750</int>
 						<reference key="object" ref="287917341"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -7018,6 +7016,31 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<reference key="object" ref="385106968"/>
 						<reference key="parent" ref="715206025"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">425</int>
+						<reference key="object" ref="398739843"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="690620532"/>
+						</object>
+						<reference key="parent" ref="439893737"/>
+						<string key="objectName">New Status Update Text Field</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">426</int>
+						<reference key="object" ref="690620532"/>
+						<reference key="parent" ref="398739843"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">815</int>
+						<reference key="object" ref="202986670"/>
+						<reference key="parent" ref="1049"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1839</int>
+						<reference key="object" ref="763905139"/>
+						<reference key="parent" ref="1049"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -7267,6 +7290,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>1823.IBPluginDependency</string>
 					<string>1828.IBPluginDependency</string>
 					<string>1830.IBPluginDependency</string>
+					<string>1839.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>19.ImportedFromIB2</string>
 					<string>195.IBPluginDependency</string>
@@ -7728,6 +7752,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
@@ -7965,7 +7990,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1837</int>
+			<int key="maxID">1840</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -8178,6 +8203,19 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				<object class="IBPartialClassDescription">
 					<string key="className">ORSCanaryNewStatusTextFieldCell</string>
 					<string key="superclassName">NSTextFieldCell</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSMutableArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>separatorMenuItem</string>
+							<string>shortenURLMenuItem</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSMenuItem</string>
+							<string>NSMenuItem</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">ORSCanaryNewStatusTextFieldCell.h</string>

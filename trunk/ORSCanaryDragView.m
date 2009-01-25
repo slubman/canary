@@ -26,6 +26,10 @@
 	return self;
 }
 
+- (NSView *) hitTest:(NSPoint)aPoint {
+	return nil;
+}
+
 - (void) drawRect:(NSRect)rect {
 	NSRect bounds = [self bounds];
 	if (highlighted) {

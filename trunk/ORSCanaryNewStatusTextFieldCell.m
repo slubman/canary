@@ -12,7 +12,12 @@
 @implementation ORSCanaryNewStatusTextFieldCell
 
 - (NSText *) setUpFieldEditorAttributes:(NSText *)textObj {
-	[textObj setMenu:[self menu]];
+	// add separator
+	if (![[textObj menu] itemWithTitle:@"Shorten URL"]) {
+		[[textObj menu] addItem:separatorMenuItem];
+		[[textObj menu] addItem:shortenURLMenuItem];
+	}
+	
 	[self setDrawsBackground:NO];
 	return textObj;
 }
