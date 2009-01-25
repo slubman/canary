@@ -665,6 +665,8 @@ sender {
 	[self postStatusUpdatesSent:note];
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
+	
+	[self controlTextDidChange:nil];
 }
 
 // Sets the sent direct messages asynchronously
@@ -710,6 +712,8 @@ sender {
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
 							userInfo:nil repeats:NO];
+	
+	[self controlTextDidChange:nil];
 }
 
 // Gets the friends timeline
