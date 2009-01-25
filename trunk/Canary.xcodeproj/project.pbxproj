@@ -26,6 +26,7 @@
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
 		0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */; };
+		0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */; };
 		0555A4B10EAA1BAF00B126BC /* ORSBitlyShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */; };
 		0555A4D70EAA1E4D00B126BC /* ORSCligsShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A4D60EAA1E4D00B126BC /* ORSCligsShortener.m */; };
 		0555A5150EAA2F7E00B126BC /* ORSAdjixShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A5140EAA2F7E00B126BC /* ORSAdjixShortener.m */; };
@@ -125,6 +126,8 @@
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
 		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
 		0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryCollectionViewItem.m; sourceTree = "<group>"; };
+		0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryUnderlinedButtonCell.h; sourceTree = "<group>"; };
+		0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryUnderlinedButtonCell.m; sourceTree = "<group>"; };
 		0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSBitlyShortener.h; sourceTree = "<group>"; };
 		0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSBitlyShortener.m; sourceTree = "<group>"; };
 		0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCligsShortener.h; sourceTree = "<group>"; };
@@ -343,26 +346,26 @@
 			children = (
 				0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */,
 				0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */,
-				0573D6DF0DA662D3002D1CCF /* ORSCanaryTextFieldCell.h */,
-				0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */,
 				0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */,
 				0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */,
-				05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */,
-				05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */,
 				0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */,
 				0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */,
-				0507EABD0EF2CA8400559018 /* ORSCanaryCollectionView.h */,
-				0507EABE0EF2CA8400559018 /* ORSCanaryCollectionView.m */,
+				058530B60F2933E4003DB512 /* iTunes.h */,
+				05E2461C0EC22BC500410548 /* Controls */,
 				0591A9610EC8E73800BF3CAD /* Other Controllers */,
-				05E2461C0EC22BC500410548 /* Misc */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		05E2461C0EC22BC500410548 /* Misc */ = {
+		05E2461C0EC22BC500410548 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				058530B60F2933E4003DB512 /* iTunes.h */,
+				05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */,
+				05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */,
+				0573D6DF0DA662D3002D1CCF /* ORSCanaryTextFieldCell.h */,
+				0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */,
+				0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */,
+				0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */,
 				0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */,
 				0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */,
 				056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */,
@@ -371,8 +374,10 @@
 				0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */,
 				0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */,
 				0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */,
+				0507EABD0EF2CA8400559018 /* ORSCanaryCollectionView.h */,
+				0507EABE0EF2CA8400559018 /* ORSCanaryCollectionView.m */,
 			);
-			name = Misc;
+			name = Controls;
 			sourceTree = "<group>";
 		};
 		05E247600EC3764700410548 /* NSXMLNodeAdditions */ = {
@@ -596,6 +601,7 @@
 				05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */,
 				0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */,
 				0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */,
+				0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

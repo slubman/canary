@@ -315,6 +315,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Sent messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -430,6 +431,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
 	
@@ -500,6 +502,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
 	
@@ -515,6 +518,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
 	
@@ -583,6 +587,7 @@ sender {
 					[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
 					[statusBarImageView setHidden:NO];
 					[statusBarButton setEnabled:YES];
+					[statusBarButton setHidden:NO];
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 											 withNotification:note];
@@ -605,6 +610,7 @@ sender {
 					[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
 					[statusBarImageView setHidden:NO];
 					[statusBarButton setEnabled:YES];
+					[statusBarButton setHidden:NO];
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
@@ -630,6 +636,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
 	
@@ -648,6 +655,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"comment"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	
 	messageDurationTimer = [NSTimer scheduledTimerWithTimeInterval:60 
 		target:self selector:@selector(hideStatusBar) 
@@ -666,6 +675,7 @@ sender {
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = NO;
 	}
 	
@@ -693,6 +703,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"email"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
@@ -1264,6 +1276,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
@@ -1289,6 +1303,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
@@ -1314,6 +1330,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 }
 
 // This method executes the call to twitpic asynchronously and sends the given
@@ -1333,6 +1351,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"information"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 }
 
 // Prints the TwitPic URL in the status text box (called asynchronously)
@@ -1349,6 +1369,8 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
 	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
@@ -1363,6 +1385,7 @@ sender {
 	[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
 	[statusBarImageView setHidden:NO];
 	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 	messageDurationTimer = [NSTimer 
 							scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
@@ -1420,6 +1443,7 @@ sender {
 								target:self selector:@selector(hideStatusBar) 
 								userInfo:nil repeats:NO];
 		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		connectionErrorShown = YES;
 	}
 	
@@ -1470,6 +1494,8 @@ sender {
 - (void) hideStatusBar {
 	[statusBarTextField setHidden:YES];
 	[statusBarImageView setHidden:YES];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
 }
 
 // This inserts the current iTunes full track info in the text field
@@ -1606,6 +1632,8 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_add"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -1623,6 +1651,8 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_delete"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -1643,6 +1673,8 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_red"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -1660,6 +1692,8 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_green"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
@@ -1697,6 +1731,8 @@ sender {
 		[statusBarImageView setImage:[NSImage imageNamed:@"fave_star"]];
 		[statusBarTextField setHidden:NO];
 		[statusBarImageView setHidden:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
 		messageDurationTimer = [NSTimer 
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 

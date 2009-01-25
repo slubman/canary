@@ -197,7 +197,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "CanaryController.m: 964";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 6165;
 		vrLoc = 31802;
@@ -509,7 +509,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1547";
 		rLen = 0;
-		rLoc = 55159;
+		rLoc = 56056;
 		rType = 0;
 		vrLen = 3008;
 		vrLoc = 53075;
@@ -533,7 +533,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 0;
-		rLoc = 55268;
+		rLoc = 56165;
 		rType = 0;
 		vrLen = 5410;
 		vrLoc = 32491;
@@ -583,7 +583,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 0;
-		rLoc = 55268;
+		rLoc = 56165;
 		rType = 0;
 		vrLen = 3008;
 		vrLoc = 53075;
@@ -663,7 +663,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 0;
-		rLoc = 55268;
+		rLoc = 56165;
 		rType = 0;
 		vrLen = 5410;
 		vrLoc = 32491;
@@ -1011,7 +1011,7 @@
 	0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
-			sepNavSelRange = "{184, 0}";
+			sepNavSelRange = "{51, 133}";
 			sepNavVisRange = "{0, 316}";
 		};
 	};
@@ -3208,7 +3208,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 0;
-		rLoc = 55268;
+		rLoc = 56165;
 		rType = 0;
 		vrLen = 5335;
 		vrLoc = 32566;
@@ -3228,7 +3228,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 0;
-		rLoc = 55268;
+		rLoc = 56165;
 		rType = 0;
 		vrLen = 5410;
 		vrLoc = 28553;
@@ -3238,7 +3238,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 922";
 		rLen = 0;
-		rLoc = 32643;
+		rLoc = 33063;
 		rType = 0;
 		vrLen = 5178;
 		vrLoc = 26760;
@@ -3248,10 +3248,132 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 922";
 		rLen = 0;
-		rLoc = 32641;
+		rLoc = 33061;
 		rType = 0;
 		vrLen = 7271;
 		vrLoc = 31691;
+	};
+	0550D5BB0F2CED54002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 590";
+		rLen = 0;
+		rLoc = 21465;
+		rType = 0;
+		vrLen = 1436;
+		vrLoc = 20771;
+	};
+	0550D5BC0F2CEDD6002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1432";
+		rLen = 0;
+		rLoc = 51322;
+		rType = 0;
+		vrLen = 2267;
+		vrLoc = 50179;
+	};
+	0550D5BE0F2CEE8A002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1432";
+		rLen = 0;
+		rLoc = 51322;
+		rType = 0;
+		vrLen = 2267;
+		vrLoc = 50179;
+	};
+	0550D5BF0F2CEE90002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1432";
+		rLen = 0;
+		rLoc = 51322;
+		rType = 0;
+		vrLen = 2197;
+		vrLoc = 50155;
+	};
+	0550D5C00F2CEED1002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */;
+		name = "ORSCanaryNewStatusTextFieldCell.m: 16";
+		rLen = 0;
+		rLoc = 365;
+		rType = 0;
+		vrLen = 376;
+		vrLoc = 186;
+	};
+	0550D5C10F2CEED1002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1432";
+		rLen = 0;
+		rLoc = 51322;
+		rType = 0;
+		vrLen = 428;
+		vrLoc = 50573;
+	};
+	0550D5C20F2CEF81002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1280";
+		rLen = 0;
+		rLoc = 45153;
+		rType = 0;
+		vrLen = 2913;
+		vrLoc = 44249;
+	};
+	0550D5C30F2CF10F002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1672";
+		rLen = 18;
+		rLoc = 58840;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 58375;
+	};
+	0550D5C40F2CF1FF002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1735";
+		rLen = 0;
+		rLoc = 60821;
+		rType = 0;
+		vrLen = 2093;
+		vrLoc = 59960;
+	};
+	0550D5C60F2CF262002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'statusBarButtton' undeclared (first use in this function)";
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		rLen = 1;
+		rLoc = 1353;
+		rType = 1;
+	};
+	0550D5C70F2CF262002EA7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 1354";
+		rLen = 0;
+		rLoc = 47992;
+		rType = 0;
+		vrLen = 955;
+		vrLoc = 47408;
+	};
+	0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavSelRange = "{186, 0}";
+			sepNavVisRange = "{0, 280}";
+		};
+	};
+	0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavSelRange = "{186, 0}";
+			sepNavVisRange = "{0, 478}";
+		};
 	};
 	0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {
 		uiCtxt = {
@@ -3725,7 +3847,7 @@
 	056BD17D0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{330, 2232}\";\n            s = 0;\n        },\n                {\n            r = \"{2680, 14}\";\n            s = 0;\n        },\n                {\n            r = \"{2822, 122}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2952}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
 			sepNavSelRange = "{331, 0}";
 			sepNavVisRange = "{0, 587}";
 		};
@@ -3934,10 +4056,10 @@
 	};
 	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1381, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1594, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1860, 941}\";\n            s = 0;\n        },\n                {\n            r = \"{2825, 3613}\";\n            s = 0;\n        },\n                {\n            r = \"{6482, 643}\";\n            s = 0;\n        },\n                {\n            r = \"{7265, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{7754, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{7908, 416}\";\n            s = 0;\n        },\n                {\n            r = \"{8420, 3029}\";\n            s = 0;\n        },\n                {\n            r = \"{11505, 661}\";\n            s = 0;\n        },\n                {\n            r = \"{12255, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{14352, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{14816, 256}\";\n            s = 0;\n        },\n                {\n            r = \"{15185, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{15379, 2398}\";\n            s = 0;\n        },\n                {\n            r = \"{17869, 413}\";\n            s = 0;\n        },\n                {\n            r = \"{18370, 4293}\";\n            s = 0;\n        },\n                {\n            r = \"{22766, 1158}\";\n            s = 0;\n        },\n                {\n            r = \"{24033, 1318}\";\n            s = 0;\n        },\n                {\n            r = \"{25412, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{25765, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{26147, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{26481, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{26805, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{27187, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{27535, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{27900, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{28138, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{28383, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{28651, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{29217, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{29470, 373}\";\n            s = 0;\n        },\n                {\n            r = \"{29926, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{32784, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{34246, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{35702, 965}\";\n            s = 0;\n        },\n                {\n            r = \"{36797, 2163}\";\n            s = 0;\n        },\n                {\n            r = \"{39060, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{39858, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{40130, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{40419, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{40730, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{41292, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{41634, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{41793, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{41998, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{42201, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{42450, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{42740, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{43094, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{43278, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{43415, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{43981, 850}\";\n            s = 0;\n        },\n                {\n            r = \"{44985, 788}\";\n            s = 0;\n        },\n                {\n            r = \"{45928, 664}\";\n            s = 0;\n        },\n                {\n            r = \"{46746, 607}\";\n            s = 0;\n        },\n                {\n            r = \"{47478, 632}\";\n            s = 0;\n        },\n                {\n            r = \"{48212, 530}\";\n            s = 0;\n        },\n                {\n            r = \"{48851, 1747}\";\n            s = 0;\n        },\n                {\n            r = \"{50686, 571}\";\n            s = 0;\n        },\n                {\n            r = \"{51445, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{52035, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{52155, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{52352, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{52889, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{53281, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{53678, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{54076, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{54476, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{55421, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{55944, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{56371, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{57012, 530}\";\n            s = 0;\n        },\n                {\n            r = \"{57645, 508}\";\n            s = 0;\n        },\n                {\n            r = \"{58241, 513}\";\n            s = 0;\n        },\n                {\n            r = \"{58866, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{59027, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{59212, 533}\";\n            s = 0;\n        },\n                {\n            r = \"{59871, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{60654, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{60874, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{61499, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{61645, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{62099, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{62562, 915}\";\n            s = 0;\n        },\n                {\n            r = \"{63588, 671}\";\n            s = 0;\n        },\n                {\n            r = \"{64367, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{65275, 923}\";\n            s = 0;\n        },\n                {\n            r = \"{66315, 689}\";\n            s = 0;\n        },\n                {\n            r = \"{67105, 694}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 67807}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 6003}}";
-			sepNavSelRange = "{5166, 0}";
-			sepNavVisRange = "{4216, 1484}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1381, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1594, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1860, 941}\";\n            s = 0;\n        },\n                {\n            r = \"{2825, 3613}\";\n            s = 0;\n        },\n                {\n            r = \"{6482, 643}\";\n            s = 0;\n        },\n                {\n            r = \"{7265, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{7754, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{7908, 416}\";\n            s = 0;\n        },\n                {\n            r = \"{11540, 661}\";\n            s = 0;\n        },\n                {\n            r = \"{12290, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{14387, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{14851, 256}\";\n            s = 0;\n        },\n                {\n            r = \"{15220, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{25832, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{26185, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{26567, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{26901, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{27225, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{27607, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{27955, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{28320, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{28558, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{28803, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{29071, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{29637, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{29890, 373}\";\n            s = 0;\n        },\n                {\n            r = \"{30346, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{32250, 814}\";\n            s = 0;\n        },\n                {\n            r = \"{33204, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{34666, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{36122, 965}\";\n            s = 0;\n        },\n                {\n            r = \"{37217, 2163}\";\n            s = 0;\n        },\n                {\n            r = \"{39480, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{40278, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{40550, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{40839, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{41150, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{41712, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{42054, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{42213, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{42418, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{42621, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{42870, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{43160, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{43514, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{43698, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{43835, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{51515, 571}\";\n            s = 0;\n        },\n                {\n            r = \"{52274, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{52864, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{53249, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{53786, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{54178, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{54575, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{54973, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{55373, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{56318, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{56841, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{60043, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{60204, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{61118, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{61901, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{62121, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{62746, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{62892, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{63346, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{63809, 915}\";\n            s = 0;\n        },\n                {\n            r = \"{64835, 671}\";\n            s = 0;\n        },\n                {\n            r = \"{65614, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{66522, 923}\";\n            s = 0;\n        },\n                {\n            r = \"{67562, 689}\";\n            s = 0;\n        },\n                {\n            r = \"{68352, 694}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 69054}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 15616}}";
+			sepNavSelRange = "{26805, 0}";
+			sepNavVisRange = "{22449, 620}";
 			sepNavWindowFrame = "{{670, 319}, {765, 847}}";
 		};
 	};
@@ -4110,7 +4232,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 995";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -4130,7 +4252,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 995";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -4150,7 +4272,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 15112;
@@ -4160,7 +4282,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 15384;
@@ -4170,7 +4292,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 15384;
@@ -4190,7 +4312,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 483;
 		vrLoc = 5123;
@@ -4210,7 +4332,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 5310;
@@ -4220,7 +4342,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 449";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 5310;
@@ -4240,7 +4362,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 450";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 14940;
@@ -4250,7 +4372,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 450";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 14940;
@@ -4260,7 +4382,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 434";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 14633;
@@ -4270,7 +4392,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 434";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 14633;
@@ -4280,7 +4402,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 434";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 14633;
@@ -4290,7 +4412,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 440";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 15014;
@@ -4300,7 +4422,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 440";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 15014;
@@ -4310,7 +4432,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 439";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 15014;
@@ -4340,7 +4462,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 587";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 20256;
@@ -4350,7 +4472,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 490";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 5492;
 		vrLoc = 53496;
@@ -4370,7 +4492,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1410";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7664;
 		vrLoc = 42852;
@@ -4390,7 +4512,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1410";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7664;
 		vrLoc = 42852;
@@ -4410,7 +4532,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1403";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7664;
 		vrLoc = 42852;
@@ -4430,7 +4552,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1387";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7664;
 		vrLoc = 42852;
@@ -4450,7 +4572,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 576";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -4470,7 +4592,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 587";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1340;
 		vrLoc = 20253;
@@ -4490,7 +4612,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 650";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 3010;
 		vrLoc = 22781;
@@ -4500,7 +4622,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1600";
 		rLen = 0;
-		rLoc = 59745;
+		rLoc = 60992;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -4614,7 +4736,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1340";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -5094,7 +5216,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1390";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -5344,7 +5466,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1363";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1564;
 		vrLoc = 48120;
@@ -5354,7 +5476,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1362";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 47097;
@@ -5374,7 +5496,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1496";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 4386;
 		vrLoc = 50488;
@@ -5394,7 +5516,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1362";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 47097;
@@ -5524,7 +5646,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1367";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7218;
 		vrLoc = 58426;
@@ -5624,7 +5746,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1367";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 3939;
@@ -5664,7 +5786,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1391";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 49044;
@@ -5694,7 +5816,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1391";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 50867;
@@ -5704,7 +5826,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1391";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 50867;
@@ -5734,7 +5856,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 48313;
@@ -5744,7 +5866,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 47921;
@@ -5754,7 +5876,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 48313;
@@ -5764,7 +5886,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 51030;
@@ -5784,7 +5906,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 51030;
@@ -5824,7 +5946,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1368";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 48313;
@@ -6632,7 +6754,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1931";
 		rLen = 0;
-		rLoc = 67802;
+		rLoc = 69049;
 		rType = 0;
 		vrLen = 5874;
 		vrLoc = 47759;
@@ -7732,7 +7854,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1931";
 		rLen = 0;
-		rLoc = 67802;
+		rLoc = 69049;
 		rType = 0;
 		vrLen = 5911;
 		vrLoc = 47722;
@@ -7750,7 +7872,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1361";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -7797,7 +7919,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1361";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1539;
 		vrLoc = 0;
@@ -7847,7 +7969,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1540";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 6813;
 		vrLoc = 49222;
@@ -7877,7 +7999,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1544";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 54835;
@@ -7887,7 +8009,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1385";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1547;
 		vrLoc = 49272;
@@ -7907,7 +8029,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1561";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1718;
 		vrLoc = 54835;
@@ -7927,7 +8049,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1556";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 4238;
 		vrLoc = 51539;
@@ -7947,7 +8069,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1544";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 54836;
@@ -7967,7 +8089,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1561";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1630;
 		vrLoc = 55182;
@@ -7996,7 +8118,7 @@
 		isa = PBXTextBookmark;
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		rLen = 0;
-		rLoc = 54891;
+		rLoc = 55788;
 		rType = 0;
 	};
 	058530E00F2B2B61003DB512 /* PBXTextBookmark */ = {
@@ -8004,7 +8126,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1561";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 54636;
@@ -8034,7 +8156,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1561";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1906;
 		vrLoc = 54002;
@@ -8074,7 +8196,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1561";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1463;
 		vrLoc = 54835;
@@ -8114,7 +8236,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1550";
 		rLen = 70;
-		rLoc = 54819;
+		rLoc = 55716;
 		rType = 0;
 		vrLen = 1705;
 		vrLoc = 55320;
@@ -8134,7 +8256,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1277";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 7828;
 		vrLoc = 26782;
@@ -8144,7 +8266,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1492";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 2813;
 		vrLoc = 52000;
@@ -8164,7 +8286,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1481";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 2909;
 		vrLoc = 51906;
@@ -8174,7 +8296,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1481";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 2910;
 		vrLoc = 51906;
@@ -8194,7 +8316,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1482";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 2328;
 		vrLoc = 50508;
@@ -8204,7 +8326,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1516";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 2260;
 		vrLoc = 52746;
@@ -8224,7 +8346,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1516";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 2260;
 		vrLoc = 52746;
@@ -8254,7 +8376,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1562";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 2808;
 		vrLoc = 54820;
@@ -8274,7 +8396,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1562";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 2867;
 		vrLoc = 54761;
@@ -8294,7 +8416,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1562";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 3128;
 		vrLoc = 54478;
@@ -8304,7 +8426,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 52;
-		rLoc = 54422;
+		rLoc = 55319;
 		rType = 0;
 		vrLen = 3177;
 		vrLoc = 54426;
@@ -8324,7 +8446,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1551";
 		rLen = 52;
-		rLoc = 54422;
+		rLoc = 55319;
 		rType = 0;
 		vrLen = 3177;
 		vrLoc = 54426;
@@ -8354,7 +8476,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1540";
 		rLen = 49;
-		rLoc = 54025;
+		rLoc = 54922;
 		rType = 0;
 		vrLen = 3735;
 		vrLoc = 53867;
@@ -8374,7 +8496,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1540";
 		rLen = 49;
-		rLoc = 54025;
+		rLoc = 54922;
 		rType = 0;
 		vrLen = 3736;
 		vrLoc = 53867;
@@ -8394,7 +8516,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1540";
 		rLen = 49;
-		rLoc = 54025;
+		rLoc = 54922;
 		rType = 0;
 		vrLen = 3735;
 		vrLoc = 53867;
@@ -8414,7 +8536,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1528";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 5020;
 		vrLoc = 53890;
@@ -8424,7 +8546,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1528";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 5044;
 		vrLoc = 53867;
@@ -8444,7 +8566,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1522";
 		rLen = 0;
-		rLoc = 53959;
+		rLoc = 54856;
 		rType = 0;
 		vrLen = 3392;
 		vrLoc = 53317;
@@ -8454,7 +8576,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1535";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4473;
 		vrLoc = 53078;
@@ -8474,7 +8596,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1522";
 		rLen = 0;
-		rLoc = 53959;
+		rLoc = 54856;
 		rType = 0;
 		vrLen = 3392;
 		vrLoc = 53317;
@@ -8494,7 +8616,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1535";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4473;
 		vrLoc = 53078;
@@ -8514,7 +8636,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1535";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4234;
 		vrLoc = 53317;
@@ -8544,7 +8666,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1535";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4234;
 		vrLoc = 53317;
@@ -8614,7 +8736,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1535";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4363;
 		vrLoc = 53189;
@@ -8634,7 +8756,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1524";
 		rLen = 0;
-		rLoc = 53964;
+		rLoc = 54861;
 		rType = 0;
 		vrLen = 4295;
 		vrLoc = 51943;
@@ -8644,7 +8766,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1546";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 4379;
 		vrLoc = 51943;
@@ -8664,7 +8786,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1546";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 4379;
 		vrLoc = 51943;
@@ -8694,7 +8816,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1546";
 		rLen = 0;
-		rLoc = 54766;
+		rLoc = 55663;
 		rType = 0;
 		vrLen = 4324;
 		vrLoc = 51998;
@@ -8714,7 +8836,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1580";
 		rLen = 0;
-		rLoc = 55264;
+		rLoc = 56161;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 54799;
@@ -8724,7 +8846,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 839";
 		rLen = 0;
-		rLoc = 28549;
+		rLoc = 28969;
 		rType = 0;
 		vrLen = 2832;
 		vrLoc = 27804;
@@ -8734,7 +8856,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1035";
 		rLen = 0;
-		rLoc = 36634;
+		rLoc = 37054;
 		rType = 0;
 		vrLen = 5998;
 		vrLoc = 32492;
@@ -8744,7 +8866,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1029";
 		rLen = 0;
-		rLoc = 36061;
+		rLoc = 36481;
 		rType = 0;
 		vrLen = 6678;
 		vrLoc = 32492;
@@ -8754,7 +8876,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1029";
 		rLen = 0;
-		rLoc = 36061;
+		rLoc = 36481;
 		rType = 0;
 		vrLen = 3750;
 		vrLoc = 32492;
@@ -8764,7 +8886,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1029";
 		rLen = 0;
-		rLoc = 36183;
+		rLoc = 36603;
 		rType = 0;
 		vrLen = 3854;
 		vrLoc = 35424;
@@ -8774,7 +8896,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1029";
 		rLen = 0;
-		rLoc = 36072;
+		rLoc = 36492;
 		rType = 0;
 		vrLen = 3856;
 		vrLoc = 35424;
@@ -8784,7 +8906,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1036";
 		rLen = 0;
-		rLoc = 36666;
+		rLoc = 37086;
 		rType = 0;
 		vrLen = 3896;
 		vrLoc = 35424;
@@ -8794,7 +8916,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1031";
 		rLen = 0;
-		rLoc = 36415;
+		rLoc = 36835;
 		rType = 0;
 		vrLen = 4843;
 		vrLoc = 33964;
@@ -8804,7 +8926,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1034";
 		rLen = 0;
-		rLoc = 36594;
+		rLoc = 37014;
 		rType = 0;
 		vrLen = 4843;
 		vrLoc = 33964;
@@ -8824,7 +8946,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1150";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 6782;
 		vrLoc = 7049;
@@ -8844,7 +8966,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 384";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 6693;
 		vrLoc = 54407;
@@ -8884,7 +9006,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 384";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 9175;
 		vrLoc = 1775;
@@ -8904,7 +9026,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 384";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 14641;
 		vrLoc = 6603;
@@ -9218,7 +9340,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1790";
 		rLen = 0;
-		rLoc = 67800;
+		rLoc = 69047;
 		rType = 0;
 		vrLen = 5879;
 		vrLoc = 55221;
@@ -9258,7 +9380,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1790";
 		rLen = 0;
-		rLoc = 67800;
+		rLoc = 69047;
 		rType = 0;
 		vrLen = 13459;
 		vrLoc = 11764;
@@ -9508,7 +9630,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 784";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 27252;
@@ -9718,7 +9840,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1763";
 		rLen = 0;
-		rLoc = 67799;
+		rLoc = 69046;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 0;
@@ -9748,7 +9870,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1763";
 		rLen = 0;
-		rLoc = 67799;
+		rLoc = 69046;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 0;
@@ -9798,7 +9920,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 520";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 15533;
@@ -9828,7 +9950,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 520";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 17848;
@@ -9868,7 +9990,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 520";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1370;
 		vrLoc = 17476;
@@ -9908,7 +10030,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 476";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1829;
 		vrLoc = 24986;
@@ -9928,7 +10050,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 527";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1506;
 		vrLoc = 17955;
@@ -10018,7 +10140,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 552";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 18747;
@@ -10068,7 +10190,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 552";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1540;
 		vrLoc = 18793;
@@ -10128,7 +10250,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 552";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 20434;
@@ -10352,7 +10474,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 597";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 1158;
 		vrLoc = 3518;
@@ -10362,7 +10484,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 995";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 11273;
 		vrLoc = 2812;
@@ -10532,7 +10654,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 995";
 		rLen = 0;
-		rLoc = 13389;
+		rLoc = 13424;
 		rType = 0;
 		vrLen = 11273;
 		vrLoc = 2812;
@@ -11173,9 +11295,9 @@
 	};
 	05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 416}}";
 			sepNavSelRange = "{365, 0}";
-			sepNavVisRange = "{0, 568}";
+			sepNavVisRange = "{186, 376}";
 			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
 		};
 	};
@@ -11929,6 +12051,17 @@
 			0550D5A70F2CDA5C002EA7AD /* PBXTextBookmark */ = 0550D5A70F2CDA5C002EA7AD /* PBXTextBookmark */;
 			0550D5A80F2CDADE002EA7AD /* PBXTextBookmark */ = 0550D5A80F2CDADE002EA7AD /* PBXTextBookmark */;
 			0550D5AB0F2CDAF8002EA7AD /* PBXTextBookmark */ = 0550D5AB0F2CDAF8002EA7AD /* PBXTextBookmark */;
+			0550D5BB0F2CED54002EA7AD /* PBXTextBookmark */ = 0550D5BB0F2CED54002EA7AD /* PBXTextBookmark */;
+			0550D5BC0F2CEDD6002EA7AD /* PBXTextBookmark */ = 0550D5BC0F2CEDD6002EA7AD /* PBXTextBookmark */;
+			0550D5BE0F2CEE8A002EA7AD /* PBXTextBookmark */ = 0550D5BE0F2CEE8A002EA7AD /* PBXTextBookmark */;
+			0550D5BF0F2CEE90002EA7AD /* PBXTextBookmark */ = 0550D5BF0F2CEE90002EA7AD /* PBXTextBookmark */;
+			0550D5C00F2CEED1002EA7AD /* PBXTextBookmark */ = 0550D5C00F2CEED1002EA7AD /* PBXTextBookmark */;
+			0550D5C10F2CEED1002EA7AD /* PBXTextBookmark */ = 0550D5C10F2CEED1002EA7AD /* PBXTextBookmark */;
+			0550D5C20F2CEF81002EA7AD /* PBXTextBookmark */ = 0550D5C20F2CEF81002EA7AD /* PBXTextBookmark */;
+			0550D5C30F2CF10F002EA7AD /* PBXTextBookmark */ = 0550D5C30F2CF10F002EA7AD /* PBXTextBookmark */;
+			0550D5C40F2CF1FF002EA7AD /* PBXTextBookmark */ = 0550D5C40F2CF1FF002EA7AD /* PBXTextBookmark */;
+			0550D5C60F2CF262002EA7AD /* PBXTextBookmark */ = 0550D5C60F2CF262002EA7AD /* PBXTextBookmark */;
+			0550D5C70F2CF262002EA7AD /* PBXTextBookmark */ = 0550D5C70F2CF262002EA7AD /* PBXTextBookmark */;
 			0555A4B80EAA1CCA00B126BC = 0555A4B80EAA1CCA00B126BC /* PBXTextBookmark */;
 			0555A4C00EAA1CCA00B126BC = 0555A4C00EAA1CCA00B126BC /* PBXTextBookmark */;
 			0555A4F10EAA2E9400B126BC = 0555A4F10EAA2E9400B126BC /* PBXTextBookmark */;
