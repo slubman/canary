@@ -25,6 +25,7 @@
 		05171B850F16AC4C00CA9812 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B840F16AC4C00CA9812 /* comment.png */; };
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
+		0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */; };
 		0555A4B10EAA1BAF00B126BC /* ORSBitlyShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */; };
 		0555A4D70EAA1E4D00B126BC /* ORSCligsShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A4D60EAA1E4D00B126BC /* ORSCligsShortener.m */; };
 		0555A5150EAA2F7E00B126BC /* ORSAdjixShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555A5140EAA2F7E00B126BC /* ORSAdjixShortener.m */; };
@@ -122,6 +123,8 @@
 		05171B840F16AC4C00CA9812 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
 		0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryStatusView.h; sourceTree = "<group>"; };
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
+		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
+		0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryCollectionViewItem.m; sourceTree = "<group>"; };
 		0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSBitlyShortener.h; sourceTree = "<group>"; };
 		0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSBitlyShortener.m; sourceTree = "<group>"; };
 		0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCligsShortener.h; sourceTree = "<group>"; };
@@ -338,8 +341,6 @@
 		05DF56720E3E60DE00B8B4DE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */,
-				0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */,
 				0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */,
 				0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */,
 				0573D6DF0DA662D3002D1CCF /* ORSCanaryTextFieldCell.h */,
@@ -366,6 +367,10 @@
 				0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */,
 				056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */,
 				056BD17D0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m */,
+				0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */,
+				0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */,
+				0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */,
+				0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -590,6 +595,7 @@
 				05A5D9B00F065A8200B596A9 /* ORSAbstractShortener.m in Sources */,
 				05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */,
 				0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */,
+				0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
