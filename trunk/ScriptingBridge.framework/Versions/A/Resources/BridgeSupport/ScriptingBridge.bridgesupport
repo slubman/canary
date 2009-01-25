@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<class name='SBApplication'>
+<method selector='isRunning'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SBObject'>
+<method variadic='true' selector='sendEvent:id:parameters:'/>
+</class>
+<informal_protocol name='SBApplicationDelegate'>
+<method type='@16@0:4r^{AEDesc=I^^{OpaqueAEDataStorageType}}8@12' type64='@32@0:8r^{AEDesc=I^^{OpaqueAEDataStorageType}}16@24' selector='eventDidFail:withError:'/>
+</informal_protocol>
+<class name='NSObject'>
+<method selector='eventDidFail:withError:'>
+<arg index='0' type_modifier='n'/>
+</method>
+</class>
+<class name='SBElementArray'>
+<method selector='arrayByApplyingSelector:'>
+<arg sel_of_type='@8@0:4' index='0' sel_of_type64='@16@0:8'/>
+</method>
+<method selector='arrayByApplyingSelector:withObject:'>
+<arg sel_of_type='@12@0:4@8' index='0' sel_of_type64='@24@0:8@16'/>
+</method>
+</class>
+</signatures>

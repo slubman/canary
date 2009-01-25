@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<signatures version='0.9'>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<class name='NSObject'>
+<method selector='eventDidFail:withError:'>
+<arg name='event' declared_type='AppleEvent*' type='^{AEDesc=I^^{OpaqueAEDataStorageType}}' const='true' index='0'/>
+<arg name='error' declared_type='NSError*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SBApplication'>
+<method selector='activate'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='applicationWithBundleIdentifier:'>
+<arg name='ident' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='applicationWithProcessIdentifier:'>
+<arg name='pid' declared_type='pid_t' type='i' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='applicationWithURL:'>
+<arg name='url' declared_type='NSURL*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='classForScriptingClass:'>
+<arg name='className' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='Class' type='#'/>
+</method>
+<method selector='classNamesForCodes'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='codesForPropertyNames'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithBundleIdentifier:'>
+<arg name='ident' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithProcessIdentifier:'>
+<arg name='pid' declared_type='pid_t' type='i' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithURL:'>
+<arg name='url' declared_type='NSURL*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isRunning'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='launchFlags'>
+<retval declared_type='LSLaunchFlags' type='L' type64='I'/>
+</method>
+<method selector='sendMode'>
+<retval declared_type='AESendMode' type='l' type64='i'/>
+</method>
+<method selector='setDelegate:'>
+<arg name='delegate' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLaunchFlags:'>
+<arg name='flags' declared_type='LSLaunchFlags' type='L' type64='I' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSendMode:'>
+<arg name='sendMode' declared_type='AESendMode' type='l' type64='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTimeout:'>
+<arg name='timeout' declared_type='long' type='l' type64='q' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='timeout'>
+<retval declared_type='long' type='l' type64='q'/>
+</method>
+</class>
+<class name='SBElementArray'>
+<method selector='arrayByApplyingSelector:'>
+<arg name='selector' declared_type='SEL' type=':' index='0'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='arrayByApplyingSelector:withObject:'>
+<arg name='aSelector' declared_type='SEL' type=':' index='0'/>
+<arg name='argument' declared_type='id' type='@' index='1'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='get'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='objectAtLocation:'>
+<arg name='location' declared_type='id' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='objectWithID:'>
+<arg name='identifier' declared_type='id' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='objectWithName:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SBObject'>
+<method selector='elementArrayWithCode:'>
+<arg name='code' declared_type='DescType' type='L' type64='I' index='0'/>
+<retval declared_type='SBElementArray*' type='@'/>
+</method>
+<method selector='get'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithData:'>
+<arg name='data' declared_type='id' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithElementCode:properties:data:'>
+<arg name='code' declared_type='DescType' type='L' type64='I' index='0'/>
+<arg name='properties' declared_type='NSDictionary*' type='@' index='1'/>
+<arg name='data' declared_type='id' type='@' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithProperties:'>
+<arg name='properties' declared_type='NSDictionary*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='propertyWithClass:code:'>
+<arg name='cls' declared_type='Class' type='#' index='0'/>
+<arg name='code' declared_type='AEKeyword' type='L' type64='I' index='1'/>
+<retval declared_type='SBObject*' type='@'/>
+</method>
+<method selector='propertyWithCode:'>
+<arg name='code' declared_type='AEKeyword' type='L' type64='I' index='0'/>
+<retval declared_type='SBObject*' type='@'/>
+</method>
+<method variadic='true' selector='sendEvent:id:parameters:'>
+<arg name='eventClass' declared_type='AEEventClass' type='L' type64='I' index='0'/>
+<arg name='eventID' declared_type='AEEventID' type='L' type64='I' index='1'/>
+<arg name='parameters' declared_type='DescType' type='L' type64='I' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setTo:'>
+<arg name='value' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='SBApplicationDelegate'>
+<method type='@16@0:4r^{AEDesc=I^^{OpaqueAEDataStorageType}}8@12' type64='@32@0:8r^{AEDesc=I^^{OpaqueAEDataStorageType}}16@24' selector='eventDidFail:withError:'>
+<arg name='event' index='0'/>
+<arg name='error' index='1'/>
+</method>
+</informal_protocol>
+</signatures>

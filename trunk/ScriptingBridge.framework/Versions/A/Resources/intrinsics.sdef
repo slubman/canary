@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd" [
+	<!ATTLIST cocoa
+		type		NMTOKENS	#IMPLIED
+		objectify	NMTOKEN		#IMPLIED
+		valuate		NMTOKEN		#IMPLIED
+		deref		(yes | no)	#IMPLIED
+		typecode    CDATA       #IMPLIED
+	>
+]>
+
+<dictionary>
+
+	<suite name="Scripting Bridge Intrinsics" code="sbin">
+
+		<value-type name="any" code="****">
+			<cocoa class="id" deref="no"/>
+		</value-type>
+
+		<value-type name="boolean" code="bool">
+			<cocoa class="NSNumber" type="BOOL" objectify="numberWithBool:" valuate="boolValue" typecode="B"/>
+		</value-type>
+
+		<value-type name="color" code="colr">
+			<cocoa class="NSColor"/>
+			<synonym name="RGB color" code="cRGB"/>
+		</value-type>
+
+		<value-type name="date" code="ldt ">
+			<cocoa class="NSDate"/>
+		</value-type>
+
+		<value-type name="double integer" code="comp">
+			<cocoa class="NSNumber" type="long long" objectify="numberWithLongLong:" valuate="longLongValue" typecode="q"/>
+			<!-- It's necessary to keep this separate from "integer" to deal with iTunes track ids and Finder item sizes in 32-bit. -->
+		</value-type>
+
+		<value-type name="file" code="file">
+			<cocoa class="NSURL"/>
+			<synonym name="alias" code="alis"/>
+			<synonym name="file specification" code="fss "/>
+		</value-type>
+
+		<value-type name="integer" code="long">
+			<cocoa class="NSNumber" type="NSInteger" objectify="numberWithInteger:" valuate="integerValue" typecode="i"/>
+			<synonym name="small integer" code="shor"/>
+			<synonym name="unsigned integer" code="magn"/>
+		</value-type>
+
+		<value-type name="list" code="list">
+			<cocoa class="NSArray"/>
+		</value-type>
+
+		<value-type name="location specifier" code="insl">
+			<cocoa class="SBObject"/>
+			<synonym name="location reference"/>
+		</value-type>
+
+		<value-type name="missing value" code="msng">
+			<cocoa class="NSNull"/>
+		</value-type>
+
+		<value-type name="number" code="nmbr">
+			<cocoa class="NSNumber"/>
+		</value-type>
+
+		<value-type name="picture" code="PICT">
+			<cocoa class="NSImage"/>
+			<synonym name="TIFF picture" code="TIFF"/>
+			<synonym name="JPEG picture" code="JPEG"/>
+			<synonym name="GIF picture" code="GIFf"/>
+		</value-type>
+
+		<value-type name="point" code="QDpt">
+			<cocoa class="NSValue" type="NSPoint" objectify="valueWithPoint:" valuate="pointValue" typecode="P"/>
+		</value-type>
+
+		<value-type name="property" code="prop">
+			<cocoa class="NSString" type="SEL" objectify="TYPE_NOT_SUPPORTED:" valuate="TYPE_NOT_SUPPORTED" typecode=":"/>
+			<!-- passing "SEL" types through the static glue is not currently supported! -->
+		</value-type>
+
+		<value-type name="real" code="doub">
+			<cocoa class="NSNumber" type="double" objectify="numberWithDouble:" valuate="doubleValue" typecode="d"/>
+		</value-type>
+
+		<value-type name="record" code="reco">
+			<cocoa class="NSDictionary"/>
+		</value-type>
+
+		<value-type name="rectangle" code="qdrt">
+			<cocoa class="NSValue" type="NSRect" objectify="valueWithRect:" valuate="rectValue" typecode="R"/>
+		</value-type>
+
+		<value-type name="specifier" code="obj ">
+			<cocoa class="SBObject" deref="no"/>
+			<synonym name="reference"/>
+		</value-type>
+
+		<value-type name="text" code="ctxt">
+			<cocoa class="NSString"/>
+			<synonym name="string" code="TEXT"/>
+			<synonym name="international text" code="itxt"/>
+			<synonym name="Unicode text" code="utxt"/>
+		</value-type>
+
+		<value-type name="type" code="type">
+			<cocoa class="NSNumber"/>
+		</value-type>
+
+		<value-type name="version" code="vers">
+			<cocoa class="NSString"/>
+		</value-type>
+
+	</suite>
+
+</dictionary>
