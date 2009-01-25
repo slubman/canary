@@ -899,7 +899,7 @@ sender {
 // Retweets the given status text from the given userID
 - (void) retweetStatus:(NSString *)statusText
 		fromUserWithID:(NSString *)userID {
-	NSString *message = [NSString stringWithFormat:@"Retweeting from @%@: %@", 
+	/*NSString *message = [NSString stringWithFormat:@"Retweeting from @%@: %@", 
 						 userID, statusText];
 	if (twitterEngine.sessionUserID) {
 		[charsLeftIndicator setIntValue:0];
@@ -916,7 +916,10 @@ sender {
 								scheduledTimerWithTimeInterval:60 
 								target:self selector:@selector(hideStatusBar) 
 								userInfo:nil repeats:NO];
-	}
+	}*/
+	NSString *message = [NSString stringWithFormat:@"♺ from @%@: %@", 
+						 userID, statusText];
+	[self insertStringTokenInNewStatusTextField:message];
 }
 
 // Delegate: Changes the green bar and enables/disables the tweet button.
