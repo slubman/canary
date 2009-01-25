@@ -290,7 +290,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {247, 596}}</string>
+							<string>{{0, 1}, {247, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,7 +307,7 @@
 							<real>247</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>374 123 906 655 0 0 1280 778 </string>
+						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.m</string>
+								<string>ORSCanaryStatusView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.m</string>
+										<string>ORSCanaryStatusView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0550D3B60F2B72D8002EA7AD</string>
+										<string>0550D3FD0F2B88A7002EA7AD</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -428,13 +428,15 @@
 											<string>0585303C0F292BB8003DB512</string>
 											<string>0585303D0F292BB8003DB512</string>
 											<string>0585303E0F292BB8003DB512</string>
-											<string>0585303F0F292BB8003DB512</string>
 											<string>058530400F292BB8003DB512</string>
 											<string>058530410F292BB8003DB512</string>
 											<string>058530C10F2937A4003DB512</string>
 											<string>058530DD0F2B2B61003DB512</string>
-											<string>058531300F2B57D9003DB512</string>
-											<string>058531480F2B5C78003DB512</string>
+											<string>0550D3CF0F2B8509002EA7AD</string>
+											<string>0550D3D00F2B8509002EA7AD</string>
+											<string>0550D3D10F2B8509002EA7AD</string>
+											<string>0550D3D20F2B8509002EA7AD</string>
+											<string>0550D3F00F2B8692002EA7AD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -532,6 +534,23 @@
 											<string>05852F510F290764003DB512</string>
 											<string>058530B20F292BB8003DB512</string>
 											<string>058530BB0F2934E6003DB512</string>
+											<string>0550D3D40F2B8509002EA7AD</string>
+											<string>0550D3D50F2B8509002EA7AD</string>
+											<string>0550D3D60F2B8509002EA7AD</string>
+											<string>0550D3D70F2B8509002EA7AD</string>
+											<string>0550D3D80F2B8509002EA7AD</string>
+											<string>0550D3D90F2B8509002EA7AD</string>
+											<string>0550D3DA0F2B8509002EA7AD</string>
+											<string>0550D3DB0F2B8509002EA7AD</string>
+											<string>0550D3DC0F2B8509002EA7AD</string>
+											<string>0550D3DD0F2B8509002EA7AD</string>
+											<string>0550D3DE0F2B8509002EA7AD</string>
+											<string>0550D3DF0F2B8509002EA7AD</string>
+											<string>0550D3E00F2B8509002EA7AD</string>
+											<string>0550D3E10F2B8509002EA7AD</string>
+											<string>0550D3E20F2B8509002EA7AD</string>
+											<string>0550D3E30F2B8509002EA7AD</string>
+											<string>0550D3E40F2B8509002EA7AD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -547,7 +566,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {637, 609}}</string>
 								<key>RubberWindowFrame</key>
-								<string>374 123 906 655 0 0 1280 778 </string>
+								<string>375 123 906 655 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -572,7 +591,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {637, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>374 123 906 655 0 0 1280 778 </string>
+										<string>375 123 906 655 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -803,14 +822,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>05852E800F27BFEF003DB512</string>
+				<string>0550D3E70F2B8515002EA7AD</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>05852E810F27BFEF003DB512</string>
-				<string>05852E820F27BFEF003DB512</string>
-				<string>05852E830F27BFEF003DB512</string>
-				<string>05852E840F27BFEF003DB512</string>
-				<string>05852E850F27BFEF003DB512</string>
+				<string>0550D3E80F2B8515002EA7AD</string>
+				<string>0550D3E90F2B8515002EA7AD</string>
+				<string>0550D3EA0F2B8515002EA7AD</string>
+				<string>0550D3EB0F2B8515002EA7AD</string>
+				<string>0573D6CD0DA66271002D1CCF</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -843,7 +862,7 @@
 		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>374 123 906 655 0 0 1280 778 </string>
+	<string>375 123 906 655 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
