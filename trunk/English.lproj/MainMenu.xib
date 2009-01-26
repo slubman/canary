@@ -9,6 +9,8 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="372"/>
+			<integer value="462"/>
+			<integer value="1843"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -75,7 +77,7 @@
 			</object>
 			<object class="NSCollectionViewItem" id="136294764"/>
 			<object class="NSView" id="77162958">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -548,6 +550,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{322, 87}</string>
+				<reference key="NSSuperview"/>
 			</object>
 			<object class="NSMenu" id="649796088">
 				<string key="NSTitle">Main Menu</string>
@@ -1220,6 +1223,24 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<string type="base64-UTF8" key="NSTitle">Q3VzdG9taXplIFRvb2xiYXLigKY</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="3788936"/>
+									<reference key="NSMixedImage" ref="183080322"/>
+								</object>
+								<object class="NSMenuItem" id="178346134">
+									<reference key="NSMenu" ref="466310130"/>
+									<bool key="NSIsDisabled">YES</bool>
+									<bool key="NSIsSeparator">YES</bool>
+									<string key="NSTitle"/>
+									<string key="NSKeyEquiv"/>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="3788936"/>
+									<reference key="NSMixedImage" ref="183080322"/>
+								</object>
+								<object class="NSMenuItem" id="662300833">
+									<reference key="NSMenu" ref="466310130"/>
+									<string key="NSTitle">Switch to Usernames</string>
+									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
@@ -5007,6 +5028,22 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<int key="connectionID">1840</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">nameButton</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="511973744"/>
+					</object>
+					<int key="connectionID">1844</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">switchToUsernames:</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="662300833"/>
+					</object>
+					<int key="connectionID">1846</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -5400,6 +5437,8 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="102151532"/>
 							<reference ref="237841660"/>
+							<reference ref="178346134"/>
+							<reference ref="662300833"/>
 						</object>
 						<reference key="parent" ref="586577488"/>
 					</object>
@@ -7003,6 +7042,16 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<reference key="object" ref="584332639"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1842</int>
+						<reference key="object" ref="178346134"/>
+						<reference key="parent" ref="466310130"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1843</int>
+						<reference key="object" ref="662300833"/>
+						<reference key="parent" ref="466310130"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -7254,6 +7303,8 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>1830.IBPluginDependency</string>
 					<string>1839.IBPluginDependency</string>
 					<string>1841.IBPluginDependency</string>
+					<string>1842.IBPluginDependency</string>
+					<string>1843.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>19.ImportedFromIB2</string>
 					<string>195.IBPluginDependency</string>
@@ -7715,6 +7766,8 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.brandonwalkin.BWToolkit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
@@ -7793,7 +7846,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>{74, 862}</string>
 					<string>{{2, 1122}, {415, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{728, 682}, {234, 43}}</string>
+					<string>{{618, 663}, {234, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{235, 1079}, {234, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -7950,7 +8003,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1841</int>
+			<int key="maxID">1846</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -8020,10 +8073,14 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>showPictureTaker:</string>
 							<string>showPreferencesWindow:</string>
 							<string>signupForNewAccountCall:</string>
+							<string>switchToScreenNames:</string>
+							<string>switchToUsernames:</string>
 							<string>typeUserID:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -8065,6 +8122,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>mainTimelineCollectionView</string>
 							<string>mainTimelineCollectionViewItem</string>
 							<string>mainTimelineScrollView</string>
+							<string>nameButton</string>
 							<string>newStatusTextField</string>
 							<string>newUserWindow</string>
 							<string>receivedDMBox</string>
@@ -8100,6 +8158,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSCollectionView</string>
 							<string>NSCollectionViewItem</string>
 							<string>NSScrollView</string>
+							<string>NSButton</string>
 							<string>NSTextField</string>
 							<string>NSWindow</string>
 							<string>NSBox</string>

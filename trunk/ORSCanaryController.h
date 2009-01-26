@@ -44,6 +44,7 @@
 	IBOutlet NSWindow *aboutWindow;
 	IBOutlet NSWindow *newUserWindow;
 	// Status View Outlets
+	IBOutlet NSButton *nameButton;
 	IBOutlet NSTextField *statusTextField;
 	IBOutlet NSView *statusView;
 	IBOutlet NSBox *statusBox;
@@ -181,6 +182,8 @@
 - (IBAction) insertITunesCurrentTrackGenre:sender;
 - (IBAction) insertITunesCurrentTrackComposer:sender;
 - (void) insertStringTokenInNewStatusTextField:(NSString *)stringToken;
+- (IBAction) switchToUsernames:sender;
+- (IBAction) switchToScreenNames:sender;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender

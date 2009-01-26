@@ -1586,6 +1586,24 @@ sender {
 	[fieldEditor didChangeText];
 }
 
+- (IBAction) switchToUsernames:sender {
+	[nameButton bind:@"title"
+			toObject:mainTimelineCollectionViewItem
+		 withKeyPath:@"representedObject.userScreenName"
+			 options:nil];
+	NSArray *previousStatuses = [[self statuses] copy];
+	[mainTimelineCollectionView setContent:nil];
+	[NSApp performSelector:@selector(setStatuses:) 
+				withObject:previousStatuses	
+				afterDelay:1.0];
+	[mainTimelineCollectionView setContent:previousStatuses];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+}
+
+- (IBAction) switchToScreenNames:sender {
+	
+}
+
 
 // Speech-related methods
 
