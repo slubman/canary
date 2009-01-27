@@ -1591,13 +1591,15 @@ sender {
 			toObject:mainTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
-	NSArray *previousStatuses = [[self statuses] copy];
+	// keeps a cache of the messages?
 	[mainTimelineCollectionView setContent:nil];
-	[NSApp performSelector:@selector(setStatuses:) 
-				withObject:previousStatuses	
-				afterDelay:1.0];
-	[mainTimelineCollectionView setContent:previousStatuses];
+	[self setStatuses:nil];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
+	//[mainTimelineCollectionView setContent:cacheManager.followingStatusCache];
+	[self setStatuses:cacheManager.followingStatusCache];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
 }
 
 - (IBAction) switchToScreenNames:sender {

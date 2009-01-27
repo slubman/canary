@@ -9,7 +9,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface ORSCanaryStatusView : NSView {
 	BOOL m_isSelected;
 }

@@ -11,6 +11,10 @@
 
 @implementation ORSCanaryStatusView
 
+- (BOOL) acceptsFirstMouse:(NSEvent *)theEvent {
+	return YES;
+}
+
 - (NSView *) hitTest:(NSPoint)aPoint {
 	NSView *result = [super hitTest:aPoint];
 	if (result && !([result isKindOfClass:[NSButton class]] ||
