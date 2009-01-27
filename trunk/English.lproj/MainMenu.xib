@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="296"/>
 			<integer value="372"/>
 			<integer value="462"/>
-			<integer value="1843"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -5038,11 +5038,19 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">switchToUsernames:</string>
+						<string key="label">switchBetweenUserNames:</string>
 						<reference key="source" ref="204190209"/>
 						<reference key="destination" ref="662300833"/>
 					</object>
-					<int key="connectionID">1846</int>
+					<int key="connectionID">1849</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">switchNamesMenuItem</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="662300833"/>
+					</object>
+					<int key="connectionID">1850</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -7496,7 +7504,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{737, 557}, {226, 113}}</string>
+					<string>{{739, 623}, {226, 113}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>{{356, 1099}, {157, 23}}</string>
@@ -7703,7 +7711,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>ORSCanaryUnderlinedButtonCell</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{530, 567}, {296, 103}}</string>
+					<string>{{532, 633}, {296, 103}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -7836,7 +7844,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{778, 602}, {197, 123}}</string>
+					<string>{{668, 613}, {197, 123}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>{{285, 1049}, {197, 73}}</string>
@@ -7934,7 +7942,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 					<string>{{347, 660}, {617, 0}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{709, 844}, {617, 0}}</string>
-					<string>{{461, 457}, {225, 213}}</string>
+					<string>{{463, 523}, {225, 213}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>{{14, 939}, {186, 183}}</string>
@@ -8003,7 +8011,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1846</int>
+			<int key="maxID">1850</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -8073,13 +8081,11 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>showPictureTaker:</string>
 							<string>showPreferencesWindow:</string>
 							<string>signupForNewAccountCall:</string>
-							<string>switchToScreenNames:</string>
-							<string>switchToUsernames:</string>
+							<string>switchBetweenUserNames:</string>
 							<string>typeUserID:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -8144,6 +8150,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>statusBox</string>
 							<string>statusTextField</string>
 							<string>statusView</string>
+							<string>switchNamesMenuItem</string>
 							<string>timelineButton</string>
 							<string>tweetButton</string>
 							<string>urlShortener</string>
@@ -8180,6 +8187,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSBox</string>
 							<string>NSTextField</string>
 							<string>NSView</string>
+							<string>NSMenuItem</string>
 							<string>NSPopUpButton</string>
 							<string>NSButton</string>
 							<string>id</string>

@@ -62,6 +62,7 @@
 	IBOutlet NSImageView *statusBarImageView;
 	IBOutlet NSTextField *statusBarTextField;
 	IBOutlet NSButton *statusBarButton;
+	IBOutlet NSMenuItem *switchNamesMenuItem;
 	// Received DMs Collection View Outletss
 	IBOutlet NSCollectionView *receivedDMsCollectionView;
 	IBOutlet NSScrollView *receivedDMsScrollView;
@@ -182,8 +183,10 @@
 - (IBAction) insertITunesCurrentTrackGenre:sender;
 - (IBAction) insertITunesCurrentTrackComposer:sender;
 - (void) insertStringTokenInNewStatusTextField:(NSString *)stringToken;
-- (IBAction) switchToUsernames:sender;
-- (IBAction) switchToScreenNames:sender;
+- (IBAction) switchBetweenUserNames:sender;
+- (void) changeToUsernames;
+- (void) changeToScreenNames;
+- (void) populate;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender

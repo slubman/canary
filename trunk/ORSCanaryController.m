@@ -77,6 +77,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 									forKey:@"CanaryWillRetrieveAllUpdates"];
 	[appDefaults setObject:[NSNumber numberWithBool:YES]
 					forKey:@"CanaryFirstTimeUser"];
+	[appDefaults setObject:[NSNumber numberWithBool:YES]
+					forKey:@"CanaryShowScreenNames"];
 	[defaults registerDefaults:appDefaults];
 }
 
@@ -210,6 +212,28 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[[dateDifferenceTextField cell] setFormatter:dateDiffFormatter];
 	[[receivedDMDateDifferenceTextField cell] setFormatter:dateDiffFormatter];
 	[[sentDMDateDifferenceTextField cell] setFormatter:dateDiffFormatter];
+	
+	if ([defaults boolForKey:@"CanaryShowScreenNames"]) {
+		[switchNamesMenuItem setTitle:@"Switch to Usernames"];
+		[nameButton bind:@"title"
+				toObject:mainTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:mainTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userScreenName"
+				 options:nil];
+	} else {
+		[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
+		[nameButton bind:@"title"
+				toObject:mainTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:mainTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userName"
+				 options:nil];
+	}
 }
 
 // Delegate: calls all the necessary methods when the app starts
@@ -1586,24 +1610,58 @@ sender {
 	[fieldEditor didChangeText];
 }
 
-- (IBAction) switchToUsernames:sender {
+- (IBAction) switchBetweenUserNames:sender {
+	if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
+		[self changeToUsernames];
+		[(NSMenuItem *)sender setTitle:@"Switch to Screen Names"];
+	} else {
+		[self changeToScreenNames];
+		[(NSMenuItem *)sender setTitle:@"Switch to Usernames"];
+	}
+}
+
+- (void) changeToUsernames {
 	[nameButton bind:@"title"
 			toObject:mainTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
-	// keeps a cache of the messages?
-	[mainTimelineCollectionView setContent:nil];
-	[self setStatuses:nil];
+	[nameButton bind:@"toolTip"
+			toObject:mainTimelineCollectionViewItem
+		 withKeyPath:@"representedObject.userName"
+			 options:nil];
+	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
-	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
-	//[mainTimelineCollectionView setContent:cacheManager.followingStatusCache];
-	[self setStatuses:cacheManager.followingStatusCache];
-	[mainTimelineCollectionView setNeedsDisplay:YES];
-	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
+	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[self performSelector:@selector(populate)
+			   withObject:nil
+			   afterDelay:0.5];
+	[defaults setObject:[NSNumber numberWithBool:NO]
+					forKey:@"CanaryShowScreenNames"];
 }
 
-- (IBAction) switchToScreenNames:sender {
-	
+- (void) changeToScreenNames {
+	[nameButton bind:@"title"
+			toObject:mainTimelineCollectionViewItem
+		 withKeyPath:@"representedObject.userName"
+			 options:nil];
+	[nameButton bind:@"toolTip"
+			toObject:mainTimelineCollectionViewItem
+		 withKeyPath:@"representedObject.userScreenName"
+			 options:nil];
+	[mainTimelineCollectionView setContent:NULL];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[self performSelector:@selector(populate)
+			   withObject:nil
+			   afterDelay:0.5];
+	[defaults setObject:[NSNumber numberWithBool:YES]
+					forKey:@"CanaryShowScreenNames"];
+}
+
+- (void) populate {
+	[mainTimelineCollectionView setContent:self.statuses];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
 }
 
 
