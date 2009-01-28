@@ -20,9 +20,9 @@
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{381, 110}\";\n            s = 0;\n        },\n                {\n            r = \"{548, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1037, 1857}\";\n            s = 0;\n        },\n                {\n            r = \"{3071, 1713}\";\n            s = 0;\n        },\n                {\n            r = \"{5076, 1403}\";\n            s = 0;\n        },\n                {\n            r = \"{6588, 605}\";\n            s = 0;\n        },\n                {\n            r = \"{7307, 102}\";\n            s = 0;\n        },\n                {\n            r = \"{7556, 133}\";\n            s = 0;\n        },\n                {\n            r = \"{7827, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{8100, 147}\";\n            s = 0;\n        },\n                {\n            r = \"{8582, 398}\";\n            s = 0;\n        },\n                {\n            r = \"{9157, 200}\";\n            s = 0;\n        },\n                {\n            r = \"{9524, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{9757, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{10038, 1311}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 11357}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 1424}}";
-			sepNavSelRange = "{1034, 0}";
-			sepNavVisRange = "{602, 1387}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 1472}}";
+			sepNavSelRange = "{1260, 0}";
+			sepNavVisRange = "{0, 1037}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
 		};
 	};
@@ -232,9 +232,9 @@
 	0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{277, 460}\";\n            s = 0;\n        },\n                {\n            r = \"{827, 658}\";\n            s = 0;\n        },\n                {\n            r = \"{1553, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{1700, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{1789, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{1903, 44}\";\n            s = 0;\n        },\n                {\n            r = \"{2010, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2429, 52}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2489}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 628}}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 628}}";
 			sepNavSelRange = "{331, 0}";
-			sepNavVisRange = "{27, 739}";
+			sepNavVisRange = "{176, 333}";
 		};
 	};
 	0507E9E70EF0814D00559018 /* PBXTextBookmark */ = {
@@ -1368,25 +1368,26 @@
 	};
 	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 4560}}";
-			sepNavSelRange = "{1142, 0}";
-			sepNavVisRange = "{2304, 1081}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 4656}}";
+			sepNavSelRange = "{2849, 0}";
+			sepNavVisRange = "{1349, 1501}";
 			sepNavWindowFrame = "{{16, 326}, {765, 847}}";
 		};
 	};
 	0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{390, 378}\";\n            s = 0;\n        },\n                {\n            r = \"{874, 488}\";\n            s = 0;\n        },\n                {\n            r = \"{1512, 401}\";\n            s = 0;\n        },\n                {\n            r = \"{2063, 314}\";\n            s = 0;\n        },\n                {\n            r = \"{2526, 464}\";\n            s = 0;\n        },\n                {\n            r = \"{3130, 599}\";\n            s = 0;\n        },\n                {\n            r = \"{3811, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{4029, 106}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4143}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 672}}";
-			sepNavSelRange = "{1229, 0}";
-			sepNavVisRange = "{0, 1177}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{390, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{907, 522}\";\n            s = 0;\n        },\n                {\n            r = \"{1579, 445}\";\n            s = 0;\n        },\n                {\n            r = \"{2174, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{2675, 502}\";\n            s = 0;\n        },\n                {\n            r = \"{3317, 626}\";\n            s = 0;\n        },\n                {\n            r = \"{4025, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{4244, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4386}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 656}}";
+			sepNavSelRange = "{830, 0}";
+			sepNavVisRange = "{0, 765}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 1392}}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 1504}}";
 			sepNavSelRange = "{118, 0}";
-			sepNavVisRange = "{35, 807}";
+			sepNavVisRange = "{35, 778}";
 		};
 	};
 	0573D7050DA66396002D1CCF /* Info.plist */ = {
@@ -1519,7 +1520,7 @@
 		fRef = 0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */;
 		name = "ORSCredentialsManager.m: 121";
 		rLen = 0;
-		rLoc = 4138;
+		rLoc = 4381;
 		rType = 0;
 		vrLen = 3981;
 		vrLoc = 0;
@@ -4990,6 +4991,84 @@
 		vrLen = 7467;
 		vrLoc = 784;
 	};
+	05A67DBB0F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600C0EAB48A500FC28C3 /* ORSSession.m */;
+		name = "ORSSession.m: 165";
+		rLen = 0;
+		rLoc = 5010;
+		rType = 0;
+		vrLen = 4787;
+		vrLoc = 0;
+	};
+	05A67DBC0F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 84";
+		rLen = 0;
+		rLoc = 2849;
+		rType = 0;
+		vrLen = 1501;
+		vrLoc = 1349;
+	};
+	05A67DBD0F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */;
+		name = "ORSCredentialsManager.h: 4";
+		rLen = 0;
+		rLoc = 118;
+		rType = 0;
+		vrLen = 778;
+		vrLoc = 35;
+	};
+	05A67DBE0F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'result' undeclared (first use in this function)";
+		fRef = 0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */;
+		rLen = 1;
+		rLoc = 25;
+		rType = 1;
+	};
+	05A67DBF0F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600C0EAB48A500FC28C3 /* ORSSession.m */;
+		name = "ORSSession.m: 165";
+		rLen = 0;
+		rLoc = 5010;
+		rType = 0;
+		vrLen = 4787;
+		vrLoc = 0;
+	};
+	05A67DC00F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 84";
+		rLen = 0;
+		rLoc = 2849;
+		rType = 0;
+		vrLen = 1501;
+		vrLoc = 1349;
+	};
+	05A67DC10F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */;
+		name = "ORSCredentialsManager.h: 4";
+		rLen = 0;
+		rLoc = 118;
+		rType = 0;
+		vrLen = 778;
+		vrLoc = 35;
+	};
+	05A67DC20F31163F0021D8AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */;
+		name = "ORSCredentialsManager.m: 86";
+		rLen = 0;
+		rLoc = 2556;
+		rType = 0;
+		vrLen = 2140;
+		vrLoc = 0;
+	};
 	05A951F10E8959F6000B98BC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05A951F20E8959F6000B98BC /* NSRange.h */;
@@ -6364,6 +6443,14 @@
 			05A67DA20F3102E20021D8AD /* PBXTextBookmark */ = 05A67DA20F3102E20021D8AD /* PBXTextBookmark */;
 			05A67DA30F3102E20021D8AD /* PBXTextBookmark */ = 05A67DA30F3102E20021D8AD /* PBXTextBookmark */;
 			05A67DA40F3102E20021D8AD /* PBXTextBookmark */ = 05A67DA40F3102E20021D8AD /* PBXTextBookmark */;
+			05A67DBB0F31163F0021D8AD /* PBXTextBookmark */ = 05A67DBB0F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DBC0F31163F0021D8AD /* PBXTextBookmark */ = 05A67DBC0F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DBD0F31163F0021D8AD /* PBXTextBookmark */ = 05A67DBD0F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DBE0F31163F0021D8AD /* PBXTextBookmark */ = 05A67DBE0F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DBF0F31163F0021D8AD /* PBXTextBookmark */ = 05A67DBF0F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DC00F31163F0021D8AD /* PBXTextBookmark */ = 05A67DC00F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DC10F31163F0021D8AD /* PBXTextBookmark */ = 05A67DC10F31163F0021D8AD /* PBXTextBookmark */;
+			05A67DC20F31163F0021D8AD /* PBXTextBookmark */ = 05A67DC20F31163F0021D8AD /* PBXTextBookmark */;
 			05A951F10E8959F6000B98BC = 05A951F10E8959F6000B98BC /* PBXTextBookmark */;
 			05A951F50E8959F6000B98BC = 05A951F50E8959F6000B98BC /* PBXTextBookmark */;
 			05B8B64F0F156036006B4B93 = 05B8B64F0F156036006B4B93 /* PBXTextBookmark */;

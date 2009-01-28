@@ -14,10 +14,14 @@
 // Determines whether the specified user has a password in the keychain.
 - (BOOL) hasPasswordForUser:(NSString *)username {
 	passwordData = nil;
-	OSStatus result = SecKeychainFindGenericPassword(NULL, APP_CNAME_LENGTH, 
-		APP_CNAME, [username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
-		[username cStringUsingEncoding:NSASCIIStringEncoding], &passwordLength, 
-											&passwordData, &loginItem);
+	OSStatus result;
+	@synchronized(self) {
+		result = SecKeychainFindGenericPassword(NULL, APP_CNAME_LENGTH,
+			APP_CNAME, 
+			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
+			[username cStringUsingEncoding:NSASCIIStringEncoding], 
+			&passwordLength, &passwordData, &loginItem);
+	}
 	lastCheckedUsername = username;
 	if (result == 0) {
 		return YES;
@@ -30,25 +34,31 @@
 - (NSString *) passwordForUser:(NSString *)username {
 	if (![username isEqualToString:lastCheckedUsername]) {
 		passwordData = nil;
-		SecKeychainFindGenericPassword(NULL, APP_CNAME_LENGTH, APP_CNAME, 
-			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
-			[username cStringUsingEncoding:NSASCIIStringEncoding], 
-				&passwordLength, &passwordData, &loginItem);
+		@synchronized(self) {
+			SecKeychainFindGenericPassword(NULL, APP_CNAME_LENGTH, APP_CNAME, 
+				[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
+				[username cStringUsingEncoding:NSASCIIStringEncoding], 
+					&passwordLength, &passwordData, &loginItem);
+		}
 	}
 	NSString *password = [[NSString alloc] initWithBytes:passwordData 
 												  length:passwordLength
-										encoding:NSASCIIStringEncoding];
+												encoding:NSASCIIStringEncoding];
 	return password;
 }
 
 // Adds a password to the keychain manager for the specified username.
 - (BOOL) addPassword:(NSString *)password
 			 forUser:(NSString *)username {
-	OSStatus result = SecKeychainAddGenericPassword(NULL, APP_CNAME_LENGTH, 
-		APP_CNAME, [username lengthOfBytesUsingEncoding:NSASCIIStringEncoding], 
-		[username cStringUsingEncoding:NSASCIIStringEncoding], 
-		[password lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
-		[password cStringUsingEncoding:NSASCIIStringEncoding], &loginItem);
+	OSStatus result;
+	@synchronized(self) {
+		result = SecKeychainAddGenericPassword(NULL, APP_CNAME_LENGTH, 
+			APP_CNAME, 
+			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding], 
+			[username cStringUsingEncoding:NSASCIIStringEncoding], 
+			[password lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
+			[password cStringUsingEncoding:NSASCIIStringEncoding], &loginItem);
+	}
 	if (result == 0) {
 		return YES;
 	} else {
@@ -60,9 +70,12 @@
 - (BOOL) setPassword:(NSString *)password
 			 forUser:(NSString *)username {
 	[self hasPasswordForUser:username]; // gets loginItem
-	OSStatus result = SecKeychainItemModifyAttributesAndData(loginItem, NULL, 
-		[password lengthOfBytesUsingEncoding:NSASCIIStringEncoding], 
-		[password cStringUsingEncoding:NSASCIIStringEncoding]);
+	OSStatus result;
+	@synchronized(self) {
+		result = SecKeychainItemModifyAttributesAndData(loginItem, 
+			NULL, [password lengthOfBytesUsingEncoding:NSASCIIStringEncoding], 
+			[password cStringUsingEncoding:NSASCIIStringEncoding]);
+	}
 	if (result == 0) {
 		return YES;
 	} else {
@@ -74,11 +87,15 @@
 // the keychain
 - (BOOL) hasStoredTwitterPasswordForUser:(NSString *)username {
 	twitterPasswordData = nil;
-	OSStatus result = SecKeychainFindInternetPassword(NULL, 11, "twitter.com", 
-		0, NULL, [username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
+	OSStatus result;
+	@synchronized(self) {
+		result = SecKeychainFindInternetPassword(NULL, 11, 
+			"twitter.com", 0, NULL, 
+			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
 			[username cStringUsingEncoding:NSASCIIStringEncoding], 1, "/", 0,
-				kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 
-					&twitterPasswordLength, &twitterPasswordData, NULL);
+			kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 
+			&twitterPasswordLength, &twitterPasswordData, NULL);
+	}
 	lastCheckedTwitterUsername = username;
 	if (result == 0) {
 		return YES;
@@ -91,11 +108,13 @@
 - (NSString *) storedTwitterPasswordForUser:(NSString *)username {
 	if (![username isEqualToString:lastCheckedTwitterUsername]) {
 		twitterPasswordData = nil;
-		SecKeychainFindInternetPassword(NULL, 11, "twitter.com", 0, NULL,
-			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
+		@synchronized(self) {
+			SecKeychainFindInternetPassword(NULL, 11, "twitter.com", 0, NULL,
+				[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
 				[username cStringUsingEncoding:NSASCIIStringEncoding], 1, "/", 
-					0, kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 
-						&twitterPasswordLength, &twitterPasswordData, NULL);
+				0, kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 
+				&twitterPasswordLength, &twitterPasswordData, NULL);
+		}
 	}
 	NSString *password = [[NSString alloc] initWithBytes:twitterPasswordData 
 												  length:twitterPasswordLength
@@ -105,17 +124,18 @@
 
 // Returns the previously retrieved password. 
 - (NSString *) fetchedPassword {
-	NSString *password = [[NSString alloc] 
-					   initWithBytes:passwordData 
-							  length:passwordLength
-							encoding:NSASCIIStringEncoding];
+	NSString *password = [[NSString alloc] initWithBytes:passwordData 
+												  length:passwordLength
+												encoding:NSASCIIStringEncoding];
 	return password;
 }
 
 // Frees the data buffer. 
 - (void) freeBuffer {
-	SecKeychainItemFreeContent(NULL, passwordData);
-	SecKeychainItemFreeContent(NULL, twitterPasswordData);
+	@synchronized(self) {
+		SecKeychainItemFreeContent(NULL, passwordData);
+		SecKeychainItemFreeContent(NULL, twitterPasswordData);
+	}
 }
 
 @end
