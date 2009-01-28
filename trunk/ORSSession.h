@@ -26,6 +26,9 @@
 - (NSData *) executeRequestOfType:(NSString *)type
 						   atPath:(NSString *)path
 					synchronously:(BOOL)synchr;
+- (NSData *) executeUnencodedRequestOfType:(NSString *)type
+									atPath:(NSString *)path
+							 synchronously:(BOOL)synchr;
 - (void) simpleExecuteRequestOfType:(NSString *)type
 							 atPath:(NSString *)path
 					  synchronously:(BOOL)synchr;

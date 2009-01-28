@@ -101,6 +101,20 @@ static ORSTwitterEngine *sharedEngine = nil;
 							  synchronously:synchr];
 }
 
+// Executes a request without URL encoding
+- (NSData *) executeUnencodedRequestOfType:(NSString *)type
+									atPath:(NSString *)path
+							 synchronously:(BOOL)synchr{
+	ORSSession *tempSession = (ORSSession *)[session copy];
+	[sessionQueue addObject:tempSession];
+	if ([sessionQueue count] > 4) {
+		[sessionQueue removeObjectAtIndex:0];
+	}
+	return [tempSession executeUnencodedRequestOfType:type 
+											   atPath:path
+										synchronously:synchr];
+}
+
 // Executes a request with no data returned
 - (void) simpleExecuteRequestOfType:(NSString *)type
 							 atPath:(NSString *)path
@@ -314,10 +328,12 @@ static ORSTwitterEngine *sharedEngine = nil;
 				 inReplyTo:(NSString *)statusID {
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"statuses/update.xml?status="];
-	NSString *statusText = [text stringByReplacingOccurrencesOfString:@"&" 
+	NSString *statusText = [text 
+		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	statusText = [statusText stringByReplacingOccurrencesOfString:@"&" 
 														   withString:@"%26"];
-	statusText = [statusText stringByReplacingOccurrencesOfString:@"+" 
-													   withString:@"%2B"];
+	statusText = [statusText stringByReplacingOccurrencesOfString:@"+"		
+														withString:@"%2B"];
 	[path appendString:statusText];
 	if (statusID != NULL) {
 		[path appendString:@"&in_reply_to_status_id="];
@@ -326,18 +342,18 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@"&source=canary"];
 	if (synchronously) {
 		NSXMLNode *node = [self getNodeFromData:[self 
-			executeRequestOfType:@"POST" 
-						  atPath:path 
-				   synchronously:synchronously]];
+			executeUnencodedRequestOfType:@"POST" 
+								   atPath:path 
+							synchronously:synchronously]];
 		if ([[node name] isEqualToString:@"status"]) {
 			return node;
 		} else {
 			return NULL;
 		}
 	} else {
-		[self executeRequestOfType:@"POST" 
-							atPath:path 
-					 synchronously:synchronously];
+		[self executeUnencodedRequestOfType:@"POST" 
+									 atPath:path 
+							  synchronously:synchronously];
 		return NULL;
 	}
 }

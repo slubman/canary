@@ -178,9 +178,16 @@
 							 stringWithString:@"direct_messages/new.xml?user="];
 	[path appendString:userID];
 	[path appendString:@"&text="];
-	[path appendString:message];
+	NSString *messageText = [message 
+		stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	messageText = [messageText stringByReplacingOccurrencesOfString:@"&" 
+															withString:@"%26"];
+	messageText = [messageText stringByReplacingOccurrencesOfString:@"+"		
+														 withString:@"%2B"];
+	[path appendString:messageText];
 	NSXMLNode *node = [self getNodeFromData:[self 
-		executeRequestOfType:@"POST" atPath:path synchronously:synchronously]];
+		executeUnencodedRequestOfType:@"POST" 
+				atPath:path synchronously:synchronously]];
 	if ([[node name] isEqualToString:@"direct_message"]) {
 		return YES;
 	} else {

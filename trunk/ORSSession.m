@@ -54,7 +54,7 @@
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:encodedRequestURL]
 				cachePolicy:NSURLRequestUseProtocolCachePolicy
-					timeoutInterval:48.0];
+										timeoutInterval:48.0];
 	
 		// Adding some extra values to the request
 		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
@@ -88,6 +88,68 @@
 			NSData *data = [NSURLConnection sendSynchronousRequest:request 
 											 returningResponse:&response 
 														 error:&error];
+			if (data) {
+				return data;
+			} else {
+			}
+			return NULL;
+		}
+	}
+	return NULL;
+}
+
+// Executes any request without URL encoding
+- (NSData *) executeUnencodedRequestOfType:(NSString *)type
+									atPath:(NSString *)path
+							 synchronously:(BOOL)synchr {
+	@synchronized(self) {
+		// Forming the first part of the request URL
+		NSMutableString *requestURL = [NSMutableString 
+			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+		
+		// Appending the second part of the request URL, the "path"
+		[requestURL appendString:path];
+		
+		NSLog(@"requestURL: %@", requestURL);
+		
+		// Creating the request
+		NSMutableURLRequest *request = [NSMutableURLRequest
+			requestWithURL:[NSURL URLWithString:requestURL]
+				cachePolicy:NSURLRequestUseProtocolCachePolicy
+										timeoutInterval:48.0];
+		
+		// Adding some extra values to the request
+		[request addValue:@"Canary" forHTTPHeaderField:@"X-Twitter-Client"];
+		[request addValue:@"0.6" 
+	   forHTTPHeaderField:@"X-Twitter-Client-Version"];
+		[request addValue:@"http://macsphere.wordpress.com/" 
+	   forHTTPHeaderField:@"X-Twitter-Client-URL"];
+		
+		// Setting the request method (except GET - doesn't need to be specified
+		// explicitly)
+		if (![type isEqualToString:@"GET"]) {
+			[request setHTTPMethod:type];
+		}
+		
+		// Checking whether the request should be synchronous or asynchronous
+		if (!synchr) {
+			// If asynchronous... setting up the connection
+			mainConnection = [[NSURLConnection alloc] initWithRequest:request 
+															 delegate:self];
+			if (mainConnection) {
+				// the data buffer
+				dataReceived = [NSMutableData data];
+			} else {
+			}
+			return NULL;
+		} else { 
+			// If synchronous
+			NSURLResponse *response = NULL;
+			NSError *error = NULL;
+			// the data is returned "immediately"
+			NSData *data = [NSURLConnection sendSynchronousRequest:request 
+												 returningResponse:&response 
+															 error:&error];
 			if (data) {
 				return data;
 			} else {
