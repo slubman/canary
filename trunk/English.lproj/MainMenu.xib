@@ -515,7 +515,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 											</object>
 										</object>
 									</object>
-									<object class="NSImageView" id="620317727">
+									<object class="NSImageView" id="1030914183">
 										<reference key="NSNextResponder" ref="462273039"/>
 										<int key="NSvFlags">-2147483615</int>
 										<object class="NSMutableSet" key="NSDragTypes">
@@ -533,7 +533,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<string key="NSFrame">{{305, 5}, {9, 12}}</string>
 										<reference key="NSSuperview" ref="462273039"/>
 										<bool key="NSEnabled">YES</bool>
-										<object class="NSImageCell" key="NSCell" id="452725070">
+										<object class="NSImageCell" key="NSCell" id="229928347">
 											<int key="NSCellFlags">130560</int>
 											<int key="NSCellFlags2">33587200</int>
 											<object class="NSCustomResource" key="NSContents">
@@ -2163,7 +2163,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								<reference key="NSControlView" ref="867426069"/>
 								<double key="NSMaxValue">1.400000e+02</double>
 								<double key="NSWarningValue">1.250000e+02</double>
-								<double key="NSCriticalValue">1.400000e+02</double>
+								<double key="NSCriticalValue">1.350000e+02</double>
 								<int key="NSIndicatorStyle">1</int>
 							</object>
 						</object>
@@ -5087,10 +5087,10 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">hidden: representedObject.protectedStatus</string>
-						<reference key="source" ref="620317727"/>
+						<reference key="source" ref="1030914183"/>
 						<reference key="destination" ref="136294764"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="620317727"/>
+							<reference key="NSSource" ref="1030914183"/>
 							<reference key="NSDestination" ref="136294764"/>
 							<string key="NSLabel">hidden: representedObject.protectedStatus</string>
 							<string key="NSBinding">hidden</string>
@@ -6515,7 +6515,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="616724472"/>
 							<reference ref="984288652"/>
 							<reference ref="572142704"/>
-							<reference ref="620317727"/>
+							<reference ref="1030914183"/>
 						</object>
 						<reference key="parent" ref="77162958"/>
 						<string key="objectName">Status Update Box</string>
@@ -7115,18 +7115,18 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1851</int>
-						<reference key="object" ref="620317727"/>
+						<reference key="object" ref="1030914183"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="452725070"/>
+							<reference ref="229928347"/>
 						</object>
 						<reference key="parent" ref="777967158"/>
 						<string key="objectName">Locked Image View</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1852</int>
-						<reference key="object" ref="452725070"/>
-						<reference key="parent" ref="620317727"/>
+						<reference key="object" ref="229928347"/>
+						<reference key="parent" ref="1030914183"/>
 					</object>
 				</object>
 			</object>
@@ -7850,7 +7850,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<string key="NS.key.0">ToolTip</string>
 						<object class="IBToolTipAttribute" key="NS.object.0">
 							<string key="name">ToolTip</string>
-							<reference key="object" ref="620317727"/>
+							<reference key="object" ref="1030914183"/>
 							<string key="toolTip">This status update is protected. Please do not retweet.</string>
 						</object>
 					</object>
