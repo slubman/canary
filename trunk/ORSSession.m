@@ -110,8 +110,6 @@
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
 		
-		NSLog(@"requestURL: %@", requestURL);
-		
 		// Creating the request
 		NSMutableURLRequest *request = [NSMutableURLRequest
 			requestWithURL:[NSURL URLWithString:requestURL]
