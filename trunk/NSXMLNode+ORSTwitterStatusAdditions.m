@@ -132,4 +132,14 @@
 	return attString;
 }
 
+// Returns whether the message is protected
+- (BOOL) protectedStatus {
+	if ([[[self firstNodeForXPath:@".//protected"] stringValue] 
+		 isEqualToString:@"true"]) {
+		return YES;
+	} else {
+		return NO;
+	}
+}
+
 @end

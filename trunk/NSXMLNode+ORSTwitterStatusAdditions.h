@@ -32,5 +32,6 @@
 - (BOOL) userProtected;
 - (NSString *) userFollowersCount;
 - (NSAttributedString *) richText;
+- (BOOL) protectedStatus;
 
 @end
