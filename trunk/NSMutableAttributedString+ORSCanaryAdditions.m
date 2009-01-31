@@ -146,6 +146,7 @@
 								intoString:&scanString];
 		scanRange.length = [scanString length];
 		scanRange.location = [scanner scanLocation] - scanRange.length;
+		
 		// URLs
 		if (foundURLString = [self detectURL:scanString]) {
 			NSRange prefixRange = [foundURLString rangeOfString:@"http://"];
@@ -184,12 +185,6 @@
 			attrRange.length = newRange.length;
 			[self addAttributes:usernameAttr range:attrRange];
 		}
-		
-		/*if ([scanString isEqualToString:@":)"]) {
-			NSRange newRange = NSMakeRange(scanRange.location, 0);
-			[self replaceCharactersInRange:newRange
-						   withAttributedString:[self emoticonStringWithName:@"Smile"]];
-		}*/
 	}
 }
 

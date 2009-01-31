@@ -16,8 +16,7 @@
 - (NSAttributedString *) attributedStringValue {
 	NSString *initialString = [[[super attributedStringValue] string] 
 				stringByReplacingOccurrencesOfString:@"\n"
-							   withString:@" "];
-							   
+							   withString:@" "];							   
 	NSMutableAttributedString *attString = [[NSMutableAttributedString alloc]
 		initWithString:[NSString replaceHTMLEntities:initialString]];
 	NSFont *textFont = [NSFont systemFontOfSize:10.2];
@@ -26,16 +25,20 @@
 	[attString beginEditing];
 	[attString addAttributes:attributes 
 					   range:NSMakeRange(0, attString.length)];
-	[attString highlightElements];	
 	/*if ([attString.string rangeOfString:@":)"].location != NSNotFound) {
-		NSRange newRange = NSMakeRange([attString.string 
-			rangeOfString:@":)"].location, 0);
-		[attString replaceCharactersInRange:[attString.string 
-			rangeOfString:@":)"] withAttributedString:[[NSAttributedString 
-				alloc] init]];
+		NSRange oldRange = [attString.string rangeOfString:@":)"];
+		NSRange newRange = NSMakeRange(oldRange.location, 0);
 		[attString replaceCharactersInRange:newRange
-			withAttributedString:[attString emoticonStringWithName:@"Smile"]];
-	}*/	
+					   withAttributedString:[attString emoticonStringWithName:@"Smile"]];
+	}*/
+	[attString highlightElements];
+	[[attString mutableString] replaceOccurrencesOfString:@":)" 
+										  withString:@"" 
+											 options:NSCaseInsensitiveSearch 
+							range:NSMakeRange(0, [attString string].length)];
+	
+	[attString addAttributes:attributes 
+					   range:NSMakeRange(0, attString.length)];
 	[attString endEditing];
 	[super setAttributedStringValue:attString];
 	return attString;
