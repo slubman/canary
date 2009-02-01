@@ -32,13 +32,6 @@
 					   withAttributedString:[attString emoticonStringWithName:@"Smile"]];
 	}*/
 	[attString highlightElements];
-	/*[[attString mutableString] replaceOccurrencesOfString:@":)" 
-										  withString:@"" 
-											 options:NSCaseInsensitiveSearch 
-							range:NSMakeRange(0, [attString string].length)];*/
-	
-	[attString addAttributes:attributes 
-					   range:NSMakeRange(0, attString.length)];
 	[attString endEditing];
 	[super setAttributedStringValue:attString];
 	return attString;

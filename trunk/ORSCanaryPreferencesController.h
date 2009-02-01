@@ -15,6 +15,8 @@
 	NSMutableArray *filters;
 	IBOutlet NSWindow *filterEditor;
 	IBOutlet NSArrayController *filterArrayController;
+	ORSFilter *tempFilter;
+	IBOutlet NSPredicateEditor *filterPredicateEditor;
 }
 
 - (IBAction) timelineRefreshRateSelected:sender;
@@ -23,10 +25,12 @@
 - (IBAction) addFilter:sender;
 - (IBAction) editFilter:sender;
 - (IBAction) duplicateFilter:sender;
-- (IBAction) showFilterSheet:sender;
-- (IBAction) cancelNewFilter:sender;
-- (IBAction) newFilterCreated:sender;
+- (IBAction) cancelFilterChanges:sender;
+- (IBAction) keepFilterChanges:sender;
 - (void) didEndNewFilterSheet:(NSWindow *)sheet
+				   returnCode:(int)returnCode
+				  contextInfo:(void *)contextInfo;
+- (void) didEndEditNewFilterSheet:(NSWindow *)sheet
 				   returnCode:(int)returnCode
 				  contextInfo:(void *)contextInfo;
 

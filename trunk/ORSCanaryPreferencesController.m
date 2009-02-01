@@ -16,12 +16,14 @@
 - (id) initWithWindow:(NSWindow *)window {
 	if (self = [super initWithWindow:window]) {
 		filters = [[NSArray alloc] init];
+		
 	}
 	return self;
 }
 
 - (void) awakeFromNib {
 	[self.window center];
+	[filterPredicateEditor setContinuous:YES];
 }
 
 - (IBAction) timelineRefreshRateSelected:sender {
@@ -38,14 +40,27 @@
 
 - (IBAction) addFilter:sender {
 	ORSFilter *newFilter = [[ORSFilter alloc] init];
-	newFilter.filterName = @"Filter #1";
+	newFilter.filterName = @"New Filter";
 	newFilter.active = YES;
+	NSPredicate *subpredicate = [NSPredicate predicateWithFormat:@"text contains \"text\""];
+	NSArray *subpredicates = [NSArray arrayWithObject:subpredicate];
+	newFilter.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:subpredicates];
 	[filterArrayController addObject:newFilter];
-	[self showFilterSheet:sender];
+	[NSApp beginSheet:filterEditor
+	   modalForWindow:self.window
+		modalDelegate:self
+	   didEndSelector:@selector(didEndNewFilterSheet:returnCode:contextInfo:)
+		  contextInfo:nil];
 }
 
 - (IBAction) editFilter:sender {
-	[self showFilterSheet:sender];
+	tempFilter = [[[filterArrayController selectedObjects]
+				   objectAtIndex:0] copy];
+	[NSApp beginSheet:filterEditor
+	   modalForWindow:self.window
+		modalDelegate:self
+	   didEndSelector:@selector(didEndEditFilterSheet:returnCode:contextInfo:)
+		  contextInfo:nil];
 }
 
 - (IBAction) duplicateFilter:sender {
@@ -54,29 +69,35 @@
 	[filterArrayController addObject:duplicateFilter];
 }
 
-
-
-- (IBAction) showFilterSheet:sender {
-	[NSApp beginSheet:filterEditor
-	   modalForWindow:self.window
-		modalDelegate:self
-	   didEndSelector:@selector(didEndNewFilterSheet:returnCode:contextInfo:)
-		  contextInfo:nil];
-}
-
-- (IBAction) cancelNewFilter:sender {
+- (IBAction) cancelFilterChanges:sender {
+	[filterArrayController discardEditing];
 	[filterEditor orderOut:sender];
 	[NSApp endSheet:filterEditor returnCode:0];
 }
 
-- (IBAction) newFilterCreated:sender {
+- (IBAction) keepFilterChanges:sender {
+	[filterArrayController commitEditing];	
 	[filterEditor orderOut:sender];
-	[NSApp endSheet:filterEditor returnCode:0];
+	[NSApp endSheet:filterEditor returnCode:1];
 }
 
 - (void) didEndNewFilterSheet:(NSWindow *)sheet
 					 returnCode:(int)returnCode
 					contextInfo:(void *)contextInfo {
+	if (returnCode == 0) {
+		[filterArrayController remove:nil];
+	}
+}
+
+- (void) didEndEditFilterSheet:(NSWindow *)sheet
+					returnCode:(int)returnCode
+				   contextInfo:(void *)contextInfo {
+	int selIndex = filterArrayController.selectionIndex;
+	if (returnCode == 0) {
+		[filterArrayController remove:nil];
+		[filterArrayController insertObject:tempFilter 
+					  atArrangedObjectIndex:selIndex];
+	}
 }
 
 @end
