@@ -11,10 +11,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ORSCanaryNewStatusTextFieldCell : NSTextFieldCell {
-
 	IBOutlet NSMenuItem *shortenURLMenuItem;
 	IBOutlet NSMenuItem *separatorMenuItem;
-	
 }
 
 - (NSText *) setUpFieldEditorAttributes:(NSText *)textObj;

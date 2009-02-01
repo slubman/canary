@@ -939,24 +939,6 @@ sender {
 // Retweets the given status text from the given userID
 - (void) retweetStatus:(NSString *)statusText
 		fromUserWithID:(NSString *)userID {
-	/*NSString *message = [NSString stringWithFormat:@"Retweeting from @%@: %@", 
-						 userID, statusText];
-	if (twitterEngine.sessionUserID) {
-		[charsLeftIndicator setIntValue:0];
-		[updateDispatcher addMessage:message];
-		
-		NSString *msg = [NSString stringWithFormat:@"Retweeted from %@",
-			userID];
-		[statusBarTextField setStringValue:msg];
-		[statusBarImageView setImage:[NSImage imageNamed:@"comments"]];
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setHidden:NO];
-		
-		messageDurationTimer = [NSTimer 
-								scheduledTimerWithTimeInterval:60 
-								target:self selector:@selector(hideStatusBar) 
-								userInfo:nil repeats:NO];
-	}*/
 	NSString *message = [NSString stringWithFormat:@"♺ from @%@: %@", 
 						 userID, statusText];
 	[self insertStringTokenInNewStatusTextField:message];

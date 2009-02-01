@@ -11,6 +11,8 @@
 
 @implementation ORSCanaryPreferencesController
 
+@synthesize filters;
+
 - (void) awakeFromNib {
 	[self.window center];
 }
@@ -25,6 +27,14 @@
 
 - (IBAction) urlShortenerSelected:sender {
 	[[ORSCanaryController sharedController] updateSelectedURLShortener];
+}
+
+- (IBAction) showNewFilterSheet:sender {
+	[NSApp beginSheet:filterEditor
+	   modalForWindow:self.window
+		modalDelegate:self
+	   didEndSelector:@selector(didEndNewFilterSheet:returnCode:contextInfo:)
+		  contextInfo:nil];
 }
 
 @end

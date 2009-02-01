@@ -17,7 +17,6 @@
 		[[textObj menu] addItem:separatorMenuItem];
 		[[textObj menu] addItem:shortenURLMenuItem];
 	}
-	
 	[self setDrawsBackground:NO];
 	return textObj;
 }

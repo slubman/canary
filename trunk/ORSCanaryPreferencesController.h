@@ -12,10 +12,17 @@
 
 @interface ORSCanaryPreferencesController : NSWindowController {
 	
+@private
+	NSArray *filters;
+	IBOutlet NSWindow *filterEditor;
+	
 }
 
 - (IBAction) timelineRefreshRateSelected:sender;
 - (IBAction) maxShownUpdatesSelected:sender;
 - (IBAction) urlShortenerSelected:sender;
+- (IBAction) showNewFilterSheet:sender;
+
+@property(retain) NSArray *filters;
 
 @end
