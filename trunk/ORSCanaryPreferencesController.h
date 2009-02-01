@@ -9,20 +9,27 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ORSCanaryController.h"
+#import "ORSFilter.h"
 
 @interface ORSCanaryPreferencesController : NSWindowController {
-	
-@private
-	NSArray *filters;
+	NSMutableArray *filters;
 	IBOutlet NSWindow *filterEditor;
-	
+	IBOutlet NSArrayController *filterArrayController;
 }
 
 - (IBAction) timelineRefreshRateSelected:sender;
 - (IBAction) maxShownUpdatesSelected:sender;
 - (IBAction) urlShortenerSelected:sender;
-- (IBAction) showNewFilterSheet:sender;
+- (IBAction) addFilter:sender;
+- (IBAction) editFilter:sender;
+- (IBAction) duplicateFilter:sender;
+- (IBAction) showFilterSheet:sender;
+- (IBAction) cancelNewFilter:sender;
+- (IBAction) newFilterCreated:sender;
+- (void) didEndNewFilterSheet:(NSWindow *)sheet
+				   returnCode:(int)returnCode
+				  contextInfo:(void *)contextInfo;
 
-@property(retain) NSArray *filters;
+@property(copy) NSMutableArray *filters;
 
 @end

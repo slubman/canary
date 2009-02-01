@@ -88,6 +88,7 @@
 		05A67E510F325A800021D8AD /* Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E350F325A800021D8AD /* Sun.png */; };
 		05A67E520F325A800021D8AD /* Undecided.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E360F325A800021D8AD /* Undecided.png */; };
 		05A67E530F325A800021D8AD /* Wink.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E370F325A800021D8AD /* Wink.png */; };
+		05A681440F35B5D80021D8AD /* ORSFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */; };
 		05B8B6A30F156D0D006B4B93 /* fave_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A20F156D0D006B4B93 /* fave_star.png */; };
 		05B8B6A60F156DB2006B4B93 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A40F156DB2006B4B93 /* user.png */; };
 		05B8B6A70F156DB2006B4B93 /* user_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A50F156DB2006B4B93 /* user_red.png */; };
@@ -241,6 +242,8 @@
 		05A67E350F325A800021D8AD /* Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sun.png; sourceTree = "<group>"; };
 		05A67E360F325A800021D8AD /* Undecided.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Undecided.png; sourceTree = "<group>"; };
 		05A67E370F325A800021D8AD /* Wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wink.png; sourceTree = "<group>"; };
+		05A681420F35B5D80021D8AD /* ORSFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSFilter.h; sourceTree = "<group>"; };
+		05A681430F35B5D80021D8AD /* ORSFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSFilter.m; sourceTree = "<group>"; };
 		05B8B6A20F156D0D006B4B93 /* fave_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fave_star.png; sourceTree = "<group>"; };
 		05B8B6A40F156DB2006B4B93 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		05B8B6A50F156DB2006B4B93 /* user_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_red.png; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */,
 				05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */,
 				05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */,
+				05A681420F35B5D80021D8AD /* ORSFilter.h */,
+				05A681430F35B5D80021D8AD /* ORSFilter.m */,
 			);
 			name = "Twitter Engine";
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */,
 				0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */,
 				0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */,
+				05A681440F35B5D80021D8AD /* ORSFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
