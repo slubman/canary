@@ -32,6 +32,9 @@
 #import "ORSTwitPicDispatcher.h" 
 #import "ORSAsyncTwitPicDispatcher.h"
 #import "iTunes.h"
+#import "ORSFilter.h"
+#import "ORSFilterTransformer.h"
+#import "ORSFilterArrayTransformer.h"
 
 @interface ORSCanaryController : NSWindowController {
 	// Fundamentals

@@ -16,14 +16,12 @@
 - (id) initWithWindow:(NSWindow *)window {
 	if (self = [super initWithWindow:window]) {
 		filters = [[NSArray alloc] init];
-		
 	}
 	return self;
 }
 
 - (void) awakeFromNib {
 	[self.window center];
-	[filterPredicateEditor setContinuous:YES];
 }
 
 - (IBAction) timelineRefreshRateSelected:sender {
@@ -42,10 +40,12 @@
 	ORSFilter *newFilter = [[ORSFilter alloc] init];
 	newFilter.filterName = @"New Filter";
 	newFilter.active = YES;
-	NSPredicate *subpredicate = [NSPredicate predicateWithFormat:@"text contains \"text\""];
-	NSArray *subpredicates = [NSArray arrayWithObject:subpredicate];
-	newFilter.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:subpredicates];
-	[filterArrayController addObject:newFilter];
+	newFilter.predicate = [NSPredicate 
+		predicateWithFormat:@"(text contains \"Adam\") AND \
+						   (text contains \"Eve\")"];
+	[filterArrayController insertObject:newFilter 
+				  atArrangedObjectIndex:0];
+	[filterArrayController setSelectionIndex:0];
 	[NSApp beginSheet:filterEditor
 	   modalForWindow:self.window
 		modalDelegate:self

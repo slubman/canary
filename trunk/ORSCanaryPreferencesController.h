@@ -12,7 +12,7 @@
 #import "ORSFilter.h"
 
 @interface ORSCanaryPreferencesController : NSWindowController {
-	NSMutableArray *filters;
+	NSArray *filters;
 	IBOutlet NSWindow *filterEditor;
 	IBOutlet NSArrayController *filterArrayController;
 	ORSFilter *tempFilter;
@@ -30,10 +30,10 @@
 - (void) didEndNewFilterSheet:(NSWindow *)sheet
 				   returnCode:(int)returnCode
 				  contextInfo:(void *)contextInfo;
-- (void) didEndEditNewFilterSheet:(NSWindow *)sheet
+- (void) didEndEditFilterSheet:(NSWindow *)sheet
 				   returnCode:(int)returnCode
 				  contextInfo:(void *)contextInfo;
 
-@property(copy) NSMutableArray *filters;
+@property(copy) NSArray *filters;
 
 @end

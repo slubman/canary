@@ -2,9 +2,10 @@
 //  ORSFilter.m
 //  Canary
 //
-//  Created by Νικόλαος Τουμπέλης on 01/02/2009.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Created by Nicholas Toumpelis on 02/02/2009.
+//  Copyright 2008 Ocean Road Software. All rights reserved.
 //
+//  0.7 - 02/02/2009
 
 #import "ORSFilter.h"
 

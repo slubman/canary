@@ -60,6 +60,17 @@ static ORSCanaryController *sharedCanaryController = nil;
 
 // Initialize
 + (void) initialize {
+	ORSFilterTransformer *filterTransformer;
+	filterTransformer = [[ORSFilterTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:filterTransformer
+									forName:@"FilterTransformer"];
+	
+	ORSFilterArrayTransformer *filterArrayTransformer;
+	filterArrayTransformer = [[ORSFilterArrayTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:filterArrayTransformer
+									forName:@"FilterArrayTransformer"];
+	
+	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSMutableDictionary *appDefaults = [NSMutableDictionary dictionary];
 	[appDefaults setObject:[NSNumber numberWithFloat:0.0]
@@ -79,6 +90,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 					forKey:@"CanaryFirstTimeUser"];
 	[appDefaults setObject:[NSNumber numberWithBool:YES]
 					forKey:@"CanaryShowScreenNames"];
+	//[appDefaults setObject:[NSArray array]
+	//				forKey:@"CanaryFilters"];
 	[defaults registerDefaults:appDefaults];
 }
 

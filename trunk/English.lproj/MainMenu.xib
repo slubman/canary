@@ -1732,6 +1732,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 											<string key="NSTitle">No Filter</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSMnemonicLoc">2147483647</int>
+											<int key="NSState">1</int>
 											<reference key="NSOnImage" ref="3788936"/>
 											<reference key="NSMixedImage" ref="183080322"/>
 											<string key="NSAction">_popUpItemAction:</string>
@@ -2376,7 +2377,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				<string key="NSClassName">ORSCanaryCollectionViewItem</string>
 			</object>
 			<object class="NSView" id="623937883">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2395,7 +2396,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">266</int>
 										<string key="NSFrame">{{67, 57}, {247, 25}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSButtonCell" key="NSCell" id="410844144">
 											<int key="NSCellFlags">-2080244224</int>
@@ -2428,7 +2428,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										</object>
 										<string key="NSFrame">{{8, 31}, {48, 48}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSImageCell" key="NSCell" id="936729685">
 											<int key="NSCellFlags">130560</int>
@@ -2446,7 +2445,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">268</int>
 										<string key="NSFrame">{{59, 5}, {5, 75}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<string key="NSOffsets">{0, 0}</string>
 										<object class="NSTextFieldCell" key="NSTitleCell">
 											<int key="NSCellFlags">67239424</int>
@@ -2469,7 +2467,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">268</int>
 										<string key="NSFrame">{{6, 27}, {52, 54}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSButtonCell" key="NSCell" id="1072097168">
 											<int key="NSCellFlags">67239424</int>
@@ -2491,7 +2488,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">290</int>
 										<string key="NSFrame">{{66, 5}, {251, 52}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSTextFieldCell" key="NSCell" id="920447757">
 											<int key="NSCellFlags">69860865</int>
@@ -2511,7 +2507,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">265</int>
 										<string key="NSFrame">{{293, 61}, {21, 18}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<int key="NSTag">117</int>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSPopUpButtonCell" key="NSCell" id="376080750">
@@ -2699,7 +2694,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">9</int>
 										<string key="NSFrame">{{291, 61}, {5, 17}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<string key="NSOffsets">{0, 0}</string>
 										<object class="NSTextFieldCell" key="NSTitleCell">
 											<int key="NSCellFlags">67239424</int>
@@ -2722,7 +2716,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSvFlags">268</int>
 										<string key="NSFrame">{{-1, 11}, {66, 11}}</string>
 										<reference key="NSSuperview" ref="149442010"/>
-										<reference key="NSWindow"/>
 										<bool key="NSEnabled">YES</bool>
 										<object class="NSTextFieldCell" key="NSCell" id="921203974">
 											<int key="NSCellFlags">68288064</int>
@@ -2740,12 +2733,10 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								</object>
 								<string key="NSFrame">{{1, 1}, {340, 87}}</string>
 								<reference key="NSSuperview" ref="359222529"/>
-								<reference key="NSWindow"/>
 							</object>
 						</object>
 						<string key="NSFrame">{{-1, 0}, {342, 89}}</string>
 						<reference key="NSSuperview" ref="623937883"/>
-						<reference key="NSWindow"/>
 						<string key="NSOffsets">{0, 0}</string>
 						<object class="NSTextFieldCell" key="NSTitleCell">
 							<int key="NSCellFlags">67239424</int>
@@ -2770,8 +2761,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{322, 87}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 			</object>
 			<object class="NSArrayController" id="131349941">
 				<object class="NSMutableArray" key="NSDeclaredKeys">
@@ -7512,6 +7501,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>1867.IBPluginDependency</string>
 					<string>1868.IBEditorWindowLastContentRect</string>
 					<string>1868.IBPluginDependency</string>
+					<string>1872.IBPluginDependency</string>
 					<string>1874.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>19.ImportedFromIB2</string>
@@ -7998,6 +7988,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{426, 577}, {113, 23}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

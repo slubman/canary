@@ -89,6 +89,8 @@
 		05A67E520F325A800021D8AD /* Undecided.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E360F325A800021D8AD /* Undecided.png */; };
 		05A67E530F325A800021D8AD /* Wink.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E370F325A800021D8AD /* Wink.png */; };
 		05A681440F35B5D80021D8AD /* ORSFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */; };
+		05A6843D0F363C5B0021D8AD /* ORSFilterTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */; };
+		05A684920F374BDD0021D8AD /* ORSFilterArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */; };
 		05B8B6A30F156D0D006B4B93 /* fave_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A20F156D0D006B4B93 /* fave_star.png */; };
 		05B8B6A60F156DB2006B4B93 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A40F156DB2006B4B93 /* user.png */; };
 		05B8B6A70F156DB2006B4B93 /* user_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6A50F156DB2006B4B93 /* user_red.png */; };
@@ -244,6 +246,10 @@
 		05A67E370F325A800021D8AD /* Wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wink.png; sourceTree = "<group>"; };
 		05A681420F35B5D80021D8AD /* ORSFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSFilter.h; sourceTree = "<group>"; };
 		05A681430F35B5D80021D8AD /* ORSFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSFilter.m; sourceTree = "<group>"; };
+		05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSFilterTransformer.h; sourceTree = "<group>"; };
+		05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSFilterTransformer.m; sourceTree = "<group>"; };
+		05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSFilterArrayTransformer.h; sourceTree = "<group>"; };
+		05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSFilterArrayTransformer.m; sourceTree = "<group>"; };
 		05B8B6A20F156D0D006B4B93 /* fave_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fave_star.png; sourceTree = "<group>"; };
 		05B8B6A40F156DB2006B4B93 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		05B8B6A50F156DB2006B4B93 /* user_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_red.png; sourceTree = "<group>"; };
@@ -314,8 +320,6 @@
 				0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */,
 				05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */,
 				05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */,
-				05A681420F35B5D80021D8AD /* ORSFilter.h */,
-				05A681430F35B5D80021D8AD /* ORSFilter.m */,
 			);
 			name = "Twitter Engine";
 			sourceTree = "<group>";
@@ -428,10 +432,24 @@
 			name = Smilies;
 			sourceTree = "<group>";
 		};
+		05A685E80F37A9D70021D8AD /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				05A681420F35B5D80021D8AD /* ORSFilter.h */,
+				05A681430F35B5D80021D8AD /* ORSFilter.m */,
+				05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */,
+				05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */,
+				05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */,
+				05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
 		05DF56710E3E608700B8B4DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				051A4B700E7ACC770040D9F3 /* Twitter Engine */,
+				05A685E80F37A9D70021D8AD /* Filters */,
 				0555A4320EAA190700B126BC /* URL Shorteners */,
 				0555A7180EAA612300B126BC /* Credentials Manager */,
 			);
@@ -728,6 +746,8 @@
 				0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */,
 				0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */,
 				05A681440F35B5D80021D8AD /* ORSFilter.m in Sources */,
+				05A6843D0F363C5B0021D8AD /* ORSFilterTransformer.m in Sources */,
+				05A684920F374BDD0021D8AD /* ORSFilterArrayTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
