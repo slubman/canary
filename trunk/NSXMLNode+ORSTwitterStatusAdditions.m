@@ -66,13 +66,18 @@
 }
 
 // Returns the in_reply_to value for the status
-- (NSString *) inReplyTo {
-	return [[self firstNodeForXPath:@".//in_reply_to"] stringValue];
+- (NSString *) inReplyToStatusID {
+	return [[self firstNodeForXPath:@".//in_reply_to_status_id"] stringValue];
 }
 
 // Returns the in_reply_to_user_id for the status
 - (NSString *) inReplyToUserID {
 	return [[self firstNodeForXPath:@".//in_reply_to_user_id"] stringValue];
+}
+
+// Returns the in_reply_to_user_id for the status
+- (NSString *) inReplyToScreenName {
+	return [[self firstNodeForXPath:@".//in_reply_to_screen_name"] stringValue];
 }
 
 // Returns the user id for the status

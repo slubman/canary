@@ -31,11 +31,11 @@
 			initWithStartingColor:[NSColor colorWithDeviceRed:.0
 														green:.0 
 														 blue:.400 
-														alpha:0.3]
+														alpha:0.2]
 					  endingColor:[NSColor colorWithDeviceRed:.0
 														green:.0
 														 blue:.400 
-														alpha:0.1]];
+														alpha:0.2]];
 		[gradient drawInRect:[self bounds] angle:90.0];
 	}
 	[super drawRect:rect];

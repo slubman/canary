@@ -20,8 +20,6 @@
 }
 
 - (id) transformedValue:(id)value {
-	NSLog(@"filter:: entered transformedValue");
-	
 	if (value == nil) 
 		return nil;
 	
@@ -55,13 +53,10 @@
 			[value class]];
     }
 	
-    NSLog(@"filter:: exited transformedValue");
 	return dictionary;
 }
 
 - (id) reverseTransformedValue:(id)value {
-	NSLog(@"filter:: entered reverseTransformedValue");
-	
     if (value == nil) 
 		return nil;
 	
@@ -87,7 +82,6 @@
 		filter.predicate = predicate;
 	}
 	
-	NSLog(@"filter:: exited reverseTransformedValue");
 	return filter;
 }
 

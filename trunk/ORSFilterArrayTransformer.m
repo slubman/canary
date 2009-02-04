@@ -20,7 +20,6 @@
 }
 
 - (id) transformedValue:(id)value {
-	NSLog(@"filterArray:: entered transformedValue");
 	if (value == nil) 
 		return nil;
 	
@@ -32,13 +31,10 @@
 		[finalArray addObject:(NSDictionary *)[tranny reverseTransformedValue:filter]];
 	}
 	
-	NSLog(@"filterArray:: exited transformedValue");
 	return finalArray;
 }
 
 - (id) reverseTransformedValue:(id)value {
-	NSLog(@"filterArray:: entered reverseTransformedValue");
-	
     if (value == nil) 
 		return nil;
 	
@@ -50,7 +46,6 @@
 		[finalArray addObject:(ORSFilter *)[tranny transformedValue:dictionary]];
 	}
     
-	NSLog(@"filterArray:: exited reverseTransformedValue");
 	return finalArray;
 }
 

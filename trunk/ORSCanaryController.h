@@ -35,6 +35,7 @@
 #import "ORSFilter.h"
 #import "ORSFilterTransformer.h"
 #import "ORSFilterArrayTransformer.h"
+#import "ORSScreenNameToBoolTransformer.h"
 
 @interface ORSCanaryController : NSWindowController {
 	// Fundamentals

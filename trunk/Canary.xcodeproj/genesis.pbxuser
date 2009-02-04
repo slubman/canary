@@ -12,9 +12,9 @@
 	};
 	0505600B0EAB48A500FC28C3 /* ORSSession.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 880}}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 896}}";
 			sepNavSelRange = "{257, 9}";
-			sepNavVisRange = "{350, 694}";
+			sepNavVisRange = "{197, 1291}";
 		};
 	};
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
@@ -197,7 +197,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "CanaryController.m: 964";
 		rLen = 0;
-		rLoc = 14779;
+		rLoc = 15036;
 		rType = 0;
 		vrLen = 6165;
 		vrLoc = 31802;
@@ -299,7 +299,7 @@
 		rLen = 0;
 		rLoc = 895;
 		rType = 0;
-		vrLen = 1530;
+		vrLen = 1425;
 		vrLoc = 0;
 	};
 	0507EEB20EF461C600559018 /* dsa_pub.pem */ = {
@@ -603,6 +603,950 @@
 		rType = 0;
 		vrLen = 1066;
 		vrLoc = 33;
+	};
+	053789810F3A10BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681420F35B5D80021D8AD /* ORSFilter.h */;
+		name = "ORSFilter.h: 3";
+		rLen = 0;
+		rLoc = 27;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	053789820F3A10BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */;
+		name = "ORSFilter.m: 35";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 566;
+	};
+	0537898D0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */;
+		name = "ORSFilter.m: 35";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 19;
+	};
+	0537898E0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	0537898F0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 90";
+		rLen = 0;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 2583;
+		vrLoc = 0;
+	};
+	053789900F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */;
+		name = "ORSFilterArrayTransformer.h: 8";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	053789910F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 36";
+		rLen = 0;
+		rLoc = 771;
+		rType = 0;
+		vrLen = 1340;
+		vrLoc = 0;
+	};
+	053789920F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
+		name = "ORSSession.h: 13";
+		rLen = 9;
+		rLoc = 257;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 197;
+	};
+	053789930F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.m: 81";
+		rLen = 0;
+		rLoc = 2314;
+		rType = 0;
+		vrLen = 2145;
+		vrLoc = 822;
+	};
+	053789940F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 25";
+		rLen = 0;
+		rLoc = 630;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 0;
+	};
+	053789950F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */;
+		name = "ORSFilter.m: 35";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 1069;
+		vrLoc = 30;
+	};
+	053789960F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	053789970F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */;
+		name = "ORSFilter.m: 35";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 19;
+	};
+	053789980F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	053789990F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 89";
+		rLen = 0;
+		rLoc = 2455;
+		rType = 0;
+		vrLen = 2253;
+		vrLoc = 378;
+	};
+	0537899A0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	0537899B0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 90";
+		rLen = 0;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 2583;
+		vrLoc = 0;
+	};
+	0537899C0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 12";
+		rLen = 0;
+		rLoc = 264;
+		rType = 0;
+		vrLen = 1447;
+		vrLoc = 0;
+	};
+	0537899D0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */;
+		name = "ORSFilterArrayTransformer.h: 8";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	0537899E0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 34";
+		rLen = 0;
+		rLoc = 750;
+		rType = 0;
+		vrLen = 1340;
+		vrLoc = 0;
+	};
+	0537899F0F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */;
+		name = "ORSFilterArrayTransformer.h: 8";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	053789A00F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 36";
+		rLen = 0;
+		rLoc = 771;
+		rType = 0;
+		vrLen = 1340;
+		vrLoc = 0;
+	};
+	053789A10F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
+		name = "ORSSession.h: 13";
+		rLen = 9;
+		rLoc = 257;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 197;
+	};
+	053789A20F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 21";
+		rLen = 0;
+		rLoc = 500;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 3;
+	};
+	053789A30F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.m: 136";
+		rLen = 0;
+		rLoc = 3885;
+		rType = 0;
+		vrLen = 1821;
+		vrLoc = 821;
+	};
+	053789A40F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 21";
+		rLen = 0;
+		rLoc = 500;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 3;
+	};
+	053789A50F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.m: 136";
+		rLen = 0;
+		rLoc = 3885;
+		rType = 0;
+		vrLen = 1820;
+		vrLoc = 822;
+	};
+	053789A60F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 25";
+		rLen = 0;
+		rLoc = 630;
+		rType = 0;
+		vrLen = 949;
+		vrLoc = 3;
+	};
+	053789A70F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.m: 81";
+		rLen = 0;
+		rLoc = 2314;
+		rType = 0;
+		vrLen = 2145;
+		vrLoc = 822;
+	};
+	053789A80F3A25BD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 25";
+		rLen = 0;
+		rLoc = 630;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 0;
+	};
+	053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {577, 569}}";
+			sepNavSelRange = "{241, 0}";
+			sepNavVisRange = "{0, 307}";
+		};
+	};
+	053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {577, 576}}";
+			sepNavSelRange = "{747, 0}";
+			sepNavVisRange = "{0, 761}";
+		};
+	};
+	053789B30F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 25";
+		rLen = 0;
+		rLoc = 630;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 0;
+	};
+	053789B40F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 14";
+		rLen = 0;
+		rLoc = 316;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	053789B50F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */;
+		name = "ORSCanaryTextFieldCell.m: 32";
+		rLen = 1;
+		rLoc = 1283;
+		rType = 0;
+		vrLen = 1418;
+		vrLoc = 0;
+	};
+	053789B60F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */;
+		name = "ORSFilterArrayTransformer.h: 4";
+		rLen = 136;
+		rLoc = 46;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	053789B70F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	053789B80F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 50";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 0;
+	};
+	053789B90F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 86";
+		rLen = 0;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 2480;
+		vrLoc = 0;
+	};
+	053789BA0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789BB0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 76";
+		rLen = 0;
+		rLoc = 2529;
+		rType = 0;
+		vrLen = 1544;
+		vrLoc = 1235;
+	};
+	053789BC0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 38";
+		rLen = 0;
+		rLoc = 1116;
+		rType = 0;
+		vrLen = 882;
+		vrLoc = 307;
+	};
+	053789BD0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */;
+		name = "ORSTwitterEngine.h: 44";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 469;
+	};
+	053789BE0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 189;
+	};
+	053789BF0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 25";
+		rLen = 0;
+		rLoc = 630;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 0;
+	};
+	053789C00F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 255;
+		vrLoc = 0;
+	};
+	053789C10F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */;
+		name = "NSString+ORSCanaryAdditions.m: 14";
+		rLen = 0;
+		rLoc = 316;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 0;
+	};
+	053789C20F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */;
+		name = "ORSCanaryTextFieldCell.m: 32";
+		rLen = 1;
+		rLoc = 1283;
+		rType = 0;
+		vrLen = 1418;
+		vrLoc = 0;
+	};
+	053789C30F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */;
+		name = "ORSFilterArrayTransformer.h: 4";
+		rLen = 136;
+		rLoc = 46;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	053789C40F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 5";
+		rLen = 133;
+		rLoc = 54;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	053789C50F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 8";
+		rLen = 0;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	053789C60F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 14";
+		rLen = 0;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	053789C70F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 12";
+		rLen = 0;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 286;
+		vrLoc = 0;
+	};
+	053789C80F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */;
+		name = "ORSFilterTransformer.h: 8";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
+	053789C90F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 14";
+		rLen = 2222;
+		rLoc = 251;
+		rType = 0;
+		vrLen = 2583;
+		vrLoc = 0;
+	};
+	053789CA0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 14";
+		rLen = 0;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	053789CB0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 22";
+		rLen = 0;
+		rLoc = 439;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	053789CC0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
+		name = "ORSFilterArrayTransformer.m: 50";
+		rLen = 0;
+		rLoc = 1221;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 0;
+	};
+	053789CD0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
+		name = "ORSFilterTransformer.m: 86";
+		rLen = 0;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 2480;
+		vrLoc = 0;
+	};
+	053789CE0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 14";
+		rLen = 0;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	053789CF0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 24";
+		rLen = 0;
+		rLoc = 473;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 103;
+	};
+	053789D00F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 14";
+		rLen = 0;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 278;
+		vrLoc = 0;
+	};
+	053789D10F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 37";
+		rLen = 0;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 1265;
+		vrLoc = 307;
+	};
+	053789D20F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789D30F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 24";
+		rLen = 0;
+		rLoc = 473;
+		rType = 0;
+		vrLen = 1036;
+		vrLoc = 103;
+	};
+	053789D40F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789D50F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 32";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 0;
+	};
+	053789D60F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 76";
+		rLen = 0;
+		rLoc = 2529;
+		rType = 0;
+		vrLen = 1544;
+		vrLoc = 1235;
+	};
+	053789D70F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 38";
+		rLen = 0;
+		rLoc = 1116;
+		rType = 0;
+		vrLen = 882;
+		vrLoc = 307;
+	};
+	053789D80F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 485;
+		vrLoc = 232;
+	};
+	053789D90F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */;
+		name = "ORSTwitterEngine.h: 44";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 469;
+	};
+	053789DA0F3A2A5D003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789DB0F3A2A61003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789DC0F3A2A66003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A681430F35B5D80021D8AD /* ORSFilter.m */;
+		name = "ORSFilter.m: 35";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 565;
+	};
+	053789DD0F3A2A66003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 369;
+		vrLoc = 386;
+	};
+	053789DE0F3A2A6B003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789E10F3A2AD8003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 518;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 0;
+	};
+	053789E20F3A2ADA003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 518;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 0;
+	};
+	053789E30F3A2B4F003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 27";
+		rLen = 0;
+		rLoc = 518;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 401;
+	};
+	053789E60F3A2B91003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 28";
+		rLen = 0;
+		rLoc = 518;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 0;
+	};
+	053789E80F3A2BAE003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 29";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 861;
+		vrLoc = 0;
+	};
+	053789E90F3A2BB0003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 29";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 858;
+		vrLoc = 3;
+	};
+	053789EA0F3A2BFD003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 29";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 452;
+		vrLoc = 401;
+	};
+	053789EB0F3A2C19003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789EC0F3A2C19003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 29";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 858;
+		vrLoc = 3;
+	};
+	053789ED0F3A2C19003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 29";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 40;
+	};
+	053789EE0F3A2C19003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789EF0F3A2C19003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 31";
+		rLen = 0;
+		rLoc = 747;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789F10F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 058530B60F2933E4003DB512 /* iTunes.h */;
+		name = "iTunes.h: 9";
+		rLen = 0;
+		rLoc = 407;
+		rType = 0;
+		vrLen = 1197;
+		vrLoc = 90;
+	};
+	053789F20F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789F30F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 31";
+		rLen = 0;
+		rLoc = 747;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789F40F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 31";
+		rLen = 0;
+		rLoc = 747;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
+	};
+	053789F50F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 058530B60F2933E4003DB512 /* iTunes.h */;
+		name = "iTunes.h: 9";
+		rLen = 0;
+		rLoc = 407;
+		rType = 0;
+		vrLen = 1197;
+		vrLoc = 90;
+	};
+	053789F60F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */;
+		name = "ORSScreenNameToBoolTransformer.h: 11";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	053789F70F3A2CFC003B86EF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */;
+		name = "ORSScreenNameToBoolTransformer.m: 31";
+		rLen = 0;
+		rLoc = 747;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 0;
 	};
 	0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {
 		uiCtxt = {
@@ -1096,7 +2040,7 @@
 	};
 	0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 1344}}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 1408}}";
 			sepNavSelRange = "{316, 0}";
 			sepNavVisRange = "{0, 1308}";
 		};
@@ -1297,17 +2241,17 @@
 	};
 	0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 608}}";
-			sepNavSelRange = "{905, 0}";
-			sepNavVisRange = "{555, 358}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 624}}";
+			sepNavSelRange = "{630, 0}";
+			sepNavVisRange = "{0, 952}";
 		};
 	};
 	0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{452, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{753, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{925, 349}\";\n            s = 0;\n        },\n                {\n            r = \"{1321, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{1437, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{1559, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{1690, 134}\";\n            s = 0;\n        },\n                {\n            r = \"{1901, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{2053, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{2192, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{2307, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{2438, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{2571, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{2707, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{2856, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{2985, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{3113, 139}\";\n            s = 0;\n        },\n                {\n            r = \"{3347, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{3508, 120}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3843}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 1392}}";
-			sepNavSelRange = "{1859, 0}";
-			sepNavVisRange = "{0, 911}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{452, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{753, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{925, 349}\";\n            s = 0;\n        },\n                {\n            r = \"{1321, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{1437, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{1559, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{1690, 134}\";\n            s = 0;\n        },\n                {\n            r = \"{1909, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{2071, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{2235, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{2378, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{2493, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{2624, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{2757, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{2893, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{3042, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{3171, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{3299, 139}\";\n            s = 0;\n        },\n                {\n            r = \"{3533, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{3694, 120}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4029}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 1440}}";
+			sepNavSelRange = "{1194, 0}";
+			sepNavVisRange = "{588, 923}";
 		};
 	};
 	0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
@@ -1337,16 +2281,16 @@
 	};
 	0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 1648}}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 1696}}";
 			sepNavSelRange = "{1083, 0}";
-			sepNavVisRange = "{3, 809}";
+			sepNavVisRange = "{469, 946}";
 		};
 	};
 	0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {577, 656}}";
 			sepNavSelRange = "{1283, 1}";
-			sepNavVisRange = "{46, 1379}";
+			sepNavVisRange = "{0, 1418}";
 			sepNavWindowFrame = "{{84, 276}, {765, 847}}";
 		};
 	};
@@ -1379,18 +2323,18 @@
 	};
 	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1381, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1594, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{3427, 3613}\";\n            s = 0;\n        },\n                {\n            r = \"{7084, 1394}\";\n            s = 0;\n        },\n                {\n            r = \"{8618, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9107, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9261, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{9775, 3064}\";\n            s = 0;\n        },\n                {\n            r = \"{12895, 661}\";\n            s = 0;\n        },\n                {\n            r = \"{13645, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{15742, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{16206, 256}\";\n            s = 0;\n        },\n                {\n            r = \"{16575, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{16769, 2433}\";\n            s = 0;\n        },\n                {\n            r = \"{19294, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{19830, 4402}\";\n            s = 0;\n        },\n                {\n            r = \"{24335, 1297}\";\n            s = 0;\n        },\n                {\n            r = \"{25741, 1457}\";\n            s = 0;\n        },\n                {\n            r = \"{27259, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{27612, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{27994, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{28328, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{28652, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{29034, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{29382, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{29747, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{29985, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{30230, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{30498, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{31064, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{31317, 373}\";\n            s = 0;\n        },\n                {\n            r = \"{31773, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{33677, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{33969, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{35431, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{36887, 965}\";\n            s = 0;\n        },\n                {\n            r = \"{37982, 2163}\";\n            s = 0;\n        },\n                {\n            r = \"{40245, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{41043, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{41315, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{41604, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{41915, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{42477, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{42819, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{42978, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{43183, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{43386, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{43635, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{43925, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{44279, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{44463, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{44600, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{45166, 918}\";\n            s = 0;\n        },\n                {\n            r = \"{46238, 856}\";\n            s = 0;\n        },\n                {\n            r = \"{47249, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{48135, 675}\";\n            s = 0;\n        },\n                {\n            r = \"{48935, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{49737, 564}\";\n            s = 0;\n        },\n                {\n            r = \"{50410, 1782}\";\n            s = 0;\n        },\n                {\n            r = \"{52280, 571}\";\n            s = 0;\n        },\n                {\n            r = \"{53039, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{53629, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{53749, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{54014, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{54551, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{54943, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{55340, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{55738, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{56138, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{56553, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{57044, 269}\";\n            s = 0;\n        },\n                {\n            r = \"{57344, 611}\";\n            s = 0;\n        },\n                {\n            r = \"{57988, 612}\";\n            s = 0;\n        },\n                {\n            r = \"{58622, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{58878, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{59401, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{59828, 594}\";\n            s = 0;\n        },\n                {\n            r = \"{60539, 600}\";\n            s = 0;\n        },\n                {\n            r = \"{61242, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{61908, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{62603, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{62764, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{62949, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{63678, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{64461, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{64681, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{65306, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{65452, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{65906, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{66369, 915}\";\n            s = 0;\n        },\n                {\n            r = \"{67395, 671}\";\n            s = 0;\n        },\n                {\n            r = \"{68174, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{69082, 923}\";\n            s = 0;\n        },\n                {\n            r = \"{70122, 689}\";\n            s = 0;\n        },\n                {\n            r = \"{70912, 694}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 71614}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {845, 6112}}";
-			sepNavSelRange = "{3005, 0}";
-			sepNavVisRange = "{2673, 450}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1381, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1594, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{3684, 3613}\";\n            s = 0;\n        },\n                {\n            r = \"{7341, 1394}\";\n            s = 0;\n        },\n                {\n            r = \"{8875, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9364, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9518, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{10032, 3064}\";\n            s = 0;\n        },\n                {\n            r = \"{13152, 661}\";\n            s = 0;\n        },\n                {\n            r = \"{13902, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{15999, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{16463, 256}\";\n            s = 0;\n        },\n                {\n            r = \"{16832, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{17026, 2433}\";\n            s = 0;\n        },\n                {\n            r = \"{19551, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{20087, 4402}\";\n            s = 0;\n        },\n                {\n            r = \"{24592, 1297}\";\n            s = 0;\n        },\n                {\n            r = \"{25998, 1457}\";\n            s = 0;\n        },\n                {\n            r = \"{27516, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{27869, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{28251, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{28585, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{28909, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{29291, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{29639, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{30004, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{30242, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{30487, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{30755, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{31321, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{31574, 373}\";\n            s = 0;\n        },\n                {\n            r = \"{32030, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{33934, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{34226, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{35688, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{37144, 965}\";\n            s = 0;\n        },\n                {\n            r = \"{38239, 2163}\";\n            s = 0;\n        },\n                {\n            r = \"{40502, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{41300, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{41572, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{41861, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{42172, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{42734, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{43076, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{43235, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{43440, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{43643, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{43892, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{44182, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{44536, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{44720, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{44857, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{45423, 918}\";\n            s = 0;\n        },\n                {\n            r = \"{46495, 856}\";\n            s = 0;\n        },\n                {\n            r = \"{47506, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{48392, 675}\";\n            s = 0;\n        },\n                {\n            r = \"{49192, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{49994, 564}\";\n            s = 0;\n        },\n                {\n            r = \"{50667, 1782}\";\n            s = 0;\n        },\n                {\n            r = \"{52537, 571}\";\n            s = 0;\n        },\n                {\n            r = \"{53296, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{53886, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{54006, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{54271, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{54808, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{55200, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{55597, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{55995, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{56395, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{56810, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{57301, 269}\";\n            s = 0;\n        },\n                {\n            r = \"{57601, 611}\";\n            s = 0;\n        },\n                {\n            r = \"{58245, 612}\";\n            s = 0;\n        },\n                {\n            r = \"{58879, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{59135, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{59658, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{60085, 594}\";\n            s = 0;\n        },\n                {\n            r = \"{60796, 600}\";\n            s = 0;\n        },\n                {\n            r = \"{61499, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{62165, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{62860, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{63021, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{63206, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{63935, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{64718, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{64938, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{65563, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{65709, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{66163, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{66626, 915}\";\n            s = 0;\n        },\n                {\n            r = \"{67652, 671}\";\n            s = 0;\n        },\n                {\n            r = \"{68431, 732}\";\n            s = 0;\n        },\n                {\n            r = \"{69339, 923}\";\n            s = 0;\n        },\n                {\n            r = \"{70379, 689}\";\n            s = 0;\n        },\n                {\n            r = \"{71169, 694}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 71871}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 6300}}";
+			sepNavSelRange = "{2203, 0}";
+			sepNavVisRange = "{1384, 1412}";
 			sepNavWindowFrame = "{{670, 67}, {765, 711}}";
 		};
 	};
 	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 4736}}";
-			sepNavSelRange = "{1059, 0}";
-			sepNavVisRange = "{812, 480}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 4752}}";
+			sepNavSelRange = "{1116, 0}";
+			sepNavVisRange = "{307, 882}";
 			sepNavWindowFrame = "{{16, 326}, {765, 847}}";
 		};
 	};
@@ -1462,7 +2406,7 @@
 		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
 		name = "NSXMLNode+CanaryAdditions.m: 57";
 		rLen = 30;
-		rLoc = 2021;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 182;
@@ -1679,9 +2623,9 @@
 	};
 	058530B60F2933E4003DB512 /* iTunes.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {556, 8176}}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 8240}}";
 			sepNavSelRange = "{407, 0}";
-			sepNavVisRange = "{307, 890}";
+			sepNavVisRange = "{90, 1197}";
 		};
 	};
 	058530BB0F2934E6003DB512 /* PBXTextBookmark */ = {
@@ -2009,7 +2953,7 @@
 		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
 		name = "NSXMLNode+ORSTwitterStatusAdditions.m: 136";
 		rLen = 0;
-		rLoc = 3699;
+		rLoc = 3885;
 		rType = 0;
 		vrLen = 1670;
 		vrLoc = 0;
@@ -2153,9 +3097,9 @@
 	};
 	05A681430F35B5D80021D8AD /* ORSFilter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 640}}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 640}}";
 			sepNavSelRange = "{1073, 0}";
-			sepNavVisRange = "{33, 1066}";
+			sepNavVisRange = "{565, 529}";
 		};
 	};
 	05A6814A0F35B7040021D8AD /* PBXTextBookmark */ = {
@@ -2262,7 +3206,7 @@
 		ignoreCount = 0;
 		lineNumber = 186;
 		location = Canary;
-		modificationTime = 255301612.924157;
+		modificationTime = 255456163.135432;
 		state = 2;
 	};
 	05A6829C0F36022A0021D8AD /* PBXTextBookmark */ = {
@@ -2400,7 +3344,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1180";
 		rLen = 0;
-		rLoc = 42384;
+		rLoc = 42641;
 		rType = 0;
 		vrLen = 3418;
 		vrLoc = 39639;
@@ -2490,7 +3434,7 @@
 		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 85";
 		rLen = 0;
-		rLoc = 2996;
+		rLoc = 3039;
 		rType = 0;
 		vrLen = 1114;
 		vrLoc = 2267;
@@ -2540,7 +3484,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 1180";
 		rLen = 0;
-		rLoc = 42384;
+		rLoc = 42641;
 		rType = 0;
 		vrLen = 3382;
 		vrLoc = 39675;
@@ -2910,7 +3854,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 248";
 		rLen = 0;
-		rLoc = 8958;
+		rLoc = 9215;
 		rType = 0;
 		vrLen = 13879;
 		vrLoc = 1258;
@@ -2930,7 +3874,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 248";
 		rLen = 0;
-		rLoc = 8958;
+		rLoc = 9215;
 		rType = 0;
 		vrLen = 11857;
 		vrLoc = 1257;
@@ -2950,7 +3894,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 248";
 		rLen = 0;
-		rLoc = 8958;
+		rLoc = 9215;
 		rType = 0;
 		vrLen = 7914;
 		vrLoc = 1258;
@@ -2980,7 +3924,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 83";
 		rLen = 0;
-		rLoc = 3360;
+		rLoc = 3617;
 		rType = 0;
 		vrLen = 6814;
 		vrLoc = 1771;
@@ -3054,9 +3998,9 @@
 	};
 	05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{284, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{359, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{414, 1257}\";\n            s = 0;\n        },\n                {\n            r = \"{1716, 959}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2683}\";\n    s = 0;\n}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{284, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{359, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{414, 1161}\";\n            s = 0;\n        },\n                {\n            r = \"{1620, 852}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2480}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
-			sepNavSelRange = "{177, 0}";
+			sepNavSelRange = "{412, 0}";
 			sepNavVisRange = "{0, 420}";
 		};
 	};
@@ -3135,7 +4079,7 @@
 		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
 		name = "ORSCanaryController.h: 85";
 		rLen = 0;
-		rLoc = 2996;
+		rLoc = 3039;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 2267;
@@ -3175,7 +4119,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 25";
 		rLen = 0;
-		rLoc = 656;
+		rLoc = 608;
 		rType = 0;
 		vrLen = 974;
 		vrLoc = 190;
@@ -3205,7 +4149,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 50";
 		rLen = 0;
-		rLoc = 1670;
+		rLoc = 1574;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 262;
@@ -3225,7 +4169,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 66";
 		rLen = 0;
-		rLoc = 2002;
+		rLoc = 1851;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 715;
@@ -3235,7 +4179,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 251";
 		rLen = 8;
-		rLoc = 8860;
+		rLoc = 9117;
 		rType = 0;
 		vrLen = 13638;
 		vrLoc = 1771;
@@ -3255,7 +4199,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 75";
 		rLen = 0;
-		rLoc = 2383;
+		rLoc = 2232;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 262;
@@ -3313,15 +4257,15 @@
 	05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
-			sepNavSelRange = "{182, 0}";
+			sepNavSelRange = "{46, 136}";
 			sepNavVisRange = "{0, 333}";
 		};
 	};
 	05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{299, 29}\";\n            s = 0;\n        },\n                {\n            r = \"{369, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{424, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{917, 522}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1447}\";\n    s = 0;\n}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{299, 29}\";\n            s = 0;\n        },\n                {\n            r = \"{369, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{424, 347}\";\n            s = 0;\n        },\n                {\n            r = \"{816, 405}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1229}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
-			sepNavSelRange = "{264, 0}";
+			sepNavSelRange = "{427, 0}";
 			sepNavVisRange = "{0, 435}";
 		};
 	};
@@ -3350,7 +4294,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 75";
 		rLen = 0;
-		rLoc = 2383;
+		rLoc = 2232;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 228;
@@ -3370,7 +4314,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 75";
 		rLen = 0;
-		rLoc = 2383;
+		rLoc = 2232;
 		rType = 0;
 		vrLen = 1120;
 		vrLoc = 262;
@@ -3460,7 +4404,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 19";
 		rLen = 0;
-		rLoc = 1440;
+		rLoc = 1222;
 		rType = 0;
 		vrLen = 376;
 		vrLoc = 0;
@@ -3480,7 +4424,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 29";
 		rLen = 0;
-		rLoc = 725;
+		rLoc = 677;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 0;
@@ -3509,7 +4453,7 @@
 		isa = PBXTextBookmark;
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 21";
-		rLen = 2297;
+		rLen = 2094;
 		rLoc = 379;
 		rType = 0;
 		vrLen = 1183;
@@ -3520,7 +4464,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 46";
 		rLen = 0;
-		rLoc = 1438;
+		rLoc = 1220;
 		rType = 0;
 		vrLen = 711;
 		vrLoc = 200;
@@ -3580,7 +4524,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 46";
 		rLen = 0;
-		rLoc = 1438;
+		rLoc = 1220;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 199;
@@ -3590,7 +4534,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 30";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1279;
@@ -3610,7 +4554,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 29";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 745;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 199;
@@ -3620,7 +4564,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 30";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 0;
@@ -3630,7 +4574,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 30";
 		rLen = 0;
-		rLoc = 739;
+		rLoc = 688;
 		rType = 0;
 		vrLen = 815;
 		vrLoc = 199;
@@ -3650,7 +4594,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 30";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 0;
@@ -3660,7 +4604,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 30";
 		rLen = 0;
-		rLoc = 771;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 199;
@@ -3680,7 +4624,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 30";
 		rLen = 0;
-		rLoc = 771;
+		rLoc = 720;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 199;
@@ -3690,7 +4634,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 30";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 891;
 		vrLoc = 0;
@@ -3700,7 +4644,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 46";
 		rLen = 0;
-		rLoc = 1350;
+		rLoc = 1189;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 365;
@@ -3740,7 +4684,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 45";
 		rLen = 0;
-		rLoc = 1353;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 947;
 		vrLoc = 305;
@@ -3780,7 +4724,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 54";
 		rLen = 0;
-		rLoc = 1650;
+		rLoc = 1554;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 337;
@@ -3800,7 +4744,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 49";
 		rLen = 0;
-		rLoc = 1400;
+		rLoc = 1200;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 363;
@@ -3810,7 +4754,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 54";
 		rLen = 0;
-		rLoc = 1650;
+		rLoc = 1554;
 		rType = 0;
 		vrLen = 926;
 		vrLoc = 1524;
@@ -3820,7 +4764,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 39";
 		rLen = 0;
-		rLoc = 1014;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 363;
@@ -3830,7 +4774,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 84";
 		rLen = 0;
-		rLoc = 2658;
+		rLoc = 2455;
 		rType = 0;
 		vrLen = 947;
 		vrLoc = 1512;
@@ -3840,7 +4784,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 39";
 		rLen = 0;
-		rLoc = 1014;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 363;
@@ -3860,7 +4804,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 84";
 		rLen = 0;
-		rLoc = 2658;
+		rLoc = 2455;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 152;
@@ -3870,7 +4814,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 39";
 		rLen = 0;
-		rLoc = 1014;
+		rLoc = 853;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 365;
@@ -3900,7 +4844,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 82";
 		rLen = 0;
-		rLoc = 2603;
+		rLoc = 2452;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 1512;
@@ -3910,7 +4854,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 52";
 		rLen = 0;
-		rLoc = 1392;
+		rLoc = 1200;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 366;
@@ -3920,7 +4864,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 22";
 		rLen = 0;
-		rLoc = 441;
+		rLoc = 414;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 41;
@@ -3970,7 +4914,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 94";
 		rLen = 0;
-		rLoc = 3331;
+		rLoc = 3588;
 		rType = 0;
 		vrLen = 7249;
 		vrLoc = 2432;
@@ -3980,7 +4924,7 @@
 		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
 		name = "ORSCanaryController.m: 94";
 		rLen = 0;
-		rLoc = 3331;
+		rLoc = 3588;
 		rType = 0;
 		vrLen = 7249;
 		vrLoc = 2432;
@@ -3990,9 +4934,9 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 90";
 		rLen = 0;
-		rLoc = 2604;
+		rLoc = 2453;
 		rType = 0;
-		vrLen = 1022;
+		vrLen = 936;
 		vrLoc = 1747;
 	};
 	05A6855D0F3758DE0021D8AD /* PBXTextBookmark */ = {
@@ -4010,7 +4954,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 49";
 		rLen = 0;
-		rLoc = 1324;
+		rLoc = 1163;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 307;
@@ -4040,7 +4984,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 49";
 		rLen = 0;
-		rLoc = 1324;
+		rLoc = 1163;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 305;
@@ -4060,7 +5004,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 90";
 		rLen = 0;
-		rLoc = 2604;
+		rLoc = 2453;
 		rType = 0;
 		vrLen = 1205;
 		vrLoc = 1240;
@@ -4070,7 +5014,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 49";
 		rLen = 0;
-		rLoc = 1324;
+		rLoc = 1163;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 307;
@@ -4080,7 +5024,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 90";
 		rLen = 0;
-		rLoc = 2604;
+		rLoc = 2453;
 		rType = 0;
 		vrLen = 1239;
 		vrLoc = 767;
@@ -4130,9 +5074,9 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 99";
 		rLen = 0;
-		rLoc = 2569;
+		rLoc = 2418;
 		rType = 0;
-		vrLen = 1308;
+		vrLen = 356;
 		vrLoc = 2327;
 	};
 	05A685BF0F37A6820021D8AD /* PBXTextBookmark */ = {
@@ -4140,7 +5084,7 @@
 		fRef = 05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */;
 		name = "ORSFilterArrayTransformer.m: 49";
 		rLen = 0;
-		rLoc = 1324;
+		rLoc = 1163;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 307;
@@ -4150,7 +5094,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 54";
 		rLen = 0;
-		rLoc = 1320;
+		rLoc = 1272;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 1139;
@@ -4190,7 +5134,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 85";
 		rLen = 0;
-		rLoc = 2525;
+		rLoc = 2374;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 0;
@@ -4220,7 +5164,7 @@
 		fRef = 05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */;
 		name = "ORSFilterTransformer.m: 85";
 		rLen = 0;
-		rLoc = 2525;
+		rLoc = 2374;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 440;
@@ -5114,6 +6058,99 @@
 			053789660F39F283003B86EF /* PBXTextBookmark */ = 053789660F39F283003B86EF /* PBXTextBookmark */;
 			053789670F39F283003B86EF /* PBXTextBookmark */ = 053789670F39F283003B86EF /* PBXTextBookmark */;
 			053789680F39F287003B86EF /* PBXTextBookmark */ = 053789680F39F287003B86EF /* PBXTextBookmark */;
+			053789810F3A10BD003B86EF /* PBXTextBookmark */ = 053789810F3A10BD003B86EF /* PBXTextBookmark */;
+			053789820F3A10BD003B86EF /* PBXTextBookmark */ = 053789820F3A10BD003B86EF /* PBXTextBookmark */;
+			0537898D0F3A25BD003B86EF /* PBXTextBookmark */ = 0537898D0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537898E0F3A25BD003B86EF /* PBXTextBookmark */ = 0537898E0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537898F0F3A25BD003B86EF /* PBXTextBookmark */ = 0537898F0F3A25BD003B86EF /* PBXTextBookmark */;
+			053789900F3A25BD003B86EF /* PBXTextBookmark */ = 053789900F3A25BD003B86EF /* PBXTextBookmark */;
+			053789910F3A25BD003B86EF /* PBXTextBookmark */ = 053789910F3A25BD003B86EF /* PBXTextBookmark */;
+			053789920F3A25BD003B86EF /* PBXTextBookmark */ = 053789920F3A25BD003B86EF /* PBXTextBookmark */;
+			053789930F3A25BD003B86EF /* PBXTextBookmark */ = 053789930F3A25BD003B86EF /* PBXTextBookmark */;
+			053789940F3A25BD003B86EF /* PBXTextBookmark */ = 053789940F3A25BD003B86EF /* PBXTextBookmark */;
+			053789950F3A25BD003B86EF /* PBXTextBookmark */ = 053789950F3A25BD003B86EF /* PBXTextBookmark */;
+			053789960F3A25BD003B86EF /* PBXTextBookmark */ = 053789960F3A25BD003B86EF /* PBXTextBookmark */;
+			053789970F3A25BD003B86EF /* PBXTextBookmark */ = 053789970F3A25BD003B86EF /* PBXTextBookmark */;
+			053789980F3A25BD003B86EF /* PBXTextBookmark */ = 053789980F3A25BD003B86EF /* PBXTextBookmark */;
+			053789990F3A25BD003B86EF /* PBXTextBookmark */ = 053789990F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899A0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899A0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899B0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899B0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899C0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899C0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899D0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899D0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899E0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899E0F3A25BD003B86EF /* PBXTextBookmark */;
+			0537899F0F3A25BD003B86EF /* PBXTextBookmark */ = 0537899F0F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A00F3A25BD003B86EF /* PBXTextBookmark */ = 053789A00F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A10F3A25BD003B86EF /* PBXTextBookmark */ = 053789A10F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A20F3A25BD003B86EF /* PBXTextBookmark */ = 053789A20F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A30F3A25BD003B86EF /* PBXTextBookmark */ = 053789A30F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A40F3A25BD003B86EF /* PBXTextBookmark */ = 053789A40F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A50F3A25BD003B86EF /* PBXTextBookmark */ = 053789A50F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A60F3A25BD003B86EF /* PBXTextBookmark */ = 053789A60F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A70F3A25BD003B86EF /* PBXTextBookmark */ = 053789A70F3A25BD003B86EF /* PBXTextBookmark */;
+			053789A80F3A25BD003B86EF /* PBXTextBookmark */ = 053789A80F3A25BD003B86EF /* PBXTextBookmark */;
+			053789B30F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B30F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B40F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B40F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B50F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B50F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B60F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B60F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B70F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B70F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B80F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B80F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789B90F3A2A5D003B86EF /* PBXTextBookmark */ = 053789B90F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BA0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BA0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BB0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BB0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BC0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BC0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BD0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BD0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BE0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BE0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789BF0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789BF0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C00F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C00F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C10F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C10F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C20F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C20F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C30F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C30F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C40F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C40F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C50F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C50F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C60F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C60F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C70F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C70F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C80F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C80F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789C90F3A2A5D003B86EF /* PBXTextBookmark */ = 053789C90F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CA0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CA0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CB0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CB0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CC0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CC0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CD0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CD0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CE0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CE0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789CF0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789CF0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D00F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D00F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D10F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D10F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D20F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D20F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D30F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D30F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D40F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D40F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D50F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D50F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D60F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D60F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D70F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D70F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D80F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D80F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789D90F3A2A5D003B86EF /* PBXTextBookmark */ = 053789D90F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789DA0F3A2A5D003B86EF /* PBXTextBookmark */ = 053789DA0F3A2A5D003B86EF /* PBXTextBookmark */;
+			053789DB0F3A2A61003B86EF /* PBXTextBookmark */ = 053789DB0F3A2A61003B86EF /* PBXTextBookmark */;
+			053789DC0F3A2A66003B86EF /* PBXTextBookmark */ = 053789DC0F3A2A66003B86EF /* PBXTextBookmark */;
+			053789DD0F3A2A66003B86EF /* PBXTextBookmark */ = 053789DD0F3A2A66003B86EF /* PBXTextBookmark */;
+			053789DE0F3A2A6B003B86EF /* PBXTextBookmark */ = 053789DE0F3A2A6B003B86EF /* PBXTextBookmark */;
+			053789E10F3A2AD8003B86EF /* PBXTextBookmark */ = 053789E10F3A2AD8003B86EF /* PBXTextBookmark */;
+			053789E20F3A2ADA003B86EF /* PBXTextBookmark */ = 053789E20F3A2ADA003B86EF /* PBXTextBookmark */;
+			053789E30F3A2B4F003B86EF /* PBXTextBookmark */ = 053789E30F3A2B4F003B86EF /* PBXTextBookmark */;
+			053789E60F3A2B91003B86EF /* PBXTextBookmark */ = 053789E60F3A2B91003B86EF /* PBXTextBookmark */;
+			053789E80F3A2BAE003B86EF /* PBXTextBookmark */ = 053789E80F3A2BAE003B86EF /* PBXTextBookmark */;
+			053789E90F3A2BB0003B86EF /* PBXTextBookmark */ = 053789E90F3A2BB0003B86EF /* PBXTextBookmark */;
+			053789EA0F3A2BFD003B86EF /* PBXTextBookmark */ = 053789EA0F3A2BFD003B86EF /* PBXTextBookmark */;
+			053789EB0F3A2C19003B86EF /* PBXTextBookmark */ = 053789EB0F3A2C19003B86EF /* PBXTextBookmark */;
+			053789EC0F3A2C19003B86EF /* PBXTextBookmark */ = 053789EC0F3A2C19003B86EF /* PBXTextBookmark */;
+			053789ED0F3A2C19003B86EF /* PBXTextBookmark */ = 053789ED0F3A2C19003B86EF /* PBXTextBookmark */;
+			053789EE0F3A2C19003B86EF /* PBXTextBookmark */ = 053789EE0F3A2C19003B86EF /* PBXTextBookmark */;
+			053789EF0F3A2C19003B86EF /* PBXTextBookmark */ = 053789EF0F3A2C19003B86EF /* PBXTextBookmark */;
+			053789F10F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F10F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F20F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F20F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F30F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F30F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F40F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F40F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F50F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F50F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F60F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F60F3A2CFC003B86EF /* PBXTextBookmark */;
+			053789F70F3A2CFC003B86EF /* PBXTextBookmark */ = 053789F70F3A2CFC003B86EF /* PBXTextBookmark */;
 			0550D3D50F2B8509002EA7AD = 0550D3D50F2B8509002EA7AD /* PBXTextBookmark */;
 			0550D3D60F2B8509002EA7AD = 0550D3D60F2B8509002EA7AD /* PBXTextBookmark */;
 			0550D4540F2C8897002EA7AD = 0550D4540F2C8897002EA7AD /* PBXTextBookmark */;

@@ -20,8 +20,9 @@
 - (NSString *) text;
 - (NSString *) source;
 - (BOOL) truncated;
-- (NSString *) inReplyTo;
+- (NSString *) inReplyToStatusID;
 - (NSString *) inReplyToUserID;
+- (NSString *) inReplyToScreenName;
 - (NSString *) userID;
 - (NSString *) userName;
 - (NSString *) userScreenName;

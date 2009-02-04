@@ -24,6 +24,7 @@
 		05171B830F16AB8100CA9812 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B820F16AB8100CA9812 /* comments.png */; };
 		05171B850F16AC4C00CA9812 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B840F16AC4C00CA9812 /* comment.png */; };
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
+		053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
 		0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */; };
 		0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */; };
@@ -153,6 +154,8 @@
 		05171B6A0F16A84600CA9812 /* picture_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture_link.png; sourceTree = "<group>"; };
 		05171B820F16AB8100CA9812 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
 		05171B840F16AC4C00CA9812 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBoolTransformer.h; sourceTree = "<group>"; };
+		053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBoolTransformer.m; sourceTree = "<group>"; };
 		0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryStatusView.h; sourceTree = "<group>"; };
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
 		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
@@ -466,6 +469,8 @@
 				0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */,
 				0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */,
 				058530B60F2933E4003DB512 /* iTunes.h */,
+				053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */,
+				053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */,
 				05E2461C0EC22BC500410548 /* Controls */,
 				0591A9610EC8E73800BF3CAD /* Other Controllers */,
 			);
@@ -748,6 +753,7 @@
 				05A681440F35B5D80021D8AD /* ORSFilter.m in Sources */,
 				05A6843D0F363C5B0021D8AD /* ORSFilterTransformer.m in Sources */,
 				05A684920F374BDD0021D8AD /* ORSFilterArrayTransformer.m in Sources */,
+				053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
