@@ -10,7 +10,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ORSTwitterEngine.h"
 
-@interface ORSScreenNameToBoolTransformer : NSObject {
+@interface ORSScreenNameToBoolTransformer : NSValueTransformer {
 
 }
 

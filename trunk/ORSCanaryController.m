@@ -1664,6 +1664,26 @@ sender {
 	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
 }
 
+- (IBAction) switchViewOptions:sender {
+	if ([viewOptionsButton state] == NSOnState) {
+		float width = mainTimelineScrollView.frame.size.width;
+		float height = mainTimelineScrollView.frame.size.height - 25.0;
+		NSSize newSize = NSMakeSize(width, height);
+		[[mainTimelineScrollView animator] setFrameSize:newSize];
+		[[receivedDMsScrollView animator] setFrameSize:newSize];
+		[[sentDMsScrollView animator] setFrameSize:newSize];
+		[[viewOptionsBox animator] setHidden:NO];
+	} else {
+		float width = mainTimelineScrollView.frame.size.width;
+		float height = mainTimelineScrollView.frame.size.height + 25.0;
+		NSSize newSize = NSMakeSize(width, height);
+		[[mainTimelineScrollView animator] setFrameSize:newSize];
+		[[receivedDMsScrollView animator] setFrameSize:newSize];
+		[[sentDMsScrollView animator] setFrameSize:newSize];
+		[viewOptionsBox setHidden:YES];
+	}
+}
+
 
 // Speech-related methods
 

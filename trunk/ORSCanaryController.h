@@ -87,6 +87,10 @@
 	IBOutlet NSArrayController *statusArrayController;
 	// Filters
 	IBOutlet NSPopUpButton *filterPopUpButton;
+	// View Options
+	IBOutlet NSBox *viewOptionsBox;
+	IBOutlet NSButton *viewOptionsButton;
+	IBOutlet NSImageView *viewOptionsImageView;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
@@ -193,6 +197,7 @@
 - (void) changeToUsernames;
 - (void) changeToScreenNames;
 - (void) populate;
+- (IBAction) switchViewOptions:sender;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender
