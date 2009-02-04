@@ -913,9 +913,10 @@
 	};
 	053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 576}}";
-			sepNavSelRange = "{747, 0}";
-			sepNavVisRange = "{0, 761}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{314, 30}\";\n            s = 0;\n        },\n                {\n            r = \"{385, 16}\";\n            s = 0;\n        },\n                {\n            r = \"{439, 314}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 761}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 569}}";
+			sepNavSelRange = "{396, 0}";
+			sepNavVisRange = "{0, 404}";
 		};
 	};
 	053789B30F3A2A5D003B86EF /* PBXTextBookmark */ = {
