@@ -22,4 +22,18 @@
 	return copyOfCurrentFilter;
 }
 
+- (void) encodeWithCoder:(NSCoder *)coder {
+	[coder encodeBool:active forKey:@"ORSCanaryFilterActive"];
+	[coder encodeObject:filterName forKey:@"ORSCanaryFilterName"];
+	[coder encodeObject:predicate forKey:@"ORSCanaryFilterPredicate"];
+}
+
+- (id) initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    active = [coder decodeBoolForKey:@"ORSCanaryFilterActive"];
+    filterName = [coder decodeObjectForKey:@"ORSCanaryFilterName"];
+    predicate = [coder decodeObjectForKey:@"ORSCanaryFilterPredicate"];
+    return self;
+}
+
 @end
