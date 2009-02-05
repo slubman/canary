@@ -1612,13 +1612,18 @@ sender {
 
 // Action: Switches between the usernames and the screen names of the senders
 - (IBAction) switchBetweenUserNames:sender {
-	if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
-		[self changeToUsernames];
-		[(NSMenuItem *)sender setTitle:@"Switch to Screen Names"];
+	if ([sender class] == [NSMenuItem class]) {
+		if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
+			[self changeToUsernames];
+			[(NSMenuItem *)sender setTitle:@"Switch to Screen Names"];
+		} else {
+			[self changeToScreenNames];
+			[(NSMenuItem *)sender setTitle:@"Switch to Usernames"];
+		}
 	} else {
-		[self changeToScreenNames];
-		[(NSMenuItem *)sender setTitle:@"Switch to Usernames"];
+		
 	}
+
 }
 
 // Changes the binding of the main timeline collection to usernames
