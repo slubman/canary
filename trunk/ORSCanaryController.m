@@ -1610,6 +1610,7 @@ sender {
 	[fieldEditor didChangeText];
 }
 
+// Action: Switches between the usernames and the screen names of the senders
 - (IBAction) switchBetweenUserNames:sender {
 	if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
 		[self changeToUsernames];
@@ -1620,6 +1621,7 @@ sender {
 	}
 }
 
+// Changes the binding of the main timeline collection to usernames
 - (void) changeToUsernames {
 	[nameButton bind:@"title"
 			toObject:mainTimelineCollectionViewItem
@@ -1639,6 +1641,7 @@ sender {
 					forKey:@"CanaryShowScreenNames"];
 }
 
+// Changes the binding of the main timeline collection to screen names
 - (void) changeToScreenNames {
 	[nameButton bind:@"title"
 			toObject:mainTimelineCollectionViewItem
@@ -1658,12 +1661,14 @@ sender {
 					forKey:@"CanaryShowScreenNames"];
 }
 
+// Repopulates the main timeline
 - (void) populate {
 	[mainTimelineCollectionView setContent:self.statuses];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
 }
 
+// Action: Shows/hides the view options banner
 - (IBAction) switchViewOptions:sender {
 	if ([viewOptionsButton state] == NSOnState) {
 		float width = mainTimelineScrollView.frame.size.width;

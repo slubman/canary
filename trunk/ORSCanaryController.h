@@ -90,7 +90,6 @@
 	// View Options
 	IBOutlet NSBox *viewOptionsBox;
 	IBOutlet NSButton *viewOptionsButton;
-	IBOutlet NSImageView *viewOptionsImageView;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;

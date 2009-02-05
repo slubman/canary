@@ -15,11 +15,9 @@
 	if ([[self content] count] > 0) {
 		[super drawRect:rect];
 	} else {
-		[super drawRect:rect];
 		NSRect bounds = [self bounds];
-		NSRect newBounds = NSMakeRect(bounds.origin.x, bounds.origin.y, bounds.size.width, bounds.size.height-26.0);
 		[[NSColor controlColor] set];
-		[NSBezierPath fillRect:newBounds];
+		[NSBezierPath fillRect:bounds];
 		
 		NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 		[attributes setObject:[NSFont boldSystemFontOfSize:12] 
@@ -29,8 +27,8 @@
 		NSString *string = @"This timeline is empty.";
 		NSSize strSize = [string sizeWithAttributes:attributes];
 		NSPoint strOrigin;
-		strOrigin.x = rect.origin.x + (rect.size.width - strSize.width)/2;
-		strOrigin.y = rect.origin.y + (rect.size.height - strSize.height)/2;
+		strOrigin.x = bounds.origin.x + (bounds.size.width - strSize.width)/2;
+		strOrigin.y = bounds.origin.y + (bounds.size.height - strSize.height)/2;
 		[string drawAtPoint:strOrigin withAttributes:attributes];
 	}
 }
