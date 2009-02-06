@@ -241,6 +241,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				toObject:mainTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
+		[viewOptionsNamesControl setSelectedSegment:1];
 	} else {
 		[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
 		[nameButton bind:@"title"
@@ -251,6 +252,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				toObject:mainTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
+		[viewOptionsNamesControl setSelectedSegment:0];
 	}
 }
 
@@ -1616,14 +1618,21 @@ sender {
 		if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
 			[self changeToUsernames];
 			[(NSMenuItem *)sender setTitle:@"Switch to Screen Names"];
+			[viewOptionsNamesControl setSelectedSegment:0];
 		} else {
 			[self changeToScreenNames];
 			[(NSMenuItem *)sender setTitle:@"Switch to Usernames"];
+			[viewOptionsNamesControl setSelectedSegment:1];
 		}
 	} else {
-		
+		if ([viewOptionsNamesControl selectedSegment] == 0) {
+			[self changeToUsernames];
+			[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
+		} else {
+			[self changeToScreenNames];
+			[switchNamesMenuItem setTitle:@"Switch to Usernames"];
+		}
 	}
-
 }
 
 // Changes the binding of the main timeline collection to usernames
