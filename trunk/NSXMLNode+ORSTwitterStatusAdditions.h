@@ -16,6 +16,7 @@
 - (NSXMLNode *) firstNodeForXPath:(NSString *)xpathString;
 - (NSString *) createdAt;
 - (NSString *) createdAtAsTimeInterval;
+- (NSTimeInterval) createdAtSecondsAgo;
 - (NSString *) ID;
 - (NSString *) text;
 - (NSString *) source;

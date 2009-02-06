@@ -277,20 +277,23 @@
 								<string>0591A9610EC8E73800BF3CAD</string>
 								<string>05DF56710E3E608700B8B4DE</string>
 								<string>051A4B700E7ACC770040D9F3</string>
+								<string>05E247600EC3764700410548</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>2</integer>
+									<integer>42</integer>
+									<integer>38</integer>
+									<integer>37</integer>
+									<integer>36</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {246, 596}}</string>
+							<string>{{0, 428}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,7 +310,7 @@
 							<real>246</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>374 123 906 655 0 0 1280 778 </string>
+						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,7 +328,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.m</string>
+								<string>NSXMLNode+ORSTwitterStatusAdditions.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +336,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.m</string>
+										<string>NSXMLNode+ORSTwitterStatusAdditions.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05378B1A0F3CBFF0003B86EF</string>
+										<string>05378B350F3CD3F1003B86EF</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -425,15 +428,11 @@
 											<string>05A683A30F362A360021D8AD</string>
 											<string>05A684490F3642350021D8AD</string>
 											<string>05A6844A0F3642350021D8AD</string>
-											<string>05A685BB0F37A6820021D8AD</string>
-											<string>05A685E90F37A9FF0021D8AD</string>
 											<string>05A685EA0F37A9FF0021D8AD</string>
 											<string>0537895F0F39F283003B86EF</string>
 											<string>053789600F39F283003B86EF</string>
 											<string>0537898D0F3A25BD003B86EF</string>
 											<string>053789920F3A25BD003B86EF</string>
-											<string>053789930F3A25BD003B86EF</string>
-											<string>053789B30F3A2A5D003B86EF</string>
 											<string>053789B40F3A2A5D003B86EF</string>
 											<string>053789B50F3A2A5D003B86EF</string>
 											<string>053789B60F3A2A5D003B86EF</string>
@@ -448,7 +447,11 @@
 											<string>05378AB50F3B03A1003B86EF</string>
 											<string>05378ACC0F3B10C2003B86EF</string>
 											<string>05378B120F3CBD3F003B86EF</string>
-											<string>05378B130F3CBD3F003B86EF</string>
+											<string>05378B220F3CD1CA003B86EF</string>
+											<string>05378B230F3CD1CA003B86EF</string>
+											<string>05378B240F3CD1CA003B86EF</string>
+											<string>05378B310F3CD3F1003B86EF</string>
+											<string>05378B320F3CD3F1003B86EF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -658,6 +661,17 @@
 											<string>05378B150F3CBD3F003B86EF</string>
 											<string>05378B160F3CBD3F003B86EF</string>
 											<string>05378B170F3CBD3F003B86EF</string>
+											<string>05378B270F3CD1CA003B86EF</string>
+											<string>05378B280F3CD1CA003B86EF</string>
+											<string>05378B290F3CD1CA003B86EF</string>
+											<string>05378B2A0F3CD1CA003B86EF</string>
+											<string>05378B2B0F3CD1CA003B86EF</string>
+											<string>05378B2C0F3CD1CA003B86EF</string>
+											<string>05378B2D0F3CD1CA003B86EF</string>
+											<string>05378B2E0F3CD1CA003B86EF</string>
+											<string>05378B2F0F3CD1CA003B86EF</string>
+											<string>05378B330F3CD3F1003B86EF</string>
+											<string>05378B340F3CD3F1003B86EF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -673,7 +687,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {638, 609}}</string>
 								<key>RubberWindowFrame</key>
-								<string>374 123 906 655 0 0 1280 778 </string>
+								<string>375 123 906 655 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -752,7 +766,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {638, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>374 123 906 655 0 0 1280 778 </string>
+										<string>375 123 906 655 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -971,7 +985,7 @@
 		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>374 123 906 655 0 0 1280 778 </string>
+	<string>375 123 906 655 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
