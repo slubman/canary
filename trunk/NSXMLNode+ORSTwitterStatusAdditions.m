@@ -41,12 +41,10 @@
 }
 
 // Returns the time as seconds ago
-- (NSTimeInterval) createdAtSecondsAgo {
-	// get the date sent in the status
-	NSDate *statusDate = [NSDate dateWithNaturalLanguageString:[[self 
-		firstNodeForXPath:@".//created_at"] stringValue]];
-	// get the date as seconds
-	return [statusDate timeIntervalSinceReferenceDate];
+- (NSInteger) createdAtSecondsAgo {
+	int currentDateAsSeconds = (int) [NSDate timeIntervalSinceReferenceDate];
+	int statusDateAsSeconds = (int)[(NSString *)[self createdAtAsTimeInterval] doubleValue];
+	return currentDateAsSeconds - statusDateAsSeconds;
 }
 
 // Returns the status id

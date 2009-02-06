@@ -293,7 +293,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 428}, {246, 596}}</string>
+							<string>{{0, 274}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -340,7 +340,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05378B350F3CD3F1003B86EF</string>
+										<string>05378B4D0F3CE7A8003B86EF</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -427,7 +427,6 @@
 											<string>05A682EB0F3610D80021D8AD</string>
 											<string>05A683A30F362A360021D8AD</string>
 											<string>05A684490F3642350021D8AD</string>
-											<string>05A6844A0F3642350021D8AD</string>
 											<string>05A685EA0F37A9FF0021D8AD</string>
 											<string>0537895F0F39F283003B86EF</string>
 											<string>053789600F39F283003B86EF</string>
@@ -450,8 +449,9 @@
 											<string>05378B220F3CD1CA003B86EF</string>
 											<string>05378B230F3CD1CA003B86EF</string>
 											<string>05378B240F3CD1CA003B86EF</string>
-											<string>05378B310F3CD3F1003B86EF</string>
-											<string>05378B320F3CD3F1003B86EF</string>
+											<string>05378B440F3CE5B7003B86EF</string>
+											<string>05378B450F3CE5B7003B86EF</string>
+											<string>05378B460F3CE5B7003B86EF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -672,6 +672,14 @@
 											<string>05378B2F0F3CD1CA003B86EF</string>
 											<string>05378B330F3CD3F1003B86EF</string>
 											<string>05378B340F3CD3F1003B86EF</string>
+											<string>05378B3D0F3CE51B003B86EF</string>
+											<string>05378B3E0F3CE51B003B86EF</string>
+											<string>05378B3F0F3CE51B003B86EF</string>
+											<string>05378B470F3CE5B7003B86EF</string>
+											<string>05378B480F3CE5B7003B86EF</string>
+											<string>05378B490F3CE5B7003B86EF</string>
+											<string>05378B4A0F3CE5B7003B86EF</string>
+											<string>05378B4B0F3CE5B7003B86EF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
