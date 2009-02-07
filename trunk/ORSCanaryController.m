@@ -2019,10 +2019,12 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in newStatuses) {
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.userProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Status Updates Received"
-										   iconData:nil
+										   iconData:iconData
 										   priority:1
 										   isSticky:NO
 									   clickContext:nil];
@@ -2043,10 +2045,12 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.userProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 									description:node.text
 							   notificationName:@"Replies Received"
-									   iconData:nil
+									   iconData:iconData
 									   priority:1
 									   isSticky:NO
 								   clickContext:nil];
@@ -2068,10 +2072,12 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.senderProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
 										description:node.text
 								   notificationName:@"Direct Messages Received"
-										   iconData:nil
+										   iconData:iconData
 										   priority:2
 										   isSticky:NO
 									   clickContext:nil];
@@ -2104,10 +2110,12 @@ sender {
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
 			if (node.ID.intValue > messageID.intValue) {
+				NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.senderProfileImageURL]];
 				[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
 											description:node.text
 									notificationName:@"Direct Messages Received"
-											   iconData:nil
+											   iconData:iconData
 											   priority:2
 											   isSticky:NO
 										   clickContext:nil];
@@ -2129,10 +2137,12 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.userProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Status Updates Sent"
-										   iconData:nil
+										   iconData:iconData
 										   priority:0
 										   isSticky:NO
 									   clickContext:nil];
@@ -2153,10 +2163,12 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
+			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+				URLWithString:node.recipientProfileImageURL]];
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Direct Messages Sent"
-										   iconData:nil
+										   iconData:iconData
 										   priority:0
 										   isSticky:NO
 									   clickContext:nil];
