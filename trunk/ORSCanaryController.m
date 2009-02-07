@@ -262,6 +262,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[instaFilterMenuItem setView:instaFilterBox];
 	[availableFiltersMenu insertItem:instaFilterMenuItem atIndex:0];
 	[availableFiltersMenu insertItem:[NSMenuItem separatorItem] atIndex:1];
+	[availableFiltersMenu insertItem:[NSMenuItem separatorItem] atIndex:4];
 	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
 						 forItem:filterMenuItem];
 }
@@ -2024,8 +2025,13 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in newStatuses) {
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-				URLWithString:node.userProfileImageURL]];
+			NSData *iconData;
+			if ([node.userProfileImageURL hasSuffix:@".gif"]) {
+				iconData = nil;
+			} else {
+				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.userProfileImageURL]];
+			}
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Status Updates Received"
@@ -2050,8 +2056,13 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-				URLWithString:node.userProfileImageURL]];
+			NSData *iconData;
+			if ([node.userProfileImageURL hasSuffix:@".gif"]) {
+				iconData = nil;
+			} else {
+				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.userProfileImageURL]];
+			}
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 									description:node.text
 							   notificationName:@"Replies Received"
@@ -2077,8 +2088,13 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-				URLWithString:node.senderProfileImageURL]];
+			NSData *iconData;
+			if ([node.senderProfileImageURL isSuffix:@".gif"]) {
+				iconData = nil;
+			} else {
+				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.senderProfileImageURL]];
+			}
 			[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
 										description:node.text
 								   notificationName:@"Direct Messages Received"
@@ -2115,8 +2131,13 @@ sender {
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
 			if (node.ID.intValue > messageID.intValue) {
-				NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-					URLWithString:node.senderProfileImageURL]];
+				NSData *iconData;
+				if ([node.senderProfileImageURL hasSuffix:@".gif"]) {
+					iconData = nil;
+				} else {
+					iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+						URLWithString:node.senderProfileImageURL]];
+				}
 				[GrowlApplicationBridge notifyWithTitle:node.senderScreenName
 											description:node.text
 									notificationName:@"Direct Messages Received"
@@ -2142,8 +2163,13 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-				URLWithString:node.userProfileImageURL]];
+			NSData *iconData;
+			if ([node.userProfileImageURL hasSuffix:@".gif"]) {
+				iconData = nil;
+			} else {
+				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.userProfileImageURL]];
+			}
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Status Updates Sent"
@@ -2168,8 +2194,13 @@ sender {
 								   clickContext:nil];
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
-			NSData *iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
-				URLWithString:node.recipientProfileImageURL]];
+			NSData *iconData;
+			if ([node.recipientProfileImageURL hasSuffix:@".gif"]) {
+				iconData = nil;
+			} else {
+				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
+					URLWithString:node.recipientProfileImageURL]];
+			}
 			[GrowlApplicationBridge notifyWithTitle:node.userName
 										description:node.text
 								   notificationName:@"Direct Messages Sent"
