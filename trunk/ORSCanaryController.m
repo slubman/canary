@@ -1103,15 +1103,15 @@ sender {
 		userURL = [(NSXMLNode *)[sender toolTip] userURL];
 	}
 	
-	if ([[sender titleOfSelectedItem] isEqualToString:@"Add"]) {
+	if ([[sender titleOfSelectedItem] isEqualToString:@"Follow"]) {
 		[self createFriendshipWithUser:userScreenName];
-	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Remove"]) {
+	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Leave"]) {
 		[self destroyFriendshipWithUser:userScreenName];
-	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Follow"]) {
+	}/* else if ([[sender titleOfSelectedItem] isEqualToString:@"Follow"]) {
 		[self followUserWithID:userScreenName];	
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Leave"]) {
 		[self leaveUserWithID:userScreenName];	
-	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Block"]) {
+	}*/ else if ([[sender titleOfSelectedItem] isEqualToString:@"Block"]) {
 		[self showUserBlockAlertSheet:userScreenName];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Unblock"]) {
 		[self unblockUserWithID:userScreenName];
@@ -1752,7 +1752,7 @@ sender {
 - (void) createFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine createFriendshipWithUser:userID];
-		NSString *msg = [NSString stringWithFormat:@"%@ has been added",
+		NSString *msg = [NSString stringWithFormat:@"Following %@",
 						 userID];
 		[statusBarTextField setStringValue:msg];
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_add"]];
@@ -1771,7 +1771,7 @@ sender {
 - (void) destroyFriendshipWithUser:(NSString *)userID {
 	if (twitterEngine.sessionUserID) {
 		[twitterEngine destroyFriendshipWithUser:userID];
-		NSString *msg = [NSString stringWithFormat:@"%@ has been removed",
+		NSString *msg = [NSString stringWithFormat:@"No longer following %@",
 						 userID];
 		[statusBarTextField setStringValue:msg];
 		[statusBarImageView setImage:[NSImage imageNamed:@"user_delete"]];
