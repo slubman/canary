@@ -242,6 +242,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
 		[viewOptionsNamesControl setSelectedSegment:1];
+		namesSelectedSegment = 1;
 	} else {
 		[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
 		[nameButton bind:@"title"
@@ -253,6 +254,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
 		[viewOptionsNamesControl setSelectedSegment:0];
+		namesSelectedSegment = 0;
 	}
 	
 	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
@@ -1625,12 +1627,15 @@ sender {
 			[viewOptionsNamesControl setSelectedSegment:1];
 		}
 	} else {
-		if ([viewOptionsNamesControl selectedSegment] == 0) {
-			[self changeToUsernames];
-			[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
-		} else {
-			[self changeToScreenNames];
-			[switchNamesMenuItem setTitle:@"Switch to Usernames"];
+		if (namesSelectedSegment != [viewOptionsNamesControl selectedSegment]) {
+			if ([viewOptionsNamesControl selectedSegment] == 0) {
+				[self changeToUsernames];
+				[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
+			} else {
+				[self changeToScreenNames];
+				[switchNamesMenuItem setTitle:@"Switch to Usernames"];
+			}
+			namesSelectedSegment = [viewOptionsNamesControl selectedSegment];
 		}
 	}
 }
@@ -1711,6 +1716,38 @@ sender {
 // Action: Visit Canary website
 - (IBAction) visitCanaryWebsite:sender {
 	[self openUserURL:@"http://macsphere.wordpress.com"];
+}
+
+- (IBAction) switchFontSize:sender {
+	if ([fontSizeControl selectedSegment] == 0) {
+		[self changeToSmallFont];
+	} else {
+		[self changeToLargeFont];
+	}
+}
+
+- (void) changeToSmallFont {
+	[mainTimelineCollectionViewItem setView:nil];
+	[mainTimelineCollectionView setContent:NULL];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[statusTextField setFont:[NSFont systemFontOfSize:10.0]];
+	[mainTimelineCollectionViewItem setView:statusView];
+	[self performSelector:@selector(populate)
+			   withObject:nil
+			   afterDelay:0.5];
+}
+
+- (void) changeToLargeFont {
+	[mainTimelineCollectionViewItem setView:nil];
+	[mainTimelineCollectionView setContent:NULL];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[statusTextField setFont:[NSFont systemFontOfSize:12.0]];
+	[mainTimelineCollectionViewItem setView:statusView];
+	[self performSelector:@selector(populate)
+			   withObject:nil
+			   afterDelay:0.5];
 }
 
 

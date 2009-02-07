@@ -93,6 +93,8 @@
 	IBOutlet NSSegmentedControl *viewOptionsNamesControl;
 	IBOutlet NSMenuItem *filterMenuItem;
 	IBOutlet NSMenu *availableFiltersMenu;
+	IBOutlet NSSegmentedControl *fontSizeControl;
+	int namesSelectedSegment;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
@@ -202,6 +204,9 @@
 - (IBAction) switchViewOptions:sender;
 - (IBAction) followMacsphere:sender;
 - (IBAction) visitCanaryWebsite:sender;
+- (IBAction) switchFontSize:sender;
+- (void) changeToSmallFont;
+- (void) changeToLargeFont;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender

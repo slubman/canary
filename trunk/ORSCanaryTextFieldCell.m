@@ -20,6 +20,7 @@
 	NSMutableAttributedString *attString = [[NSMutableAttributedString alloc]
 		initWithString:[NSString replaceHTMLEntities:initialString]];
 	NSFont *textFont = [NSFont systemFontOfSize:10.2];
+	//NSFont *textFont = [NSFont systemFontOfSize:12.2];
 	NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
 								textFont, NSFontAttributeName, NULL];
 	[attString beginEditing];
