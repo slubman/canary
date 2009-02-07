@@ -1703,6 +1703,11 @@ sender {
 	}
 }
 
+// Action: Follows user macsphere
+- (IBAction) followMacsphere:sender {
+	[self createFriendshipWithUser:@"macsphere"];	
+}
+
 
 // Speech-related methods
 

@@ -198,6 +198,7 @@
 - (void) changeToScreenNames;
 - (void) populate;
 - (IBAction) switchViewOptions:sender;
+- (IBAction) followMacsphere:sender;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender
