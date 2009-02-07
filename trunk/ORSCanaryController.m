@@ -254,6 +254,9 @@ static ORSCanaryController *sharedCanaryController = nil;
 				 options:nil];
 		[viewOptionsNamesControl setSelectedSegment:0];
 	}
+	
+	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
+						 forItem:filterMenuItem];
 }
 
 // Delegate: calls all the necessary methods when the app starts
@@ -1712,6 +1715,7 @@ sender {
 - (IBAction) visitCanaryWebsite:sender {
 	[self openUserURL:@"http://macsphere.wordpress.com"];
 }
+
 
 // Speech-related methods
 

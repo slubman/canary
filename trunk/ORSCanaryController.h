@@ -91,6 +91,8 @@
 	IBOutlet NSBox *viewOptionsBox;
 	IBOutlet NSButton *viewOptionsButton;
 	IBOutlet NSSegmentedControl *viewOptionsNamesControl;
+	IBOutlet NSMenuItem *filterMenuItem;
+	IBOutlet NSMenu *availableFiltersMenu;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
