@@ -19,6 +19,9 @@
 	IBOutlet NSPredicateEditor *filterPredicateEditor;
 }
 
++ (ORSCanaryPreferencesController *)sharedPreferencesController;
++ (id) allocWithZone:(NSZone *)zone;
+- (id)copyWithZone:(NSZone *)zone;
 - (IBAction) timelineRefreshRateSelected:sender;
 - (IBAction) maxShownUpdatesSelected:sender;
 - (IBAction) urlShortenerSelected:sender;

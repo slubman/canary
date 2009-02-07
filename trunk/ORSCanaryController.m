@@ -1173,16 +1173,13 @@ sender {
 
 // Action: This is called when the about window needs to be shown.
 - (IBAction) showAboutWindow:sender {
-	ORSCanaryAboutController *aboutController =
-		[[ORSCanaryAboutController alloc] initWithWindowNibName:@"About"];
+	ORSCanaryAboutController *aboutController = [ORSCanaryAboutController sharedAboutController];
 	[aboutController.window makeKeyAndOrderFront:sender];
 }
 
 // Action: This is called when the preferences window needs to be shown.
 - (IBAction) showPreferencesWindow:sender {
-	ORSCanaryPreferencesController *preferencesController =
-		[[ORSCanaryPreferencesController alloc] 
-			initWithWindowNibName:@"Preferences"];
+	ORSCanaryPreferencesController *preferencesController = [ORSCanaryPreferencesController sharedPreferencesController];
 	[preferencesController.window makeKeyAndOrderFront:sender];
 }
 

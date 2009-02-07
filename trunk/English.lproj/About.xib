@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="17"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -62,29 +62,6 @@
 										<object class="NSTextView" id="541845661">
 											<reference key="NSNextResponder" ref="1019171422"/>
 											<int key="NSvFlags">2322</int>
-											<object class="NSMutableSet" key="NSDragTypes">
-												<bool key="EncodedWithXMLCoder">YES</bool>
-												<object class="NSMutableArray" key="set.sortedObjects">
-													<bool key="EncodedWithXMLCoder">YES</bool>
-													<string>Apple HTML pasteboard type</string>
-													<string>Apple PDF pasteboard type</string>
-													<string>Apple PICT pasteboard type</string>
-													<string>Apple PNG pasteboard type</string>
-													<string>Apple URL pasteboard type</string>
-													<string>CorePasteboardFlavorType 0x6D6F6F76</string>
-													<string>CorePasteboardFlavorType 0x75726C20</string>
-													<string>NSColor pasteboard type</string>
-													<string>NSFilenamesPboardType</string>
-													<string>NSStringPboardType</string>
-													<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
-													<string>NeXT RTFD pasteboard type</string>
-													<string>NeXT Rich Text Format v1.0 pasteboard type</string>
-													<string>NeXT TIFF v4.0 pasteboard type</string>
-													<string>NeXT font pasteboard type</string>
-													<string>NeXT ruler pasteboard type</string>
-													<string>WebURLsWithTitlesPboardType</string>
-												</object>
-											</object>
 											<string key="NSFrameSize">{241, 559}</string>
 											<reference key="NSSuperview" ref="1019171422"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="459043301">
@@ -579,7 +556,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
-												<int key="NSFlags">264199</int>
+												<int key="NSFlags">264197</int>
 												<object class="NSColor" key="NSBackgroundColor" id="728174033">
 													<int key="NSColorSpace">3</int>
 													<bytes key="NSWhite">MQA</bytes>

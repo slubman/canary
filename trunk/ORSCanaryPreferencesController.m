@@ -13,6 +13,31 @@
 
 @synthesize filters;
 
+static ORSCanaryPreferencesController *sharedPreferencesController = nil;
+
++ (ORSCanaryPreferencesController *)sharedPreferencesController {
+	@synchronized(self) {
+		if (sharedPreferencesController == nil) {
+			[[self alloc] initWithWindowNibName:@"Preferences"];
+		}
+	}
+	return sharedPreferencesController;
+}
+
++ (id) allocWithZone:(NSZone *)zone {
+	@synchronized(self) {
+		if (sharedPreferencesController == nil) {
+			sharedPreferencesController = [super allocWithZone:zone];
+			return sharedPreferencesController;
+		}
+	}
+	return nil;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+	return self;
+} 
+
 - (id) initWithWindow:(NSWindow *)window {
 	if (self = [super initWithWindow:window]) {
 		filters = [[NSArray alloc] init];
@@ -20,8 +45,30 @@
 	return self;
 }
 
+- (void) windowWillClose:(NSNotification *)notification {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setFloat:self.window.frame.origin.x
+				forKey:@"CanaryPreferencesWindowX"];
+	[defaults setFloat:self.window.frame.origin.y
+				forKey:@"CanaryPreferencesWindowY"];
+	[defaults setFloat:self.window.frame.size.width
+				forKey:@"CanaryPreferencesWindowWidth"];
+	[defaults setFloat:self.window.frame.size.height
+				forKey:@"CanaryPreferencesWindowHeight"];
+}
+
 - (void) awakeFromNib {
-	[self.window center];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if ([defaults floatForKey:@"CanaryPreferencesWindowX"]) {
+		NSRect newFrame = NSMakeRect(
+			[defaults floatForKey:@"CanaryPreferencesWindowX"],
+			[defaults floatForKey:@"CanaryPreferencesWindowY"],
+			[defaults floatForKey:@"CanaryPreferencesWindowWidth"],
+			[defaults floatForKey:@"CanaryPreferencesWindowHeight"]);
+		[[self window] setFrame:newFrame display:YES];
+	} else {
+		[self.window center];
+	}
 }
 
 - (IBAction) timelineRefreshRateSelected:sender {
