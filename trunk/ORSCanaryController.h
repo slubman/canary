@@ -85,8 +85,6 @@
 	IBOutlet NSTextField *sentDMDateDifferenceTextField;
 	// Array Controllers
 	IBOutlet NSArrayController *statusArrayController;
-	// Filters
-	IBOutlet NSPopUpButton *filterPopUpButton;
 	// View Options
 	IBOutlet NSBox *viewOptionsBox;
 	IBOutlet NSButton *viewOptionsButton;
@@ -95,6 +93,8 @@
 	IBOutlet NSMenu *availableFiltersMenu;
 	IBOutlet NSSegmentedControl *fontSizeControl;
 	int namesSelectedSegment;
+	IBOutlet NSPopUpButton *filterPopUpButton;
+	IBOutlet NSBox *instaFilterBox;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;

@@ -257,6 +257,11 @@ static ORSCanaryController *sharedCanaryController = nil;
 		namesSelectedSegment = 0;
 	}
 	
+	NSMenuItem *instaFilterMenuItem = [[NSMenuItem alloc] init];
+	[instaFilterMenuItem setTitle:@"InstaFilter"];
+	[instaFilterMenuItem setView:instaFilterBox];
+	[availableFiltersMenu insertItem:instaFilterMenuItem atIndex:0];
+	[availableFiltersMenu insertItem:[NSMenuItem separatorItem] atIndex:1];
 	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
 						 forItem:filterMenuItem];
 }
