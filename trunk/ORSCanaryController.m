@@ -1708,6 +1708,10 @@ sender {
 	[self createFriendshipWithUser:@"macsphere"];	
 }
 
+// Action: Visit Canary website
+- (IBAction) visitCanaryWebsite:sender {
+	[self openUserURL:@"http://macsphere.wordpress.com"];
+}
 
 // Speech-related methods
 
