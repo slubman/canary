@@ -262,8 +262,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[instaFilterMenuItem setView:instaFilterBox];
 	[availableFiltersMenu insertItem:instaFilterMenuItem atIndex:0];
 	[availableFiltersMenu insertItem:[NSMenuItem separatorItem] atIndex:1];
-	[availableFiltersMenu insertItem:[NSMenuItem separatorItem] atIndex:4];
-	[[NSApp mainMenu] setSubmenu:availableFiltersMenu
+	[NSApp mainMenu] setSubmenu:availableFiltersMenu
 						 forItem:filterMenuItem];
 }
 
