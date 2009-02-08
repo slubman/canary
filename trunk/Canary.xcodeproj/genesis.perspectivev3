@@ -292,7 +292,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {246, 596}}</string>
+							<string>{{0, 586}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -339,7 +339,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05378E310F3E5834003B86EF</string>
+										<string>05378E4E0F3EE762003B86EF</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -444,14 +444,14 @@
 											<string>05378D090F3DCCE3003B86EF</string>
 											<string>05378D0A0F3DCCE3003B86EF</string>
 											<string>05378D0B0F3DCCE3003B86EF</string>
-											<string>05378D430F3DD77C003B86EF</string>
 											<string>05378D7F0F3DDE31003B86EF</string>
 											<string>05378D800F3DDE31003B86EF</string>
 											<string>05378D900F3DE1D7003B86EF</string>
 											<string>05378DA00F3DE709003B86EF</string>
 											<string>05378DA10F3DE709003B86EF</string>
-											<string>05378E2B0F3E5711003B86EF</string>
-											<string>05378E2C0F3E5711003B86EF</string>
+											<string>05378E370F3EE200003B86EF</string>
+											<string>05378E440F3EE55B003B86EF</string>
+											<string>05378E450F3EE55B003B86EF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -864,6 +864,14 @@
 											<string>05378DFA0F3DEEB7003B86EF</string>
 											<string>05378E2D0F3E5711003B86EF</string>
 											<string>05378E2E0F3E5711003B86EF</string>
+											<string>05378E390F3EE200003B86EF</string>
+											<string>05378E3A0F3EE200003B86EF</string>
+											<string>05378E3F0F3EE2CF003B86EF</string>
+											<string>05378E460F3EE55B003B86EF</string>
+											<string>05378E470F3EE55B003B86EF</string>
+											<string>05378E480F3EE55B003B86EF</string>
+											<string>05378E490F3EE55B003B86EF</string>
+											<string>05378E4A0F3EE55B003B86EF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
