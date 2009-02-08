@@ -920,6 +920,15 @@ sender {
 				forKey:@"CanaryWindowHeight"];
 	[self saveLastIDs];
 	[twitterEngine endSession];
+	
+	NSMutableArray *toBeRemoved = [[NSMutableArray alloc] init];
+	for (ORSFilter *filter in (NSArray *)[filterArrayController arrangedObjects]) {
+		if (filter.active == NO) {
+			[toBeRemoved addObject:filter];
+		}
+	}
+	[filterArrayController setSelectedObjects:toBeRemoved];
+	[filterArrayController remove:self];
 }
 
 // Saves the last IDs in the user preferences when called
@@ -1753,6 +1762,50 @@ sender {
 	[self performSelector:@selector(populate)
 			   withObject:nil
 			   afterDelay:0.5];
+}
+
+// Action: Performs the instant filtering
+- (IBAction) performInstaFiltering:sender {
+	//if (![smallInstaFilterSearchField.stringValue isEqualToString:@""]) {
+	if (![smallInstaFilterSearchField.stringValue isEqualToString:@""]) {
+		ORSFilter *instaFilter = [[ORSFilter alloc] init];
+		instaFilter.filterName = [smallInstaFilterSearchField stringValue];
+		instaFilter.active = NO;
+		instaFilter.predicate = [NSPredicate 
+			predicateWithFormat:@"(text contains[cd] %@) OR \
+								 (userScreenName contains[cd] %@) OR \
+								 (userDescription contains[cd] %@) OR \
+								 (userLocation contains[cd] %@) OR \
+								 (source contains[cd] %@) OR \
+								 (inReplyToScreenName contains[cd] %@)", 
+								 [smallInstaFilterSearchField stringValue],
+								 [smallInstaFilterSearchField stringValue],
+								 [smallInstaFilterSearchField stringValue],
+								 [smallInstaFilterSearchField stringValue],
+								 [smallInstaFilterSearchField stringValue],
+								 [smallInstaFilterSearchField stringValue]];
+		if ([[filterArrayController selectedObjects] count] > 0) {
+			if ([(ORSFilter *)[[filterArrayController selectedObjects]	
+							   objectAtIndex:0] active] == NO) {
+				[filterArrayController removeSelectedObjects:[filterArrayController selectedObjects]];
+				[filterArrayController insertObject:instaFilter 
+							  atArrangedObjectIndex:0];
+				[filterArrayController setSelectionIndex:0];
+			}
+		} else {
+			[filterArrayController insertObject:instaFilter 
+						  atArrangedObjectIndex:0];
+			[filterArrayController setSelectionIndex:0];
+		}
+	} else {
+		if ([[filterArrayController selectedObjects] count] > 0) {
+			if ([(ORSFilter *)[[filterArrayController selectedObjects]	
+						   objectAtIndex:0] active] == NO) {
+				[filterArrayController removeSelectedObjects:
+					[filterArrayController selectedObjects]];
+			}
+		}
+	}
 }
 
 

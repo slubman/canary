@@ -98,6 +98,8 @@
 	IBOutlet NSBox *smallInstaFilterBox;
 	IBOutlet NSMenu *viewMenu;
 	IBOutlet NSMenu* filterMenu;
+	IBOutlet NSSearchField *smallInstaFilterSearchField;
+	IBOutlet NSArrayController *filterArrayController;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
@@ -210,6 +212,7 @@
 - (IBAction) switchFontSize:sender;
 - (void) changeToSmallFont;
 - (void) changeToLargeFont;
+- (IBAction) performInstaFiltering:sender;
 
 - (IBAction) listen:sender;
 - (void) speechRecognizer:(NSSpeechRecognizer *)sender
