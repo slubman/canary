@@ -1836,19 +1836,19 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 								</object>
 							</object>
-							<object class="NSSearchField" id="769487028">
+							<object class="NSSearchField" id="105523938">
 								<reference key="NSNextResponder" ref="445882553"/>
 								<int key="NSvFlags">258</int>
 								<string key="NSFrame">{{84, 6}, {169, 22}}</string>
 								<reference key="NSSuperview" ref="445882553"/>
 								<reference key="NSWindow"/>
 								<bool key="NSEnabled">YES</bool>
-								<object class="NSSearchFieldCell" key="NSCell" id="259335752">
+								<object class="NSSearchFieldCell" key="NSCell" id="167120487">
 									<int key="NSCellFlags">343014976</int>
 									<int key="NSCellFlags2">268436480</int>
 									<string key="NSContents"/>
 									<reference key="NSSupport" ref="1017135163"/>
-									<reference key="NSControlView" ref="769487028"/>
+									<reference key="NSControlView" ref="105523938"/>
 									<bool key="NSDrawsBackground">YES</bool>
 									<int key="NSTextBezelStyle">1</int>
 									<reference key="NSBackgroundColor" ref="216766085"/>
@@ -1858,8 +1858,8 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<int key="NSCellFlags2">0</int>
 										<string key="NSContents">search</string>
 										<string key="NSAction">_searchFieldSearch:</string>
-										<reference key="NSTarget" ref="259335752"/>
-										<reference key="NSControlView" ref="769487028"/>
+										<reference key="NSTarget" ref="167120487"/>
+										<reference key="NSControlView" ref="105523938"/>
 										<int key="NSButtonFlags">138690815</int>
 										<int key="NSButtonFlags2">0</int>
 										<string key="NSKeyEquivalent"/>
@@ -1887,8 +1887,8 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 											</object>
 										</object>
 										<string key="NSAction">_searchFieldCancel:</string>
-										<reference key="NSTarget" ref="259335752"/>
-										<reference key="NSControlView" ref="769487028"/>
+										<reference key="NSTarget" ref="167120487"/>
+										<reference key="NSControlView" ref="105523938"/>
 										<int key="NSButtonFlags">138690815</int>
 										<int key="NSButtonFlags2">0</int>
 										<string key="NSKeyEquivalent"/>
@@ -6230,9 +6230,65 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<object class="IBActionConnection" key="connection">
 						<string key="label">performInstaFiltering:</string>
 						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="769487028"/>
+						<reference key="destination" ref="105523938"/>
 					</object>
 					<int key="connectionID">2248</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">largeInstaFilterSearchField</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="105523938"/>
+					</object>
+					<int key="connectionID">2249</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">filterPredicate: selection.predicate</string>
+						<reference key="source" ref="852300212"/>
+						<reference key="destination" ref="166492944"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="852300212"/>
+							<reference key="NSDestination" ref="166492944"/>
+							<string key="NSLabel">filterPredicate: selection.predicate</string>
+							<string key="NSBinding">filterPredicate</string>
+							<string key="NSKeyPath">selection.predicate</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">2251</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">filterPredicate: selection.predicate</string>
+						<reference key="source" ref="131349941"/>
+						<reference key="destination" ref="166492944"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="131349941"/>
+							<reference key="NSDestination" ref="166492944"/>
+							<string key="NSLabel">filterPredicate: selection.predicate</string>
+							<string key="NSBinding">filterPredicate</string>
+							<string key="NSKeyPath">selection.predicate</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">2253</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">receivedDMsCollectionViewItem</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="474545686"/>
+					</object>
+					<int key="connectionID">2254</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">sentDMsCollectionViewItem</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="123807384"/>
+					</object>
+					<int key="connectionID">2255</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -8415,7 +8471,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="477358256"/>
-							<reference ref="769487028"/>
+							<reference ref="105523938"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 						<string key="objectName">InstaFilter Box</string>
@@ -8465,17 +8521,17 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2246</int>
-						<reference key="object" ref="769487028"/>
+						<reference key="object" ref="105523938"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="259335752"/>
+							<reference ref="167120487"/>
 						</object>
 						<reference key="parent" ref="946372623"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2247</int>
-						<reference key="object" ref="259335752"/>
-						<reference key="parent" ref="769487028"/>
+						<reference key="object" ref="167120487"/>
+						<reference key="parent" ref="105523938"/>
 					</object>
 				</object>
 			</object>
@@ -9527,7 +9583,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">2248</int>
+			<int key="maxID">2255</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -9658,6 +9714,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>fontSizeControl</string>
 							<string>indicator</string>
 							<string>instaFilterBox</string>
+							<string>largeInstaFilterSearchField</string>
 							<string>mainTimelineCollectionView</string>
 							<string>mainTimelineCollectionViewItem</string>
 							<string>mainTimelineScrollView</string>
@@ -9669,12 +9726,14 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>receivedDMTextField</string>
 							<string>receivedDMView</string>
 							<string>receivedDMsCollectionView</string>
+							<string>receivedDMsCollectionViewItem</string>
 							<string>receivedDMsScrollView</string>
 							<string>sentDMBox</string>
 							<string>sentDMDateDifferenceTextField</string>
 							<string>sentDMTextField</string>
 							<string>sentDMView</string>
 							<string>sentDMsCollectionView</string>
+							<string>sentDMsCollectionViewItem</string>
 							<string>sentDMsScrollView</string>
 							<string>smallInstaFilterBox</string>
 							<string>smallInstaFilterSearchField</string>
@@ -9708,6 +9767,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSSegmentedControl</string>
 							<string>NSProgressIndicator</string>
 							<string>NSBox</string>
+							<string>NSSearchField</string>
 							<string>NSCollectionView</string>
 							<string>NSCollectionViewItem</string>
 							<string>NSScrollView</string>
@@ -9719,12 +9779,14 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSTextField</string>
 							<string>NSView</string>
 							<string>NSCollectionView</string>
+							<string>NSCollectionViewItem</string>
 							<string>NSScrollView</string>
 							<string>NSBox</string>
 							<string>NSTextField</string>
 							<string>NSTextField</string>
 							<string>NSView</string>
 							<string>NSCollectionView</string>
+							<string>NSCollectionViewItem</string>
 							<string>NSScrollView</string>
 							<string>NSBox</string>
 							<string>NSSearchField</string>

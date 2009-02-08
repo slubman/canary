@@ -1664,9 +1664,31 @@ sender {
 			toObject:mainTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userName"
 			 options:nil];
+	[nameButton bind:@"title"
+			toObject:receivedDMsCollectionViewItem
+		 withKeyPath:@"representedObject.senderScreenName"
+			 options:nil];
+	[nameButton bind:@"toolTip"
+			toObject:receivedDMsCollectionViewItem
+		 withKeyPath:@"representedObject.senderName"
+			 options:nil];
+	[nameButton bind:@"title"
+			toObject:sentDMsCollectionViewItem
+		 withKeyPath:@"representedObject.recipientScreenName"
+			 options:nil];
+	[nameButton bind:@"toolTip"
+			toObject:sentDMsCollectionViewItem
+		 withKeyPath:@"representedObject.recipientName"
+			 options:nil];
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[receivedDMsCollectionView setContent:NULL];
+	[receivedDMsCollectionView setNeedsDisplay:YES];
+	[receivedDMsCollectionView displayIfNeededIgnoringOpacity];
+	[sentDMsCollectionView setContent:NULL];
+	[sentDMsCollectionView setNeedsDisplay:YES];
+	[sentDMsCollectionView displayIfNeededIgnoringOpacity];
 	[self performSelector:@selector(populate)
 			   withObject:nil
 			   afterDelay:0.5];
@@ -1684,9 +1706,31 @@ sender {
 			toObject:mainTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
+	[nameButton bind:@"title"
+			toObject:receivedDMsCollectionViewItem
+		 withKeyPath:@"representedObject.senderName"
+			 options:nil];
+	[nameButton bind:@"toolTip"
+			toObject:receivedDMsCollectionViewItem
+		 withKeyPath:@"representedObject.senderScreenName"
+			 options:nil];
+	[nameButton bind:@"title"
+			toObject:sentDMsCollectionViewItem
+		 withKeyPath:@"representedObject.recipientName"
+			 options:nil];
+	[nameButton bind:@"toolTip"
+			toObject:sentDMsCollectionViewItem
+		 withKeyPath:@"representedObject.recipientScreenName"
+			 options:nil];
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+	[receivedDMsCollectionView setContent:NULL];
+	[receivedDMsCollectionView setNeedsDisplay:YES];
+	[receivedDMsCollectionView displayIfNeededIgnoringOpacity];
+	[sentDMsCollectionView setContent:NULL];
+	[sentDMsCollectionView setNeedsDisplay:YES];
+	[sentDMsCollectionView displayIfNeededIgnoringOpacity];
 	[self performSelector:@selector(populate)
 			   withObject:nil
 			   afterDelay:0.5];
@@ -1699,6 +1743,12 @@ sender {
 	[mainTimelineCollectionView setContent:self.statuses];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
+	[receivedDMsCollectionView setContent:self.receivedDirectMessages];
+	[receivedDMsCollectionView setNeedsDisplay:YES];
+	[receivedDMsCollectionView	displayIfNeededIgnoringOpacity];
+	[sentDMsCollectionView setContent:self.sentDirectMessages];
+	[sentDMsCollectionView setNeedsDisplay:YES];
+	[sentDMsCollectionView	displayIfNeededIgnoringOpacity];
 }
 
 // Action: Shows/hides the view options banner
@@ -1766,10 +1816,8 @@ sender {
 
 // Action: Performs the instant filtering
 - (IBAction) performInstaFiltering:sender {
-	//if (![smallInstaFilterSearchField.stringValue isEqualToString:@""]) {
 	if (![((NSSearchField *)sender).stringValue isEqualToString:@""]) {
 		ORSFilter *instaFilter = [[ORSFilter alloc] init];
-		//instaFilter.filterName = [smallInstaFilterSearchField stringValue];
 		instaFilter.filterName = ((NSSearchField *)sender).stringValue;
 		instaFilter.active = NO;
 		instaFilter.predicate = [NSPredicate 
@@ -1779,12 +1827,6 @@ sender {
 								 (userLocation contains[cd] %@) OR \
 								 (source contains[cd] %@) OR \
 								 (inReplyToScreenName contains[cd] %@)", 
-								 //[smallInstaFilterSearchField stringValue],
-								 //[smallInstaFilterSearchField stringValue],
-								 //[smallInstaFilterSearchField stringValue],
-								 //[smallInstaFilterSearchField stringValue],
-								 //[smallInstaFilterSearchField stringValue],
-								 //[smallInstaFilterSearchField stringValue]];
 								 ((NSSearchField *)sender).stringValue,
 								 ((NSSearchField *)sender).stringValue,
 								 ((NSSearchField *)sender).stringValue,
@@ -1812,6 +1854,11 @@ sender {
 					[filterArrayController selectedObjects]];
 			}
 		}
+	}
+	if (sender == smallInstaFilterSearchField) {
+		[largeInstaFilterSearchField setStringValue:((NSSearchField *)sender).stringValue];
+	} else {
+		[smallInstaFilterSearchField setStringValue:((NSSearchField *)sender).stringValue];
 	}
 }
 

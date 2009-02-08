@@ -70,9 +70,11 @@
 	// Received DMs Collection View Outletss
 	IBOutlet NSCollectionView *receivedDMsCollectionView;
 	IBOutlet NSScrollView *receivedDMsScrollView;
+	IBOutlet NSCollectionViewItem *receivedDMsCollectionViewItem;
 	// Sent DMs Collection View Outlets
 	IBOutlet NSCollectionView *sentDMsCollectionView;
 	IBOutlet NSScrollView *sentDMsScrollView;
+	IBOutlet NSCollectionViewItem *sentDMsCollectionViewItem;
 	// Received DMs View Outlets
 	IBOutlet NSTextField *receivedDMTextField;
 	IBOutlet NSView *receivedDMView;
@@ -99,6 +101,7 @@
 	IBOutlet NSMenu *viewMenu;
 	IBOutlet NSMenu* filterMenu;
 	IBOutlet NSSearchField *smallInstaFilterSearchField;
+	IBOutlet NSSearchField *largeInstaFilterSearchField;
 	IBOutlet NSArrayController *filterArrayController;
 	
 	NSArray *statuses;
