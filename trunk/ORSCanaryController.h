@@ -95,6 +95,7 @@
 	int namesSelectedSegment;
 	IBOutlet NSPopUpButton *filterPopUpButton;
 	IBOutlet NSBox *instaFilterBox;
+	IBOutlet NSMenu *viewMenu;
 	
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
