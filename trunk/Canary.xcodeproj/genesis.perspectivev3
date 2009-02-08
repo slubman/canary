@@ -284,7 +284,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -326,7 +326,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.h</string>
+								<string>ORSCanaryController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -334,11 +334,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.h</string>
+										<string>ORSCanaryController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05378FEE0F3F840D003B86EF</string>
+										<string>05378FF80F3F8BC3003B86EF</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -449,8 +449,8 @@
 											<string>05378E810F3F0A29003B86EF</string>
 											<string>05378E920F3F1281003B86EF</string>
 											<string>05378F1D0F3F5B77003B86EF</string>
-											<string>05378FE70F3F82F9003B86EF</string>
-											<string>05378FEC0F3F83C9003B86EF</string>
+											<string>05378FF50F3F8BC3003B86EF</string>
+											<string>05378FF60F3F8BC3003B86EF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -906,6 +906,7 @@
 											<string>05378FD30F3F724E003B86EF</string>
 											<string>05378FDC0F3F7816003B86EF</string>
 											<string>05378FE90F3F82F9003B86EF</string>
+											<string>05378FF70F3F8BC3003B86EF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

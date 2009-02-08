@@ -1767,9 +1767,10 @@ sender {
 // Action: Performs the instant filtering
 - (IBAction) performInstaFiltering:sender {
 	//if (![smallInstaFilterSearchField.stringValue isEqualToString:@""]) {
-	if (![smallInstaFilterSearchField.stringValue isEqualToString:@""]) {
+	if (![((NSSearchField *)sender).stringValue isEqualToString:@""]) {
 		ORSFilter *instaFilter = [[ORSFilter alloc] init];
-		instaFilter.filterName = [smallInstaFilterSearchField stringValue];
+		//instaFilter.filterName = [smallInstaFilterSearchField stringValue];
+		instaFilter.filterName = ((NSSearchField *)sender).stringValue;
 		instaFilter.active = NO;
 		instaFilter.predicate = [NSPredicate 
 			predicateWithFormat:@"(text contains[cd] %@) OR \
@@ -1778,12 +1779,18 @@ sender {
 								 (userLocation contains[cd] %@) OR \
 								 (source contains[cd] %@) OR \
 								 (inReplyToScreenName contains[cd] %@)", 
-								 [smallInstaFilterSearchField stringValue],
-								 [smallInstaFilterSearchField stringValue],
-								 [smallInstaFilterSearchField stringValue],
-								 [smallInstaFilterSearchField stringValue],
-								 [smallInstaFilterSearchField stringValue],
-								 [smallInstaFilterSearchField stringValue]];
+								 //[smallInstaFilterSearchField stringValue],
+								 //[smallInstaFilterSearchField stringValue],
+								 //[smallInstaFilterSearchField stringValue],
+								 //[smallInstaFilterSearchField stringValue],
+								 //[smallInstaFilterSearchField stringValue],
+								 //[smallInstaFilterSearchField stringValue]];
+								 ((NSSearchField *)sender).stringValue,
+								 ((NSSearchField *)sender).stringValue,
+								 ((NSSearchField *)sender).stringValue,
+								 ((NSSearchField *)sender).stringValue,
+								 ((NSSearchField *)sender).stringValue,
+								 ((NSSearchField *)sender).stringValue];
 		if ([[filterArrayController selectedObjects] count] > 0) {
 			if ([(ORSFilter *)[[filterArrayController selectedObjects]	
 							   objectAtIndex:0] active] == NO) {
