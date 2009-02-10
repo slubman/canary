@@ -68,12 +68,12 @@
 	IBOutlet NSButton *statusBarButton;
 	IBOutlet NSMenuItem *switchNamesMenuItem;
 	// Received DMs Collection View Outletss
-	IBOutlet NSCollectionView *receivedDMsCollectionView;
-	IBOutlet NSScrollView *receivedDMsScrollView;
+	//IBOutlet NSCollectionView *receivedDMsCollectionView;
+	//IBOutlet NSScrollView *receivedDMsScrollView;
 	IBOutlet NSCollectionViewItem *receivedDMsCollectionViewItem;
 	// Sent DMs Collection View Outlets
-	IBOutlet NSCollectionView *sentDMsCollectionView;
-	IBOutlet NSScrollView *sentDMsScrollView;
+	//IBOutlet NSCollectionView *sentDMsCollectionView;
+	//IBOutlet NSScrollView *sentDMsScrollView;
 	IBOutlet NSCollectionViewItem *sentDMsCollectionViewItem;
 	// Received DMs View Outlets
 	IBOutlet NSTextField *receivedDMTextField;
@@ -87,6 +87,8 @@
 	IBOutlet NSTextField *sentDMDateDifferenceTextField;
 	// Array Controllers
 	IBOutlet NSArrayController *statusArrayController;
+	IBOutlet NSArrayController *receivedDMsArrayController;
+	IBOutlet NSArrayController *sentDMsArrayController;
 	// View Options
 	IBOutlet NSBox *viewOptionsBox;
 	IBOutlet NSButton *viewOptionsButton;
@@ -208,7 +210,9 @@
 - (IBAction) switchBetweenUserNames:sender;
 - (void) changeToUsernames;
 - (void) changeToScreenNames;
-- (void) populate;
+- (void) populateWithStatuses;
+- (void) populateWithReceivedDMs;
+- (void) populateWithSentDMs;
 - (IBAction) switchViewOptions:sender;
 - (IBAction) followMacsphere:sender;
 - (IBAction) visitCanaryWebsite:sender;
@@ -278,10 +282,10 @@
 @property (retain) NSProgressIndicator *indicator;
 @property (retain) NSView *contentView;
 @property (retain) NSCollectionViewItem *mainTimelineCollectionViewItem;
-@property (retain) NSCollectionView *receivedDMsCollectionView;
-@property (retain) NSScrollView *receivedDMsScrollView;
-@property (retain) NSCollectionView *sentDMsCollectionView;
-@property (retain) NSScrollView *sentDMsScrollView;
+//@property (retain) NSCollectionView *receivedDMsCollectionView;
+//@property (retain) NSScrollView *receivedDMsScrollView;
+//@property (retain) NSCollectionView *sentDMsCollectionView;
+//@property (retain) NSScrollView *sentDMsScrollView;
 @property (retain) NSTextField *receivedDMTextField;
 @property (retain) NSView *receivedDMView;
 @property (retain) NSBox *receivedDMBox;

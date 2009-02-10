@@ -23,8 +23,7 @@
 			mainTimelineCollectionView, mainTimelineScrollView, tweetButton,
 			newStatusTextField, charsLeftIndicator, timelineButton, sentDMBox,
 			contentView, mainTimelineCollectionViewItem, sentDMTextField,
-			receivedDMsCollectionView, receivedDMsScrollView, sentDMView,
-			sentDMsCollectionView, sentDMsScrollView, receivedDMTextField, 
+			sentDMView, receivedDMTextField, 
 			receivedDMView, receivedDMBox, receivedDMDateDifferenceTextField,
 			sentDMDateDifferenceTextField, statusArrayController, defaults, 
 			refreshTimer, loginItem, prevUserID, prevPassword, spokenCommands,
@@ -241,6 +240,22 @@ static ORSCanaryController *sharedCanaryController = nil;
 				toObject:mainTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
+		[nameButton bind:@"title"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderScreenName"
+				 options:nil];
+		[nameButton bind:@"title"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientScreenName"
+				 options:nil];
 		[viewOptionsNamesControl setSelectedSegment:1];
 		namesSelectedSegment = 1;
 	} else {
@@ -252,6 +267,22 @@ static ORSCanaryController *sharedCanaryController = nil;
 		[nameButton bind:@"toolTip"
 				toObject:mainTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
+				 options:nil];
+		[nameButton bind:@"title"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderName"
+				 options:nil];
+		[nameButton bind:@"title"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientName"
 				 options:nil];
 		[viewOptionsNamesControl setSelectedSegment:0];
 		namesSelectedSegment = 0;
@@ -291,10 +322,7 @@ sender {
 		[charsLeftIndicator setMaxValue:140];
 		[charsLeftIndicator setCriticalValue:140];
 		[charsLeftIndicator setWarningValue:125];
-		
 		[updateDispatcher addMessage:[newStatusTextField stringValue]];
-		//[tweetButton setTitle:@"Tweet!"];
-		
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 	}
@@ -309,9 +337,6 @@ sender {
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[mainTimelineScrollView setHidden:NO];
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
 		[self getFriendsTimeline];
@@ -319,9 +344,6 @@ sender {
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.archiveStatusCache count] > 0) {
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[mainTimelineScrollView setHidden:NO];
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
 		[self getUserTimeline];
@@ -329,9 +351,6 @@ sender {
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.publicStatusCache count] > 0) {
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[mainTimelineScrollView setHidden:NO];
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
 		[self getPublicTimeline];
@@ -339,9 +358,6 @@ sender {
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.repliesStatusCache count] > 0) {
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[mainTimelineScrollView setHidden:NO];
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
 		[self getReplies];
@@ -349,9 +365,6 @@ sender {
 				isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.favoritesStatusCache count] > 0) {
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[mainTimelineScrollView setHidden:NO];
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
 		[self getFavorites];
@@ -359,13 +372,27 @@ sender {
 				isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[[cacheManager receivedMessagesCache] count] > 0) {
-			[mainTimelineScrollView setHidden:YES];
-			[sentDMsScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:NO];
-			[self setReceivedDirectMessages:[cacheManager 
-											 receivedMessagesCache]];
+			//[self setStatuses:cacheManager.receivedMessagesCache];
+			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
+			
 		}
+		[mainTimelineCollectionView bind:@"content"
+								toObject:receivedDMsArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:receivedDMsArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:nil];
+		[mainTimelineCollectionView setItemPrototype:receivedDMsCollectionViewItem];
 		[self getReceivedMessages];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithReceivedDMs)
+				   withObject:nil
+				   afterDelay:0.5];
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
@@ -374,9 +401,6 @@ sender {
 				isEqualToString:@"Sent messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.sentMessagesCache count] > 0) {
-			[mainTimelineScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[sentDMsScrollView setHidden:NO];
 			[self setSentDirectMessages:cacheManager.sentMessagesCache];
 		}
 		[self getSentMessages];
@@ -387,16 +411,8 @@ sender {
 // Scrolls timeline to the top
 - (void) scrollToTop {
     NSPoint newScrollOrigin;
-	NSScrollView *scrollView;
-	if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Received messages"]) {
-		scrollView = receivedDMsScrollView;
-	} else if ([timelineButton.titleOfSelectedItem 
-				isEqualToString:@"Sent messages"]) {
-		scrollView = sentDMsScrollView;
-	} else {
-		scrollView = mainTimelineScrollView;
-	}
+	NSScrollView *scrollView = mainTimelineScrollView;
+
     if ([scrollView.documentView isFlipped]) {
         newScrollOrigin = NSMakePoint(0.0,0.0);
     } else {
@@ -469,8 +485,6 @@ sender {
 - (void) updateMaxNoOfShownUpdates {
 	int maxNoOfShownUpdates = [self maxShownUpdates];
 	[mainTimelineCollectionView setMaxNumberOfRows:maxNoOfShownUpdates];
-	[receivedDMsCollectionView setMaxNumberOfRows:maxNoOfShownUpdates];
-	[sentDMsCollectionView setMaxNumberOfRows:maxNoOfShownUpdates];
 }
 
 // Updates the selected URL shortener (according to the user's settings)
@@ -534,9 +548,6 @@ sender {
 	[indicator stopAnimation:self];
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	[charsLeftIndicator setHidden:NO];
-	[receivedDMsScrollView setHidden:YES];
-	[sentDMsScrollView setHidden:YES];
-	[mainTimelineScrollView setHidden:NO];
 	
 	if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 														previousTimeline]]) {
@@ -579,15 +590,12 @@ sender {
 	NSPoint oldScrollOrigin;
 	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Received messages"]) {
-		oldScrollOrigin = receivedDMsScrollView.contentView.bounds.origin;
+		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		[self setReceivedDirectMessages:[cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note]];
 		[self postDMsReceived:note];
-		[mainTimelineScrollView setHidden:YES];
-		[sentDMsScrollView setHidden:YES];
-		[receivedDMsScrollView setHidden:NO];
-		[receivedDMsScrollView.documentView scrollPoint:oldScrollOrigin];
+		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
@@ -609,14 +617,12 @@ sender {
 			 !([[[(NSArray *)note.object objectAtIndex:1] 
 				 recipientScreenName] 
 				isEqualToString:twitterEngine.sessionUserID]))) {
-			oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
+			oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 			[self setSentDirectMessages:[cacheManager
 				setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
 									 withNotification:note]];	
 			[mainTimelineScrollView setHidden:YES];
-			[receivedDMsScrollView setHidden:YES];
-			[sentDMsScrollView setHidden:NO];
-			[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
+			[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
 			if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 													previousTimeline]]) {
@@ -737,16 +743,13 @@ sender {
 	
 	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Sent Messages"]) {		
-		NSPoint oldScrollOrigin = sentDMsScrollView.contentView.bounds.origin;
+		NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		NSMutableArray *cache = [NSMutableArray 
 							 arrayWithArray:self.sentDirectMessages];
 	
 		[cache insertObject:note.object atIndex:0];
 		[self setSentDirectMessages:cache];
-		[mainTimelineScrollView setHidden:YES];
-		[receivedDMsScrollView setHidden:YES];
-		[sentDMsScrollView setHidden:NO];
-		[sentDMsScrollView.documentView scrollPoint:oldScrollOrigin];
+		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		[indicator stopAnimation:self];
 		[charsLeftIndicator setHidden:NO];
 	}
@@ -1439,7 +1442,6 @@ sender {
 	connectionErrorShown = YES;
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
-	[receivedDMsScrollView setHidden:YES];
 }
 
 // Shows the server response when there is an error
@@ -1457,17 +1459,14 @@ sender {
 			[statusBarTextField setStringValue:@"Twitter is overloaded"];
 			[indicator stopAnimation:self];
 			[charsLeftIndicator setHidden:NO];
-			[receivedDMsScrollView setHidden:YES];
 		} else if (statusCode == 502) {
 			[statusBarTextField setStringValue:@"Twitter is down"];
 			[indicator stopAnimation:self];
 			[charsLeftIndicator setHidden:NO];
-			[receivedDMsScrollView setHidden:YES];
 		} else if (statusCode == 500) {
 			[statusBarTextField setStringValue:@"Twitter internal error"];
 			[indicator stopAnimation:self];
 			[charsLeftIndicator setHidden:NO];
-			[receivedDMsScrollView setHidden:YES];
 		} else if (statusCode == 404) {
 			[statusBarTextField setStringValue:@"Requested resource not found"];
 		} else if (statusCode == 403) {
@@ -1683,13 +1682,7 @@ sender {
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-	[receivedDMsCollectionView setContent:NULL];
-	[receivedDMsCollectionView setNeedsDisplay:YES];
-	[receivedDMsCollectionView displayIfNeededIgnoringOpacity];
-	[sentDMsCollectionView setContent:NULL];
-	[sentDMsCollectionView setNeedsDisplay:YES];
-	[sentDMsCollectionView displayIfNeededIgnoringOpacity];
-	[self performSelector:@selector(populate)
+	[self performSelector:@selector(populateWithStatuses)
 			   withObject:nil
 			   afterDelay:0.5];
 	[defaults setObject:[NSNumber numberWithBool:NO]
@@ -1725,13 +1718,7 @@ sender {
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-	[receivedDMsCollectionView setContent:NULL];
-	[receivedDMsCollectionView setNeedsDisplay:YES];
-	[receivedDMsCollectionView displayIfNeededIgnoringOpacity];
-	[sentDMsCollectionView setContent:NULL];
-	[sentDMsCollectionView setNeedsDisplay:YES];
-	[sentDMsCollectionView displayIfNeededIgnoringOpacity];
-	[self performSelector:@selector(populate)
+	[self performSelector:@selector(populateWithStatuses)
 			   withObject:nil
 			   afterDelay:0.5];
 	[defaults setObject:[NSNumber numberWithBool:YES]
@@ -1739,16 +1726,22 @@ sender {
 }
 
 // Repopulates the main timeline
-- (void) populate {
+- (void) populateWithStatuses {
 	[mainTimelineCollectionView setContent:self.statuses];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
-	[receivedDMsCollectionView setContent:self.receivedDirectMessages];
-	[receivedDMsCollectionView setNeedsDisplay:YES];
-	[receivedDMsCollectionView	displayIfNeededIgnoringOpacity];
-	[sentDMsCollectionView setContent:self.sentDirectMessages];
-	[sentDMsCollectionView setNeedsDisplay:YES];
-	[sentDMsCollectionView	displayIfNeededIgnoringOpacity];
+}
+
+- (void) populateWithReceivedDMs {
+	[mainTimelineCollectionView setContent:self.receivedDirectMessages];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
+}
+
+- (void) populateWithSentDMs {
+	[mainTimelineCollectionView setContent:self.sentDirectMessages];
+	[mainTimelineCollectionView setNeedsDisplay:YES];
+	[mainTimelineCollectionView	displayIfNeededIgnoringOpacity];
 }
 
 // Action: Shows/hides the view options banner
@@ -1758,16 +1751,16 @@ sender {
 		float height = mainTimelineScrollView.frame.size.height - 25.0;
 		NSSize newSize = NSMakeSize(width, height);
 		[[mainTimelineScrollView animator] setFrameSize:newSize];
-		[[receivedDMsScrollView animator] setFrameSize:newSize];
-		[[sentDMsScrollView animator] setFrameSize:newSize];
+		//[[receivedDMsScrollView animator] setFrameSize:newSize];
+		//[[sentDMsScrollView animator] setFrameSize:newSize];
 		[[viewOptionsBox animator] setHidden:NO];
 	} else {
 		float width = mainTimelineScrollView.frame.size.width;
 		float height = mainTimelineScrollView.frame.size.height + 25.0;
 		NSSize newSize = NSMakeSize(width, height);
 		[[mainTimelineScrollView animator] setFrameSize:newSize];
-		[[receivedDMsScrollView animator] setFrameSize:newSize];
-		[[sentDMsScrollView animator] setFrameSize:newSize];
+		//[[receivedDMsScrollView animator] setFrameSize:newSize];
+		//[[sentDMsScrollView animator] setFrameSize:newSize];
 		[viewOptionsBox setHidden:YES];
 	}
 }
