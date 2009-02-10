@@ -62,18 +62,14 @@
 	IBOutlet NSPopUpButton *timelineButton;
 	IBOutlet NSProgressIndicator *indicator;
 	IBOutlet NSView *contentView;
-	IBOutlet NSCollectionViewItem *mainTimelineCollectionViewItem;
+	IBOutlet NSCollectionViewItem *statusTimelineCollectionViewItem;
 	IBOutlet NSImageView *statusBarImageView;
 	IBOutlet NSTextField *statusBarTextField;
 	IBOutlet NSButton *statusBarButton;
 	IBOutlet NSMenuItem *switchNamesMenuItem;
-	// Received DMs Collection View Outletss
-	//IBOutlet NSCollectionView *receivedDMsCollectionView;
-	//IBOutlet NSScrollView *receivedDMsScrollView;
+	// Received DMs Collection View Outlets
 	IBOutlet NSCollectionViewItem *receivedDMsCollectionViewItem;
 	// Sent DMs Collection View Outlets
-	//IBOutlet NSCollectionView *sentDMsCollectionView;
-	//IBOutlet NSScrollView *sentDMsScrollView;
 	IBOutlet NSCollectionViewItem *sentDMsCollectionViewItem;
 	// Received DMs View Outlets
 	IBOutlet NSTextField *receivedDMTextField;
@@ -281,11 +277,7 @@
 @property (retain) NSPopUpButton *timelineButton;
 @property (retain) NSProgressIndicator *indicator;
 @property (retain) NSView *contentView;
-@property (retain) NSCollectionViewItem *mainTimelineCollectionViewItem;
-//@property (retain) NSCollectionView *receivedDMsCollectionView;
-//@property (retain) NSScrollView *receivedDMsScrollView;
-//@property (retain) NSCollectionView *sentDMsCollectionView;
-//@property (retain) NSScrollView *sentDMsScrollView;
+@property (retain) NSCollectionViewItem *statusTimelineCollectionViewItem;
 @property (retain) NSTextField *receivedDMTextField;
 @property (retain) NSView *receivedDMView;
 @property (retain) NSBox *receivedDMBox;

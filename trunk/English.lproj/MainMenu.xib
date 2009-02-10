@@ -9,6 +9,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="372"/>
+			<integer value="462"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -92,7 +93,7 @@
 			</object>
 			<object class="NSCollectionViewItem" id="136294764"/>
 			<object class="NSView" id="77162958">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -633,6 +634,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{322, 87}</string>
+				<reference key="NSSuperview"/>
 			</object>
 			<object class="NSMenu" id="649796088">
 				<string key="NSTitle">Main Menu</string>
@@ -5208,14 +5210,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<int key="connectionID">1550</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">mainTimelineCollectionViewItem</string>
-						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="136294764"/>
-					</object>
-					<int key="connectionID">1561</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: representedObject.userURL</string>
 						<reference key="source" ref="279165272"/>
@@ -6046,6 +6040,14 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<reference key="destination" ref="131349941"/>
 					</object>
 					<int key="connectionID">2257</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">statusTimelineCollectionViewItem</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="136294764"/>
+					</object>
+					<int key="connectionID">2258</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -9238,7 +9240,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">2257</int>
+			<int key="maxID">2258</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -9371,7 +9373,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>instaFilterBox</string>
 							<string>largeInstaFilterSearchField</string>
 							<string>mainTimelineCollectionView</string>
-							<string>mainTimelineCollectionViewItem</string>
 							<string>mainTimelineScrollView</string>
 							<string>nameButton</string>
 							<string>newStatusTextField</string>
@@ -9396,6 +9397,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>statusBarTextField</string>
 							<string>statusBox</string>
 							<string>statusTextField</string>
+							<string>statusTimelineCollectionViewItem</string>
 							<string>statusView</string>
 							<string>switchNamesMenuItem</string>
 							<string>timelineButton</string>
@@ -9422,7 +9424,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSBox</string>
 							<string>NSSearchField</string>
 							<string>NSCollectionView</string>
-							<string>NSCollectionViewItem</string>
 							<string>NSScrollView</string>
 							<string>NSButton</string>
 							<string>NSTextField</string>
@@ -9447,6 +9448,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSTextField</string>
 							<string>NSBox</string>
 							<string>NSTextField</string>
+							<string>NSCollectionViewItem</string>
 							<string>NSView</string>
 							<string>NSMenuItem</string>
 							<string>NSPopUpButton</string>

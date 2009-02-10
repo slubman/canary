@@ -22,13 +22,12 @@
 			statusView, statusBox, dateDifferenceTextField, indicator,
 			mainTimelineCollectionView, mainTimelineScrollView, tweetButton,
 			newStatusTextField, charsLeftIndicator, timelineButton, sentDMBox,
-			contentView, mainTimelineCollectionViewItem, sentDMTextField,
-			sentDMView, receivedDMTextField, 
+			contentView, statusTimelineCollectionViewItem, sentDMTextField,
+			sentDMView, receivedDMTextField, betweenUsers, realSelectedRange,
 			receivedDMView, receivedDMBox, receivedDMDateDifferenceTextField,
 			sentDMDateDifferenceTextField, statusArrayController, defaults, 
 			refreshTimer, loginItem, prevUserID, prevPassword, spokenCommands,
-			recognizer, firstBackgroundReceivedDMRetrieval, betweenUsers,
-			realSelectedRange;
+			recognizer, firstBackgroundReceivedDMRetrieval;
 
 static ORSCanaryController *sharedCanaryController = nil;
 
@@ -233,13 +232,15 @@ static ORSCanaryController *sharedCanaryController = nil;
 	if ([defaults boolForKey:@"CanaryShowScreenNames"]) {
 		[switchNamesMenuItem setTitle:@"Switch to Usernames"];
 		[nameButton bind:@"title"
-				toObject:mainTimelineCollectionViewItem
+				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
 		[nameButton bind:@"toolTip"
-				toObject:mainTimelineCollectionViewItem
+				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
+		// Bind the following conditionally (when the timeline is saved)
+		/*
 		[nameButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderName"
@@ -256,18 +257,21 @@ static ORSCanaryController *sharedCanaryController = nil;
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientScreenName"
 				 options:nil];
+		 */
 		[viewOptionsNamesControl setSelectedSegment:1];
 		namesSelectedSegment = 1;
 	} else {
 		[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
 		[nameButton bind:@"title"
-				toObject:mainTimelineCollectionViewItem
+				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
 		[nameButton bind:@"toolTip"
-				toObject:mainTimelineCollectionViewItem
+				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
+		// Bind the following conditionally (when the timeline is saved)
+		/*
 		[nameButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderScreenName"
@@ -284,6 +288,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientName"
 				 options:nil];
+		 */
 		[viewOptionsNamesControl setSelectedSegment:0];
 		namesSelectedSegment = 0;
 	}
@@ -340,6 +345,21 @@ sender {
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
 		[self getFriendsTimeline];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -347,6 +367,21 @@ sender {
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
 		[self getUserTimeline];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -354,6 +389,21 @@ sender {
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
 		[self getPublicTimeline];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -361,6 +411,21 @@ sender {
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
 		[self getReplies];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -368,13 +433,26 @@ sender {
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
 		[self getFavorites];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[[cacheManager receivedMessagesCache] count] > 0) {
-			//[self setStatuses:cacheManager.receivedMessagesCache];
 			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
-			
 		}
 		[mainTimelineCollectionView bind:@"content"
 								toObject:receivedDMsArrayController
@@ -384,7 +462,6 @@ sender {
 								toObject:receivedDMsArrayController
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:nil];
 		[mainTimelineCollectionView setItemPrototype:receivedDMsCollectionViewItem];
 		[self getReceivedMessages];
 		[mainTimelineCollectionView setContent:NULL];
@@ -404,6 +481,21 @@ sender {
 			[self setSentDirectMessages:cacheManager.sentMessagesCache];
 		}
 		[self getSentMessages];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:sentDMsArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:sentDMsArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithSentDMs)
+				   withObject:nil
+				   afterDelay:0.5];
 	}
 	[self updateTimer];
 }
@@ -1656,11 +1748,11 @@ sender {
 // Changes the binding of the main timeline collection to usernames
 - (void) changeToUsernames {
 	[nameButton bind:@"title"
-			toObject:mainTimelineCollectionViewItem
+			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
 	[nameButton bind:@"toolTip"
-			toObject:mainTimelineCollectionViewItem
+			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userName"
 			 options:nil];
 	[nameButton bind:@"title"
@@ -1692,11 +1784,11 @@ sender {
 // Changes the binding of the main timeline collection to screen names
 - (void) changeToScreenNames {
 	[nameButton bind:@"title"
-			toObject:mainTimelineCollectionViewItem
+			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userName"
 			 options:nil];
 	[nameButton bind:@"toolTip"
-			toObject:mainTimelineCollectionViewItem
+			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
 	[nameButton bind:@"title"
@@ -1784,24 +1876,24 @@ sender {
 }
 
 - (void) changeToSmallFont {
-	[mainTimelineCollectionViewItem setView:nil];
+	[statusTimelineCollectionViewItem setView:nil];
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
 	[statusTextField setFont:[NSFont systemFontOfSize:10.0]];
-	[mainTimelineCollectionViewItem setView:statusView];
+	[statusTimelineCollectionViewItem setView:statusView];
 	[self performSelector:@selector(populate)
 			   withObject:nil
 			   afterDelay:0.5];
 }
 
 - (void) changeToLargeFont {
-	[mainTimelineCollectionViewItem setView:nil];
+	[statusTimelineCollectionViewItem setView:nil];
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
 	[statusTextField setFont:[NSFont systemFontOfSize:12.0]];
-	[mainTimelineCollectionViewItem setView:statusView];
+	[statusTimelineCollectionViewItem setView:statusView];
 	[self performSelector:@selector(populate)
 			   withObject:nil
 			   afterDelay:0.5];
