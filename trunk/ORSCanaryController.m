@@ -341,6 +341,7 @@ sender {
 	}
 	[mainTimelineCollectionView unbind:@"content"];
 	[mainTimelineCollectionView unbind:@"selectionIndexes"];
+	[mainTimelineCollectionView setItemPrototype:NULL];
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
