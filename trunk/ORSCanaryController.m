@@ -455,6 +455,7 @@ sender {
 								toObject:sentDMsArrayController
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
 		[self getSentMessages];
 	}
 	[self updateTimer];
@@ -674,7 +675,7 @@ sender {
 			[self setSentDirectMessages:[cacheManager
 				setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
 									 withNotification:note]];	
-			[mainTimelineScrollView setHidden:YES];
+			//[mainTimelineScrollView setHidden:YES];
 			[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
 			if (![timelineButton.titleOfSelectedItem isEqualToString:[self
