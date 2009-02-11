@@ -107,54 +107,6 @@
 								<int key="NSvFlags">256</int>
 								<object class="NSMutableArray" key="NSSubviews">
 									<bool key="EncodedWithXMLCoder">YES</bool>
-									<object class="NSBox" id="367949573">
-										<reference key="NSNextResponder" ref="462273039"/>
-										<int key="NSvFlags">-2147483630</int>
-										<object class="NSMutableArray" key="NSSubviews">
-											<bool key="EncodedWithXMLCoder">YES</bool>
-											<object class="NSView" id="555954159">
-												<reference key="NSNextResponder" ref="367949573"/>
-												<int key="NSvFlags">256</int>
-												<string key="NSFrame">{{1, 1}, {346, 93}}</string>
-												<reference key="NSSuperview" ref="367949573"/>
-											</object>
-										</object>
-										<string key="NSFrame">{{-7, -6}, {348, 95}}</string>
-										<reference key="NSSuperview" ref="462273039"/>
-										<string key="NSOffsets">{0, 0}</string>
-										<object class="NSTextFieldCell" key="NSTitleCell">
-											<int key="NSCellFlags">67239424</int>
-											<int key="NSCellFlags2">0</int>
-											<string key="NSContents"/>
-											<object class="NSFont" key="NSSupport" id="26">
-												<string key="NSName">LucidaGrande</string>
-												<double key="NSSize">1.100000e+01</double>
-												<int key="NSfFlags">3100</int>
-											</object>
-											<object class="NSColor" key="NSBackgroundColor" id="216766085">
-												<int key="NSColorSpace">6</int>
-												<string key="NSCatalogName">System</string>
-												<string key="NSColorName">textBackgroundColor</string>
-												<object class="NSColor" key="NSColor" id="403112811">
-													<int key="NSColorSpace">3</int>
-													<bytes key="NSWhite">MQA</bytes>
-												</object>
-											</object>
-											<object class="NSColor" key="NSTextColor">
-												<int key="NSColorSpace">3</int>
-												<bytes key="NSWhite">MCAwLjgwMDAwMDAxAA</bytes>
-											</object>
-										</object>
-										<reference key="NSContentView" ref="555954159"/>
-										<int key="NSBorderType">1</int>
-										<int key="NSBoxType">4</int>
-										<int key="NSTitlePosition">0</int>
-										<bool key="NSTransparent">NO</bool>
-										<object class="NSColor" key="NSFillColor2">
-											<int key="NSColorSpace">1</int>
-											<bytes key="NSRGB">MC44NzIyNjI3OCAxIDAuNTIxODk3NzkAA</bytes>
-										</object>
-									</object>
 									<object class="NSButton" id="511973744">
 										<reference key="NSNextResponder" ref="462273039"/>
 										<int key="NSvFlags">266</int>
@@ -226,7 +178,15 @@
 												<double key="NSSize">1.300000e+01</double>
 												<int key="NSfFlags">1044</int>
 											</object>
-											<reference key="NSBackgroundColor" ref="216766085"/>
+											<object class="NSColor" key="NSBackgroundColor" id="216766085">
+												<int key="NSColorSpace">6</int>
+												<string key="NSCatalogName">System</string>
+												<string key="NSColorName">textBackgroundColor</string>
+												<object class="NSColor" key="NSColor" id="403112811">
+													<int key="NSColorSpace">3</int>
+													<bytes key="NSWhite">MQA</bytes>
+												</object>
+											</object>
 											<object class="NSColor" key="NSTextColor">
 												<int key="NSColorSpace">3</int>
 												<bytes key="NSWhite">MCAwLjgwMDAwMDAxAA</bytes>
@@ -615,7 +575,11 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">0</int>
 							<string key="NSContents">Box</string>
-							<reference key="NSSupport" ref="26"/>
+							<object class="NSFont" key="NSSupport" id="26">
+								<string key="NSName">LucidaGrande</string>
+								<double key="NSSize">1.100000e+01</double>
+								<int key="NSfFlags">3100</int>
+							</object>
 							<reference key="NSBackgroundColor" ref="216766085"/>
 							<object class="NSColor" key="NSTextColor">
 								<int key="NSColorSpace">3</int>
@@ -5605,26 +5569,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<int key="connectionID">1897</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">hidden: representedObject.inReplyToScreenName</string>
-						<reference key="source" ref="367949573"/>
-						<reference key="destination" ref="136294764"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="367949573"/>
-							<reference key="NSDestination" ref="136294764"/>
-							<string key="NSLabel">hidden: representedObject.inReplyToScreenName</string>
-							<string key="NSBinding">hidden</string>
-							<string key="NSKeyPath">representedObject.inReplyToScreenName</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSValueTransformerName</string>
-								<string key="NS.object.0">ScreenNameToBoolTransformer</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">1999</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">viewOptionsButton</string>
 						<reference key="source" ref="204190209"/>
@@ -7235,7 +7179,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="984288652"/>
 							<reference ref="572142704"/>
 							<reference ref="1030914183"/>
-							<reference ref="367949573"/>
 						</object>
 						<reference key="parent" ref="77162958"/>
 						<string key="objectName">Status Update Box</string>
@@ -7855,12 +7798,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 						<string key="objectName">Filter Array Controller</string>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">1996</int>
-						<reference key="object" ref="367949573"/>
-						<reference key="parent" ref="777967158"/>
-						<string key="objectName">Color Box</string>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">562</int>
 						<reference key="object" ref="565459749"/>
 						<object class="NSMutableArray" key="children">
@@ -8474,7 +8411,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<string>198.ImportedFromIB2</string>
 					<string>199.IBPluginDependency</string>
 					<string>199.ImportedFromIB2</string>
-					<string>1996.IBPluginDependency</string>
 					<string>200.IBPluginDependency</string>
 					<string>200.ImportedFromIB2</string>
 					<string>200.editorWindowContentRectSynchronizationRect</string>
@@ -8971,7 +8907,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>{{608, 612}, {275, 83}}</string>
