@@ -234,8 +234,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -291,7 +289,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 791}, {246, 596}}</string>
+							<string>{{0, 0}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -319,6 +317,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05D0F6E10F436F8C00ABF45A</string>
+										<string>05D0F6EB0F43735E00ABF45A</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -447,7 +447,7 @@
 											<string>0509C9B60F42B97600C5E208</string>
 											<string>0509C9C10F42B9CC00C5E208</string>
 											<string>0509C9F70F42C5D500C5E208</string>
-											<string>0528FC2D0F433015000B18F6</string>
+											<string>05D0F6E80F43735100ABF45A</string>
 										</array>
 										<key>prevStack</key>
 										<array>

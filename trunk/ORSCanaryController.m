@@ -339,27 +339,21 @@ sender {
 			previousTimeline]]) && [sender isEqualTo:timelineButton]) {
 		return;
 	}
-	//[mainTimelineCollectionView setHidden:YES];
-	//[mainTimelineCollectionView unbind:@"content"];
-	//[mainTimelineCollectionView unbind:@"selectionIndexes"];
-	//[mainTimelineCollectionView setHidden:NO];
+	[mainTimelineCollectionView unbind:@"content"];
+	[mainTimelineCollectionView unbind:@"selectionIndexes"];
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
-		/*[mainTimelineCollectionView bind:@"content"
+		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
 								 options:nil];
 		[mainTimelineCollectionView bind:@"selectionIndexes"
 								toObject:statusArrayController
 							 withKeyPath:@"selectionIndexes"
-								 options:nil];*/
-		[statusArrayController bind:@"contentArray"
-						   toObject:self
-						withKeyPath:@"self.statuses"
-							options:nil];
+								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self getFriendsTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
@@ -368,18 +362,14 @@ sender {
 				[cacheManager.repliesStatusCache count] > 0) {
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
-		/*[mainTimelineCollectionView bind:@"content"
+		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
 								 options:nil];
 		[mainTimelineCollectionView bind:@"selectionIndexes"
 								toObject:statusArrayController
 							 withKeyPath:@"selectionIndexes"
-								 options:nil];*/
-		[statusArrayController bind:@"contentArray"
-						   toObject:self
-						withKeyPath:@"self.statuses"
-							options:nil];
+								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self getReplies];
 	} else if ([timelineButton.titleOfSelectedItem
@@ -388,18 +378,14 @@ sender {
 				[cacheManager.publicStatusCache count] > 0) {
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
-		/*[mainTimelineCollectionView bind:@"content"
+		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
 								 options:nil];
 		[mainTimelineCollectionView bind:@"selectionIndexes"
 								toObject:statusArrayController
 							 withKeyPath:@"selectionIndexes"
-								 options:nil];*/
-		[statusArrayController bind:@"contentArray"
-						   toObject:self
-						withKeyPath:@"self.statuses"
-							options:nil];
+								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self getPublicTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
@@ -408,18 +394,14 @@ sender {
 				[cacheManager.favoritesStatusCache count] > 0) {
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
-		/*[mainTimelineCollectionView bind:@"content"
+		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
 								 options:nil];
 		[mainTimelineCollectionView bind:@"selectionIndexes"
 								toObject:statusArrayController
 							 withKeyPath:@"selectionIndexes"
-								 options:nil];*/
-		[statusArrayController bind:@"contentArray"
-						   toObject:self
-						withKeyPath:@"self.statuses"
-							options:nil];
+								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self getFavorites];
 	} else if ([timelineButton.titleOfSelectedItem
@@ -428,18 +410,14 @@ sender {
 			[cacheManager.archiveStatusCache count] > 0) {
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
-		/*[mainTimelineCollectionView bind:@"content"
+		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
 								 options:nil];
 		[mainTimelineCollectionView bind:@"selectionIndexes"
 								toObject:statusArrayController
 							 withKeyPath:@"selectionIndexes"
-								 options:nil];*/
-		[statusArrayController bind:@"contentArray"
-						   toObject:self
-						withKeyPath:@"self.statuses"
-							options:nil];
+								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self getUserTimeline];
 	}  else if ([timelineButton.titleOfSelectedItem
@@ -481,172 +459,6 @@ sender {
 	}
 	[self updateTimer];
 }
-
-/*- (IBAction) changeTimeline:sender {
-	if (([timelineButton.titleOfSelectedItem isEqualToString:[self
-			previousTimeline]]) && [sender isEqualTo:timelineButton]) {
-		return;
-	}
-	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.followingStatusCache count] > 0) {
-			[self setStatuses:cacheManager.followingStatusCache];
-		}
-		[self getFriendsTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithStatuses)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Archive"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.archiveStatusCache count] > 0) {
-			[self setStatuses:cacheManager.archiveStatusCache];
-		}
-		[self getUserTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithStatuses)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Public"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.publicStatusCache count] > 0) {
-			[self setStatuses:cacheManager.publicStatusCache];
-		}
-		[self getPublicTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithStatuses)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Replies"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.repliesStatusCache count] > 0) {
-			[self setStatuses:cacheManager.repliesStatusCache];
-		}
-		[self getReplies];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithStatuses)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Favorites"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.favoritesStatusCache count] > 0) {
-			[self setStatuses:cacheManager.favoritesStatusCache];
-		}
-		[self getFavorites];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithStatuses)
-				   withObject:nil
-				   afterDelay:0.5];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Received messages"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[[cacheManager receivedMessagesCache] count] > 0) {
-			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
-		}
-		[mainTimelineCollectionView bind:@"content"
-								toObject:receivedDMsArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:receivedDMsArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:receivedDMsCollectionViewItem];
-		[self getReceivedMessages];
-		//[mainTimelineCollectionView setContent:NULL];
-		//[mainTimelineCollectionView setNeedsDisplay:YES];
-		//[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		//[self performSelector:@selector(populateWithReceivedDMs)
-		//		   withObject:nil
-		//		   afterDelay:0.5];
-		[statusBarTextField setHidden:YES];
-		[statusBarImageView setHidden:YES];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
-	} else if ([timelineButton.titleOfSelectedItem
-				isEqualToString:@"Sent messages"]) {
-		if ([sender isEqualTo:timelineButton] && 
-				[cacheManager.sentMessagesCache count] > 0) {
-			[self setSentDirectMessages:cacheManager.sentMessagesCache];
-		}
-		[self getSentMessages];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
-		[mainTimelineCollectionView setContent:NULL];
-		[mainTimelineCollectionView setNeedsDisplay:YES];
-		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-		[self performSelector:@selector(populateWithSentDMs)
-				   withObject:nil
-				   afterDelay:0.5];
-	}
-	[self updateTimer];
-}*/
 
 // Scrolls timeline to the top
 - (void) scrollToTop {
