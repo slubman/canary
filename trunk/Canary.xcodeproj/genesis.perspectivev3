@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -283,11 +283,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>86</integer>
+									<integer>4</integer>
+									<integer>2</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 883}, {246, 596}}</string>
+							<string>{{0, 0}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -303,6 +306,8 @@
 							<string>MainColumn</string>
 							<real>246</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,6 +318,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -330,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05D0F8280F43855E00ABF45A</string>
+										<string>05D0F8350F438FA500ABF45A</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -377,7 +384,6 @@
 											<string>058530180F292BB8003DB512</string>
 											<string>0585301A0F292BB8003DB512</string>
 											<string>0585301C0F292BB8003DB512</string>
-											<string>0585301D0F292BB8003DB512</string>
 											<string>0585301E0F292BB8003DB512</string>
 											<string>0585301F0F292BB8003DB512</string>
 											<string>058530200F292BB8003DB512</string>
@@ -441,7 +447,8 @@
 											<string>05D0F80A0F43820100ABF45A</string>
 											<string>05D0F80B0F43820100ABF45A</string>
 											<string>05D0F8170F43835900ABF45A</string>
-											<string>05D0F8240F4384CA00ABF45A</string>
+											<string>05D0F82C0F438E3800ABF45A</string>
+											<string>05D0F8340F438FA200ABF45A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -567,6 +574,8 @@
 											<string>05D0F81A0F43835900ABF45A</string>
 											<string>05D0F81B0F43835900ABF45A</string>
 											<string>05D0F81C0F43835900ABF45A</string>
+											<string>05D0F82E0F438E3800ABF45A</string>
+											<string>05D0F82F0F438E3800ABF45A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -581,6 +590,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {638, 609}}</string>
+								<key>RubberWindowFrame</key>
+								<string>375 123 906 655 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -604,6 +615,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {638, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>375 123 906 655 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -726,8 +739,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -739,8 +750,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {906, 224}}</string>
-						<key>RubberWindowFrame</key>
-						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -815,11 +824,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{437, 0}, {469, 177}}</string>
-							<key>RubberWindowFrame</key>
-							<string>375 123 906 655 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>

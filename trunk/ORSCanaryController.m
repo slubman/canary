@@ -1718,22 +1718,23 @@ sender {
 			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userName"
 			 options:nil];
-	[nameButton bind:@"title"
-			toObject:receivedDMsCollectionViewItem
-		 withKeyPath:@"representedObject.senderScreenName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:receivedDMsCollectionViewItem
-		 withKeyPath:@"representedObject.senderName"
-			 options:nil];
-	[nameButton bind:@"title"
-			toObject:sentDMsCollectionViewItem
-		 withKeyPath:@"representedObject.recipientScreenName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:sentDMsCollectionViewItem
-		 withKeyPath:@"representedObject.recipientName"
-			 options:nil];
+	// Need to switch that according to the active timeline
+	//[nameButton bind:@"title"
+	//		toObject:receivedDMsCollectionViewItem
+	//	 withKeyPath:@"representedObject.senderScreenName"
+	//		 options:nil];
+	//[nameButton bind:@"toolTip"
+	//		toObject:receivedDMsCollectionViewItem
+	//	 withKeyPath:@"representedObject.senderName"
+	//		 options:nil];
+	//[nameButton bind:@"title"
+	//		toObject:sentDMsCollectionViewItem
+	//	 withKeyPath:@"representedObject.recipientScreenName"
+	//		 options:nil];
+	//[nameButton bind:@"toolTip"
+	//		toObject:sentDMsCollectionViewItem
+	//	 withKeyPath:@"representedObject.recipientName"
+	//		 options:nil];
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
@@ -1754,7 +1755,8 @@ sender {
 			toObject:statusTimelineCollectionViewItem
 		 withKeyPath:@"representedObject.userScreenName"
 			 options:nil];
-	[nameButton bind:@"title"
+	// Need to switch that according to the active timeline
+	/*[nameButton bind:@"title"
 			toObject:receivedDMsCollectionViewItem
 		 withKeyPath:@"representedObject.senderName"
 			 options:nil];
@@ -1769,7 +1771,7 @@ sender {
 	[nameButton bind:@"toolTip"
 			toObject:sentDMsCollectionViewItem
 		 withKeyPath:@"representedObject.recipientScreenName"
-			 options:nil];
+			 options:nil];*/
 	[mainTimelineCollectionView setContent:NULL];
 	[mainTimelineCollectionView setNeedsDisplay:YES];
 	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
