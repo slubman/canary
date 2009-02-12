@@ -128,6 +128,7 @@
 	NSRange realSelectedRange;
 	
 	BOOL firstFollowingTimelineRun;
+	BOOL showScreenNames;
 }
 
 + (ORSCanaryController *) sharedController;

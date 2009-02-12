@@ -231,64 +231,14 @@ static ORSCanaryController *sharedCanaryController = nil;
 	
 	if ([defaults boolForKey:@"CanaryShowScreenNames"]) {
 		[switchNamesMenuItem setTitle:@"Switch to Usernames"];
-		[nameButton bind:@"title"
-				toObject:statusTimelineCollectionViewItem
-			 withKeyPath:@"representedObject.userName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:statusTimelineCollectionViewItem
-			 withKeyPath:@"representedObject.userScreenName"
-				 options:nil];
-		// Bind the following conditionally (when the timeline is saved)
-		/*
-		[nameButton bind:@"title"
-				toObject:receivedDMsCollectionViewItem
-			 withKeyPath:@"representedObject.senderName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:receivedDMsCollectionViewItem
-			 withKeyPath:@"representedObject.senderScreenName"
-				 options:nil];
-		[nameButton bind:@"title"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientScreenName"
-				 options:nil];
-		 */
+		[self changeToScreenNames];
+		showScreenNames = YES;
 		[viewOptionsNamesControl setSelectedSegment:1];
 		namesSelectedSegment = 1;
 	} else {
 		[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
-		[nameButton bind:@"title"
-				toObject:statusTimelineCollectionViewItem
-			 withKeyPath:@"representedObject.userScreenName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:statusTimelineCollectionViewItem
-			 withKeyPath:@"representedObject.userName"
-				 options:nil];
-		// Bind the following conditionally (when the timeline is saved)
-		/*
-		[nameButton bind:@"title"
-				toObject:receivedDMsCollectionViewItem
-			 withKeyPath:@"representedObject.senderScreenName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:receivedDMsCollectionViewItem
-			 withKeyPath:@"representedObject.senderName"
-				 options:nil];
-		[nameButton bind:@"title"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientScreenName"
-				 options:nil];
-		[nameButton bind:@"toolTip"
-				toObject:sentDMsCollectionViewItem
-			 withKeyPath:@"representedObject.recipientName"
-				 options:nil];
-		 */
+		[self changeToUsernames];
+		showScreenNames = NO;
 		[viewOptionsNamesControl setSelectedSegment:0];
 		namesSelectedSegment = 0;
 	}
@@ -460,6 +410,11 @@ sender {
 		[self getSentMessages];
 	}
 	[self updateTimer];
+	if (showScreenNames) {
+		[self changeToScreenNames];
+	} else {
+		[self changeToUsernames];
+	}
 }
 
 // Scrolls timeline to the top
@@ -676,7 +631,6 @@ sender {
 			[self setSentDirectMessages:[cacheManager
 				setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
 									 withNotification:note]];	
-			//[mainTimelineScrollView setHidden:YES];
 			[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
 			if (![timelineButton.titleOfSelectedItem isEqualToString:[self
@@ -1687,10 +1641,14 @@ sender {
 	if ([sender class] == [NSMenuItem class]) {
 		if ([[(NSMenuItem *)sender title] isEqualToString:@"Switch to Usernames"]) {
 			[self changeToUsernames];
+			[defaults setObject:[NSNumber numberWithBool:NO]
+						 forKey:@"CanaryShowScreenNames"];
 			[(NSMenuItem *)sender setTitle:@"Switch to Screen Names"];
 			[viewOptionsNamesControl setSelectedSegment:0];
 		} else {
 			[self changeToScreenNames];
+			[defaults setObject:[NSNumber numberWithBool:YES]
+						 forKey:@"CanaryShowScreenNames"];
 			[(NSMenuItem *)sender setTitle:@"Switch to Usernames"];
 			[viewOptionsNamesControl setSelectedSegment:1];
 		}
@@ -1706,80 +1664,98 @@ sender {
 			namesSelectedSegment = [viewOptionsNamesControl selectedSegment];
 		}
 	}
+	if ([timelineButton.titleOfSelectedItem 
+		 isEqualToString:@"Received messages"]) {
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithReceivedDMs)
+				   withObject:nil
+				   afterDelay:0.5];
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithSentDMs)
+				   withObject:nil
+				   afterDelay:0.5];
+	} else {
+		[mainTimelineCollectionView setContent:NULL];
+		[mainTimelineCollectionView setNeedsDisplay:YES];
+		[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
+		[self performSelector:@selector(populateWithStatuses)
+				   withObject:nil
+				   afterDelay:0.5];
+	}
 }
 
 // Changes the binding of the main timeline collection to usernames
 - (void) changeToUsernames {
-	[nameButton bind:@"title"
-			toObject:statusTimelineCollectionViewItem
-		 withKeyPath:@"representedObject.userScreenName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:statusTimelineCollectionViewItem
-		 withKeyPath:@"representedObject.userName"
-			 options:nil];
-	// Need to switch that according to the active timeline
-	//[nameButton bind:@"title"
-	//		toObject:receivedDMsCollectionViewItem
-	//	 withKeyPath:@"representedObject.senderScreenName"
-	//		 options:nil];
-	//[nameButton bind:@"toolTip"
-	//		toObject:receivedDMsCollectionViewItem
-	//	 withKeyPath:@"representedObject.senderName"
-	//		 options:nil];
-	//[nameButton bind:@"title"
-	//		toObject:sentDMsCollectionViewItem
-	//	 withKeyPath:@"representedObject.recipientScreenName"
-	//		 options:nil];
-	//[nameButton bind:@"toolTip"
-	//		toObject:sentDMsCollectionViewItem
-	//	 withKeyPath:@"representedObject.recipientName"
-	//		 options:nil];
-	[mainTimelineCollectionView setContent:NULL];
-	[mainTimelineCollectionView setNeedsDisplay:YES];
-	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-	[self performSelector:@selector(populateWithStatuses)
-			   withObject:nil
-			   afterDelay:0.5];
-	[defaults setObject:[NSNumber numberWithBool:NO]
-					forKey:@"CanaryShowScreenNames"];
+	showScreenNames = NO;
+	if ([timelineButton.titleOfSelectedItem 
+		 isEqualToString:@"Received messages"]) {
+		[nameButton bind:@"title"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderName"
+				 options:nil];
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
+		[nameButton bind:@"title"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientName"
+				 options:nil];
+	} else {
+		[nameButton bind:@"title"
+				toObject:statusTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userScreenName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:statusTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userName"
+				 options:nil];
+	}
+	
 }
 
 // Changes the binding of the main timeline collection to screen names
 - (void) changeToScreenNames {
-	[nameButton bind:@"title"
-			toObject:statusTimelineCollectionViewItem
-		 withKeyPath:@"representedObject.userName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:statusTimelineCollectionViewItem
-		 withKeyPath:@"representedObject.userScreenName"
-			 options:nil];
-	// Need to switch that according to the active timeline
-	/*[nameButton bind:@"title"
-			toObject:receivedDMsCollectionViewItem
-		 withKeyPath:@"representedObject.senderName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:receivedDMsCollectionViewItem
-		 withKeyPath:@"representedObject.senderScreenName"
-			 options:nil];
-	[nameButton bind:@"title"
-			toObject:sentDMsCollectionViewItem
-		 withKeyPath:@"representedObject.recipientName"
-			 options:nil];
-	[nameButton bind:@"toolTip"
-			toObject:sentDMsCollectionViewItem
-		 withKeyPath:@"representedObject.recipientScreenName"
-			 options:nil];*/
-	[mainTimelineCollectionView setContent:NULL];
-	[mainTimelineCollectionView setNeedsDisplay:YES];
-	[mainTimelineCollectionView displayIfNeededIgnoringOpacity];
-	[self performSelector:@selector(populateWithStatuses)
-			   withObject:nil
-			   afterDelay:0.5];
-	[defaults setObject:[NSNumber numberWithBool:YES]
-					forKey:@"CanaryShowScreenNames"];
+	showScreenNames = YES;
+	if ([timelineButton.titleOfSelectedItem 
+			isEqualToString:@"Received messages"]) {
+		[nameButton bind:@"title"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:receivedDMsCollectionViewItem
+			 withKeyPath:@"representedObject.senderScreenName"
+				 options:nil];
+	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
+		[nameButton bind:@"title"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:sentDMsCollectionViewItem
+			 withKeyPath:@"representedObject.recipientScreenName"
+				 options:nil];
+	} else {
+		[nameButton bind:@"title"
+				toObject:statusTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userName"
+				 options:nil];
+		[nameButton bind:@"toolTip"
+				toObject:statusTimelineCollectionViewItem
+			 withKeyPath:@"representedObject.userScreenName"
+				 options:nil];
+	}
 }
 
 // Repopulates the main timeline
@@ -1808,16 +1784,12 @@ sender {
 		float height = mainTimelineScrollView.frame.size.height - 25.0;
 		NSSize newSize = NSMakeSize(width, height);
 		[[mainTimelineScrollView animator] setFrameSize:newSize];
-		//[[receivedDMsScrollView animator] setFrameSize:newSize];
-		//[[sentDMsScrollView animator] setFrameSize:newSize];
 		[[viewOptionsBox animator] setHidden:NO];
 	} else {
 		float width = mainTimelineScrollView.frame.size.width;
 		float height = mainTimelineScrollView.frame.size.height + 25.0;
 		NSSize newSize = NSMakeSize(width, height);
 		[[mainTimelineScrollView animator] setFrameSize:newSize];
-		//[[receivedDMsScrollView animator] setFrameSize:newSize];
-		//[[sentDMsScrollView animator] setFrameSize:newSize];
 		[viewOptionsBox setHidden:YES];
 	}
 }
@@ -2245,7 +2217,7 @@ sender {
 	} else {
 		for (NSXMLNode *node in (NSArray *)note.object) {
 			NSData *iconData;
-			if ([node.senderProfileImageURL isSuffix:@".gif"]) {
+			if ([node.senderProfileImageURL hassSuffix:@".gif"]) {
 				iconData = nil;
 			} else {
 				iconData = [[NSData alloc] initWithContentsOfURL:[NSURL 
