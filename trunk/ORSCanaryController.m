@@ -617,30 +617,19 @@ sender {
 		}
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
-		if ((([[[(NSArray *)note.object objectAtIndex:0] senderScreenName] 
-			 isEqualToString:twitterEngine.sessionUserID]) && 
-				!([[[(NSArray *)note.object objectAtIndex:0] 
-					recipientScreenName] 
-						isEqualToString:twitterEngine.sessionUserID])) ||
-			(([[[(NSArray *)note.object objectAtIndex:1] senderScreenName] 
-			   isEqualToString:twitterEngine.sessionUserID]) && 
-			 !([[[(NSArray *)note.object objectAtIndex:1] 
-				 recipientScreenName] 
-				isEqualToString:twitterEngine.sessionUserID]))) {
-			oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-			[self setSentDirectMessages:[cacheManager
-				setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
-									 withNotification:note]];	
-			[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-		
-			if (![timelineButton.titleOfSelectedItem isEqualToString:[self
-													previousTimeline]]) {
-				[self scrollToTop];
-			}
-			previousTimeline = timelineButton.titleOfSelectedItem;
-			if (newStatusTextField.stringValue.length == 0) {
-				[newStatusTextField setStringValue:@"d "];
-			}
+		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
+		[self setSentDirectMessages:[cacheManager
+			setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
+								 withNotification:note]];	
+		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
+	
+		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
+												previousTimeline]]) {
+			[self scrollToTop];
+		}
+		previousTimeline = timelineButton.titleOfSelectedItem;
+		if (newStatusTextField.stringValue.length == 0) {
+			[newStatusTextField setStringValue:@"d "];
 		}
 	} else {
 		if (((NSArray *)note.object).count > 0) {
