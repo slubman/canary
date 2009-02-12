@@ -48,7 +48,7 @@
 	IBOutlet NSWindow *aboutWindow;
 	IBOutlet NSWindow *newUserWindow;
 	// Status View Outlets
-	IBOutlet NSButton *nameButton;
+	IBOutlet NSButton *statusNameButton;
 	IBOutlet NSTextField *statusTextField;
 	IBOutlet NSView *statusView;
 	IBOutlet NSBox *statusBox;
@@ -67,16 +67,18 @@
 	IBOutlet NSTextField *statusBarTextField;
 	IBOutlet NSButton *statusBarButton;
 	IBOutlet NSMenuItem *switchNamesMenuItem;
-	// Received DMs Collection View Outlets
+	// Received DMs Collection View Item Outlets
 	IBOutlet NSCollectionViewItem *receivedDMsCollectionViewItem;
-	// Sent DMs Collection View Outlets
+	// Sent DMs Collection View Item Outlets
 	IBOutlet NSCollectionViewItem *sentDMsCollectionViewItem;
 	// Received DMs View Outlets
+	IBOutlet NSButton *receivedDMButton;
 	IBOutlet NSTextField *receivedDMTextField;
 	IBOutlet NSView *receivedDMView;
 	IBOutlet NSBox *receivedDMBox;
 	IBOutlet NSTextField *receivedDMDateDifferenceTextField;
 	// Sent DMs View Outlets
+	IBOutlet NSButton *sentDMButton;
 	IBOutlet NSTextField *sentDMTextField;
 	IBOutlet NSView *sentDMView;
 	IBOutlet NSBox *sentDMBox;

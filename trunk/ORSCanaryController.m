@@ -292,6 +292,11 @@ sender {
 	[mainTimelineCollectionView unbind:@"content"];
 	[mainTimelineCollectionView unbind:@"selectionIndexes"];
 	[mainTimelineCollectionView setItemPrototype:NULL];
+	if (showScreenNames) {
+		[self changeToScreenNames];
+	} else {
+		[self changeToUsernames];
+	}
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
@@ -410,11 +415,6 @@ sender {
 		[self getSentMessages];
 	}
 	[self updateTimer];
-	if (showScreenNames) {
-		[self changeToScreenNames];
-	} else {
-		[self changeToUsernames];
-	}
 }
 
 // Scrolls timeline to the top
@@ -1656,12 +1656,18 @@ sender {
 		if (namesSelectedSegment != [viewOptionsNamesControl selectedSegment]) {
 			if ([viewOptionsNamesControl selectedSegment] == 0) {
 				[self changeToUsernames];
+				[defaults setObject:[NSNumber numberWithBool:NO]
+							 forKey:@"CanaryShowScreenNames"];
 				[switchNamesMenuItem setTitle:@"Switch to Screen Names"];
 			} else {
 				[self changeToScreenNames];
+				[defaults setObject:[NSNumber numberWithBool:YES]
+							 forKey:@"CanaryShowScreenNames"];
 				[switchNamesMenuItem setTitle:@"Switch to Usernames"];
 			}
 			namesSelectedSegment = [viewOptionsNamesControl selectedSegment];
+		} else {
+			return;
 		}
 	}
 	if ([timelineButton.titleOfSelectedItem 
@@ -1691,71 +1697,70 @@ sender {
 
 // Changes the binding of the main timeline collection to usernames
 - (void) changeToUsernames {
-	showScreenNames = NO;
 	if ([timelineButton.titleOfSelectedItem 
 		 isEqualToString:@"Received messages"]) {
-		[nameButton bind:@"title"
+		[receivedDMButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderScreenName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[receivedDMButton bind:@"toolTip"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderName"
 				 options:nil];
 	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
-		[nameButton bind:@"title"
+		[sentDMButton bind:@"title"
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientScreenName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[sentDMButton bind:@"toolTip"
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientName"
 				 options:nil];
 	} else {
-		[nameButton bind:@"title"
+		[statusNameButton bind:@"title"
 				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[statusNameButton bind:@"toolTip"
 				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
 	}
-	
+	showScreenNames = NO;
 }
 
 // Changes the binding of the main timeline collection to screen names
 - (void) changeToScreenNames {
-	showScreenNames = YES;
 	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Received messages"]) {
-		[nameButton bind:@"title"
+		[receivedDMButton bind:@"title"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[receivedDMButton bind:@"toolTip"
 				toObject:receivedDMsCollectionViewItem
 			 withKeyPath:@"representedObject.senderScreenName"
 				 options:nil];
 	} else if ([timelineButton.titleOfSelectedItem isEqualToString:@"Sent messages"]) {
-		[nameButton bind:@"title"
+		[sentDMButton bind:@"title"
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[sentDMButton bind:@"toolTip"
 				toObject:sentDMsCollectionViewItem
 			 withKeyPath:@"representedObject.recipientScreenName"
 				 options:nil];
 	} else {
-		[nameButton bind:@"title"
+		[statusNameButton bind:@"title"
 				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userName"
 				 options:nil];
-		[nameButton bind:@"toolTip"
+		[statusNameButton bind:@"toolTip"
 				toObject:statusTimelineCollectionViewItem
 			 withKeyPath:@"representedObject.userScreenName"
 				 options:nil];
 	}
+	showScreenNames = YES;
 }
 
 // Repopulates the main timeline
