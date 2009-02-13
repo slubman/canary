@@ -302,6 +302,7 @@ sender {
 				[cacheManager.followingStatusCache count] > 0) {
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
+		[self getFriendsTimeline];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -311,13 +312,13 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self getFriendsTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.repliesStatusCache count] > 0) {
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
+		[self getReplies];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -327,13 +328,13 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self getReplies];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.publicStatusCache count] > 0) {
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
+		[self getPublicTimeline];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -343,13 +344,13 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self getPublicTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
 			   isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.favoritesStatusCache count] > 0) {
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
+		[self getFavorites];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -359,13 +360,13 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self getFavorites];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[cacheManager.archiveStatusCache count] > 0) {
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
+		[self getUserTimeline];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:statusArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -375,13 +376,13 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self getUserTimeline];
 	}  else if ([timelineButton.titleOfSelectedItem
 				 isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[[cacheManager receivedMessagesCache] count] > 0) {
 			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
 		}
+		[self getReceivedMessages];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:receivedDMsArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -391,7 +392,6 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:receivedDMsCollectionViewItem];
-		[self getReceivedMessages];
 		
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
@@ -403,6 +403,7 @@ sender {
 			[cacheManager.sentMessagesCache count] > 0) {
 			[self setSentDirectMessages:cacheManager.sentMessagesCache];
 		}
+		[self getSentMessages];
 		[mainTimelineCollectionView bind:@"content"
 								toObject:sentDMsArrayController
 							 withKeyPath:@"arrangedObjects"
@@ -412,7 +413,6 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
-		[self getSentMessages];
 	}
 	[self updateTimer];
 }
@@ -555,10 +555,7 @@ sender {
 			setStatusesForTimelineCache:ORSFavoritesTimelineCacheType 
 						   withNotification:note]];
 	}
-	[indicator stopAnimation:self];
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-	[charsLeftIndicator setHidden:NO];
-	
 	if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 														previousTimeline]]) {
 		[self scrollToTop];
@@ -568,6 +565,9 @@ sender {
 	if ([newStatusTextField.stringValue isEqualToString:@"d "]) {
 		[newStatusTextField setStringValue:@""];
 	}
+	
+	[indicator stopAnimation:self];
+	[charsLeftIndicator setHidden:NO];
 }
 
 // Sets the users asynchronously
