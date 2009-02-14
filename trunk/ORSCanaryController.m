@@ -289,9 +289,6 @@ sender {
 			previousTimeline]]) && [sender isEqualTo:timelineButton]) {
 		return;
 	}
-	[mainTimelineCollectionView unbind:@"content"];
-	[mainTimelineCollectionView unbind:@"selectionIndexes"];
-	[mainTimelineCollectionView setItemPrototype:NULL];
 	if (showScreenNames) {
 		[self changeToScreenNames];
 	} else {
@@ -303,15 +300,6 @@ sender {
 			[self setStatuses:cacheManager.followingStatusCache];
 		}
 		[self getFriendsTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -319,15 +307,6 @@ sender {
 			[self setStatuses:cacheManager.repliesStatusCache];
 		}
 		[self getReplies];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -335,15 +314,6 @@ sender {
 			[self setStatuses:cacheManager.publicStatusCache];
 		}
 		[self getPublicTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem
 			   isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -351,15 +321,6 @@ sender {
 			[self setStatuses:cacheManager.favoritesStatusCache];
 		}
 		[self getFavorites];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -367,15 +328,6 @@ sender {
 			[self setStatuses:cacheManager.archiveStatusCache];
 		}
 		[self getUserTimeline];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	}  else if ([timelineButton.titleOfSelectedItem
 				 isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
@@ -383,16 +335,6 @@ sender {
 			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
 		}
 		[self getReceivedMessages];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:receivedDMsArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:receivedDMsArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:receivedDMsCollectionViewItem];
-		
 		[statusBarTextField setHidden:YES];
 		[statusBarImageView setHidden:YES];
 		[statusBarButton setEnabled:NO];
@@ -404,15 +346,6 @@ sender {
 			[self setSentDirectMessages:cacheManager.sentMessagesCache];
 		}
 		[self getSentMessages];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:sentDMsArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
 	}
 	[self updateTimer];
 }
@@ -530,30 +463,89 @@ sender {
 										   withNotification:note]];
 			[self postStatusUpdatesReceived:note];
 		}
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
 		[self setStatuses:[cacheManager 
 			setStatusesForTimelineCache:ORSArchiveTimelineCacheType
 						 withNotification:note]];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Public"]) {
-		NSArray *theCache = [cacheManager 
-							 setStatusesForTimelineCache:ORSPublicTimelineCacheType
-							 withNotification:note]; 
-		[self setStatuses:theCache];
+		[self setStatuses:[cacheManager 
+						   setStatusesForTimelineCache:ORSPublicTimelineCacheType
+						   withNotification:note]];
 		[self postStatusUpdatesReceived:note];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 		[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSRepliesTimelineCacheType
 											withNotification:note]];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		[self postRepliesReceived:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 		[self setStatuses:[cacheManager 
 			setStatusesForTimelineCache:ORSFavoritesTimelineCacheType 
 						   withNotification:note]];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	}
 	[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	if (![timelineButton.titleOfSelectedItem isEqualToString:[self
@@ -604,6 +596,20 @@ sender {
 		[self setReceivedDirectMessages:[cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note]];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:receivedDMsArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:receivedDMsArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView 
+			setItemPrototype:receivedDMsCollectionViewItem];
+		
 		[self postDMsReceived:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
@@ -620,7 +626,19 @@ sender {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 		[self setSentDirectMessages:[cacheManager
 			setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
-								 withNotification:note]];	
+								 withNotification:note]];
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:sentDMsArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:sentDMsArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
@@ -1290,10 +1308,133 @@ sender {
 	[self openUserURL:@"https://twitter.com/signup"];
 }
 
+// This gets called when the main application window is called and the
+// user clicks on the dock icon.
+- (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
+					 hasVisibleWindows:(BOOL)flag {
+	[self.window makeKeyAndOrderFront:self];
+	return YES;
+}
+
+// This hides the status bar message
+- (void) hideStatusBar {
+	[statusBarTextField setHidden:YES];
+	[statusBarImageView setHidden:YES];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
+}
+
+
+// Front-end error handling
+
+// Shows that there is a connection problem
+- (void) showConnectionFailure:(NSNotification *)note {
+	[statusBarTextField setStringValue:@"Connection problem"];
+	[statusBarTextField setHidden:NO];
+	[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
+	[statusBarImageView setHidden:NO];
+	[statusBarButton setEnabled:NO];
+	[statusBarButton setHidden:YES];
+	messageDurationTimer = [NSTimer 
+							scheduledTimerWithTimeInterval:60 
+							target:self selector:@selector(hideStatusBar) 
+							userInfo:nil repeats:NO];
+	connectionErrorShown = YES;
+	[indicator stopAnimation:self];
+	[charsLeftIndicator setHidden:NO];
+}
+
+// Shows the server response when there is an error
+- (void) showReceivedResponse:(NSNotification *)note {
+	if (betweenUsers) {
+		betweenUsers = NO;
+		return;
+	}
+	
+	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
+	NSInteger statusCode = response.statusCode;
+	
+	if (statusCode != 200 && statusCode != 304) {
+		if (statusCode == 503) {
+			[statusBarTextField setStringValue:@"Twitter is overloaded"];
+			[indicator stopAnimation:self];
+			[charsLeftIndicator setHidden:NO];
+		} else if (statusCode == 502) {
+			[statusBarTextField setStringValue:@"Twitter is down"];
+			[indicator stopAnimation:self];
+			[charsLeftIndicator setHidden:NO];
+		} else if (statusCode == 500) {
+			[statusBarTextField setStringValue:@"Twitter internal error"];
+			[indicator stopAnimation:self];
+			[charsLeftIndicator setHidden:NO];
+		} else if (statusCode == 404) {
+			[statusBarTextField setStringValue:@"Requested resource not found"];
+		} else if (statusCode == 403) {
+			[statusBarTextField 
+			 setStringValue:@"Request not allowed by Twitter"];
+		} else if (statusCode == 401) {
+			[statusBarTextField 
+			 setStringValue:@"Authorization required or invalid"];
+		} else if (statusCode == 400) {
+			[statusBarTextField 
+			 setStringValue:@"Request invalid or rate exceeded"];
+		}
+		
+		[statusBarTextField setHidden:NO];
+		[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
+		[statusBarImageView setHidden:NO];
+		messageDurationTimer = [NSTimer 
+								scheduledTimerWithTimeInterval:60 
+								target:self selector:@selector(hideStatusBar) 
+								userInfo:nil repeats:NO];
+		[statusBarButton setEnabled:NO];
+		[statusBarButton setHidden:YES];
+		connectionErrorShown = YES;
+	}
+	
+	[indicator stopAnimation:self];
+	[charsLeftIndicator setHidden:NO];
+}
+
+
+
+// TwitPic functionality
+
+// Action: shows the picture taker to the user
+- (IBAction) showPictureTaker:sender {
+	IKPictureTaker *pictureTaker = [IKPictureTaker pictureTaker];
+	[pictureTaker setValue:[NSNumber numberWithBool:NO]
+					forKey:IKPictureTakerShowEffectsKey];
+	[pictureTaker setValue:[NSNumber numberWithBool:YES]
+					forKey:IKPictureTakerAllowsEditingKey];
+	[pictureTaker setValue:[NSNumber numberWithBool:YES]
+					forKey:IKPictureTakerAllowsVideoCaptureKey];
+	[pictureTaker beginPictureTakerSheetForWindow:self.window
+									 withDelegate:self
+								   didEndSelector:@selector(
+															pictureTakerDidEnd:returnCode:contextInfo:)
+									  contextInfo:nil];
+}
+
+// This gets called when the picture taker has an output image
+- (void) pictureTakerDidEnd:(IKPictureTaker *)picker
+				 returnCode:(NSInteger)code
+				contextInfo:(void *)contextInfo {
+	if (code == NSOKButton) { 
+		NSImage *image = [picker outputImage];
+		NSData *dataTiffRep = [image TIFFRepresentation];
+		NSBitmapImageRep *bitmapRep = [NSBitmapImageRep 
+									   imageRepWithData:dataTiffRep];
+		NSData *jpegData = [bitmapRep representationUsingType:NSJPEGFileType
+												   properties:nil];
+		[self executeAsyncCallToTwitPicWithData:jpegData];
+	}
+}
+
 // Action: This sends an image to TwitPic
 - (IBAction) sendImageToTwitPic:sender {
 	NSArray *acceptableFileTypes = [NSArray arrayWithObjects:@"jpg", @"jpeg", 
-		@"png", @"gif", @"jpe", nil];
+									@"png", @"gif", @"jpe", nil];
 	NSOpenPanel *oPanel = [NSOpenPanel openPanel];
 	[oPanel setAllowsMultipleSelection:NO];
 	int result = [oPanel runModalForDirectory:NSHomeDirectory() 
@@ -1311,9 +1452,9 @@ sender {
 	ORSTwitPicDispatcher *twitPicDispatcher = [[ORSTwitPicDispatcher alloc]
 											   init];
 	NSString *twitPicURLString = [twitPicDispatcher uploadData:imageData
-		withUsername:twitterEngine.sessionUserID
-			password:twitterEngine.sessionPassword
-				filename:filename];
+												  withUsername:twitterEngine.sessionUserID
+													  password:twitterEngine.sessionPassword
+													  filename:filename];
 	
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
@@ -1338,14 +1479,14 @@ sender {
 	ORSTwitPicDispatcher *twitPicDispatcher = [[ORSTwitPicDispatcher alloc]
 											   init];
 	NSString *twitPicURLString = [twitPicDispatcher uploadData:imageData
-		withUsername:twitterEngine.sessionUserID
-			password:twitterEngine.sessionPassword
-				filename:@"user_selection.jpeg"];
-
+												  withUsername:twitterEngine.sessionUserID
+													  password:twitterEngine.sessionPassword
+													  filename:@"user_selection.jpeg"];
+	
 	[self insertStringTokenInNewStatusTextField:twitPicURLString];
 	
 	NSString *msg = [NSString 
-		stringWithFormat:@"Picture has been sent to Twitpic"];
+					 stringWithFormat:@"Picture has been sent to Twitpic"];
 	[statusBarTextField setStringValue:msg];
 	[statusBarImageView setImage:[NSImage imageNamed:@"picture_link"]];
 	[statusBarTextField setHidden:NO];
@@ -1366,11 +1507,11 @@ sender {
 	[indicator startAnimation:self];
 	NSData *imageData = [[NSData alloc] initWithContentsOfFile:filename];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
-		[[ORSAsyncTwitPicDispatcher alloc] init];
+	[[ORSAsyncTwitPicDispatcher alloc] init];
 	[asyncTwitPicDispatcher uploadData:imageData
-		withUsername:twitterEngine.sessionUserID
-			password:twitterEngine.sessionPassword
-				filename:filename];
+						  withUsername:twitterEngine.sessionUserID
+							  password:twitterEngine.sessionPassword
+							  filename:filename];
 	NSString *msg = [NSString 
 					 stringWithFormat:@"Sending picture to Twitpic..."];
 	[statusBarTextField setStringValue:msg];
@@ -1387,11 +1528,11 @@ sender {
 	[charsLeftIndicator setHidden:YES];
 	[indicator startAnimation:self];
 	ORSAsyncTwitPicDispatcher *asyncTwitPicDispatcher = 
-		[[ORSAsyncTwitPicDispatcher alloc] init];
+	[[ORSAsyncTwitPicDispatcher alloc] init];
 	[asyncTwitPicDispatcher uploadData:imageData
-		withUsername:twitterEngine.sessionUserID
-			password:twitterEngine.sessionPassword
-				filename:@"user_selection.jpeg"];
+						  withUsername:twitterEngine.sessionUserID
+							  password:twitterEngine.sessionPassword
+							  filename:@"user_selection.jpeg"];
 	NSString *msg = [NSString 
 					 stringWithFormat:@"Sending picture to Twitpic..."];
 	[statusBarTextField setStringValue:msg];
@@ -1425,121 +1566,8 @@ sender {
 							userInfo:nil repeats:NO];
 }
 
-// Shows that there is a connection problem
-- (void) showConnectionFailure:(NSNotification *)note {
-	[statusBarTextField setStringValue:@"Connection problem"];
-	[statusBarTextField setHidden:NO];
-	[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
-	[statusBarImageView setHidden:NO];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-	messageDurationTimer = [NSTimer 
-							scheduledTimerWithTimeInterval:60 
-							target:self selector:@selector(hideStatusBar) 
-							userInfo:nil repeats:NO];
-	connectionErrorShown = YES;
-	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
-}
 
-// Shows the server response when there is an error
-- (void) showReceivedResponse:(NSNotification *)note {
-	if (betweenUsers) {
-		betweenUsers = NO;
-		return;
-	}
-
-	NSHTTPURLResponse *response = (NSHTTPURLResponse *)note.object;
-	NSInteger statusCode = response.statusCode;
-	
-	if (statusCode != 200 && statusCode != 304) {
-		if (statusCode == 503) {
-			[statusBarTextField setStringValue:@"Twitter is overloaded"];
-			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
-		} else if (statusCode == 502) {
-			[statusBarTextField setStringValue:@"Twitter is down"];
-			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
-		} else if (statusCode == 500) {
-			[statusBarTextField setStringValue:@"Twitter internal error"];
-			[indicator stopAnimation:self];
-			[charsLeftIndicator setHidden:NO];
-		} else if (statusCode == 404) {
-			[statusBarTextField setStringValue:@"Requested resource not found"];
-		} else if (statusCode == 403) {
-			[statusBarTextField 
-				setStringValue:@"Request not allowed by Twitter"];
-		} else if (statusCode == 401) {
-			[statusBarTextField 
-			 setStringValue:@"Authorization required or invalid"];
-		} else if (statusCode == 400) {
-			[statusBarTextField 
-					setStringValue:@"Request invalid or rate exceeded"];
-		}
-		
-		[statusBarTextField setHidden:NO];
-		[statusBarImageView setImage:[NSImage imageNamed:@"error"]];
-		[statusBarImageView setHidden:NO];
-		messageDurationTimer = [NSTimer 
-								scheduledTimerWithTimeInterval:60 
-								target:self selector:@selector(hideStatusBar) 
-								userInfo:nil repeats:NO];
-		[statusBarButton setEnabled:NO];
-		[statusBarButton setHidden:YES];
-		connectionErrorShown = YES;
-	}
-	
-	[indicator stopAnimation:self];
-	[charsLeftIndicator setHidden:NO];
-}
-
-// Action: shows the picture taker to the user
-- (IBAction) showPictureTaker:sender {
-	IKPictureTaker *pictureTaker = [IKPictureTaker pictureTaker];
-	[pictureTaker setValue:[NSNumber numberWithBool:NO]
-              forKey:IKPictureTakerShowEffectsKey];
-	[pictureTaker setValue:[NSNumber numberWithBool:YES]
-					forKey:IKPictureTakerAllowsEditingKey];
-	[pictureTaker setValue:[NSNumber numberWithBool:YES]
-					forKey:IKPictureTakerAllowsVideoCaptureKey];
-	[pictureTaker beginPictureTakerSheetForWindow:self.window
-									 withDelegate:self
-								   didEndSelector:@selector(
-		pictureTakerDidEnd:returnCode:contextInfo:)
-									  contextInfo:nil];
-}
-
-// This gets called when the picture taker has an output image
-- (void) pictureTakerDidEnd:(IKPictureTaker *)picker
-				 returnCode:(NSInteger)code
-				contextInfo:(void *)contextInfo {
-	if (code == NSOKButton) { 
-		NSImage *image = [picker outputImage];
-		NSData *dataTiffRep = [image TIFFRepresentation];
-		NSBitmapImageRep *bitmapRep = [NSBitmapImageRep 
-									   imageRepWithData:dataTiffRep];
-		NSData *jpegData = [bitmapRep representationUsingType:NSJPEGFileType
-												   properties:nil];
-		[self executeAsyncCallToTwitPicWithData:jpegData];
-	}
-}
-
-// This gets called when the main application window is called and the
-// user clicks on the dock icon.
-- (BOOL) applicationShouldHandleReopen:(NSApplication *)theApplication	
-					 hasVisibleWindows:(BOOL)flag {
-	[self.window makeKeyAndOrderFront:self];
-	return YES;
-}
-
-// This hides the status bar message
-- (void) hideStatusBar {
-	[statusBarTextField setHidden:YES];
-	[statusBarImageView setHidden:YES];
-	[statusBarButton setEnabled:NO];
-	[statusBarButton setHidden:YES];
-}
+// iTunes functionality methods
 
 // This inserts the current iTunes full track info in the text field
 - (IBAction) insertITunesCurrentTrackFull:sender {
@@ -1624,6 +1652,9 @@ sender {
 	[fieldEditor setNeedsDisplay:YES];
 	[fieldEditor didChangeText];
 }
+
+
+// View options related methods
 
 // Action: Switches between the usernames and the screen names of the senders
 - (IBAction) switchBetweenUserNames:sender {
