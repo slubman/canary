@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -306,6 +306,8 @@
 							<string>MainColumn</string>
 							<real>246</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -316,6 +318,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -333,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>054EC5640F4740CF007C4FDC</string>
+										<string>054EC5950F474399007C4FDC</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -443,8 +447,8 @@
 											<string>05D0F9130F44BBCB00ABF45A</string>
 											<string>05D0F95E0F44C6F200ABF45A</string>
 											<string>05D0F9C10F44C8C400ABF45A</string>
-											<string>05FA45C10F471F4100A86635</string>
-											<string>05FA45DB0F472E1100A86635</string>
+											<string>054EC5850F474292007C4FDC</string>
+											<string>054EC58F0F4742A0007C4FDC</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -556,6 +560,7 @@
 											<string>053789C00F3A2A5D003B86EF</string>
 											<string>053789C50F3A2A5D003B86EF</string>
 											<string>05378C280F3DC170003B86EF</string>
+											<string>054EC5870F474292007C4FDC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -570,6 +575,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {638, 609}}</string>
+								<key>RubberWindowFrame</key>
+								<string>375 123 906 655 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -593,6 +600,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {638, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>375 123 906 655 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -674,11 +683,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>054EC55A0F474068007C4FDC</string>
+				<string>054EC5810F474197007C4FDC</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>054EC55B0F474068007C4FDC</string>
+				<string>054EC5820F474197007C4FDC</string>
 				<string>0573D6CD0DA66271002D1CCF</string>
-				<string>054EC55C0F474068007C4FDC</string>
+				<string>054EC5830F474197007C4FDC</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -726,8 +735,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {906, 209}}</string>
-						<key>RubberWindowFrame</key>
-						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -802,11 +809,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{461, 0}, {445, 203}}</string>
-							<key>RubberWindowFrame</key>
-							<string>375 123 906 655 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>375 123 906 655 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -829,14 +832,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>054EC55D0F474068007C4FDC</string>
+				<string>054EC58A0F474297007C4FDC</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>054EC55E0F474068007C4FDC</string>
-				<string>054EC55F0F474068007C4FDC</string>
-				<string>054EC5600F474068007C4FDC</string>
-				<string>054EC5610F474068007C4FDC</string>
-				<string>054EC5620F474068007C4FDC</string>
+				<string>054EC58B0F474297007C4FDC</string>
+				<string>054EC58C0F474297007C4FDC</string>
+				<string>054EC58D0F474297007C4FDC</string>
+				<string>054EC58E0F474297007C4FDC</string>
+				<string>0573D6CD0DA66271002D1CCF</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

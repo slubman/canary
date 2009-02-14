@@ -447,6 +447,18 @@ sender {
 	
 	NSPoint oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
+		[mainTimelineCollectionView unbind:@"content"];
+		[mainTimelineCollectionView unbind:@"selectionIndexes"];
+		[mainTimelineCollectionView setItemPrototype:NULL];
+		[mainTimelineCollectionView bind:@"content"
+								toObject:statusArrayController
+							 withKeyPath:@"arrangedObjects"
+								 options:nil];
+		[mainTimelineCollectionView bind:@"selectionIndexes"
+								toObject:statusArrayController
+							 withKeyPath:@"selectionIndexes"
+								 options:nil];
+		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		if ((firstFollowingTimelineRun) && [self willRetrieveAllUpdates]) {
 			NSArray *newStatuses = [cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
@@ -463,18 +475,6 @@ sender {
 										   withNotification:note]];
 			[self postStatusUpdatesReceived:note];
 		}
-		[mainTimelineCollectionView unbind:@"content"];
-		[mainTimelineCollectionView unbind:@"selectionIndexes"];
-		[mainTimelineCollectionView setItemPrototype:NULL];
-		[mainTimelineCollectionView bind:@"content"
-								toObject:statusArrayController
-							 withKeyPath:@"arrangedObjects"
-								 options:nil];
-		[mainTimelineCollectionView bind:@"selectionIndexes"
-								toObject:statusArrayController
-							 withKeyPath:@"selectionIndexes"
-								 options:nil];
-		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
