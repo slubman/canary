@@ -27,16 +27,11 @@
 
 - (void) drawRect:(NSRect)rect {
 	if ([self selected] && [self isKindOfClass:[ORSCanaryStatusView	class]]) {
-		NSGradient *gradient = [[NSGradient alloc] 
-			initWithStartingColor:[NSColor colorWithDeviceRed:.0
-														green:.0 
-														 blue:.400 
-														alpha:0.2]
-					  endingColor:[NSColor colorWithDeviceRed:.0
-														green:.0
-														 blue:.400 
-														alpha:0.2]];
-		[gradient drawInRect:[self bounds] angle:90.0];
+		[[NSColor colorWithDeviceRed:.651
+							   green:.717
+								blue:.919 
+							   alpha:1.0] setFill];
+		NSRectFill([self bounds]);
 	}
 	[super drawRect:rect];
 }
