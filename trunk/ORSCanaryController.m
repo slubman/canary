@@ -27,7 +27,7 @@
 			receivedDMView, receivedDMBox, receivedDMDateDifferenceTextField,
 			sentDMDateDifferenceTextField, statusArrayController, defaults, 
 			refreshTimer, loginItem, prevUserID, prevPassword, spokenCommands,
-			recognizer, firstBackgroundReceivedDMRetrieval;
+			recognizer, firstBackgroundReceivedDMRetrieval, showScreenNames;
 
 static ORSCanaryController *sharedCanaryController = nil;
 

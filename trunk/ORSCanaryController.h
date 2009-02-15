@@ -291,5 +291,6 @@
 @property () BOOL firstBackgroundReceivedDMRetrieval;
 @property () BOOL betweenUsers;
 @property () NSRange realSelectedRange;
+@property () BOOL showScreenNames;
 
 @end

@@ -290,7 +290,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {246, 596}}</string>
+							<string>{{0, 44}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -337,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0535A5200F48AA7100513DC7</string>
+										<string>0535A5440F48AE8E00513DC7</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -446,14 +446,14 @@
 											<string>05C60AF50F4889FE002B59D0</string>
 											<string>05C60AF60F4889FE002B59D0</string>
 											<string>05C60AF70F4889FE002B59D0</string>
-											<string>05C60AF80F4889FE002B59D0</string>
-											<string>0535A4F40F48A47B00513DC7</string>
-											<string>0535A50E0F48AA7100513DC7</string>
-											<string>0535A50F0F48AA7100513DC7</string>
 											<string>0535A5100F48AA7100513DC7</string>
 											<string>0535A5110F48AA7100513DC7</string>
 											<string>0535A5120F48AA7100513DC7</string>
-											<string>0535A5130F48AA7100513DC7</string>
+											<string>0535A5230F48ABA600513DC7</string>
+											<string>0535A52E0F48ACD400513DC7</string>
+											<string>0535A5370F48AD9600513DC7</string>
+											<string>0535A53E0F48AE8E00513DC7</string>
+											<string>0535A53F0F48AE8E00513DC7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -614,6 +614,22 @@
 											<string>0535A51D0F48AA7100513DC7</string>
 											<string>0535A51E0F48AA7100513DC7</string>
 											<string>0535A51F0F48AA7100513DC7</string>
+											<string>0535A5250F48ABA600513DC7</string>
+											<string>0535A5260F48ABA600513DC7</string>
+											<string>0535A5270F48ABA600513DC7</string>
+											<string>0535A5280F48ABA600513DC7</string>
+											<string>0535A5290F48ABA600513DC7</string>
+											<string>0535A52A0F48ABA600513DC7</string>
+											<string>0535A5310F48ACD400513DC7</string>
+											<string>0535A5320F48ACD400513DC7</string>
+											<string>0535A5330F48ACD400513DC7</string>
+											<string>0535A5390F48AD9600513DC7</string>
+											<string>0535A53A0F48AD9600513DC7</string>
+											<string>0535A53B0F48AD9600513DC7</string>
+											<string>0535A5400F48AE8E00513DC7</string>
+											<string>0535A5410F48AE8E00513DC7</string>
+											<string>0535A5420F48AE8E00513DC7</string>
+											<string>0535A5430F48AE8E00513DC7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
