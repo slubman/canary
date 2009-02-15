@@ -560,6 +560,7 @@ sender {
 	
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
+	[self controlTextDidChange:note];
 }
 
 // Sets the users asynchronously
@@ -702,6 +703,7 @@ sender {
 	}
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
+	[self controlTextDidChange:note];
 }
 
 // Sets the sent status asynchronously
