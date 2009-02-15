@@ -10,6 +10,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Security/Security.h>
+#include <CoreServices/CoreServices.h>
+#include <CoreFoundation/CoreFoundation.h>
 
 #define APP_CNAME "Canary"
 #define APP_CNAME_LENGTH 6
