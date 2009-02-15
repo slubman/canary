@@ -101,6 +101,7 @@
 		05B8B6E40F1571CF006B4B93 /* user_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6E20F1571CF006B4B93 /* user_delete.png */; };
 		05B8B6E50F1571CF006B4B93 /* user_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6E30F1571CF006B4B93 /* user_add.png */; };
 		05C60A8C0F485A65002B59D0 /* ORSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C60A8B0F485A65002B59D0 /* ORSImageView.m */; };
+		05C60AE00F488366002B59D0 /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */; };
 		05CDAF7C0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */; };
 		05D6EB6A0ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */; };
 		05D6EEB40EDB439000CBC4B6 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D6EEB30EDB439000CBC4B6 /* Growl.framework */; };
@@ -265,6 +266,8 @@
 		05B8B6E30F1571CF006B4B93 /* user_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_add.png; sourceTree = "<group>"; };
 		05C60A8A0F485A65002B59D0 /* ORSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSImageView.h; sourceTree = "<group>"; };
 		05C60A8B0F485A65002B59D0 /* ORSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSImageView.m; sourceTree = "<group>"; };
+		05C60ADE0F488366002B59D0 /* ORSCanaryController+Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSCanaryController+Growl.h"; sourceTree = "<group>"; };
+		05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORSCanaryController+Growl.m"; sourceTree = "<group>"; };
 		05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryNewStatusTextFieldCell.h; sourceTree = "<group>"; };
 		05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryNewStatusTextFieldCell.m; sourceTree = "<group>"; };
 		05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSTimelineCacheManager.h; sourceTree = "<group>"; };
@@ -470,6 +473,8 @@
 			children = (
 				0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */,
 				0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */,
+				05C60ADE0F488366002B59D0 /* ORSCanaryController+Growl.h */,
+				05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */,
 				0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */,
 				0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */,
 				0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */,
@@ -764,6 +769,7 @@
 				05A684920F374BDD0021D8AD /* ORSFilterArrayTransformer.m in Sources */,
 				053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */,
 				05C60A8C0F485A65002B59D0 /* ORSImageView.m in Sources */,
+				05C60AE00F488366002B59D0 /* ORSCanaryController+Growl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

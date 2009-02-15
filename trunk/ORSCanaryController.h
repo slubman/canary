@@ -247,15 +247,6 @@
 - (NSString *) statusIDSinceLastExecution;
 - (NSString *) receivedDMIDSinceLastExecution;
 
-// Growl-related methods
-- (void) postStatusUpdatesReceived:(NSNotification *)note;
-- (void) postRepliesReceived:(NSNotification *)note;
-- (void) postDMsReceived:(NSNotification *)note;
-- (void) postDMsReceived:(NSNotification *)note
-				 afterID:(NSString *)messageID;
-- (void) postStatusUpdatesSent:(NSNotification *)note;
-- (void) postDMsSent:(NSNotification *)note;
-
 @property(copy) NSArray *statuses;
 @property(copy) NSArray *receivedDirectMessages;
 @property(copy) NSArray *sentDirectMessages;
