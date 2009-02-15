@@ -24,6 +24,7 @@
 		05171B830F16AB8100CA9812 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B820F16AB8100CA9812 /* comments.png */; };
 		05171B850F16AC4C00CA9812 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B840F16AC4C00CA9812 /* comment.png */; };
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
+		0535A4EF0F48A3A700513DC7 /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */; };
 		053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */; };
 		053789FF0F3A3B2A003B86EF /* LightGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 053789FE0F3A3B2A003B86EF /* LightGradient.png */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
@@ -101,7 +102,6 @@
 		05B8B6E40F1571CF006B4B93 /* user_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6E20F1571CF006B4B93 /* user_delete.png */; };
 		05B8B6E50F1571CF006B4B93 /* user_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B8B6E30F1571CF006B4B93 /* user_add.png */; };
 		05C60A8C0F485A65002B59D0 /* ORSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C60A8B0F485A65002B59D0 /* ORSImageView.m */; };
-		05C60AE00F488366002B59D0 /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */; };
 		05CDAF7C0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */; };
 		05D6EB6A0ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */; };
 		05D6EEB40EDB439000CBC4B6 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D6EEB30EDB439000CBC4B6 /* Growl.framework */; };
@@ -157,6 +157,8 @@
 		05171B6A0F16A84600CA9812 /* picture_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture_link.png; sourceTree = "<group>"; };
 		05171B820F16AB8100CA9812 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
 		05171B840F16AC4C00CA9812 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORSCanaryController+Growl.m"; sourceTree = "<group>"; };
+		0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSCanaryController+Growl.h"; sourceTree = "<group>"; };
 		053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBoolTransformer.h; sourceTree = "<group>"; };
 		053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBoolTransformer.m; sourceTree = "<group>"; };
 		053789FE0F3A3B2A003B86EF /* LightGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LightGradient.png; path = ../../Misc/LightGradient.png; sourceTree = SOURCE_ROOT; };
@@ -266,8 +268,6 @@
 		05B8B6E30F1571CF006B4B93 /* user_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_add.png; sourceTree = "<group>"; };
 		05C60A8A0F485A65002B59D0 /* ORSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSImageView.h; sourceTree = "<group>"; };
 		05C60A8B0F485A65002B59D0 /* ORSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSImageView.m; sourceTree = "<group>"; };
-		05C60ADE0F488366002B59D0 /* ORSCanaryController+Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSCanaryController+Growl.h"; sourceTree = "<group>"; };
-		05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORSCanaryController+Growl.m"; sourceTree = "<group>"; };
 		05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryNewStatusTextFieldCell.h; sourceTree = "<group>"; };
 		05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryNewStatusTextFieldCell.m; sourceTree = "<group>"; };
 		05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSTimelineCacheManager.h; sourceTree = "<group>"; };
@@ -473,8 +473,8 @@
 			children = (
 				0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */,
 				0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */,
-				05C60ADE0F488366002B59D0 /* ORSCanaryController+Growl.h */,
-				05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */,
+				0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */,
+				0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */,
 				0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */,
 				0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */,
 				0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */,
@@ -769,7 +769,7 @@
 				05A684920F374BDD0021D8AD /* ORSFilterArrayTransformer.m in Sources */,
 				053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */,
 				05C60A8C0F485A65002B59D0 /* ORSImageView.m in Sources */,
-				05C60AE00F488366002B59D0 /* ORSCanaryController+Growl.m in Sources */,
+				0535A4EF0F48A3A700513DC7 /* ORSCanaryController+Growl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

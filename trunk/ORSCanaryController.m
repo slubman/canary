@@ -473,7 +473,7 @@ sender {
 			[self setStatuses:[cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
 										   withNotification:note]];
-			[self postStatusUpdatesReceived:note];
+			[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
 		}
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
@@ -498,7 +498,6 @@ sender {
 		[self setStatuses:[cacheManager 
 						   setStatusesForTimelineCache:ORSPublicTimelineCacheType
 						   withNotification:note]];
-		[self postStatusUpdatesReceived:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -511,6 +510,7 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
+		[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
 		[self setStatuses:[cacheManager 
@@ -528,7 +528,7 @@ sender {
 							 withKeyPath:@"selectionIndexes"
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
-		[self postRepliesReceived:note];
+		[self performSelectorInBackground:@selector(postRepliesReceived:) withObject:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
 		[self setStatuses:[cacheManager 
@@ -610,8 +610,7 @@ sender {
 								 options:nil];
 		[mainTimelineCollectionView 
 			setItemPrototype:receivedDMsCollectionViewItem];
-		
-		[self postDMsReceived:note];
+		[self performSelectorInBackground:@selector(postDMsReceived:) withObject:note];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
@@ -641,7 +640,6 @@ sender {
 								 options:nil];
 		[mainTimelineCollectionView setItemPrototype:sentDMsCollectionViewItem];
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
-	
 		if (![timelineButton.titleOfSelectedItem isEqualToString:[self
 												previousTimeline]]) {
 			[self scrollToTop];
@@ -691,7 +689,7 @@ sender {
 					[cacheManager setStatusesForTimelineCache:
 						ORSReceivedMessagesTimelineCacheType 
 										 withNotification:note];
-					[self postDMsReceived:note];
+					[self performSelectorInBackground:@selector(postDMsReceived:) withObject:note];
 					messageDurationTimer = [NSTimer 
 						scheduledTimerWithTimeInterval:60 
 							target:self selector:@selector(hideStatusBar) 
