@@ -105,7 +105,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 		if (sharedCanaryController == nil) {
 			if (self = [super init]) {
 				sharedCanaryController = self;
-				[GrowlApplicationBridge setGrowlDelegate:@""];
+				[GrowlApplicationBridge setGrowlDelegate:self];
 				connectionErrorShown = NO;
 		
 				defaults = [NSUserDefaults standardUserDefaults];
