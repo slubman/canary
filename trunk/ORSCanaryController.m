@@ -1119,6 +1119,12 @@ sender {
 		} else {
 			return NO;
 		}
+	} else if (item.action == @selector(showWindow:)) {
+		if ([self.window isVisible]) {
+			return NO;
+		} else {
+			return YES;
+		}
 	} else  {
 		return YES;
 	}
