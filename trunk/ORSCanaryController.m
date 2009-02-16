@@ -88,6 +88,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[appDefaults setObject:@"Every minute" forKey:@"CanaryRefreshPeriod"];
 	[appDefaults setObject:@"250" forKey:@"CanaryMaxShownUpdates"];
 	[appDefaults setObject:@"Cli.gs" forKey:@"CanarySelectedURLShortener"];
+	[appDefaults setObject:[NSNumber numberWithBool:YES]
+					forKey:@"CanaryWillShortenPastedURLs"];
 	[appDefaults setObject:[NSNumber numberWithBool:NO]
 									forKey:@"CanaryWillRetrieveAllUpdates"];
 	[appDefaults setObject:[NSNumber numberWithBool:YES]
@@ -2175,6 +2177,29 @@ sender {
 	} else {
 		return NULL;
 	}
+}
+
+
+
+- (IBAction) paste:sender {
+    NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
+    NSString *originalString = [generalPasteboard 
+								stringForType:NSStringPboardType];
+    if (originalString != nil) {
+		if ([originalString hasPrefix:@"http://"]) {
+			if ([(NSNumber *)[defaults 
+			objectForKey:@"CanaryWillShortenPastedURLs"] boolValue] == YES) {
+				NSString *shortenedURL = [[ORSCanaryController 
+					sharedController].urlShortener 
+										  generateURLFrom:originalString];
+				[self insertStringTokenInNewStatusTextField:shortenedURL];
+			} else {
+				[self insertStringTokenInNewStatusTextField:originalString];
+			}
+		} else {
+			[self insertStringTokenInNewStatusTextField:originalString];
+		}
+    }
 }
 
 @end

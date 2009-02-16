@@ -249,6 +249,8 @@
 - (NSString *) statusIDSinceLastExecution;
 - (NSString *) receivedDMIDSinceLastExecution;
 
+- (IBAction) paste:sender;
+
 @property(copy) NSArray *statuses;
 @property(copy) NSArray *receivedDirectMessages;
 @property(copy) NSArray *sentDirectMessages;
