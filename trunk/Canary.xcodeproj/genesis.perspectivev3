@@ -273,11 +273,8 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>05DF56720E3E60DE00B8B4DE</string>
-								<string>05E2461C0EC22BC500410548</string>
-								<string>0591A9610EC8E73800BF3CAD</string>
 								<string>05DF56710E3E608700B8B4DE</string>
 								<string>051A4B700E7ACC770040D9F3</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -290,7 +287,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {246, 596}}</string>
+							<string>{{0, 13}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -337,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0535A5F50F49896000513DC7</string>
+										<string>0535A79A0F49B1A600513DC7</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -412,7 +409,6 @@
 											<string>05378B440F3CE5B7003B86EF</string>
 											<string>05378B690F3D91DF003B86EF</string>
 											<string>05378BBF0F3DA819003B86EF</string>
-											<string>05378C1C0F3DC170003B86EF</string>
 											<string>05378C1E0F3DC170003B86EF</string>
 											<string>05378CB30F3DC9AA003B86EF</string>
 											<string>05378CB40F3DC9AA003B86EF</string>
@@ -452,8 +448,9 @@
 											<string>0535A5D10F49870D00513DC7</string>
 											<string>0535A5D20F49870D00513DC7</string>
 											<string>0535A5D40F49870D00513DC7</string>
-											<string>0535A5EF0F49896000513DC7</string>
-											<string>0535A5F00F49896000513DC7</string>
+											<string>0535A7940F49B1A600513DC7</string>
+											<string>0535A7950F49B1A600513DC7</string>
+											<string>0535A7960F49B1A600513DC7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -685,6 +682,9 @@
 											<string>0535A5F20F49896000513DC7</string>
 											<string>0535A5F30F49896000513DC7</string>
 											<string>0535A5F40F49896000513DC7</string>
+											<string>0535A7970F49B1A600513DC7</string>
+											<string>0535A7980F49B1A600513DC7</string>
+											<string>0535A7990F49B1A600513DC7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

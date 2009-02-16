@@ -12,9 +12,9 @@
 	};
 	0505600B0EAB48A500FC28C3 /* ORSSession.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 912}}";
-			sepNavSelRange = "{257, 9}";
-			sepNavVisRange = "{197, 1291}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 944}}";
+			sepNavSelRange = "{388, 0}";
+			sepNavVisRange = "{39, 1115}";
 		};
 	};
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
@@ -925,10 +925,10 @@
 	};
 	0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{313, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{464, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{622, 107}\";\n            s = 0;\n        },\n                {\n            r = \"{853, 1349}\";\n            s = 0;\n        },\n                {\n            r = \"{2313, 1422}\";\n            s = 0;\n        },\n                {\n            r = \"{3843, 1518}\";\n            s = 0;\n        },\n                {\n            r = \"{5537, 1384}\";\n            s = 0;\n        },\n                {\n            r = \"{7038, 1136}\";\n            s = 0;\n        },\n                {\n            r = \"{8275, 1173}\";\n            s = 0;\n        },\n                {\n            r = \"{9506, 1304}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10818}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 756}}";
-			sepNavSelRange = "{773, 0}";
-			sepNavVisRange = "{180, 1057}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{313, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{464, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{622, 107}\";\n            s = 0;\n        },\n                {\n            r = \"{9554, 1304}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10866}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 4388}}";
+			sepNavSelRange = "{8870, 0}";
+			sepNavVisRange = "{7912, 1284}";
 		};
 	};
 	0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {
@@ -973,7 +973,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 6153;
@@ -1013,7 +1013,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 20";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 615;
 		vrLoc = 0;
@@ -1033,7 +1033,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 20";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 615;
 		vrLoc = 0;
@@ -1113,7 +1113,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 6153;
@@ -1153,7 +1153,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7157;
 		vrLoc = 0;
@@ -1213,7 +1213,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 40";
 		rLen = 0;
-		rLoc = 1849;
+		rLoc = 1855;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 326;
@@ -1223,7 +1223,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7157;
 		vrLoc = 0;
@@ -1243,7 +1243,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 179;
@@ -1263,7 +1263,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 40";
 		rLen = 0;
-		rLoc = 1849;
+		rLoc = 1855;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 326;
@@ -1303,7 +1303,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 40";
 		rLen = 0;
-		rLoc = 1849;
+		rLoc = 1855;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 326;
@@ -1343,7 +1343,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7123;
 		vrLoc = 35;
@@ -1353,7 +1353,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7123;
 		vrLoc = 35;
@@ -1383,7 +1383,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7123;
 		vrLoc = 35;
@@ -1413,7 +1413,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 220";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7123;
 		vrLoc = 35;
@@ -1513,7 +1513,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 51";
 		rLen = 0;
-		rLoc = 1945;
+		rLoc = 1953;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 656;
@@ -1653,7 +1653,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5493;
+		rLoc = 5517;
 		rType = 0;
 		vrLen = 7529;
 		vrLoc = 180;
@@ -1663,7 +1663,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5493;
+		rLoc = 5517;
 		rType = 0;
 		vrLen = 4087;
 		vrLoc = 179;
@@ -1680,7 +1680,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5493;
+		rLoc = 5517;
 		rType = 0;
 		vrLen = 4087;
 		vrLoc = 179;
@@ -1710,7 +1710,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5493;
+		rLoc = 5517;
 		rType = 0;
 		vrLen = 7609;
 		vrLoc = 94;
@@ -1730,7 +1730,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7624;
 		vrLoc = 180;
@@ -1740,7 +1740,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7623;
 		vrLoc = 180;
@@ -1760,7 +1760,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 3537;
 		vrLoc = 4266;
@@ -1780,7 +1780,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7606;
 		vrLoc = 180;
@@ -1790,7 +1790,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 2900;
 		vrLoc = 180;
@@ -1810,7 +1810,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 248";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7607;
 		vrLoc = 180;
@@ -1830,7 +1830,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7655;
 		vrLoc = 180;
@@ -1840,7 +1840,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7656;
 		vrLoc = 180;
@@ -1850,7 +1850,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 3521;
 		vrLoc = 4314;
@@ -1860,7 +1860,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7529;
 		vrLoc = 180;
@@ -1880,7 +1880,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7529;
 		vrLoc = 180;
@@ -1920,7 +1920,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 3455;
 		vrLoc = 4254;
@@ -2000,7 +2000,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7551;
 		vrLoc = 158;
@@ -2030,7 +2030,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 72";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 3134;
 		vrLoc = 1180;
@@ -2040,7 +2040,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 72";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 5240;
 		vrLoc = 1375;
@@ -2060,7 +2060,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 72";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 1287;
 		vrLoc = 1849;
@@ -2100,7 +2100,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 7643;
 		vrLoc = 218;
@@ -2110,7 +2110,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 6620;
 		vrLoc = 49;
@@ -2140,7 +2140,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 251";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 7643;
 		vrLoc = 218;
@@ -2160,7 +2160,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 7643;
 		vrLoc = 218;
@@ -2200,7 +2200,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 7643;
 		vrLoc = 218;
@@ -2210,7 +2210,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 7643;
 		vrLoc = 218;
@@ -2220,7 +2220,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 410;
 		vrLoc = 1724;
@@ -2230,7 +2230,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 250";
 		rLen = 0;
-		rLoc = 10810;
+		rLoc = 10858;
 		rType = 0;
 		vrLen = 5542;
 		vrLoc = 0;
@@ -2280,7 +2280,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7685;
 		vrLoc = 180;
@@ -2330,7 +2330,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 245";
 		rLen = 0;
-		rLoc = 9448;
+		rLoc = 9496;
 		rType = 0;
 		vrLen = 7685;
 		vrLoc = 180;
@@ -2360,7 +2360,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 253";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 7437;
 		vrLoc = 732;
@@ -2380,7 +2380,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 7437;
 		vrLoc = 732;
@@ -2410,7 +2410,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 7437;
 		vrLoc = 732;
@@ -2430,7 +2430,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 7437;
 		vrLoc = 732;
@@ -2460,7 +2460,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 142";
 		rLen = 0;
-		rLoc = 5468;
+		rLoc = 5492;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 1111;
@@ -2490,7 +2490,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 249";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 732;
@@ -2510,7 +2510,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 252";
 		rLen = 0;
-		rLoc = 10733;
+		rLoc = 10781;
 		rType = 0;
 		vrLen = 1291;
 		vrLoc = 732;
@@ -2550,7 +2550,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 282";
 		rLen = 0;
-		rLoc = 10289;
+		rLoc = 10337;
 		rType = 0;
 		vrLen = 1088;
 		vrLoc = 8807;
@@ -2560,7 +2560,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 279";
 		rLen = 0;
-		rLoc = 10113;
+		rLoc = 10161;
 		rType = 0;
 		vrLen = 1158;
 		vrLoc = 8338;
@@ -2590,7 +2590,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 279";
 		rLen = 0;
-		rLoc = 10490;
+		rLoc = 10538;
 		rType = 0;
 		vrLen = 1070;
 		vrLoc = 8488;
@@ -2610,7 +2610,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 280";
 		rLen = 0;
-		rLoc = 10207;
+		rLoc = 10255;
 		rType = 0;
 		vrLen = 1203;
 		vrLoc = 8358;
@@ -2630,7 +2630,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 282";
 		rLen = 0;
-		rLoc = 10289;
+		rLoc = 10337;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 8810;
@@ -2660,7 +2660,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 304";
 		rLen = 0;
-		rLoc = 10810;
+		rLoc = 10858;
 		rType = 0;
 		vrLen = 9999;
 		vrLoc = 180;
@@ -2678,7 +2678,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 293";
 		rLen = 0;
-		rLoc = 10506;
+		rLoc = 10554;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 9134;
@@ -2688,7 +2688,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 194";
 		rLen = 0;
-		rLoc = 6921;
+		rLoc = 6953;
 		rType = 0;
 		vrLen = 10002;
 		vrLoc = 180;
@@ -2728,7 +2728,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 86";
 		rLen = 0;
-		rLoc = 2513;
+		rLoc = 2521;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 1462;
@@ -2758,7 +2758,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 194";
 		rLen = 0;
-		rLoc = 6921;
+		rLoc = 6953;
 		rType = 0;
 		vrLen = 10002;
 		vrLoc = 180;
@@ -2828,7 +2828,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 86";
 		rLen = 0;
-		rLoc = 2513;
+		rLoc = 2521;
 		rType = 0;
 		vrLen = 1366;
 		vrLoc = 1462;
@@ -2878,7 +2878,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 86";
 		rLen = 0;
-		rLoc = 2513;
+		rLoc = 2521;
 		rType = 0;
 		vrLen = 1325;
 		vrLoc = 1503;
@@ -2898,7 +2898,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 101";
 		rLen = 0;
-		rLoc = 3037;
+		rLoc = 3045;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 180;
@@ -2908,7 +2908,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 101";
 		rLen = 0;
-		rLoc = 3037;
+		rLoc = 3045;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 180;
@@ -2928,7 +2928,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 101";
 		rLen = 0;
-		rLoc = 3037;
+		rLoc = 3045;
 		rType = 0;
 		vrLen = 469;
 		vrLoc = 1206;
@@ -2938,7 +2938,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 101";
 		rLen = 0;
-		rLoc = 3037;
+		rLoc = 3045;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 732;
@@ -2966,7 +2966,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 81";
 		rLen = 0;
-		rLoc = 2299;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 4484;
 		vrLoc = 413;
@@ -2986,7 +2986,7 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 125";
 		rLen = 0;
-		rLoc = 3880;
+		rLoc = 3896;
 		rType = 0;
 		vrLen = 4479;
 		vrLoc = 263;
@@ -3006,10 +3006,90 @@
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 165";
 		rLen = 0;
-		rLoc = 5361;
+		rLoc = 5385;
 		rType = 0;
 		vrLen = 10638;
 		vrLoc = 180;
+	};
+	0535A5F70F498A4500513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 68";
+		rLen = 0;
+		rLoc = 1902;
+		rType = 0;
+		vrLen = 1246;
+		vrLoc = 967;
+	};
+	0535A7940F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
+		name = "ORSSession.h: 22";
+		rLen = 0;
+		rLoc = 388;
+		rType = 0;
+		vrLen = 1115;
+		vrLoc = 39;
+	};
+	0535A7950F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2147";
+		rLen = 30;
+		rLoc = 76124;
+		rType = 0;
+		vrLen = 3731;
+		vrLoc = 72745;
+	};
+	0535A7960F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 68";
+		rLen = 0;
+		rLoc = 1902;
+		rType = 0;
+		vrLen = 4165;
+		vrLoc = 1296;
+	};
+	0535A7970F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 68";
+		rLen = 0;
+		rLoc = 1902;
+		rType = 0;
+		vrLen = 4255;
+		vrLoc = 1206;
+	};
+	0535A7980F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
+		name = "ORSSession.h: 22";
+		rLen = 0;
+		rLoc = 388;
+		rType = 0;
+		vrLen = 1115;
+		vrLoc = 39;
+	};
+	0535A7990F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2147";
+		rLen = 30;
+		rLoc = 76124;
+		rType = 0;
+		vrLen = 3731;
+		vrLoc = 72745;
+	};
+	0535A79A0F49B1A600513DC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 270";
+		rLen = 0;
+		rLoc = 9172;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 8214;
 	};
 	05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -4292,7 +4372,7 @@
 	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1301, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1514, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1727, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1780, 1800}\";\n            s = 0;\n        },\n                {\n            r = \"{3604, 3614}\";\n            s = 0;\n        },\n                {\n            r = \"{7262, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{8852, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9341, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9495, 374}\";\n            s = 0;\n        },\n                {\n            r = \"{12312, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{12787, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{14884, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{15348, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{15583, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{15777, 5256}\";\n            s = 0;\n        },\n                {\n            r = \"{21125, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{21661, 4882}\";\n            s = 0;\n        },\n                {\n            r = \"{26646, 1297}\";\n            s = 0;\n        },\n                {\n            r = \"{28052, 1348}\";\n            s = 0;\n        },\n                {\n            r = \"{29461, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{29814, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{30196, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{30530, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{30854, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{31236, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{31584, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{31949, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{32187, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{32432, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{32700, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{33266, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{33519, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{34286, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{36190, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{36482, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{37944, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{39400, 1095}\";\n            s = 0;\n        },\n                {\n            r = \"{40625, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{42894, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{43692, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{43964, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{44234, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{44522, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{45084, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{45426, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{45585, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{45790, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{45993, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{46242, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{46532, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{46886, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{47070, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{47337, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{47457, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{47732, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{48365, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{50137, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{50900, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{51360, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{51933, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{53040, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{54091, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{54993, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{55809, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{56665, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{57202, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{57594, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{57991, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{58389, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{58789, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{59204, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{59807, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{62128, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{63320, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{64476, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{64683, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{64900, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{65169, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{65840, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{65964, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{66059, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{66207, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{66650, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67150, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{69130, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{69653, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{70080, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{70786, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{71492, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{72158, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{72853, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{73014, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{73199, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{73928, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{74711, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{74931, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{75556, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{75702, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{76156, 312}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 76476}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 6852}}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 6868}}";
 			sepNavSelRange = "{13877, 30}";
 			sepNavVisRange = "{13138, 780}";
 			sepNavWindowFrame = "{{670, 67}, {765, 711}}";
@@ -6294,7 +6374,7 @@
 		fRef = 05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 11";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 242;
 		vrLoc = 0;
@@ -6464,7 +6544,7 @@
 		fRef = 05C60ADF0F488366002B59D0 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 14";
 		rLen = 0;
-		rLoc = 10811;
+		rLoc = 10859;
 		rType = 0;
 		vrLen = 261;
 		vrLoc = 0;
@@ -7717,6 +7797,14 @@
 			0535A5F30F49896000513DC7 /* PBXTextBookmark */ = 0535A5F30F49896000513DC7 /* PBXTextBookmark */;
 			0535A5F40F49896000513DC7 /* PBXTextBookmark */ = 0535A5F40F49896000513DC7 /* PBXTextBookmark */;
 			0535A5F50F49896000513DC7 /* PBXTextBookmark */ = 0535A5F50F49896000513DC7 /* PBXTextBookmark */;
+			0535A5F70F498A4500513DC7 /* PBXTextBookmark */ = 0535A5F70F498A4500513DC7 /* PBXTextBookmark */;
+			0535A7940F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7940F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A7950F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7950F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A7960F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7960F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A7970F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7970F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A7980F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7980F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A7990F49B1A600513DC7 /* PBXTextBookmark */ = 0535A7990F49B1A600513DC7 /* PBXTextBookmark */;
+			0535A79A0F49B1A600513DC7 /* PBXTextBookmark */ = 0535A79A0F49B1A600513DC7 /* PBXTextBookmark */;
 			05372D9D0E7EE8CC008ABD85 = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DA20E7EE8CC008ABD85 = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DAB0E7EE8CC008ABD85 = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;
