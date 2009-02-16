@@ -292,5 +292,8 @@
 @property () BOOL betweenUsers;
 @property () NSRange realSelectedRange;
 @property () BOOL showScreenNames;
+@property (retain) NSTextField *statusBarTextField;
+@property (retain) NSImageView *statusBarImageView;
+@property (retain) NSButton *statusBarButton;
 
 @end

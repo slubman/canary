@@ -130,6 +130,10 @@
 								[twitterEngine sessionUserID]]];
 		
 		[canaryController setupReceivedDMTimer];
+		[canaryController.statusBarTextField setHidden:YES];
+		[canaryController.statusBarImageView setHidden:YES];
+		[canaryController.statusBarButton setEnabled:NO];
+		[canaryController.statusBarButton setHidden:YES];
 		[canaryController changeTimeline:nil];
 	}
 	[authenticator freeBuffer];
