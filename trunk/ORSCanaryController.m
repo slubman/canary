@@ -207,6 +207,8 @@ static ORSCanaryController *sharedCanaryController = nil;
 				cacheManager.lastReceivedMessageID = lastExecutionID;
 		
 				betweenUsers = NO;
+				
+				previousUpdateText = @"";
 			}
 		}
 	}
@@ -274,6 +276,7 @@ sender {
 - (IBAction) sendUpdate:sender {
 	if ([twitterEngine sessionUserID]) {
 		// Counter readjustment
+		previousUpdateText = [[newStatusTextField stringValue] copy];
 		[charsLeftIndicator setIntValue:0];
 		[charsLeftIndicator setMaxValue:140];
 		[charsLeftIndicator setCriticalValue:140];
@@ -282,6 +285,10 @@ sender {
 		[charsLeftIndicator setHidden:YES];
 		[indicator startAnimation:self];
 	}
+}
+
+- (IBAction) retypePreviousUpdate:sender {
+	[self insertStringTokenInNewStatusTextField:previousUpdateText];
 }
 
 // Action: allows the user to change the active timeline
@@ -739,10 +746,10 @@ sender {
 		target:self selector:@selector(hideStatusBar) 
 			userInfo:nil repeats:NO];
 	
+	//[self performSelectorInBackground:@selector(postStatusUpdatesSent:) withObject:note];
 	[self postStatusUpdatesSent:note];
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
-	
 	[self controlTextDidChange:nil];
 }
 
@@ -770,7 +777,8 @@ sender {
 		[indicator stopAnimation:self];
 		[charsLeftIndicator setHidden:NO];
 	}
-	[self postDMsSent:note];
+
+	[self performSelectorInBackground:@selector(postDMsSent:) withObject:note];
 	[indicator stopAnimation:self];
 	[charsLeftIndicator setHidden:NO];
 	
@@ -1125,6 +1133,13 @@ sender {
 			return NO;
 		} else {
 			return YES;
+		}
+	} else if (item.action == @selector(retypePreviousUpdate:)) {
+		if ((previousUpdateText != NULL) 
+			&& ![previousUpdateText isEqualToString:@""]) {
+			return YES;
+		} else {
+			return NO;
 		}
 	} else  {
 		return YES;
@@ -1643,6 +1658,7 @@ sender {
 		[self insertStringTokenInNewStatusTextField:composer];
 	}
 }
+
 
 // Inserts the string to the new status text field
 - (void) insertStringTokenInNewStatusTextField:(NSString *)stringToken {

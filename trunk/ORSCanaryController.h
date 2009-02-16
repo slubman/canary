@@ -104,6 +104,7 @@
 	IBOutlet NSSearchField *largeInstaFilterSearchField;
 	IBOutlet NSArrayController *filterArrayController;
 	
+	NSString *previousUpdateText; // The text of the last attempted update
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
 	NSArray *sentDirectMessages;
@@ -138,6 +139,7 @@
 - (id) copyWithZone:(NSZone *)zone;
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification;
 - (IBAction) sendUpdate:sender;
+- (IBAction) retypePreviousUpdate:sender;
 - (IBAction) changeTimeline:sender;
 - (void) scrollToTop;
 - (void) updateTimer;
