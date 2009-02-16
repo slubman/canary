@@ -15,8 +15,10 @@
 
 - (NSCharacterSet *) httpDelimitingCharset;
 - (NSCharacterSet *) fullDelimitingCharset;
+- (NSCharacterSet *) hashtagDelimitingCharset;
 - (NSString *) detectURL:(NSString *)string;
 - (NSString *) detectUsername:(NSString *)string;
+- (NSString *) detectHashtag:(NSString *)string;
 - (NSAttributedString *) emoticonStringWithName:(NSString *)name;
 - (void) highlightElements;
 

@@ -8,8 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="385"/>
 			<integer value="372"/>
-			<integer value="205"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -93,7 +93,7 @@
 			</object>
 			<object class="NSCollectionViewItem" id="136294764"/>
 			<object class="NSView" id="77162958">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -598,6 +598,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{322, 87}</string>
+				<reference key="NSSuperview"/>
 			</object>
 			<object class="NSMenu" id="649796088">
 				<string key="NSTitle">Main Menu</string>
@@ -912,7 +913,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="28227490">
+								<object class="NSMenuItem" id="144513254">
 									<reference key="NSMenu" ref="789758025"/>
 									<bool key="NSIsDisabled">YES</bool>
 									<bool key="NSIsSeparator">YES</bool>
@@ -922,7 +923,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="253160313">
+								<object class="NSMenuItem" id="846523083">
 									<reference key="NSMenu" ref="789758025"/>
 									<string key="NSTitle">Retype Previous Update</string>
 									<string key="NSKeyEquiv"/>
@@ -930,7 +931,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSOnImage" ref="3788936"/>
 									<reference key="NSMixedImage" ref="183080322"/>
 								</object>
-								<object class="NSMenuItem" id="381212385">
+								<object class="NSMenuItem" id="364603626">
 									<reference key="NSMenu" ref="789758025"/>
 									<string key="NSTitle">Delete Last Sent Update</string>
 									<string key="NSKeyEquiv"/>
@@ -5997,7 +5998,7 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<object class="IBActionConnection" key="connection">
 						<string key="label">retypePreviousUpdate:</string>
 						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="253160313"/>
+						<reference key="destination" ref="846523083"/>
 					</object>
 					<int key="connectionID">2273</int>
 				</object>
@@ -6106,9 +6107,9 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 							<reference ref="515219149"/>
 							<reference ref="1043131932"/>
 							<reference ref="652841018"/>
-							<reference ref="253160313"/>
-							<reference ref="28227490"/>
-							<reference ref="381212385"/>
+							<reference ref="846523083"/>
+							<reference ref="144513254"/>
+							<reference ref="364603626"/>
 						</object>
 						<reference key="parent" ref="952259628"/>
 					</object>
@@ -8184,17 +8185,17 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2269</int>
-						<reference key="object" ref="253160313"/>
+						<reference key="object" ref="846523083"/>
 						<reference key="parent" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2271</int>
-						<reference key="object" ref="28227490"/>
+						<reference key="object" ref="144513254"/>
 						<reference key="parent" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2272</int>
-						<reference key="object" ref="381212385"/>
+						<reference key="object" ref="364603626"/>
 						<reference key="parent" ref="789758025"/>
 					</object>
 				</object>
@@ -9213,7 +9214,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">2273</int>
+			<int key="maxID">2275</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

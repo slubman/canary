@@ -282,11 +282,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>88</integer>
+									<integer>8</integer>
+									<integer>2</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 917}, {246, 596}}</string>
+							<string>{{0, 0}, {246, 596}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -321,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryController.m</string>
+								<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryController.m</string>
+										<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0535A8450F49D1C700513DC7</string>
+										<string>0535A8AE0F49FD6800513DC7</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -390,12 +393,10 @@
 											<string>058530400F292BB8003DB512</string>
 											<string>058530410F292BB8003DB512</string>
 											<string>0550D5270F2CC96C002EA7AD</string>
-											<string>05DE24080F2E79060099E87F</string>
 											<string>05A67D520F30EB4F0021D8AD</string>
 											<string>05A67D910F30FCFB0021D8AD</string>
 											<string>05A67E0D0F325A6F0021D8AD</string>
 											<string>05A67EE00F3267520021D8AD</string>
-											<string>05A67FB10F3481B30021D8AD</string>
 											<string>05A680D30F35B0100021D8AD</string>
 											<string>05A684490F3642350021D8AD</string>
 											<string>05A685EA0F37A9FF0021D8AD</string>
@@ -417,7 +418,6 @@
 											<string>05378E920F3F1281003B86EF</string>
 											<string>05378F1D0F3F5B77003B86EF</string>
 											<string>0509C79A0F42259200C5E208</string>
-											<string>0509C9C10F42B9CC00C5E208</string>
 											<string>05D0F80A0F43820100ABF45A</string>
 											<string>05D0F82C0F438E3800ABF45A</string>
 											<string>05D0F95E0F44C6F200ABF45A</string>
@@ -431,15 +431,11 @@
 											<string>05C60AED0F4889FE002B59D0</string>
 											<string>05C60AEE0F4889FE002B59D0</string>
 											<string>05C60AEF0F4889FE002B59D0</string>
-											<string>05C60AF10F4889FE002B59D0</string>
-											<string>05C60AF20F4889FE002B59D0</string>
 											<string>05C60AF30F4889FE002B59D0</string>
 											<string>05C60AF50F4889FE002B59D0</string>
 											<string>05C60AF60F4889FE002B59D0</string>
-											<string>0535A5100F48AA7100513DC7</string>
 											<string>0535A5110F48AA7100513DC7</string>
 											<string>0535A5120F48AA7100513DC7</string>
-											<string>0535A5370F48AD9600513DC7</string>
 											<string>0535A59A0F4955B100513DC7</string>
 											<string>0535A5B70F495C2100513DC7</string>
 											<string>0535A5D00F49870D00513DC7</string>
@@ -448,8 +444,15 @@
 											<string>0535A7940F49B1A600513DC7</string>
 											<string>0535A7A70F49BB7D00513DC7</string>
 											<string>0535A7A80F49BB7D00513DC7</string>
-											<string>0535A7F10F49CDE300513DC7</string>
-											<string>0535A8270F49CFFA00513DC7</string>
+											<string>0535A85E0F49E17B00513DC7</string>
+											<string>0535A85F0F49E17B00513DC7</string>
+											<string>0535A86C0F49E7B500513DC7</string>
+											<string>0535A86D0F49E7B500513DC7</string>
+											<string>0535A86E0F49E7B500513DC7</string>
+											<string>0535A86F0F49E7B500513DC7</string>
+											<string>0535A8700F49E7B500513DC7</string>
+											<string>0535A8AA0F49FD6800513DC7</string>
+											<string>0535A8AB0F49FD6800513DC7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -720,6 +723,28 @@
 											<string>0535A7E00F49C20400513DC7</string>
 											<string>0535A7EA0F49CB6300513DC7</string>
 											<string>0535A7F30F49CDE300513DC7</string>
+											<string>0535A8530F49DA3600513DC7</string>
+											<string>0535A8540F49DA3600513DC7</string>
+											<string>0535A8550F49DA3600513DC7</string>
+											<string>0535A8620F49E17B00513DC7</string>
+											<string>0535A8630F49E17B00513DC7</string>
+											<string>0535A8640F49E17B00513DC7</string>
+											<string>0535A8650F49E17B00513DC7</string>
+											<string>0535A8660F49E17B00513DC7</string>
+											<string>0535A8730F49E7B500513DC7</string>
+											<string>0535A8740F49E7B500513DC7</string>
+											<string>0535A8750F49E7B500513DC7</string>
+											<string>0535A8760F49E7B500513DC7</string>
+											<string>0535A8770F49E7B500513DC7</string>
+											<string>0535A8780F49E7B500513DC7</string>
+											<string>0535A89A0F49F8F700513DC7</string>
+											<string>0535A89B0F49F8F700513DC7</string>
+											<string>0535A89C0F49F8F700513DC7</string>
+											<string>0535A89D0F49F8F700513DC7</string>
+											<string>0535A8A50F49FB4C00513DC7</string>
+											<string>0535A8A60F49FB4C00513DC7</string>
+											<string>0535A8AC0F49FD6800513DC7</string>
+											<string>0535A8AD0F49FD6800513DC7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

@@ -32,6 +32,16 @@
 	return charset;
 }
 
+// Returns a delimiting character set for twitter hashtag
+- (NSCharacterSet *) hashtagDelimitingCharset {
+	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
+	[charset addCharactersInString:@"±§!$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
+	[charset addCharactersInString:@"¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ"];
+	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷⁄€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
+	[charset addCharactersInString:@"»¸˛Ç◊ı˜Â¯˘¿"];
+	return charset;
+}
+
 // Detects all types of URLs (except special Twitter names)
 - (NSString *) detectURL:(NSString *)string {	
 	NSRange range;
@@ -84,14 +94,15 @@
 		if (range.location == 0) {
 			NSString *substring = [string substringFromIndex:range.location];
 			NSRange charsetRange = [substring 
-									rangeOfCharacterFromSet:[self fullDelimitingCharset]];
+				rangeOfCharacterFromSet:[self fullDelimitingCharset]];
 			if (charsetRange.location == NSNotFound) {
 				return substring;
 			} else {
 				return [substring substringToIndex:charsetRange.location];
 			}
 		} else {
-			NSString *previousSubstring = [string substringToIndex:range.location];
+			NSString *previousSubstring = [string 
+				substringToIndex:range.location];
 			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
 								alphanumericCharacterSet];
 			unichar lastChar = [previousSubstring 
@@ -99,9 +110,49 @@
 			if ([alphanumericCharset characterIsMember:lastChar]) {
 				return NULL;
 			} else {
-				NSString *substring = [string substringFromIndex:range.location];
+				NSString *substring = [string 
+					substringFromIndex:range.location];
 				NSRange charsetRange = [substring 
-										rangeOfCharacterFromSet:[self fullDelimitingCharset]];
+					rangeOfCharacterFromSet:[self fullDelimitingCharset]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects hashtags
+- (NSString *) detectHashtag:(NSString *)string {
+	NSRange range = [string rangeOfString:@"#"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+				rangeOfCharacterFromSet:[self hashtagDelimitingCharset]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+				characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+					rangeOfCharacterFromSet:[self hashtagDelimitingCharset]];
 				if (charsetRange.location == NSNotFound) {
 					return substring;
 				} else {
@@ -136,7 +187,8 @@
 	NSURL *foundURL;
 	NSString *foundURLString;
 	NSString *username;
-	NSDictionary *linkAttr, *usernameAttr;
+	NSString *hashtag;
+	NSDictionary *linkAttr, *usernameAttr, *hashtagAttr;
 	
 	scanner = [NSScanner scannerWithString:[self string]];
 	terminalCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -169,6 +221,7 @@
 			attrRange.length = newRange.length;
 			[self addAttributes:linkAttr range:attrRange];
 		}
+		
 		// Twitter usernames
 		if (username = [self detectUsername:scanString]) {
 			NSMutableString *userLinkString = [NSMutableString 
@@ -178,12 +231,30 @@
 			usernameAttr = [NSDictionary dictionaryWithObjectsAndKeys:
 				foundURL, NSLinkAttributeName, 
 					[NSColor darkGrayColor], 
-						NSForegroundColorAttributeName,NULL];
+						NSForegroundColorAttributeName, NULL];
 			NSRange newRange = [scanString rangeOfString:username];
 			NSRange attrRange;
 			attrRange.location = scanRange.location + newRange.location;
 			attrRange.length = newRange.length;
 			[self addAttributes:usernameAttr range:attrRange];
+		}
+		
+		// Hashtags
+		if (hashtag = [self detectHashtag:scanString]) {
+			NSLog(@"hashtag: %@", hashtag);
+			NSMutableString *hashtagString = [NSMutableString stringWithString:@"http://search.twitter.com/search?q=%23"];
+			[hashtagString appendString:[hashtag substringFromIndex:1]];
+			foundURL = [NSURL URLWithString:hashtagString];
+			hashtagAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+				[NSColor blueColor], NSForegroundColorAttributeName,
+					[NSNumber numberWithInt:NSSingleUnderlineStyle], 
+						NSUnderlineStyleAttributeName,
+									   foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:hashtag];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:hashtagAttr range:attrRange];
 		}
 	}
 }
