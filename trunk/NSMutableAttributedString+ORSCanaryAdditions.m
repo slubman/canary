@@ -32,6 +32,16 @@
 	return charset;
 }
 
+// Returns a delimiting character set for twitter usernames and mailto: urls
+- (NSCharacterSet *) usernameDelimitingCharset {
+	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
+	[charset addCharactersInString:@"±§!#$%^&*()+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
+	[charset addCharactersInString:@"¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ"];
+	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷⁄€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
+	[charset addCharactersInString:@"»¸˛Ç◊ı˜Â¯˘¿"];
+	return charset;
+}
+
 // Returns a delimiting character set for twitter hashtag
 - (NSCharacterSet *) hashtagDelimitingCharset {
 	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
@@ -94,7 +104,7 @@
 		if (range.location == 0) {
 			NSString *substring = [string substringFromIndex:range.location];
 			NSRange charsetRange = [substring 
-				rangeOfCharacterFromSet:[self fullDelimitingCharset]];
+				rangeOfCharacterFromSet:[self usernameDelimitingCharset]];
 			if (charsetRange.location == NSNotFound) {
 				return substring;
 			} else {
@@ -113,7 +123,7 @@
 				NSString *substring = [string 
 					substringFromIndex:range.location];
 				NSRange charsetRange = [substring 
-					rangeOfCharacterFromSet:[self fullDelimitingCharset]];
+					rangeOfCharacterFromSet:[self usernameDelimitingCharset]];
 				if (charsetRange.location == NSNotFound) {
 					return substring;
 				} else {

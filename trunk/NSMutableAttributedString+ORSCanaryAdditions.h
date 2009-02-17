@@ -15,6 +15,7 @@
 
 - (NSCharacterSet *) httpDelimitingCharset;
 - (NSCharacterSet *) fullDelimitingCharset;
+- (NSCharacterSet *) usernameDelimitingCharset;
 - (NSCharacterSet *) hashtagDelimitingCharset;
 - (NSString *) detectURL:(NSString *)string;
 - (NSString *) detectUsername:(NSString *)string;
