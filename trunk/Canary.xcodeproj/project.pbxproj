@@ -61,6 +61,8 @@
 		0592EA800EA265F9002AC429 /* Canary.png in Resources */ = {isa = PBXBuildFile; fileRef = 0592EA7F0EA265F9002AC429 /* Canary.png */; };
 		0594912E0ED6036300874CB4 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */; };
 		059491310ED6037B00874CB4 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */; };
+		059746440F4F58C50092B310 /* urlborg.png in Resources */ = {isa = PBXBuildFile; fileRef = 059746430F4F58C50092B310 /* urlborg.png */; };
+		059746460F4F594A0092B310 /* trim.png in Resources */ = {isa = PBXBuildFile; fileRef = 059746450F4F594A0092B310 /* trim.png */; };
 		05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A5D7810F03F0D100B596A9 /* Quartz.framework */; };
 		05A5D9B00F065A8200B596A9 /* ORSAbstractShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5D9AF0F065A8200B596A9 /* ORSAbstractShortener.m */; };
 		05A67E380F325A800021D8AD /* Angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A67E1C0F325A800021D8AD /* Angry.png */; };
@@ -221,6 +223,8 @@
 		0592EA670EA26342002AC429 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		0592EA7F0EA265F9002AC429 /* Canary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canary.png; sourceTree = "<group>"; };
 		0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = "Third-party Frameworks/BWToolkit/BWToolkitFramework.framework"; sourceTree = DEVELOPER_DIR; };
+		059746430F4F58C50092B310 /* urlborg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urlborg.png; sourceTree = "<group>"; };
+		059746450F4F594A0092B310 /* trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trim.png; sourceTree = "<group>"; };
 		05A5D7810F03F0D100B596A9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		05A5D82D0F05469500B596A9 /* Greek */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Greek; path = Greek.lproj/LoginWindow.xib; sourceTree = "<group>"; };
 		05A5D9AE0F065A8200B596A9 /* ORSAbstractShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSAbstractShortener.h; sourceTree = "<group>"; };
@@ -391,6 +395,8 @@
 				05EE98460ED5FF1C00A860AC /* Gradient2.png */,
 				053789FE0F3A3B2A003B86EF /* LightGradient.png */,
 				05D6EF9A0EDDE51400CBC4B6 /* message.png */,
+				059746430F4F58C50092B310 /* urlborg.png */,
+				059746450F4F594A0092B310 /* trim.png */,
 				0591A95A0EC8E25F00BF3CAD /* tinyurl.png */,
 			);
 			name = "Icons and Images";
@@ -719,6 +725,8 @@
 				05A67E520F325A800021D8AD /* Undecided.png in Resources */,
 				05A67E530F325A800021D8AD /* Wink.png in Resources */,
 				053789FF0F3A3B2A003B86EF /* LightGradient.png in Resources */,
+				059746440F4F58C50092B310 /* urlborg.png in Resources */,
+				059746460F4F594A0092B310 /* trim.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
