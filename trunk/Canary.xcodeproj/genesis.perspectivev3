@@ -234,6 +234,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -282,7 +284,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>6</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -317,14 +319,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NSMutableAttributedString+ORSCanaryAdditions.h</string>
+								<string>ORSCanaryController+Growl.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NSMutableAttributedString+ORSCanaryAdditions.h</string>
+										<string>ORSCanaryController+Growl.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0535AA1E0F4B2CBB00513DC7</string>
+										<string>0535AB360F4C839900513DC7</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -437,22 +437,22 @@
 											<string>0535A5D10F49870D00513DC7</string>
 											<string>0535A5D20F49870D00513DC7</string>
 											<string>0535A7940F49B1A600513DC7</string>
-											<string>0535A7A70F49BB7D00513DC7</string>
 											<string>0535A7A80F49BB7D00513DC7</string>
 											<string>0535A86C0F49E7B500513DC7</string>
 											<string>0535A86E0F49E7B500513DC7</string>
 											<string>0535A86F0F49E7B500513DC7</string>
-											<string>0535A8C30F4A13AC00513DC7</string>
 											<string>0535A9230F4A1E7000513DC7</string>
 											<string>0535A93C0F4A1EE200513DC7</string>
 											<string>0535A93D0F4A1EE200513DC7</string>
 											<string>0535A94C0F4A213100513DC7</string>
 											<string>0535A94E0F4A213100513DC7</string>
-											<string>0535A9A30F4A28B000513DC7</string>
-											<string>0535AA150F4B2C9B00513DC7</string>
 											<string>0535AA160F4B2C9B00513DC7</string>
-											<string>0535AA1B0F4B2CBB00513DC7</string>
-											<string>0535AA1C0F4B2CBB00513DC7</string>
+											<string>0535AB270F4C839900513DC7</string>
+											<string>0535AB280F4C839900513DC7</string>
+											<string>0535AB290F4C839900513DC7</string>
+											<string>0535AB2A0F4C839900513DC7</string>
+											<string>0535AB2B0F4C839900513DC7</string>
+											<string>0535AB2C0F4C839900513DC7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -781,6 +781,15 @@
 											<string>0535AA180F4B2C9B00513DC7</string>
 											<string>0535AA190F4B2C9B00513DC7</string>
 											<string>0535AA1D0F4B2CBB00513DC7</string>
+											<string>0535AB2D0F4C839900513DC7</string>
+											<string>0535AB2E0F4C839900513DC7</string>
+											<string>0535AB2F0F4C839900513DC7</string>
+											<string>0535AB300F4C839900513DC7</string>
+											<string>0535AB310F4C839900513DC7</string>
+											<string>0535AB320F4C839900513DC7</string>
+											<string>0535AB330F4C839900513DC7</string>
+											<string>0535AB340F4C839900513DC7</string>
+											<string>0535AB350F4C839900513DC7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
