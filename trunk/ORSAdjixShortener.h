@@ -28,4 +28,6 @@
  */
 - (NSString *) generateURLFrom:(NSString *)originalURL;
 
+- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL;
+
 @end

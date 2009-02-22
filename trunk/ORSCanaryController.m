@@ -2180,7 +2180,7 @@ sender {
 }
 
 
-
+// Action: paste
 - (IBAction) paste:sender {
 	if ([self.window isKeyWindow]) {
 		
