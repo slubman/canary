@@ -251,7 +251,6 @@
 		
 		// Hashtags
 		if (hashtag = [self detectHashtag:scanString]) {
-			NSLog(@"hashtag: %@", hashtag);
 			NSMutableString *hashtagString = [NSMutableString stringWithString:@"http://search.twitter.com/search?q=%23"];
 			[hashtagString appendString:[hashtag substringFromIndex:1]];
 			foundURL = [NSURL URLWithString:hashtagString];

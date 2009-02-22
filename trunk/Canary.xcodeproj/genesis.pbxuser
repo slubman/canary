@@ -12,17 +12,17 @@
 	};
 	0505600B0EAB48A500FC28C3 /* ORSSession.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 944}}";
-			sepNavSelRange = "{388, 0}";
-			sepNavVisRange = "{39, 1115}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 896}}";
+			sepNavSelRange = "{387, 0}";
+			sepNavVisRange = "{350, 1422}";
 		};
 	};
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{381, 110}\";\n            s = 0;\n        },\n                {\n            r = \"{3071, 1713}\";\n            s = 0;\n        },\n                {\n            r = \"{5076, 1403}\";\n            s = 0;\n        },\n                {\n            r = \"{6588, 605}\";\n            s = 0;\n        },\n                {\n            r = \"{7307, 102}\";\n            s = 0;\n        },\n                {\n            r = \"{7827, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{8582, 398}\";\n            s = 0;\n        },\n                {\n            r = \"{9157, 200}\";\n            s = 0;\n        },\n                {\n            r = \"{9524, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{9757, 149}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 11357}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {845, 3184}}";
-			sepNavSelRange = "{6482, 0}";
-			sepNavVisRange = "{6175, 312}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 2992}}";
+			sepNavSelRange = "{5435, 0}";
+			sepNavVisRange = "{4877, 1610}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
 		};
 	};
@@ -69,7 +69,7 @@
 	};
 	050562580EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 624}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
 			sepNavSelRange = "{613, 0}";
 			sepNavVisRange = "{0, 1219}";
 		};
@@ -77,9 +77,10 @@
 	050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{401, 314}\";\n            s = 0;\n        },\n                {\n            r = \"{809, 421}\";\n            s = 0;\n        },\n                {\n            r = \"{1329, 397}\";\n            s = 0;\n        },\n                {\n            r = \"{1827, 324}\";\n            s = 0;\n        },\n                {\n            r = \"{2277, 436}\";\n            s = 0;\n        },\n                {\n            r = \"{2823, 399}\";\n            s = 0;\n        },\n                {\n            r = \"{3355, 453}\";\n            s = 0;\n        },\n                {\n            r = \"{3932, 430}\";\n            s = 0;\n        },\n                {\n            r = \"{4503, 454}\";\n            s = 0;\n        },\n                {\n            r = \"{5028, 317}\";\n            s = 0;\n        },\n                {\n            r = \"{5443, 423}\";\n            s = 0;\n        },\n                {\n            r = \"{5969, 399}\";\n            s = 0;\n        },\n                {\n            r = \"{6473, 326}\";\n            s = 0;\n        },\n                {\n            r = \"{6939, 455}\";\n            s = 0;\n        },\n                {\n            r = \"{7526, 432}\";\n            s = 0;\n        },\n                {\n            r = \"{8050, 315}\";\n            s = 0;\n        },\n                {\n            r = \"{8462, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{8923, 333}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 9264}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 1200}}";
-			sepNavSelRange = "{1410, 0}";
-			sepNavVisRange = "{0, 1039}";
+			sepNavIntBoundsRect = "{{0, 0}, {673, 1216}}";
+			sepNavSelRange = "{199, 0}";
+			sepNavVisRange = "{0, 1073}";
+			sepNavWindowFrame = "{{436, 67}, {719, 711}}";
 		};
 	};
 	0505628A0EABD32300FC28C3 /* PBXTextBookmark */ = {
@@ -134,7 +135,7 @@
 	};
 	0505632B0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{1040, 0}";
 			sepNavVisRange = "{0, 1264}";
 		};
@@ -224,7 +225,7 @@
 	};
 	0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {556, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{383, 0}";
 			sepNavVisRange = "{0, 701}";
 		};
@@ -232,9 +233,9 @@
 	0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{277, 460}\";\n            s = 0;\n        },\n                {\n            r = \"{1553, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{1700, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{1789, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{1903, 44}\";\n            s = 0;\n        },\n                {\n            r = \"{2010, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2429, 52}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2489}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 864}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 932}}";
 			sepNavSelRange = "{370, 30}";
-			sepNavVisRange = "{151, 947}";
+			sepNavVisRange = "{421, 1002}";
 		};
 	};
 	0507E9E70EF0814D00559018 /* PBXTextBookmark */ = {
@@ -379,14 +380,14 @@
 	0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{313, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{464, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{622, 107}\";\n            s = 0;\n        },\n                {\n            r = \"{853, 1357}\";\n            s = 0;\n        },\n                {\n            r = \"{2321, 1430}\";\n            s = 0;\n        },\n                {\n            r = \"{3859, 1526}\";\n            s = 0;\n        },\n                {\n            r = \"{5561, 1392}\";\n            s = 0;\n        },\n                {\n            r = \"{7070, 1144}\";\n            s = 0;\n        },\n                {\n            r = \"{8315, 1181}\";\n            s = 0;\n        },\n                {\n            r = \"{9554, 1304}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10866}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {592, 688}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 688}}";
 			sepNavSelRange = "{1170, 0}";
-			sepNavVisRange = "{158, 1079}";
+			sepNavVisRange = "{49, 1188}";
 		};
 	};
 	0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {592, 570}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{472, 0}";
 			sepNavVisRange = "{0, 824}";
 		};
@@ -431,16 +432,6 @@
 		vrLen = 472;
 		vrLoc = 0;
 	};
-	0535A5D10F49870D00513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */;
-		name = "ORSTimelineCacheManager.m: 130";
-		rLen = 0;
-		rLoc = 4334;
-		rType = 0;
-		vrLen = 4339;
-		vrLoc = 0;
-	};
 	0535A5D20F49870D00513DC7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */;
@@ -450,16 +441,6 @@
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 406;
-	};
-	0535A7940F49B1A600513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
-		name = "ORSSession.h: 22";
-		rLen = 0;
-		rLoc = 388;
-		rType = 0;
-		vrLen = 1115;
-		vrLoc = 39;
 	};
 	0535A7A80F49BB7D00513DC7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -521,36 +502,6 @@
 		vrLen = 316;
 		vrLoc = 0;
 	};
-	0535A93D0F4A1EE200513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */;
-		name = "ORSCanaryNewStatusTextFieldCell.h: 11";
-		rLen = 0;
-		rLoc = 231;
-		rType = 0;
-		vrLen = 447;
-		vrLoc = 0;
-	};
-	0535A94C0F4A213100513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */;
-		name = "ORSCanaryNewStatusTextFieldCell.m: 22";
-		rLen = 0;
-		rLoc = 559;
-		rType = 0;
-		vrLen = 566;
-		vrLoc = 0;
-	};
-	0535A94E0F4A213100513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */;
-		name = "NSString+ORSCanaryAdditions.h: 14";
-		rLen = 0;
-		rLoc = 256;
-		rType = 0;
-		vrLen = 316;
-		vrLoc = 0;
-	};
 	0535AA160F4B2C9B00513DC7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */;
@@ -560,46 +511,6 @@
 		rType = 0;
 		vrLen = 3143;
 		vrLoc = 0;
-	};
-	0535AB270F4C839900513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
-		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 36";
-		rLen = 46;
-		rLoc = 1346;
-		rType = 0;
-		vrLen = 9665;
-		vrLoc = 181;
-	};
-	0535AB280F4C839900513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
-		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 18";
-		rLen = 0;
-		rLoc = 466;
-		rType = 0;
-		vrLen = 758;
-		vrLoc = 0;
-	};
-	0535AB290F4C839900513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
-		name = "ORSCanaryController.m: 2204";
-		rLen = 0;
-		rLoc = 77917;
-		rType = 0;
-		vrLen = 4287;
-		vrLoc = 73636;
-	};
-	0535AB2A0F4C839900513DC7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
-		name = "ORSCanaryController.h: 288";
-		rLen = 0;
-		rLoc = 10501;
-		rType = 0;
-		vrLen = 1103;
-		vrLoc = 7986;
 	};
 	0535AB2B0F4C839900513DC7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -678,16 +589,6 @@
 		name = NSTextFieldCell.h;
 		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSTextFieldCell.h;
 		sourceTree = "<absolute>";
-	};
-	053789600F39F283003B86EF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
-		name = "main.m: 13";
-		rLen = 3;
-		rLoc = 200;
-		rType = 0;
-		vrLen = 287;
-		vrLoc = 0;
 	};
 	053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {
 		uiCtxt = {
@@ -843,46 +744,6 @@
 		vrLen = 450;
 		vrLoc = 0;
 	};
-	05378D090F3DCCE3003B86EF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */;
-		name = "ORSCanaryAboutController.m: 23";
-		rLen = 0;
-		rLoc = 529;
-		rType = 0;
-		vrLen = 1742;
-		vrLoc = 0;
-	};
-	05378D0A0F3DCCE3003B86EF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */;
-		name = "ORSCanaryAboutController.h: 16";
-		rLen = 0;
-		rLoc = 323;
-		rType = 0;
-		vrLen = 402;
-		vrLoc = 0;
-	};
-	05378E810F3F0A29003B86EF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */;
-		name = "ORSCanaryPreferencesController.h: 24";
-		rLen = 0;
-		rLoc = 653;
-		rType = 0;
-		vrLen = 1197;
-		vrLoc = 51;
-	};
-	05378F1D0F3F5B77003B86EF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */;
-		name = "ORSCanaryPreferencesController.m: 87";
-		rLen = 366;
-		rLoc = 2410;
-		rType = 0;
-		vrLen = 2851;
-		vrLoc = 614;
-	};
 	0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
@@ -964,7 +825,7 @@
 	};
 	0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{186, 0}";
 			sepNavVisRange = "{0, 280}";
 		};
@@ -972,7 +833,7 @@
 	0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{320, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{418, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{570, 10}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 588}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{368, 0}";
 			sepNavVisRange = "{0, 475}";
 		};
@@ -1367,7 +1228,7 @@
 	};
 	0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {570, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{256, 0}";
 			sepNavVisRange = "{0, 316}";
 		};
@@ -1476,7 +1337,7 @@
 	};
 	056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{323, 0}";
 			sepNavVisRange = "{0, 402}";
 		};
@@ -1484,7 +1345,7 @@
 	056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{379, 150}\";\n            s = 0;\n        },\n                {\n            r = \"{569, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{777, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{853, 410}\";\n            s = 0;\n        },\n                {\n            r = \"{1289, 445}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1742}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{380, 0}";
 			sepNavVisRange = "{0, 557}";
 		};
@@ -1593,9 +1454,10 @@
 	};
 	0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 640}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
 			sepNavSelRange = "{821, 19}";
-			sepNavVisRange = "{45, 947}";
+			sepNavVisRange = "{45, 942}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */ = {
@@ -1608,16 +1470,16 @@
 	};
 	0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{440, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{909, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{2322, 1205}\";\n            s = 0;\n        },\n                {\n            r = \"{6156, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 9846}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {845, 3440}}";
-			sepNavSelRange = "{6711, 0}";
-			sepNavVisRange = "{4870, 495}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{440, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{909, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{2322, 1205}\";\n            s = 0;\n        },\n                {\n            r = \"{6156, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 9811}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {592, 3216}}";
+			sepNavSelRange = "{6700, 0}";
+			sepNavVisRange = "{6217, 1031}";
 			sepNavWindowFrame = "{{61, 284}, {765, 847}}";
 		};
 	};
 	0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {592, 570}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{466, 0}";
 			sepNavVisRange = "{0, 758}";
 		};
@@ -1641,7 +1503,7 @@
 	0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{404, 1068}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1479}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{311, 0}";
 			sepNavVisRange = "{0, 412}";
 			sepNavWindowFrame = "{{84, 276}, {765, 847}}";
@@ -1676,35 +1538,36 @@
 	};
 	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1361, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1574, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1787, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{3763, 3649}\";\n            s = 0;\n        },\n                {\n            r = \"{7456, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{9046, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9535, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9689, 438}\";\n            s = 0;\n        },\n                {\n            r = \"{10172, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{10335, 2291}\";\n            s = 0;\n        },\n                {\n            r = \"{12682, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{13157, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{15254, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{15718, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{15953, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{16147, 5256}\";\n            s = 0;\n        },\n                {\n            r = \"{21495, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{22031, 4882}\";\n            s = 0;\n        },\n                {\n            r = \"{27016, 1384}\";\n            s = 0;\n        },\n                {\n            r = \"{28509, 1400}\";\n            s = 0;\n        },\n                {\n            r = \"{29970, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{30323, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{30705, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{31039, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{31363, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{31745, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{32093, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{32458, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{32696, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{32941, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{33775, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{34028, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{34795, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{36699, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{36991, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{38453, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{39909, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{41328, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{43597, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{44395, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{44667, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{44937, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{45225, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{45787, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{46129, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{46288, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46493, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46696, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{46945, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{47235, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{47589, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{47773, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{48040, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{48160, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{48435, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{49068, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{50840, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{51603, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{52063, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{52636, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{53743, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{54794, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{55696, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{56512, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{57368, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{57905, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{58297, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{58694, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{59092, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{59492, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{59908, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{60511, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{62832, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{64024, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{65180, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{65387, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{65604, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{65873, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{66544, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{66668, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{66763, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{66911, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67354, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67854, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{69834, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{70357, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{70784, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{71490, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{72196, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{72862, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{73557, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{73718, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{73903, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{74632, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{75415, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{75635, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{76260, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{76406, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{76860, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{77204, 711}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 77923}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {592, 6992}}";
-			sepNavSelRange = "{14118, 0}";
-			sepNavVisRange = "{13225, 899}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1361, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1574, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1787, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{3763, 3649}\";\n            s = 0;\n        },\n                {\n            r = \"{7456, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{9046, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9535, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9689, 438}\";\n            s = 0;\n        },\n                {\n            r = \"{10172, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{10335, 2291}\";\n            s = 0;\n        },\n                {\n            r = \"{12682, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{13157, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{15254, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{15718, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{15953, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{16147, 5256}\";\n            s = 0;\n        },\n                {\n            r = \"{21495, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{22031, 4882}\";\n            s = 0;\n        },\n                {\n            r = \"{27016, 1384}\";\n            s = 0;\n        },\n                {\n            r = \"{28509, 1400}\";\n            s = 0;\n        },\n                {\n            r = \"{29970, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{30323, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{30705, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{31039, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{31363, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{31745, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{32093, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{32458, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{32696, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{32941, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{33209, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{33775, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{34028, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{34795, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{36699, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{36991, 1332}\";\n            s = 0;\n        },\n                {\n            r = \"{38453, 1331}\";\n            s = 0;\n        },\n                {\n            r = \"{39909, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{41328, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{43597, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{44395, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{44667, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{44937, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{45225, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{45787, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{46129, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{46288, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46493, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46696, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{46945, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{47235, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{47589, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{47773, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{48040, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{48160, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{48435, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{49068, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{50840, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{51603, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{52063, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{52636, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{53743, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{54794, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{55696, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{56512, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{57368, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{57905, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{58297, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{58694, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{59092, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{59492, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{59908, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{60511, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{62832, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{64024, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{65180, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{65387, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{65604, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{65873, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{66544, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{66668, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{66763, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{66911, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67354, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67854, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{69834, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{70357, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{70784, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{71490, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{72196, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{72862, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{73557, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{73718, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{73903, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{74632, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{75415, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{75635, 511}\";\n            s = 0;\n        },\n                {\n            r = \"{76260, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{76406, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{76860, 312}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 78049}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1015, 6876}}";
+			sepNavSelRange = "{13688, 0}";
+			sepNavVisRange = "{14315, 182}";
 			sepNavWindowFrame = "{{670, 67}, {765, 711}}";
 		};
 	};
 	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {592, 4768}}";
-			sepNavSelRange = "{10501, 0}";
-			sepNavVisRange = "{7986, 1103}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 4976}}";
+			sepNavSelRange = "{8815, 0}";
+			sepNavVisRange = "{981, 1437}";
 			sepNavWindowFrame = "{{16, 67}, {765, 711}}";
 		};
 	};
 	0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{390, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{907, 522}\";\n            s = 0;\n        },\n                {\n            r = \"{1579, 445}\";\n            s = 0;\n        },\n                {\n            r = \"{2174, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{2675, 502}\";\n            s = 0;\n        },\n                {\n            r = \"{3317, 626}\";\n            s = 0;\n        },\n                {\n            r = \"{4025, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{4244, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4386}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {576, 672}}";
-			sepNavSelRange = "{830, 0}";
-			sepNavVisRange = "{31, 1197}";
+			sepNavIntBoundsRect = "{{0, 0}, {673, 672}}";
+			sepNavSelRange = "{500, 0}";
+			sepNavVisRange = "{0, 1204}";
 			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 1488}}";
-			sepNavSelRange = "{2110, 10}";
-			sepNavVisRange = "{1339, 530}";
+			sepNavIntBoundsRect = "{{0, 0}, {660, 1488}}";
+			sepNavSelRange = "{1377, 0}";
+			sepNavVisRange = "{109, 815}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	0573D7050DA66396002D1CCF /* Info.plist */ = {
@@ -1787,26 +1650,6 @@
 	057876070EF585FC006A7E89 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 057875C90EF58553006A7E89 /* error.png */;
-	};
-	05803FF60F4EBAD500CA72E5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
-		name = "ORSCanaryController+Growl.m: 281";
-		rLen = 0;
-		rLoc = 9496;
-		rType = 0;
-		vrLen = 10772;
-		vrLoc = 94;
-	};
-	05803FF70F4EBAD500CA72E5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
-		name = "ORSCanaryController+Growl.m: 281";
-		rLen = 0;
-		rLoc = 9496;
-		rType = 0;
-		vrLen = 10772;
-		vrLoc = 94;
 	};
 	05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {
 		uiCtxt = {
@@ -1912,26 +1755,6 @@
 		vrLen = 593;
 		vrLoc = 0;
 	};
-	058530230F292BB8003DB512 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */;
-		name = "ORSTwitterEngine+UserAdditions.m: 168";
-		rLen = 0;
-		rLoc = 5345;
-		rType = 0;
-		vrLen = 3324;
-		vrLoc = 0;
-	};
-	058530240F292BB8003DB512 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 050562580EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.h */;
-		name = "ORSTwitterEngine+UserAdditions.h: 22";
-		rLen = 0;
-		rLoc = 613;
-		rType = 0;
-		vrLen = 1219;
-		vrLoc = 0;
-	};
 	058530250F292BB8003DB512 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0505632C0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.m */;
@@ -1941,16 +1764,6 @@
 		rType = 0;
 		vrLen = 5893;
 		vrLoc = 933;
-	};
-	058530260F292BB8003DB512 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0505632B0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.h */;
-		name = "ORSTwitterEngine+StatusAdditions.h: 30";
-		rLen = 0;
-		rLoc = 1040;
-		rType = 0;
-		vrLen = 1264;
-		vrLoc = 0;
 	};
 	058530400F292BB8003DB512 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -1966,9 +1779,10 @@
 	};
 	058530B60F2933E4003DB512 /* iTunes.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 7568}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 7984}}";
 			sepNavSelRange = "{6705, 0}";
-			sepNavVisRange = "{6282, 813}";
+			sepNavVisRange = "{1183, 923}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	058530BB0F2934E6003DB512 /* PBXTextBookmark */ = {
@@ -2010,18 +1824,18 @@
 	};
 	0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 688}}";
-			sepNavSelRange = "{653, 0}";
-			sepNavVisRange = "{51, 1197}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 720}}";
+			sepNavSelRange = "{562, 0}";
+			sepNavVisRange = "{54, 1290}";
 		};
 	};
 	0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{443, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{651, 188}\";\n            s = 0;\n        },\n                {\n            r = \"{877, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{938, 99}\";\n            s = 0;\n        },\n                {\n            r = \"{1097, 434}\";\n            s = 0;\n        },\n                {\n            r = \"{1557, 475}\";\n            s = 0;\n        },\n                {\n            r = \"{2084, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{2188, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{2303, 71}\";\n            s = 0;\n        },\n                {\n            r = \"{2993, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{3303, 160}\";\n            s = 0;\n        },\n                {\n            r = \"{3507, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{3669, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{3911, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{4101, 210}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4319}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 1188}}";
-			sepNavSelRange = "{843, 366}";
-			sepNavVisRange = "{573, 1034}";
-			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{443, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{651, 188}\";\n            s = 0;\n        },\n                {\n            r = \"{878, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{939, 99}\";\n            s = 0;\n        },\n                {\n            r = \"{1098, 434}\";\n            s = 0;\n        },\n                {\n            r = \"{1558, 510}\";\n            s = 0;\n        },\n                {\n            r = \"{2120, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{2224, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{2339, 1236}\";\n            s = 0;\n        },\n                {\n            r = \"{3609, 550}\";\n            s = 0;\n        },\n                {\n            r = \"{4194, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{4504, 160}\";\n            s = 0;\n        },\n                {\n            r = \"{4708, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{4870, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{5112, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{5302, 210}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5520}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 948}}";
+			sepNavSelRange = "{808, 0}";
+			sepNavVisRange = "{529, 735}";
+			sepNavWindowFrame = "{{15, 67}, {765, 711}}";
 		};
 	};
 	0591A96C0EC8E77E00BF3CAD /* PBXBookmark */ = {
@@ -2097,15 +1911,447 @@
 		isa = PBXBookmark;
 		fRef = 0592EA7F0EA265F9002AC429 /* Canary.png */;
 	};
-	059746390F4F333A0092B310 /* PBXTextBookmark */ = {
+	0597465D0F5022480092B310 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 059746430F4F58C50092B310 /* urlborg.png */;
+	};
+	0597465E0F5022480092B310 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 059746450F4F594A0092B310 /* trim.png */;
+	};
+	059746640F5022480092B310 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 059746430F4F58C50092B310 /* urlborg.png */;
+	};
+	059746650F5022480092B310 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 059746450F4F594A0092B310 /* trim.png */;
+	};
+	0597467F0F50239E0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 253";
+		rLen = 0;
+		rLoc = 9070;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 8587;
+	};
+	059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORSCanaryNewStatusTextField.h;
+		path = /Users/genesis/Projects/Canary/source/trunk/ORSCanaryNewStatusTextField.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{287, 0}";
+			sepNavVisRange = "{0, 353}";
+		};
+	};
+	059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORSCanaryNewStatusTextField.m;
+		path = /Users/genesis/Projects/Canary/source/trunk/ORSCanaryNewStatusTextField.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 720}}";
+			sepNavSelRange = "{266, 0}";
+			sepNavVisRange = "{0, 1137}";
+		};
+	};
+	059746AD0F502AC00092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */;
+		name = "ORSCanaryNewStatusTextField.h: 12";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 253;
+		vrLoc = 0;
+	};
+	059746AE0F502AC00092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 477;
+		rType = 0;
+		vrLen = 256;
+		vrLoc = 0;
+	};
+	059746D40F502C640092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */;
+		name = "ORSCanaryNewStatusTextField.h: 18";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 352;
+		vrLoc = 0;
+	};
+	059746E50F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 4";
+		rLen = 0;
+		rLoc = 51;
+		rType = 0;
+		vrLen = 1136;
+		vrLoc = 0;
+	};
+	059746E60F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */;
+		name = "ORSCredentialsManager.h: 90";
+		rLen = 10;
+		rLoc = 2110;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 1293;
+	};
+	059746E70F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */;
+		name = "ORSCredentialsManager.m: 49";
+		rLen = 0;
+		rLoc = 1431;
+		rType = 0;
+		vrLen = 4223;
+		vrLoc = 0;
+	};
+	059746E80F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */;
+		name = "ORSTwitterEngine+UserAdditions.m: 10";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 3810;
+		vrLoc = 0;
+	};
+	059746E90F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600B0EAB48A500FC28C3 /* ORSSession.h */;
+		name = "ORSSession.h: 21";
+		rLen = 0;
+		rLoc = 387;
+		rType = 0;
+		vrLen = 1422;
+		vrLoc = 350;
+	};
+	059746EA0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505600C0EAB48A500FC28C3 /* ORSSession.m */;
+		name = "ORSSession.m: 320";
+		rLen = 0;
+		rLoc = 10305;
+		rType = 0;
+		vrLen = 1758;
+		vrLoc = 9599;
+	};
+	059746EB0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */;
+		name = "ORSTimelineCacheManager.m: 130";
+		rLen = 0;
+		rLoc = 4334;
+		rType = 0;
+		vrLen = 4339;
+		vrLoc = 0;
+	};
+	059746EC0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0505632B0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.h */;
+		name = "ORSTwitterEngine+StatusAdditions.h: 30";
+		rLen = 0;
+		rLoc = 1040;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 0;
+	};
+	059746ED0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 050562580EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.h */;
+		name = "ORSTwitterEngine+UserAdditions.h: 22";
+		rLen = 0;
+		rLoc = 613;
+		rType = 0;
+		vrLen = 1219;
+		vrLoc = 0;
+	};
+	059746EE0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05C60A8A0F485A65002B59D0 /* ORSImageView.h */;
+		name = "ORSImageView.h: 8";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 241;
+		vrLoc = 0;
+	};
+	059746EF0F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */;
+		name = "ORSCanaryNewStatusTextFieldCell.h: 11";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 447;
+		vrLoc = 0;
+	};
+	059746F00F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */;
+		name = "ORSCanaryNewStatusTextFieldCell.m: 22";
+		rLen = 0;
+		rLoc = 559;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	059746F10F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */;
+		name = "ORSCanaryTextFieldCell.m: 15";
+		rLen = 0;
+		rLoc = 311;
+		rType = 0;
+		vrLen = 1479;
+		vrLoc = 0;
+	};
+	059746F20F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */;
+		name = "ORSCanaryUnderlinedButtonCell.h: 8";
+		rLen = 0;
+		rLoc = 186;
+		rType = 0;
+		vrLen = 280;
+		vrLoc = 0;
+	};
+	059746F30F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */;
+		name = "ORSCanaryUnderlinedButtonCell.m: 22";
+		rLen = 0;
+		rLoc = 472;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 0;
+	};
+	059746F40F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */;
+		name = "ORSCanaryDragView.h: 19";
+		rLen = 0;
+		rLoc = 383;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 0;
+	};
+	059746F50F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */;
+		name = "ORSCanaryDragView.m: 34";
+		rLen = 30;
+		rLoc = 829;
+		rType = 0;
+		vrLen = 1710;
+		vrLoc = 779;
+	};
+	059746F60F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */;
+		name = "ORSCanaryPreferencesController.h: 20";
+		rLen = 0;
+		rLoc = 562;
+		rType = 0;
+		vrLen = 1290;
+		vrLoc = 54;
+	};
+	059746F70F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */;
+		name = "ORSCanaryPreferencesController.m: 73";
+		rLen = 0;
+		rLoc = 2068;
+		rType = 0;
+		vrLen = 2297;
+		vrLoc = 0;
+	};
+	059746F80F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */;
+		name = "ORSCanaryAboutController.m: 23";
+		rLen = 0;
+		rLoc = 529;
+		rType = 0;
+		vrLen = 1742;
+		vrLoc = 0;
+	};
+	059746F90F5052F90092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */;
+		name = "ORSCanaryAboutController.h: 16";
+		rLen = 0;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 402;
+		vrLoc = 0;
+	};
+	059747210F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 8";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	059747220F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 255";
+		rLen = 0;
+		rLoc = 8958;
+		rType = 0;
+		vrLen = 1747;
+		vrLoc = 9322;
+	};
+	059747230F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 058530B60F2933E4003DB512 /* iTunes.h */;
+		name = "iTunes.h: 157";
+		rLen = 0;
+		rLoc = 6705;
+		rType = 0;
+		vrLen = 923;
+		vrLoc = 1183;
+	};
+	059747240F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 26";
+		rLen = 0;
+		rLoc = 844;
+		rType = 0;
+		vrLen = 16501;
+		vrLoc = 16088;
+	};
+	059747250F505D1C0092B310 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
 		name = "ORSCanaryController+Growl.m: 281";
 		rLen = 0;
 		rLoc = 9496;
 		rType = 0;
-		vrLen = 10772;
-		vrLoc = 94;
+		vrLen = 10817;
+		vrLoc = 49;
+	};
+	059747260F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 18";
+		rLen = 0;
+		rLoc = 466;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 0;
+	};
+	059747270F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 316;
+		vrLoc = 0;
+	};
+	059747280F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 8";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	059747290F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 255";
+		rLen = 0;
+		rLoc = 8958;
+		rType = 0;
+		vrLen = 1747;
+		vrLoc = 9322;
+	};
+	0597472A0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 26";
+		rLen = 0;
+		rLoc = 844;
+		rType = 0;
+		vrLen = 16501;
+		vrLoc = 16088;
+	};
+	0597472B0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 058530B60F2933E4003DB512 /* iTunes.h */;
+		name = "iTunes.h: 157";
+		rLen = 0;
+		rLoc = 6705;
+		rType = 0;
+		vrLen = 923;
+		vrLoc = 1183;
+	};
+	0597472C0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 26";
+		rLen = 0;
+		rLoc = 844;
+		rType = 0;
+		vrLen = 16501;
+		vrLoc = 16088;
+	};
+	0597472D0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */;
+		name = "ORSCanaryController+Growl.m: 281";
+		rLen = 0;
+		rLoc = 9496;
+		rType = 0;
+		vrLen = 10817;
+		vrLoc = 49;
+	};
+	0597472E0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 18";
+		rLen = 0;
+		rLoc = 466;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 0;
+	};
+	0597472F0F505D1C0092B310 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 316;
+		vrLoc = 0;
 	};
 	05A5D9AE0F065A8200B596A9 /* ORSAbstractShortener.h */ = {
 		uiCtxt = {
@@ -2290,36 +2536,6 @@
 		rType = 0;
 		vrLen = 4169;
 		vrLoc = 323;
-	};
-	05A67E0D0F325A6F0021D8AD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */;
-		name = "ORSCredentialsManager.m: 86";
-		rLen = 0;
-		rLoc = 2556;
-		rType = 0;
-		vrLen = 4349;
-		vrLoc = 31;
-	};
-	05A67EE00F3267520021D8AD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */;
-		name = "ORSCanaryUnderlinedButtonCell.h: 8";
-		rLen = 0;
-		rLoc = 186;
-		rType = 0;
-		vrLen = 280;
-		vrLoc = 0;
-	};
-	05A680D30F35B0100021D8AD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */;
-		name = "ORSCanaryDragView.h: 19";
-		rLen = 0;
-		rLoc = 383;
-		rType = 0;
-		vrLen = 701;
-		vrLoc = 0;
 	};
 	05A681420F35B5D80021D8AD /* ORSFilter.h */ = {
 		uiCtxt = {
@@ -2569,6 +2785,466 @@
 		vrLen = 2420;
 		vrLoc = 0;
 	};
+	05C4F2390F50C6AC00947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 316;
+		vrLoc = 0;
+	};
+	05C4F23A0F50C6AC00947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */;
+		name = "NSString+ORSCanaryAdditions.h: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 316;
+		vrLoc = 0;
+	};
+	05C4F23B0F50C6AC00947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 32";
+		rLen = 19;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 45;
+	};
+	05C4F2480F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 32";
+		rLen = 19;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 45;
+	};
+	05C4F2490F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 18";
+		rLen = 0;
+		rLoc = 472;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	05C4F24A0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2184";
+		rLen = 0;
+		rLoc = 77241;
+		rType = 0;
+		vrLen = 2314;
+		vrLoc = 75605;
+	};
+	05C4F24B0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */;
+		name = "ORSCanaryNewStatusTextField.h: 17";
+		rLen = 0;
+		rLoc = 287;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 0;
+	};
+	05C4F24C0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F24D0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */;
+		name = "NSXMLNode+ORSTwitterStatusAdditions.h: 32";
+		rLen = 19;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 45;
+	};
+	05C4F24E0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */;
+		name = "ORSCanaryController+Growl.h: 18";
+		rLen = 0;
+		rLoc = 472;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	05C4F24F0F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2184";
+		rLen = 0;
+		rLoc = 77241;
+		rType = 0;
+		vrLen = 2314;
+		vrLoc = 75605;
+	};
+	05C4F2500F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */;
+		name = "ORSCanaryNewStatusTextField.h: 18";
+		rLen = 0;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 352;
+		vrLoc = 0;
+	};
+	05C4F2510F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F2520F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A50F502A2D0092B310 /* ORSCanaryNewStatusTextField.h */;
+		name = "ORSCanaryNewStatusTextField.h: 17";
+		rLen = 0;
+		rLoc = 287;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 0;
+	};
+	05C4F2530F50C90800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F2540F50C91100947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F2550F50C94900947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 160;
+	};
+	05C4F2570F50C99000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F2580F50C99500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 0;
+	};
+	05C4F2590F50C9A200947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 160;
+	};
+	05C4F25A0F50C9A500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1137;
+		vrLoc = 0;
+	};
+	05C4F25C0F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1137;
+		vrLoc = 0;
+	};
+	05C4F25D0F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 252";
+		rLen = 0;
+		rLoc = 8815;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 981;
+	};
+	05C4F25E0F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77213;
+		rType = 0;
+		vrLen = 2373;
+		vrLoc = 75566;
+	};
+	05C4F25F0F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 1137;
+		vrLoc = 0;
+	};
+	05C4F2600F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2184";
+		rLen = 0;
+		rLoc = 77241;
+		rType = 0;
+		vrLen = 2353;
+		vrLoc = 75566;
+	};
+	05C4F2610F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 255";
+		rLen = 0;
+		rLoc = 8958;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 7537;
+	};
+	05C4F2620F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2184";
+		rLen = 27;
+		rLoc = 77177;
+		rType = 0;
+		vrLen = 2357;
+		vrLoc = 75566;
+	};
+	05C4F2630F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 252";
+		rLen = 0;
+		rLoc = 8815;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 8301;
+	};
+	05C4F2640F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77213;
+		rType = 0;
+		vrLen = 2373;
+		vrLoc = 75566;
+	};
+	05C4F2650F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */;
+		name = "ORSCanaryController.h: 252";
+		rLen = 0;
+		rLoc = 8815;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 981;
+	};
+	05C4F2660F50CA6500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2207";
+		rLen = 0;
+		rLoc = 77968;
+		rType = 0;
+		vrLen = 1864;
+		vrLoc = 76148;
+	};
+	05C4F2680F50CAF000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2207";
+		rLen = 0;
+		rLoc = 77968;
+		rType = 0;
+		vrLen = 1280;
+		vrLoc = 76738;
+	};
+	05C4F2690F50CAF800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2207";
+		rLen = 0;
+		rLoc = 77968;
+		rType = 0;
+		vrLen = 1280;
+		vrLoc = 76738;
+	};
+	05C4F26A0F50CB0100947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 059746A60F502A2D0092B310 /* ORSCanaryNewStatusTextField.m */;
+		name = "ORSCanaryNewStatusTextField.m: 13";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 160;
+	};
+	05C4F26B0F50CB0100947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2207";
+		rLen = 0;
+		rLoc = 77968;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 77725;
+	};
+	05C4F26D0F50CB0800947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2207";
+		rLen = 0;
+		rLoc = 77968;
+		rType = 0;
+		vrLen = 1280;
+		vrLoc = 76738;
+	};
+	05C4F26F0F50CB6200947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 1267;
+		vrLoc = 76737;
+	};
+	05C4F2720F50CB7300947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 1678;
+		vrLoc = 76326;
+	};
+	05C4F2730F50CB8500947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 2605;
+		vrLoc = 75326;
+	};
+	05C4F2740F50CB9D00947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 148;
+		vrLoc = 77851;
+	};
+	05C4F2790F50CCE000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */;
+		name = "ORSCanaryPreferencesController.m: 109";
+		rLen = 0;
+		rLoc = 3575;
+		rType = 0;
+		vrLen = 5142;
+		vrLoc = 378;
+	};
+	05C4F27A0F50CCE000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 1845;
+		vrLoc = 76148;
+	};
+	05C4F27B0F50CCE000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2185";
+		rLen = 0;
+		rLoc = 77235;
+		rType = 0;
+		vrLen = 1572;
+		vrLoc = 76363;
+	};
+	05C4F27C0F50CCE000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */;
+		name = "ORSCanaryPreferencesController.m: 109";
+		rLen = 0;
+		rLoc = 3575;
+		rType = 0;
+		vrLen = 5142;
+		vrLoc = 378;
+	};
+	05C4F27D0F50CCE000947B18 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */;
+		name = "ORSCanaryController.m: 2209";
+		rLen = 0;
+		rLoc = 78037;
+		rType = 0;
+		vrLen = 1686;
+		vrLoc = 76363;
+	};
 	05C60A6C0F482FA8002B59D0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 05C60A6D0F482FA8002B59D0 /* AERegistry.h */;
@@ -2603,19 +3279,9 @@
 		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/Headers/AERegistry.h;
 		sourceTree = "<absolute>";
 	};
-	05C60A790F483511002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 058530B60F2933E4003DB512 /* iTunes.h */;
-		name = "iTunes.h: 157";
-		rLen = 0;
-		rLoc = 6705;
-		rType = 0;
-		vrLen = 2038;
-		vrLoc = 5495;
-	};
 	05C60A8A0F485A65002B59D0 /* ORSImageView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{165, 0}";
 			sepNavVisRange = "{0, 241}";
 		};
@@ -2647,46 +3313,6 @@
 		vrLen = 326;
 		vrLoc = 0;
 	};
-	05C60AEC0F4889FE002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */;
-		name = "ORSCanaryTextFieldCell.m: 15";
-		rLen = 0;
-		rLoc = 311;
-		rType = 0;
-		vrLen = 1479;
-		vrLoc = 0;
-	};
-	05C60AED0F4889FE002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */;
-		name = "ORSCanaryUnderlinedButtonCell.m: 22";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 588;
-		vrLoc = 0;
-	};
-	05C60AEE0F4889FE002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */;
-		name = "ORSCanaryDragView.m: 34";
-		rLen = 30;
-		rLoc = 829;
-		rType = 0;
-		vrLen = 1484;
-		vrLoc = 151;
-	};
-	05C60AEF0F4889FE002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */;
-		name = "ORSCredentialsManager.h: 90";
-		rLen = 10;
-		rLoc = 2110;
-		rType = 0;
-		vrLen = 530;
-		vrLoc = 1339;
-	};
 	05C60AF30F4889FE002B59D0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */;
@@ -2705,16 +3331,6 @@
 		rLoc = 3360;
 		rType = 0;
 		vrLen = 1528;
-		vrLoc = 0;
-	};
-	05C60AF60F4889FE002B59D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 05C60A8A0F485A65002B59D0 /* ORSImageView.h */;
-		name = "ORSImageView.h: 8";
-		rLen = 0;
-		rLoc = 165;
-		rType = 0;
-		vrLen = 241;
 		vrLoc = 0;
 	};
 	05C60B020F4889FE002B59D0 /* PBXTextBookmark */ = {
@@ -2739,7 +3355,7 @@
 	};
 	05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {570, 340}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{231, 0}";
 			sepNavVisRange = "{0, 447}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
@@ -2748,7 +3364,7 @@
 	05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{340, 218}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 566}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {570, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{342, 0}";
 			sepNavVisRange = "{0, 349}";
 			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
@@ -2804,16 +3420,6 @@
 		vrLen = 2160;
 		vrLoc = 1471;
 	};
-	05D0F9C10F44C8C400ABF45A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 0505600C0EAB48A500FC28C3 /* ORSSession.m */;
-		name = "ORSSession.m: 326";
-		rLen = 0;
-		rLoc = 10643;
-		rType = 0;
-		vrLen = 1649;
-		vrLoc = 9708;
-	};
 	05D6EAF20ED8838D00CBC4B6 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 0591A95A0EC8E25F00BF3CAD /* tinyurl.png */;
@@ -2828,7 +3434,7 @@
 	05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{748, 1031}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 479}\";\n            s = 0;\n        },\n                {\n            r = \"{2414, 1917}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4339}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {577, 569}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
 			sepNavSelRange = "{910, 0}";
 			sepNavVisRange = "{0, 915}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
@@ -3084,7 +3690,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					414,
+					543,
 					20,
 					48,
 					43,
@@ -3175,8 +3781,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 256848691;
-			PBXWorkspaceStateSaveDate = 256848691;
+			PBXPerProjectTemplateStateSaveDate = 256951951;
+			PBXWorkspaceStateSaveDate = 256951951;
 		};
 		perUserProjectItems = {
 			05016E3D0E7BF03A004C6EFD = 05016E3D0E7BF03A004C6EFD /* PBXTextBookmark */;
@@ -3206,29 +3812,19 @@
 			0535A4FC0F48A47B00513DC7 = 0535A4FC0F48A47B00513DC7 /* PBXTextBookmark */;
 			0535A59A0F4955B100513DC7 = 0535A59A0F4955B100513DC7 /* PBXTextBookmark */;
 			0535A5D00F49870D00513DC7 = 0535A5D00F49870D00513DC7 /* PBXTextBookmark */;
-			0535A5D10F49870D00513DC7 = 0535A5D10F49870D00513DC7 /* PBXTextBookmark */;
 			0535A5D20F49870D00513DC7 = 0535A5D20F49870D00513DC7 /* PBXTextBookmark */;
-			0535A7940F49B1A600513DC7 = 0535A7940F49B1A600513DC7 /* PBXTextBookmark */;
 			0535A7A80F49BB7D00513DC7 = 0535A7A80F49BB7D00513DC7 /* PBXTextBookmark */;
 			0535A86C0F49E7B500513DC7 = 0535A86C0F49E7B500513DC7 /* PBXTextBookmark */;
 			0535A86E0F49E7B500513DC7 = 0535A86E0F49E7B500513DC7 /* PBXTextBookmark */;
 			0535A86F0F49E7B500513DC7 = 0535A86F0F49E7B500513DC7 /* PBXTextBookmark */;
 			0535A9230F4A1E7000513DC7 = 0535A9230F4A1E7000513DC7 /* PBXTextBookmark */;
 			0535A93C0F4A1EE200513DC7 = 0535A93C0F4A1EE200513DC7 /* PBXTextBookmark */;
-			0535A93D0F4A1EE200513DC7 = 0535A93D0F4A1EE200513DC7 /* PBXTextBookmark */;
-			0535A94C0F4A213100513DC7 = 0535A94C0F4A213100513DC7 /* PBXTextBookmark */;
-			0535A94E0F4A213100513DC7 = 0535A94E0F4A213100513DC7 /* PBXTextBookmark */;
 			0535AA160F4B2C9B00513DC7 = 0535AA160F4B2C9B00513DC7 /* PBXTextBookmark */;
-			0535AB270F4C839900513DC7 = 0535AB270F4C839900513DC7 /* PBXTextBookmark */;
-			0535AB280F4C839900513DC7 = 0535AB280F4C839900513DC7 /* PBXTextBookmark */;
-			0535AB290F4C839900513DC7 = 0535AB290F4C839900513DC7 /* PBXTextBookmark */;
-			0535AB2A0F4C839900513DC7 = 0535AB2A0F4C839900513DC7 /* PBXTextBookmark */;
 			0535AB2B0F4C839900513DC7 = 0535AB2B0F4C839900513DC7 /* PBXTextBookmark */;
 			05372D9D0E7EE8CC008ABD85 = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DA20E7EE8CC008ABD85 = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DAB0E7EE8CC008ABD85 = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;
 			05372DB70E7EE8CC008ABD85 = 05372DB70E7EE8CC008ABD85 /* PBXTextBookmark */;
-			053789600F39F283003B86EF = 053789600F39F283003B86EF /* PBXTextBookmark */;
 			053789B60F3A2A5D003B86EF = 053789B60F3A2A5D003B86EF /* PBXTextBookmark */;
 			053789B70F3A2A5D003B86EF = 053789B70F3A2A5D003B86EF /* PBXTextBookmark */;
 			053789B80F3A2A5D003B86EF = 053789B80F3A2A5D003B86EF /* PBXTextBookmark */;
@@ -3243,10 +3839,6 @@
 			05378C280F3DC170003B86EF = 05378C280F3DC170003B86EF /* PBXTextBookmark */;
 			05378CB30F3DC9AA003B86EF = 05378CB30F3DC9AA003B86EF /* PBXTextBookmark */;
 			05378CB40F3DC9AA003B86EF = 05378CB40F3DC9AA003B86EF /* PBXTextBookmark */;
-			05378D090F3DCCE3003B86EF = 05378D090F3DCCE3003B86EF /* PBXTextBookmark */;
-			05378D0A0F3DCCE3003B86EF = 05378D0A0F3DCCE3003B86EF /* PBXTextBookmark */;
-			05378E810F3F0A29003B86EF = 05378E810F3F0A29003B86EF /* PBXTextBookmark */;
-			05378F1D0F3F5B77003B86EF = 05378F1D0F3F5B77003B86EF /* PBXTextBookmark */;
 			0550D3D50F2B8509002EA7AD = 0550D3D50F2B8509002EA7AD /* PBXTextBookmark */;
 			0550D3D60F2B8509002EA7AD = 0550D3D60F2B8509002EA7AD /* PBXTextBookmark */;
 			0550D4540F2C8897002EA7AD = 0550D4540F2C8897002EA7AD /* PBXTextBookmark */;
@@ -3294,8 +3886,6 @@
 			0573D7EB0DA7D48C002D1CCF = 0573D7EB0DA7D48C002D1CCF /* PBXTextBookmark */;
 			0573D7EE0DA7D48C002D1CCF = 0573D7EE0DA7D48C002D1CCF /* PBXTextBookmark */;
 			057876070EF585FC006A7E89 = 057876070EF585FC006A7E89 /* PBXBookmark */;
-			05803FF60F4EBAD500CA72E5 = 05803FF60F4EBAD500CA72E5 /* PBXTextBookmark */;
-			05803FF70F4EBAD500CA72E5 = 05803FF70F4EBAD500CA72E5 /* PBXTextBookmark */;
 			05852F4D0F290764003DB512 = 05852F4D0F290764003DB512 /* PBXTextBookmark */;
 			05852F510F290764003DB512 = 05852F510F290764003DB512 /* PBXTextBookmark */;
 			058530150F292BB8003DB512 = 058530150F292BB8003DB512 /* PBXTextBookmark */;
@@ -3305,10 +3895,7 @@
 			0585301E0F292BB8003DB512 = 0585301E0F292BB8003DB512 /* PBXTextBookmark */;
 			0585301F0F292BB8003DB512 = 0585301F0F292BB8003DB512 /* PBXTextBookmark */;
 			058530200F292BB8003DB512 = 058530200F292BB8003DB512 /* PBXTextBookmark */;
-			058530230F292BB8003DB512 = 058530230F292BB8003DB512 /* PBXTextBookmark */;
-			058530240F292BB8003DB512 = 058530240F292BB8003DB512 /* PBXTextBookmark */;
 			058530250F292BB8003DB512 = 058530250F292BB8003DB512 /* PBXTextBookmark */;
-			058530260F292BB8003DB512 = 058530260F292BB8003DB512 /* PBXTextBookmark */;
 			058530400F292BB8003DB512 = 058530400F292BB8003DB512 /* PBXBookmark */;
 			058530410F292BB8003DB512 = 058530410F292BB8003DB512 /* PBXBookmark */;
 			058530B20F292BB8003DB512 = 058530B20F292BB8003DB512 /* PBXBookmark */;
@@ -3324,7 +3911,50 @@
 			0592E7AF0EA1466E002AC429 = 0592E7AF0EA1466E002AC429 /* PBXTextBookmark */;
 			0592E7B20EA1466E002AC429 = 0592E7B20EA1466E002AC429 /* PBXTextBookmark */;
 			0592EA9B0EA276FD002AC429 = 0592EA9B0EA276FD002AC429 /* PBXBookmark */;
-			059746390F4F333A0092B310 /* PBXTextBookmark */ = 059746390F4F333A0092B310 /* PBXTextBookmark */;
+			0597465D0F5022480092B310 = 0597465D0F5022480092B310 /* PBXBookmark */;
+			0597465E0F5022480092B310 = 0597465E0F5022480092B310 /* PBXBookmark */;
+			059746640F5022480092B310 = 059746640F5022480092B310 /* PBXBookmark */;
+			059746650F5022480092B310 = 059746650F5022480092B310 /* PBXBookmark */;
+			0597467F0F50239E0092B310 = 0597467F0F50239E0092B310 /* PBXTextBookmark */;
+			059746AD0F502AC00092B310 = 059746AD0F502AC00092B310 /* PBXTextBookmark */;
+			059746AE0F502AC00092B310 = 059746AE0F502AC00092B310 /* PBXTextBookmark */;
+			059746D40F502C640092B310 = 059746D40F502C640092B310 /* PBXTextBookmark */;
+			059746E50F5052F90092B310 = 059746E50F5052F90092B310 /* PBXTextBookmark */;
+			059746E60F5052F90092B310 = 059746E60F5052F90092B310 /* PBXTextBookmark */;
+			059746E70F5052F90092B310 = 059746E70F5052F90092B310 /* PBXTextBookmark */;
+			059746E80F5052F90092B310 = 059746E80F5052F90092B310 /* PBXTextBookmark */;
+			059746E90F5052F90092B310 = 059746E90F5052F90092B310 /* PBXTextBookmark */;
+			059746EA0F5052F90092B310 = 059746EA0F5052F90092B310 /* PBXTextBookmark */;
+			059746EB0F5052F90092B310 = 059746EB0F5052F90092B310 /* PBXTextBookmark */;
+			059746EC0F5052F90092B310 = 059746EC0F5052F90092B310 /* PBXTextBookmark */;
+			059746ED0F5052F90092B310 = 059746ED0F5052F90092B310 /* PBXTextBookmark */;
+			059746EE0F5052F90092B310 = 059746EE0F5052F90092B310 /* PBXTextBookmark */;
+			059746EF0F5052F90092B310 = 059746EF0F5052F90092B310 /* PBXTextBookmark */;
+			059746F00F5052F90092B310 = 059746F00F5052F90092B310 /* PBXTextBookmark */;
+			059746F10F5052F90092B310 = 059746F10F5052F90092B310 /* PBXTextBookmark */;
+			059746F20F5052F90092B310 = 059746F20F5052F90092B310 /* PBXTextBookmark */;
+			059746F30F5052F90092B310 = 059746F30F5052F90092B310 /* PBXTextBookmark */;
+			059746F40F5052F90092B310 = 059746F40F5052F90092B310 /* PBXTextBookmark */;
+			059746F50F5052F90092B310 = 059746F50F5052F90092B310 /* PBXTextBookmark */;
+			059746F60F5052F90092B310 = 059746F60F5052F90092B310 /* PBXTextBookmark */;
+			059746F70F5052F90092B310 = 059746F70F5052F90092B310 /* PBXTextBookmark */;
+			059746F80F5052F90092B310 = 059746F80F5052F90092B310 /* PBXTextBookmark */;
+			059746F90F5052F90092B310 = 059746F90F5052F90092B310 /* PBXTextBookmark */;
+			059747210F505D1C0092B310 = 059747210F505D1C0092B310 /* PBXTextBookmark */;
+			059747220F505D1C0092B310 = 059747220F505D1C0092B310 /* PBXTextBookmark */;
+			059747230F505D1C0092B310 = 059747230F505D1C0092B310 /* PBXTextBookmark */;
+			059747240F505D1C0092B310 = 059747240F505D1C0092B310 /* PBXTextBookmark */;
+			059747250F505D1C0092B310 = 059747250F505D1C0092B310 /* PBXTextBookmark */;
+			059747260F505D1C0092B310 = 059747260F505D1C0092B310 /* PBXTextBookmark */;
+			059747270F505D1C0092B310 = 059747270F505D1C0092B310 /* PBXTextBookmark */;
+			059747280F505D1C0092B310 = 059747280F505D1C0092B310 /* PBXTextBookmark */;
+			059747290F505D1C0092B310 = 059747290F505D1C0092B310 /* PBXTextBookmark */;
+			0597472A0F505D1C0092B310 = 0597472A0F505D1C0092B310 /* PBXTextBookmark */;
+			0597472B0F505D1C0092B310 = 0597472B0F505D1C0092B310 /* PBXTextBookmark */;
+			0597472C0F505D1C0092B310 = 0597472C0F505D1C0092B310 /* PBXTextBookmark */;
+			0597472D0F505D1C0092B310 = 0597472D0F505D1C0092B310 /* PBXTextBookmark */;
+			0597472E0F505D1C0092B310 = 0597472E0F505D1C0092B310 /* PBXTextBookmark */;
+			0597472F0F505D1C0092B310 = 0597472F0F505D1C0092B310 /* PBXTextBookmark */;
 			05A5D9C50F06641900B596A9 = 05A5D9C50F06641900B596A9 /* PBXTextBookmark */;
 			05A5D9C60F06641900B596A9 = 05A5D9C60F06641900B596A9 /* PBXTextBookmark */;
 			05A5D9C70F06641900B596A9 = 05A5D9C70F06641900B596A9 /* PBXTextBookmark */;
@@ -3342,9 +3972,6 @@
 			05A5DA1B0F06641900B596A9 = 05A5DA1B0F06641900B596A9 /* PBXTextBookmark */;
 			05A67D520F30EB4F0021D8AD = 05A67D520F30EB4F0021D8AD /* PBXTextBookmark */;
 			05A67D910F30FCFB0021D8AD = 05A67D910F30FCFB0021D8AD /* PBXTextBookmark */;
-			05A67E0D0F325A6F0021D8AD = 05A67E0D0F325A6F0021D8AD /* PBXTextBookmark */;
-			05A67EE00F3267520021D8AD = 05A67EE00F3267520021D8AD /* PBXTextBookmark */;
-			05A680D30F35B0100021D8AD = 05A680D30F35B0100021D8AD /* PBXTextBookmark */;
 			05A6814A0F35B7040021D8AD = 05A6814A0F35B7040021D8AD /* PBXTextBookmark */;
 			05A6814B0F35B7040021D8AD = 05A6814B0F35B7040021D8AD /* PBXTextBookmark */;
 			05A684490F3642350021D8AD = 05A684490F3642350021D8AD /* PBXTextBookmark */;
@@ -3370,18 +3997,58 @@
 			05BF6BA40E11880900F77093 = 05BF6BA40E11880900F77093 /* PBXTextBookmark */;
 			05BF6BA50E11880900F77093 = 05BF6BA50E11880900F77093 /* PBXTextBookmark */;
 			05C0A18A0DB5FB9B0045061A = 05C0A18A0DB5FB9B0045061A /* PBXTextBookmark */;
+			05C4F2390F50C6AC00947B18 /* PBXTextBookmark */ = 05C4F2390F50C6AC00947B18 /* PBXTextBookmark */;
+			05C4F23A0F50C6AC00947B18 /* PBXTextBookmark */ = 05C4F23A0F50C6AC00947B18 /* PBXTextBookmark */;
+			05C4F23B0F50C6AC00947B18 /* PBXTextBookmark */ = 05C4F23B0F50C6AC00947B18 /* PBXTextBookmark */;
+			05C4F2480F50C90800947B18 /* PBXTextBookmark */ = 05C4F2480F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2490F50C90800947B18 /* PBXTextBookmark */ = 05C4F2490F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24A0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24A0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24B0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24B0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24C0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24C0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24D0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24D0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24E0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24E0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F24F0F50C90800947B18 /* PBXTextBookmark */ = 05C4F24F0F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2500F50C90800947B18 /* PBXTextBookmark */ = 05C4F2500F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2510F50C90800947B18 /* PBXTextBookmark */ = 05C4F2510F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2520F50C90800947B18 /* PBXTextBookmark */ = 05C4F2520F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2530F50C90800947B18 /* PBXTextBookmark */ = 05C4F2530F50C90800947B18 /* PBXTextBookmark */;
+			05C4F2540F50C91100947B18 /* PBXTextBookmark */ = 05C4F2540F50C91100947B18 /* PBXTextBookmark */;
+			05C4F2550F50C94900947B18 /* PBXTextBookmark */ = 05C4F2550F50C94900947B18 /* PBXTextBookmark */;
+			05C4F2570F50C99000947B18 /* PBXTextBookmark */ = 05C4F2570F50C99000947B18 /* PBXTextBookmark */;
+			05C4F2580F50C99500947B18 /* PBXTextBookmark */ = 05C4F2580F50C99500947B18 /* PBXTextBookmark */;
+			05C4F2590F50C9A200947B18 /* PBXTextBookmark */ = 05C4F2590F50C9A200947B18 /* PBXTextBookmark */;
+			05C4F25A0F50C9A500947B18 /* PBXTextBookmark */ = 05C4F25A0F50C9A500947B18 /* PBXTextBookmark */;
+			05C4F25C0F50CA6500947B18 /* PBXTextBookmark */ = 05C4F25C0F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F25D0F50CA6500947B18 /* PBXTextBookmark */ = 05C4F25D0F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F25E0F50CA6500947B18 /* PBXTextBookmark */ = 05C4F25E0F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F25F0F50CA6500947B18 /* PBXTextBookmark */ = 05C4F25F0F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2600F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2600F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2610F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2610F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2620F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2620F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2630F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2630F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2640F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2640F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2650F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2650F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2660F50CA6500947B18 /* PBXTextBookmark */ = 05C4F2660F50CA6500947B18 /* PBXTextBookmark */;
+			05C4F2680F50CAF000947B18 /* PBXTextBookmark */ = 05C4F2680F50CAF000947B18 /* PBXTextBookmark */;
+			05C4F2690F50CAF800947B18 /* PBXTextBookmark */ = 05C4F2690F50CAF800947B18 /* PBXTextBookmark */;
+			05C4F26A0F50CB0100947B18 /* PBXTextBookmark */ = 05C4F26A0F50CB0100947B18 /* PBXTextBookmark */;
+			05C4F26B0F50CB0100947B18 /* PBXTextBookmark */ = 05C4F26B0F50CB0100947B18 /* PBXTextBookmark */;
+			05C4F26D0F50CB0800947B18 /* PBXTextBookmark */ = 05C4F26D0F50CB0800947B18 /* PBXTextBookmark */;
+			05C4F26F0F50CB6200947B18 /* PBXTextBookmark */ = 05C4F26F0F50CB6200947B18 /* PBXTextBookmark */;
+			05C4F2720F50CB7300947B18 /* PBXTextBookmark */ = 05C4F2720F50CB7300947B18 /* PBXTextBookmark */;
+			05C4F2730F50CB8500947B18 /* PBXTextBookmark */ = 05C4F2730F50CB8500947B18 /* PBXTextBookmark */;
+			05C4F2740F50CB9D00947B18 /* PBXTextBookmark */ = 05C4F2740F50CB9D00947B18 /* PBXTextBookmark */;
+			05C4F2790F50CCE000947B18 /* PBXTextBookmark */ = 05C4F2790F50CCE000947B18 /* PBXTextBookmark */;
+			05C4F27A0F50CCE000947B18 /* PBXTextBookmark */ = 05C4F27A0F50CCE000947B18 /* PBXTextBookmark */;
+			05C4F27B0F50CCE000947B18 /* PBXTextBookmark */ = 05C4F27B0F50CCE000947B18 /* PBXTextBookmark */;
+			05C4F27C0F50CCE000947B18 /* PBXTextBookmark */ = 05C4F27C0F50CCE000947B18 /* PBXTextBookmark */;
+			05C4F27D0F50CCE000947B18 /* PBXTextBookmark */ = 05C4F27D0F50CCE000947B18 /* PBXTextBookmark */;
 			05C60A6C0F482FA8002B59D0 = 05C60A6C0F482FA8002B59D0 /* PBXTextBookmark */;
 			05C60A720F482FA8002B59D0 = 05C60A720F482FA8002B59D0 /* PBXTextBookmark */;
-			05C60A790F483511002B59D0 = 05C60A790F483511002B59D0 /* PBXTextBookmark */;
 			05C60AE90F4889FE002B59D0 = 05C60AE90F4889FE002B59D0 /* PBXTextBookmark */;
 			05C60AEA0F4889FE002B59D0 = 05C60AEA0F4889FE002B59D0 /* PBXTextBookmark */;
-			05C60AEC0F4889FE002B59D0 = 05C60AEC0F4889FE002B59D0 /* PBXTextBookmark */;
-			05C60AED0F4889FE002B59D0 = 05C60AED0F4889FE002B59D0 /* PBXTextBookmark */;
-			05C60AEE0F4889FE002B59D0 = 05C60AEE0F4889FE002B59D0 /* PBXTextBookmark */;
-			05C60AEF0F4889FE002B59D0 = 05C60AEF0F4889FE002B59D0 /* PBXTextBookmark */;
 			05C60AF30F4889FE002B59D0 = 05C60AF30F4889FE002B59D0 /* PBXTextBookmark */;
 			05C60AF50F4889FE002B59D0 = 05C60AF50F4889FE002B59D0 /* PBXTextBookmark */;
-			05C60AF60F4889FE002B59D0 = 05C60AF60F4889FE002B59D0 /* PBXTextBookmark */;
 			05C60B020F4889FE002B59D0 = 05C60B020F4889FE002B59D0 /* PBXTextBookmark */;
 			05C60B030F4889FE002B59D0 = 05C60B030F4889FE002B59D0 /* PBXTextBookmark */;
 			05CDAF830DB94DEA00481566 = 05CDAF830DB94DEA00481566 /* PBXTextBookmark */;
@@ -3389,7 +4056,6 @@
 			05D0F80A0F43820100ABF45A = 05D0F80A0F43820100ABF45A /* PBXTextBookmark */;
 			05D0F82C0F438E3800ABF45A = 05D0F82C0F438E3800ABF45A /* PBXTextBookmark */;
 			05D0F95E0F44C6F200ABF45A = 05D0F95E0F44C6F200ABF45A /* PBXTextBookmark */;
-			05D0F9C10F44C8C400ABF45A = 05D0F9C10F44C8C400ABF45A /* PBXTextBookmark */;
 			05D6EAF20ED8838D00CBC4B6 = 05D6EAF20ED8838D00CBC4B6 /* PBXBookmark */;
 			05D6EB800ED9663A00CBC4B6 = 05D6EB800ED9663A00CBC4B6 /* PBXTextBookmark */;
 			05D6EB810ED9663A00CBC4B6 = 05D6EB810ED9663A00CBC4B6 /* PBXTextBookmark */;
@@ -3417,8 +4083,8 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
-			sepNavSelRange = "{200, 3}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{161, 0}";
 			sepNavVisRange = "{0, 287}";
 		};
 	};

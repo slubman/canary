@@ -34,7 +34,7 @@ static ORSCanaryPreferencesController *sharedPreferencesController = nil;
 	return nil;
 }
 
-- (id)copyWithZone:(NSZone *)zone {
+- (id) copyWithZone:(NSZone *)zone {
 	return self;
 } 
 
@@ -59,6 +59,7 @@ static ORSCanaryPreferencesController *sharedPreferencesController = nil;
 
 - (void) awakeFromNib {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[self urlShortenerSelected:self];
 	if ([defaults floatForKey:@"CanaryPreferencesWindowX"]) {
 		NSRect newFrame = NSMakeRect(
 			[defaults floatForKey:@"CanaryPreferencesWindowX"],
@@ -81,6 +82,30 @@ static ORSCanaryPreferencesController *sharedPreferencesController = nil;
 
 - (IBAction) urlShortenerSelected:sender {
 	[[ORSCanaryController sharedController] updateSelectedURLShortener];
+	if ([selectedShortenerPopUp.selectedItem.title isEqualToString:@"Adjix"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:0];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"Bit.ly"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:1];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"Cli.gs"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:2];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"Is.gd"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:3];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"snipr"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:4];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"TinyURL"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:5];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"tr.im"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:6];
+	} else if ([selectedShortenerPopUp.selectedItem.title 
+				isEqualToString:@"urlBorg"]) {
+		[shortenerSettingsTabView selectTabViewItemAtIndex:7];
+	}
 }
 
 - (IBAction) addFilter:sender {

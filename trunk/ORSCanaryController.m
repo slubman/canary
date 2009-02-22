@@ -2182,6 +2182,8 @@ sender {
 
 
 - (IBAction) paste:sender {
+	if ([self.window isKeyWindow]) {
+		
     NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
     NSString *originalString = [generalPasteboard 
 								stringForType:NSStringPboardType];
@@ -2200,6 +2202,12 @@ sender {
 			[self insertStringTokenInNewStatusTextField:originalString];
 		}
     }
+		
+	} else {
+		[NSApp sendAction:@selector(paste:) 
+					   to:nil 
+					 from:self];
+	}
 }
 
 @end

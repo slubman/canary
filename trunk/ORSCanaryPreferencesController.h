@@ -17,6 +17,8 @@
 	IBOutlet NSArrayController *filterArrayController;
 	ORSFilter *tempFilter;
 	IBOutlet NSPredicateEditor *filterPredicateEditor;
+	IBOutlet NSPopUpButton *selectedShortenerPopUp;
+	IBOutlet NSTabView *shortenerSettingsTabView;
 }
 
 + (ORSCanaryPreferencesController *)sharedPreferencesController;
