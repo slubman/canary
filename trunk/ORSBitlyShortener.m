@@ -19,20 +19,8 @@
 		return [self generateAuthenticatedURLFrom:originalURL];
 	} else {
 		NSString *requestURL = [NSString 
-			stringWithFormat:@"http://bit.ly/?url=%@", originalURL];
+			stringWithFormat:@"http://bit.ly/api?url=%@", originalURL];
 		return [super generateURLFromRequestURL:requestURL];
-		/*NSError *error, *documentError = NULL;
-		NSXMLDocument *xmlDocument = [[NSXMLDocument alloc] 
-			initWithXMLString:[super generateURLFromRequestURL:requestURL] 
-									  options:NSXMLDocumentTidyXML
-									  error:&documentError];
-		NSXMLNode *mainNode = (NSXMLNode *)[xmlDocument rootElement];
-		NSArray *nodes = [mainNode 
-			nodesForXPath:@".//results/nodeKeyVal/shortUrl" error:&error];
-		NSXMLNode *firstNode = (NSXMLNode *)[nodes objectAtIndex:0];
-		NSString *shortURL = [firstNode stringValue];
-		
-		return shortURL;*/
 	}
 }
 
@@ -43,8 +31,7 @@
 	NSString *username = [defaults stringForKey:@"BitlyUsername"];
 	NSString *apiKey = [defaults stringForKey:@"BitlyAPIKey"];
 	NSMutableString *requestURL = [NSMutableString 
-		stringWithFormat:@"http://api.bit.ly/shorten?version=2.0.1&format=xml\
-			&longUrl=%@", originalURL];
+		stringWithFormat:@"http://api.bit.ly/shorten?version=2.0.1&format=xml&history=1&longUrl=%@", originalURL];
 	if (username) {
 		[requestURL appendFormat:@"&login=%@", username];
 	}
@@ -53,7 +40,7 @@
 		[requestURL appendFormat:@"&apiKey=%@", apiKey];
 	}
 	
-	/*NSError *error, *documentError = NULL;
+	NSError *error, *documentError = NULL;
 	NSXMLDocument *xmlDocument = [[NSXMLDocument alloc] initWithXMLString:[super 
 		generateURLFromRequestURL:requestURL] options:NSXMLDocumentTidyXML
 				error:&documentError];
@@ -62,8 +49,7 @@
 	NSXMLNode *firstNode = (NSXMLNode *)[nodes objectAtIndex:0];
 	NSString *shortURL = [firstNode stringValue];
 	
-	return shortURL;*/
-	return [super generateURLFromRequestURL:requestURL];
+	return shortURL;
 }
 
 @end
