@@ -2136,8 +2136,14 @@ sender {
 		return ORSCligsShortenerType;
 	else if ([selectedURLShortener isEqualToString:@"Is.gd"])
 		return ORSIsgdShortenerType;
-	else
+	else if ([selectedURLShortener isEqualToString:@"SnipURL"])
+		return ORSSnipURLShortenerType;
+	else if ([selectedURLShortener isEqualToString:@"TinyURL"])
 		return ORSTinyURLShortenerType;
+	else if ([selectedURLShortener isEqualToString:@"tr.im"])
+		return ORSTrimShortenerType;
+	else
+		return ORSUrlborgShortenerType;
 }
 
 // Returns whether Canary is set to retrieve all updates since last execution

@@ -9,22 +9,28 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ORSShortener.h"
-#import "ORSTinyURLShortener.h"
+#import "ORSAdjixShortener.h"
 #import "ORSBitlyShortener.h"
 #import "ORSCligsShortener.h"
-#import "ORSAdjixShortener.h"
 #import "ORSIsgdShortener.h"
+#import "ORSSnipURLShortener.h"
+#import "ORSTinyURLShortener.h"
+#import "ORSTrimShortener.h"
+#import "ORSUrlborgShortener.h"
 
 /*!
  @enum ORSShortenerTypes
  Contains constants for all available URL shorteners.
  */
 enum {
-	ORSTinyURLShortenerType = 1,
+	ORSAdjixShortenerType = 1,
 	ORSBitlyShortenerType = 2,
 	ORSCligsShortenerType = 3,
-	ORSAdjixShortenerType = 6,
-	ORSIsgdShortenerType = 7
+	ORSIsgdShortenerType = 4,
+	ORSSnipURLShortenerType = 5,
+	ORSTinyURLShortenerType = 6,
+	ORSTrimShortenerType = 7,
+	ORSUrlborgShortenerType = 8
 };
 
 /*!

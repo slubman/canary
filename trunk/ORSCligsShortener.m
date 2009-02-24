@@ -14,18 +14,29 @@
 // This method returns the generated (shortened) URL that corresponds to the 
 // given (original) URL.
 - (NSString *) generateURLFrom:(NSString *)originalURL {
-	NSString *requestURL = [NSString 
-		stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@", 
-							originalURL];
-	/*NSURLRequest *request = [NSURLRequest 
-		requestWithURL:[NSURL URLWithString:requestURL]
-			cachePolicy:NSURLRequestUseProtocolCachePolicy
-				timeoutInterval:21.0];
-	NSURLResponse *response = nil;
-	NSError *error = nil;
-	return [[NSString alloc] initWithData:[NSURLConnection 
-		sendSynchronousRequest:request returningResponse:&response error:&error]
-								 encoding:NSASCIIStringEncoding];*/
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if ([defaults boolForKey:@"CligsUseAuthentication"]) {
+		return [self generateAuthenticatedURLFrom:originalURL];
+	} else {
+		NSString *requestURL = [NSString 
+			stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@", 
+								originalURL];
+		return [super generateURLFromRequestURL:requestURL];
+	}
+}
+
+// This method returns the generated (shortened) URL that corresponds to the
+// given (original) URL using the specified set of authentication credentials.
+- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSString *apiKey = [defaults stringForKey:@"CligsAPIKey"];
+	NSMutableString *requestURL = [NSMutableString 
+		stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@&appID=canary", 
+								   originalURL];
+	if (apiKey) {
+		[requestURL appendFormat:@"&key=%@", apiKey];
+	}
+	
 	return [super generateURLFromRequestURL:requestURL];
 }
 

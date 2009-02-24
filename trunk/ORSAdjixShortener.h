@@ -27,7 +27,6 @@
  Returns the URL shortener that corresponds to the given shortener type.
  */
 - (NSString *) generateURLFrom:(NSString *)originalURL;
-
 - (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL;
 
 @end

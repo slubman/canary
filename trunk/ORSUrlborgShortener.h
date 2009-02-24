@@ -1,25 +1,25 @@
 /*!
- @header ORSIsgdShortener
- @abstract Represents an is.gd URL shortener.
+ @header ORSUrlborgShortener
+ @abstract Represents a urlBorg shortener.
  @author Nicholas Toumpelis
  @copyright Ocean Road Software
  @version 0.6
- @updated 2008-10-18
+ @updated 2009-02-24
  */
 
 #import <Cocoa/Cocoa.h>
 #import "ORSAbstractShortener.h"
 
 /*!
- @class ORSIsgdShortener
+ @class ORSUrlborgShortener
  @group URL Shorteners
- @abstract Represents an is.gd URL shortener.
+ @abstract Represents a urlBorg shortener.
  @author Nicholas Toumpelis
  @version 0.6
- @updated 2008-10-18
+ @updated 2009-02-24
  */
-@interface ORSIsgdShortener: ORSAbstractShortener {
-
+@interface ORSUrlborgShortener : ORSAbstractShortener {
+	
 }
 
 /*!
@@ -27,5 +27,7 @@
  Returns the URL shortener that corresponds to the given shortener type.
  */
 - (NSString *) generateURLFrom:(NSString *)originalURL;
+- (NSString *) generateAuthenticatedURLFrom:(NSString *)originalURL;
 
 @end
+

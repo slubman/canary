@@ -110,6 +110,9 @@
 		05D6EEBC0EDB439400CBC4B6 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05D6EEB30EDB439000CBC4B6 /* Growl.framework */; };
 		05D6EEC60EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 05D6EEC50EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict */; };
 		05D6EF9B0EDDE51400CBC4B6 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D6EF9A0EDDE51400CBC4B6 /* message.png */; };
+		05E21C000F532EC90027A864 /* ORSSnipURLShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E21BFF0F532EC90027A864 /* ORSSnipURLShortener.m */; };
+		05E21CAD0F5343BB0027A864 /* ORSTrimShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E21CAC0F5343BB0027A864 /* ORSTrimShortener.m */; };
+		05E21CE00F5349600027A864 /* ORSUrlborgShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E21CDF0F5349600027A864 /* ORSUrlborgShortener.m */; };
 		05E2463B0EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E2463A0EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.m */; };
 		05E8A27E0ECB7308008743A4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E8A27D0ECB7308008743A4 /* Preferences.xib */; };
 		05EE98430ED5FE7200A860AC /* Gradient1.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EE98420ED5FE7200A860AC /* Gradient1.png */; };
@@ -279,6 +282,12 @@
 		05D6EEB30EDB439000CBC4B6 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		05D6EEC50EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		05D6EF9A0EDDE51400CBC4B6 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		05E21BFE0F532EC90027A864 /* ORSSnipURLShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSnipURLShortener.h; sourceTree = "<group>"; };
+		05E21BFF0F532EC90027A864 /* ORSSnipURLShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSnipURLShortener.m; sourceTree = "<group>"; };
+		05E21CAB0F5343BB0027A864 /* ORSTrimShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSTrimShortener.h; sourceTree = "<group>"; };
+		05E21CAC0F5343BB0027A864 /* ORSTrimShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSTrimShortener.m; sourceTree = "<group>"; };
+		05E21CDE0F5349600027A864 /* ORSUrlborgShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSUrlborgShortener.h; sourceTree = "<group>"; };
+		05E21CDF0F5349600027A864 /* ORSUrlborgShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSUrlborgShortener.m; sourceTree = "<group>"; };
 		05E246390EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLNode+ORSTwitterDMAdditions.h"; sourceTree = "<group>"; };
 		05E2463A0EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLNode+ORSTwitterDMAdditions.m"; sourceTree = "<group>"; };
 		05EE98340ED5F86600A860AC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -348,10 +357,16 @@
 				0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */,
 				0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */,
 				0555A4D60EAA1E4D00B126BC /* ORSCligsShortener.m */,
-				055D60820DB6485000ED2B41 /* ORSTinyURLShortener.h */,
-				055D60830DB6485000ED2B41 /* ORSTinyURLShortener.m */,
 				0555A65F0EAA509E00B126BC /* ORSIsgdShortener.h */,
 				0555A6600EAA509E00B126BC /* ORSIsgdShortener.m */,
+				05E21BFE0F532EC90027A864 /* ORSSnipURLShortener.h */,
+				05E21BFF0F532EC90027A864 /* ORSSnipURLShortener.m */,
+				055D60820DB6485000ED2B41 /* ORSTinyURLShortener.h */,
+				055D60830DB6485000ED2B41 /* ORSTinyURLShortener.m */,
+				05E21CAB0F5343BB0027A864 /* ORSTrimShortener.h */,
+				05E21CAC0F5343BB0027A864 /* ORSTrimShortener.m */,
+				05E21CDE0F5349600027A864 /* ORSUrlborgShortener.h */,
+				05E21CDF0F5349600027A864 /* ORSUrlborgShortener.m */,
 				0555A5190EAA38AC00B126BC /* ORSShortenerFactory.h */,
 				0555A51A0EAA38AC00B126BC /* ORSShortenerFactory.m */,
 				05A5D9AE0F065A8200B596A9 /* ORSAbstractShortener.h */,
@@ -778,6 +793,9 @@
 				053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */,
 				05C60A8C0F485A65002B59D0 /* ORSImageView.m in Sources */,
 				0535A4EF0F48A3A700513DC7 /* ORSCanaryController+Growl.m in Sources */,
+				05E21C000F532EC90027A864 /* ORSSnipURLShortener.m in Sources */,
+				05E21CAD0F5343BB0027A864 /* ORSTrimShortener.m in Sources */,
+				05E21CE00F5349600027A864 /* ORSUrlborgShortener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

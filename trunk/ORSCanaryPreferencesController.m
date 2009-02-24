@@ -94,7 +94,7 @@ static ORSCanaryPreferencesController *sharedPreferencesController = nil;
 				isEqualToString:@"Is.gd"]) {
 		[shortenerSettingsTabView selectTabViewItemAtIndex:3];
 	} else if ([selectedShortenerPopUp.selectedItem.title 
-				isEqualToString:@"snipr"]) {
+				isEqualToString:@"SnipURL"]) {
 		[shortenerSettingsTabView selectTabViewItemAtIndex:4];
 	} else if ([selectedShortenerPopUp.selectedItem.title 
 				isEqualToString:@"TinyURL"]) {
