@@ -33,10 +33,18 @@
 - (NSString *) generateURLFrom:(NSString *)originalURL;
 
 /*!
- @method generateURKFromRequestURL:
+ @method generateURLFromRequestURL:
  This should be used by all concrete classes that implement generateURLFrom:. It
  generates the actual request that is sent to the remote server.
  */
 - (NSString *) generateURLFromRequestURL:(NSString *)requestURL;
+
+/*!
+ @method generateURLFromPostRequestURL:
+ This should be used by all concrete classes that implement generateURLFrom: and 
+ would like to send POST requests. It generates the actual request that is sent 
+ to the remote server.
+ */
+- (NSString *) generateURLFromPostRequestURL:(NSString *)requestURL;
 
 @end

@@ -33,4 +33,22 @@
 					encoding:NSASCIIStringEncoding];
 }
 
+// This should be used by all concrete classes that implement generateURLFrom:
+// and would like to send POST requests. It generates the actual request that 
+// is sent to the remote server.
+- (NSString *) generateURLFromPostRequestURL:(NSString *)requestURL {
+	NSMutableURLRequest *request = [NSMutableURLRequest
+		requestWithURL:[NSURL URLWithString:requestURL]
+			cachePolicy:NSURLRequestUseProtocolCachePolicy
+				timeoutInterval:21.0];
+	[request setHTTPMethod:@"POST"];
+	NSURLResponse *response = nil;
+	NSError *error = nil;
+	return [[NSString alloc] initWithData:[NSURLConnection 
+		sendSynchronousRequest:request 
+			returningResponse:&response 
+				error:&error]
+					encoding:NSASCIIStringEncoding];
+}
+
 @end

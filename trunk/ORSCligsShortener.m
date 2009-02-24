@@ -19,7 +19,7 @@
 		return [self generateAuthenticatedURLFrom:originalURL];
 	} else {
 		NSString *requestURL = [NSString 
-			stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@", 
+			stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@&appid=canary", 
 								originalURL];
 		return [super generateURLFromRequestURL:requestURL];
 	}
@@ -31,7 +31,7 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *apiKey = [defaults stringForKey:@"CligsAPIKey"];
 	NSMutableString *requestURL = [NSMutableString 
-		stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@&appID=canary", 
+		stringWithFormat:@"http://cli.gs/api/v1/cligs/create?url=%@&appid=canary", 
 								   originalURL];
 	if (apiKey) {
 		[requestURL appendFormat:@"&key=%@", apiKey];

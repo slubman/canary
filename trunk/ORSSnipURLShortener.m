@@ -34,7 +34,7 @@
 		[requestURL appendFormat:@"&snipapi=%@", apiKey];
 	}
 	
-	return [super generateURLFromRequestURL:requestURL];
+	return [super generateURLFromPostRequestURL:requestURL];
 }
 
 @end
