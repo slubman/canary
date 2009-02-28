@@ -727,10 +727,6 @@
 													<reference key="NSControlView" ref="1046342455"/>
 													<int key="NSButtonFlags">112869631</int>
 													<int key="NSButtonFlags2">129</int>
-													<object class="NSCustomResource" key="NSNormalImage">
-														<string key="NSClassName">NSImage</string>
-														<string key="NSResourceName">snipr</string>
-													</object>
 													<string key="NSAlternateContents"/>
 													<string key="NSKeyEquivalent"/>
 													<int key="NSPeriodicDelay">400</int>
