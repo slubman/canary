@@ -1450,18 +1450,18 @@
 	};
 	0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{440, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{909, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{1394, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{1858, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2322, 1205}\";\n            s = 0;\n        },\n                {\n            r = \"{3609, 1169}\";\n            s = 0;\n        },\n                {\n            r = \"{4850, 1189}\";\n            s = 0;\n        },\n                {\n            r = \"{6103, 1233}\";\n            s = 0;\n        },\n                {\n            r = \"{7400, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{8708, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{10017, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{11340, 1245}\";\n            s = 0;\n        },\n                {\n            r = \"{12702, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 20126}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {721, 3632}}";
-			sepNavSelRange = "{7853, 0}";
-			sepNavVisRange = "{6990, 1493}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{440, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{909, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{1394, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{1858, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2322, 1205}\";\n            s = 0;\n        },\n                {\n            r = \"{3609, 1169}\";\n            s = 0;\n        },\n                {\n            r = \"{4850, 1189}\";\n            s = 0;\n        },\n                {\n            r = \"{6103, 1233}\";\n            s = 0;\n        },\n                {\n            r = \"{7400, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{8708, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{10017, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{11326, 1246}\";\n            s = 0;\n        },\n                {\n            r = \"{12636, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{13995, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 22225}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 3984}}";
+			sepNavSelRange = "{2029, 0}";
+			sepNavVisRange = "{8016, 1330}";
 			sepNavWindowFrame = "{{61, 284}, {765, 847}}";
 		};
 	};
 	0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
-			sepNavSelRange = "{888, 0}";
-			sepNavVisRange = "{0, 989}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{865, 0}";
+			sepNavVisRange = "{0, 986}";
 		};
 	};
 	0573D6DB0DA662C1002D1CCF /* ORSTwitterEngine.m */ = {
@@ -4681,7 +4681,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 237";
 		rLen = 0;
-		rLoc = 13435;
+		rLoc = 14728;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 10368;
@@ -4701,7 +4701,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 237";
 		rLen = 0;
-		rLoc = 13435;
+		rLoc = 14728;
 		rType = 0;
 		vrLen = 638;
 		vrLoc = 10368;
@@ -4711,7 +4711,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 318";
 		rLen = 0;
-		rLoc = 16973;
+		rLoc = 18277;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 10368;
@@ -4771,7 +4771,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 277";
 		rLen = 0;
-		rLoc = 13604;
+		rLoc = 14908;
 		rType = 0;
 		vrLen = 5436;
 		vrLoc = 4801;
@@ -4821,7 +4821,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 424";
 		rLen = 0;
-		rLoc = 17991;
+		rLoc = 19295;
 		rType = 0;
 		vrLen = 1310;
 		vrLoc = 14607;
@@ -4831,7 +4831,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 436";
 		rLen = 0;
-		rLoc = 18597;
+		rLoc = 19901;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 14607;
@@ -4841,7 +4841,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 14533;
@@ -4851,7 +4851,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 14533;
@@ -4861,7 +4861,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 14533;
@@ -4871,7 +4871,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 1425;
 		vrLoc = 14533;
@@ -4881,7 +4881,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 575;
 		vrLoc = 14533;
@@ -4911,7 +4911,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 426";
 		rLen = 0;
-		rLoc = 18054;
+		rLoc = 19358;
 		rType = 0;
 		vrLen = 1591;
 		vrLoc = 13070;
@@ -4941,7 +4941,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 26";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 0;
@@ -4951,7 +4951,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 26";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 0;
@@ -4971,7 +4971,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 26";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 0;
@@ -4981,7 +4981,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 481";
 		rLen = 0;
-		rLoc = 18706;
+		rLoc = 20010;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 16568;
@@ -4991,7 +4991,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 463";
 		rLen = 0;
-		rLoc = 17969;
+		rLoc = 19273;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 16474;
@@ -5001,7 +5001,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 484";
 		rLen = 0;
-		rLoc = 18868;
+		rLoc = 20172;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 16586;
@@ -5011,7 +5011,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 484";
 		rLen = 0;
-		rLoc = 18868;
+		rLoc = 20172;
 		rType = 0;
 		vrLen = 1447;
 		vrLoc = 16586;
@@ -5021,7 +5021,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 482";
 		rLen = 0;
-		rLoc = 18740;
+		rLoc = 20044;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 16586;
@@ -5031,7 +5031,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 482";
 		rLen = 0;
-		rLoc = 18740;
+		rLoc = 20044;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 16586;
@@ -5041,7 +5041,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 482";
 		rLen = 0;
-		rLoc = 18740;
+		rLoc = 20044;
 		rType = 0;
 		vrLen = 595;
 		vrLoc = 16586;
@@ -5051,7 +5051,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 16035;
@@ -5061,7 +5061,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 16035;
@@ -5071,7 +5071,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 16035;
@@ -5081,7 +5081,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 595;
 		vrLoc = 16586;
@@ -5091,7 +5091,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 16092;
@@ -5101,7 +5101,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 16586;
@@ -5111,7 +5111,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 0;
@@ -5120,8 +5120,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 333";
-		rLen = 47;
-		rLoc = 11291;
+		rLen = 44;
+		rLoc = 11280;
 		rType = 0;
 		vrLen = 7763;
 		vrLoc = 6041;
@@ -5131,7 +5131,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 5416;
 		vrLoc = 7339;
@@ -5141,7 +5141,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 26";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 0;
@@ -5151,7 +5151,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 483";
 		rLen = 0;
-		rLoc = 18826;
+		rLoc = 20130;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 16696;
@@ -5161,7 +5161,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 26";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 0;
@@ -5170,8 +5170,8 @@
 		isa = PBXTextBookmark;
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 333";
-		rLen = 47;
-		rLoc = 11291;
+		rLen = 44;
+		rLoc = 11280;
 		rType = 0;
 		vrLen = 7763;
 		vrLoc = 6041;
@@ -5181,7 +5181,7 @@
 		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
 		rLen = 0;
-		rLoc = 888;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 0;
@@ -5191,7 +5191,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 385";
 		rLen = 0;
-		rLoc = 13183;
+		rLoc = 14476;
 		rType = 0;
 		vrLen = 7763;
 		vrLoc = 6041;
@@ -5201,10 +5201,150 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 540";
 		rLen = 0;
-		rLoc = 19490;
+		rLoc = 20787;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 18627;
+	};
+	05845C190F5B2E96006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
+		rLen = 0;
+		rLoc = 865;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	05845C1A0F5B2E96006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 540";
+		rLen = 0;
+		rLoc = 20787;
+		rType = 0;
+		vrLen = 1392;
+		vrLoc = 18734;
+	};
+	05845C1B0F5B2E96006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 540";
+		rLen = 0;
+		rLoc = 20787;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 18795;
+	};
+	05845C1C0F5B2E96006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
+		rLen = 0;
+		rLoc = 865;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	05845C1D0F5B2E96006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 538";
+		rLen = 0;
+		rLoc = 20716;
+		rType = 0;
+		vrLen = 1384;
+		vrLoc = 18717;
+	};
+	05845C1E0F5B3660006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
+		rLen = 0;
+		rLoc = 865;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	05845C1F0F5B3660006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 538";
+		rLen = 0;
+		rLoc = 20716;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 18666;
+	};
+	05845C200F5B3660006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 538";
+		rLen = 0;
+		rLoc = 20716;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 18666;
+	};
+	05845C210F5B3660006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.h: 27";
+		rLen = 0;
+		rLoc = 865;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	05845C220F5B3660006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 552";
+		rLen = 0;
+		rLoc = 21441;
+		rType = 0;
+		vrLen = 1436;
+		vrLoc = 18664;
+	};
+	05845C260F5B3715006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 393";
+		rLen = 0;
+		rLoc = 14774;
+		rType = 0;
+		vrLen = 1441;
+		vrLoc = 18716;
+	};
+	05845C270F5B4795006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 371";
+		rLen = 0;
+		rLoc = 12589;
+		rType = 0;
+		vrLen = 7811;
+		vrLoc = 7339;
+	};
+	05845C280F5B4816006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 598";
+		rLen = 0;
+		rLoc = 21578;
+		rType = 0;
+		vrLen = 1337;
+		vrLoc = 20917;
+	};
+	05845C2B0F5B48D8006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
+		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 435";
+		rLen = 0;
+		rLoc = 14908;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 20895;
 	};
 	05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {
 		uiCtxt = {
@@ -5477,7 +5617,7 @@
 		fRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */;
 		name = "NSMutableAttributedString+ORSCanaryAdditions.m: 253";
 		rLen = 0;
-		rLoc = 15692;
+		rLoc = 16996;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 8587;
@@ -7060,6 +7200,20 @@
 			05845C160F5B26C0006F7306 /* PBXTextBookmark */ = 05845C160F5B26C0006F7306 /* PBXTextBookmark */;
 			05845C170F5B26C0006F7306 /* PBXTextBookmark */ = 05845C170F5B26C0006F7306 /* PBXTextBookmark */;
 			05845C180F5B277E006F7306 /* PBXTextBookmark */ = 05845C180F5B277E006F7306 /* PBXTextBookmark */;
+			05845C190F5B2E96006F7306 /* PBXTextBookmark */ = 05845C190F5B2E96006F7306 /* PBXTextBookmark */;
+			05845C1A0F5B2E96006F7306 /* PBXTextBookmark */ = 05845C1A0F5B2E96006F7306 /* PBXTextBookmark */;
+			05845C1B0F5B2E96006F7306 /* PBXTextBookmark */ = 05845C1B0F5B2E96006F7306 /* PBXTextBookmark */;
+			05845C1C0F5B2E96006F7306 /* PBXTextBookmark */ = 05845C1C0F5B2E96006F7306 /* PBXTextBookmark */;
+			05845C1D0F5B2E96006F7306 /* PBXTextBookmark */ = 05845C1D0F5B2E96006F7306 /* PBXTextBookmark */;
+			05845C1E0F5B3660006F7306 /* PBXTextBookmark */ = 05845C1E0F5B3660006F7306 /* PBXTextBookmark */;
+			05845C1F0F5B3660006F7306 /* PBXTextBookmark */ = 05845C1F0F5B3660006F7306 /* PBXTextBookmark */;
+			05845C200F5B3660006F7306 /* PBXTextBookmark */ = 05845C200F5B3660006F7306 /* PBXTextBookmark */;
+			05845C210F5B3660006F7306 /* PBXTextBookmark */ = 05845C210F5B3660006F7306 /* PBXTextBookmark */;
+			05845C220F5B3660006F7306 /* PBXTextBookmark */ = 05845C220F5B3660006F7306 /* PBXTextBookmark */;
+			05845C260F5B3715006F7306 /* PBXTextBookmark */ = 05845C260F5B3715006F7306 /* PBXTextBookmark */;
+			05845C270F5B4795006F7306 /* PBXTextBookmark */ = 05845C270F5B4795006F7306 /* PBXTextBookmark */;
+			05845C280F5B4816006F7306 /* PBXTextBookmark */ = 05845C280F5B4816006F7306 /* PBXTextBookmark */;
+			05845C2B0F5B48D8006F7306 /* PBXTextBookmark */ = 05845C2B0F5B48D8006F7306 /* PBXTextBookmark */;
 			05852F4D0F290764003DB512 = 05852F4D0F290764003DB512 /* PBXTextBookmark */;
 			05852F510F290764003DB512 = 05852F510F290764003DB512 /* PBXTextBookmark */;
 			058530150F292BB8003DB512 = 058530150F292BB8003DB512 /* PBXTextBookmark */;

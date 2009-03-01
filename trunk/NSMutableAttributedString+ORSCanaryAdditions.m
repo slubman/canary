@@ -329,9 +329,9 @@
 	}
 }
 
-// Detects Twitter statuses
-- (NSString *) detectTwitter:(NSString *)string {
-	NSRange range = [string rangeOfString:@"twitter:"];
+// Detects IETFs
+- (NSString *) detectIETF:(NSString *)string {
+	NSRange range = [string rangeOfString:@"ietf:rfc:"];
 	if (range.location == NSNotFound) {
 		return NULL;
 	} else {
@@ -351,6 +351,45 @@
 												   alphanumericCharacterSet];
 			unichar lastChar = [previousSubstring 
 							characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+										rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects NBNs
+- (NSString *) detectNBN:(NSString *)string {
+	NSRange range = [string rangeOfString:@"nbn:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+									rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+								characterAtIndex:([previousSubstring length]-1)];
 			if ([alphanumericCharset characterIsMember:lastChar]) {
 				return NULL;
 			} else {
@@ -390,10 +429,10 @@
 	NSString *scanString;
 	NSCharacterSet *terminalCharacterSet;
 	NSURL *foundURL;
-	NSString *foundURLString, *username, *hashtag, *doi, *hdl, *isbn, *issn
-		*twitter;
+	NSString *foundURLString, *username, *hashtag, *doi, *hdl, *isbn, *issn,
+		*ietf, *nbn;
 	NSDictionary *linkAttr, *usernameAttr, *hashtagAttr, *doiAttr, *hdlAttr, 
-		*isbnAttr, *issnAttr, *twitterAttr;
+		*isbnAttr, *issnAttr, *ietfAttr, *nbnAttr;
 	
 	scanner = [NSScanner scannerWithString:[self string]];
 	terminalCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -534,22 +573,41 @@
 			[self addAttributes:issnAttr range:attrRange];
 		}
 		
-		// Twitter
-		if (twitter = [self detectTwitter:scanString]) {
-			NSMutableString *twitterString = [NSMutableString 
-				stringWithString:@"http://books.google.com/books?q="];
-			[issnString appendString:issn];
-			foundURL = [NSURL URLWithString:issnString];
-			issnAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+		// IETF RFCs
+		if (ietf = [self detectIETF:scanString]) {
+			NSMutableString *ietfString = [NSMutableString 
+				stringWithString:@"http://www.ietf.org/rfc/rfc"];
+			[ietfString appendString:[ietf substringFromIndex:9]];
+			[ietfString appendString:@".txt"];
+			foundURL = [NSURL URLWithString:ietfString];
+			ietfAttr = [NSDictionary dictionaryWithObjectsAndKeys:
 						[NSColor redColor], NSForegroundColorAttributeName,
 						[NSNumber numberWithInt:NSSingleUnderlineStyle], 
 						NSUnderlineStyleAttributeName,
 						foundURL, NSLinkAttributeName, NULL];
-			NSRange newRange = [scanString rangeOfString:issn];
+			NSRange newRange = [scanString rangeOfString:ietf];
 			NSRange attrRange;
 			attrRange.location = scanRange.location + newRange.location;
 			attrRange.length = newRange.length;
-			[self addAttributes:issnAttr range:attrRange];
+			[self addAttributes:ietfAttr range:attrRange];
+		}
+		
+		// NBNs
+		if (nbn = [self detectNBN:scanString]) {
+			NSMutableString *nbnString = [NSMutableString 
+				stringWithString:@"http://nbn-resolving.org/urn/resolver.pl?urn=urn:"];
+			[nbnString appendString:nbn];
+			foundURL = [NSURL URLWithString:nbnString];
+			nbnAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+						[NSColor redColor], NSForegroundColorAttributeName,
+						[NSNumber numberWithInt:NSSingleUnderlineStyle], 
+						NSUnderlineStyleAttributeName,
+						foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:nbn];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:nbnAttr range:attrRange];
 		}
 	}
 }

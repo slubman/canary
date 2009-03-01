@@ -24,7 +24,7 @@
 - (NSString *) detectHDL:(NSString *)string;
 - (NSString *) detectISBN:(NSString *)string;
 - (NSString *) detectISSN:(NSString *)string;
-- (NSString *) detectTwitter:(NSString *)string;
+- (NSString *) detectIETF:(NSString *)string;
 - (NSAttributedString *) emoticonStringWithName:(NSString *)name;
 - (void) highlightElements;
 
