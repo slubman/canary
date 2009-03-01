@@ -173,6 +173,201 @@
 	}
 }
 
+// Detects DOIs
+- (NSString *) detectDOI:(NSString *)string {
+	NSRange range = [string rangeOfString:@"doi:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+					rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+								characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+					rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects HDLs
+- (NSString *) detectHDL:(NSString *)string {
+	NSRange range = [string rangeOfString:@"hdl:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+									rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+								characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+										rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects ISBNs
+- (NSString *) detectISBN:(NSString *)string {
+	NSRange range = [string rangeOfString:@"isbn:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+									rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+								characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+										rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects ISSNs
+- (NSString *) detectISSN:(NSString *)string {
+	NSRange range = [string rangeOfString:@"issn:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+									rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+								characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+										rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects Twitter statuses
+- (NSString *) detectTwitter:(NSString *)string {
+	NSRange range = [string rangeOfString:@"twitter:"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+									rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+										   substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+												   alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+							characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+									   substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+										rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
 // Returns an attributed string for an emoticon
 - (NSAttributedString *) emoticonStringWithName:(NSString *)name {
 	NSString *emoticonPath = [NSBundle pathForResource:name
@@ -195,10 +390,10 @@
 	NSString *scanString;
 	NSCharacterSet *terminalCharacterSet;
 	NSURL *foundURL;
-	NSString *foundURLString;
-	NSString *username;
-	NSString *hashtag;
-	NSDictionary *linkAttr, *usernameAttr, *hashtagAttr;
+	NSString *foundURLString, *username, *hashtag, *doi, *hdl, *isbn, *issn
+		*twitter;
+	NSDictionary *linkAttr, *usernameAttr, *hashtagAttr, *doiAttr, *hdlAttr, 
+		*isbnAttr, *issnAttr, *twitterAttr;
 	
 	scanner = [NSScanner scannerWithString:[self string]];
 	terminalCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -251,7 +446,8 @@
 		
 		// Hashtags
 		if (hashtag = [self detectHashtag:scanString]) {
-			NSMutableString *hashtagString = [NSMutableString stringWithString:@"http://search.twitter.com/search?q=%23"];
+			NSMutableString *hashtagString = [NSMutableString 
+				stringWithString:@"http://search.twitter.com/search?q=%23"];
 			[hashtagString appendString:[hashtag substringFromIndex:1]];
 			foundURL = [NSURL URLWithString:hashtagString];
 			hashtagAttr = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -264,6 +460,96 @@
 			attrRange.location = scanRange.location + newRange.location;
 			attrRange.length = newRange.length;
 			[self addAttributes:hashtagAttr range:attrRange];
+		}
+		
+		// DOIs
+		if (doi = [self detectDOI:scanString]) {
+			NSMutableString *doiString = [NSMutableString 
+				stringWithString:@"http://dx.doi.org/"];
+			[doiString appendString:doi];
+			foundURL = [NSURL URLWithString:doiString];
+			doiAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+						   [NSColor redColor], NSForegroundColorAttributeName,
+						   [NSNumber numberWithInt:NSSingleUnderlineStyle], 
+						   NSUnderlineStyleAttributeName,
+						   foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:doi];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:doiAttr range:attrRange];
+		}
+		
+		// HDLs
+		if (hdl = [self detectHDL:scanString]) {
+			NSMutableString *hdlString = [NSMutableString 
+				stringWithString:@"http://dx.doi.org/"];
+			[hdlString appendString:hdl];
+			foundURL = [NSURL URLWithString:hdlString];
+			hdlAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+					   [NSColor redColor], NSForegroundColorAttributeName,
+					   [NSNumber numberWithInt:NSSingleUnderlineStyle], 
+					   NSUnderlineStyleAttributeName,
+					   foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:hdl];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:hdlAttr range:attrRange];
+		}
+		
+		// ISBNs
+		if (isbn = [self detectISBN:scanString]) {
+			NSMutableString *isbnString = [NSMutableString 
+				stringWithString:@"http://books.google.com/books?q="];
+			[isbnString appendString:isbn];
+			foundURL = [NSURL URLWithString:isbnString];
+			isbnAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+					   [NSColor redColor], NSForegroundColorAttributeName,
+					   [NSNumber numberWithInt:NSSingleUnderlineStyle], 
+					   NSUnderlineStyleAttributeName,
+					   foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:isbn];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:isbnAttr range:attrRange];
+		}
+		
+		// ISSNs
+		if (issn = [self detectISSN:scanString]) {
+			NSMutableString *issnString = [NSMutableString 
+						stringWithString:@"http://books.google.com/books?q="];
+			[issnString appendString:issn];
+			foundURL = [NSURL URLWithString:issnString];
+			issnAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+						[NSColor redColor], NSForegroundColorAttributeName,
+						[NSNumber numberWithInt:NSSingleUnderlineStyle], 
+						NSUnderlineStyleAttributeName,
+						foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:issn];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:issnAttr range:attrRange];
+		}
+		
+		// Twitter
+		if (twitter = [self detectTwitter:scanString]) {
+			NSMutableString *twitterString = [NSMutableString 
+				stringWithString:@"http://books.google.com/books?q="];
+			[issnString appendString:issn];
+			foundURL = [NSURL URLWithString:issnString];
+			issnAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+						[NSColor redColor], NSForegroundColorAttributeName,
+						[NSNumber numberWithInt:NSSingleUnderlineStyle], 
+						NSUnderlineStyleAttributeName,
+						foundURL, NSLinkAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:issn];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:issnAttr range:attrRange];
 		}
 	}
 }

@@ -20,6 +20,11 @@
 - (NSString *) detectURL:(NSString *)string;
 - (NSString *) detectUsername:(NSString *)string;
 - (NSString *) detectHashtag:(NSString *)string;
+- (NSString *) detectDOI:(NSString *)string;
+- (NSString *) detectHDL:(NSString *)string;
+- (NSString *) detectISBN:(NSString *)string;
+- (NSString *) detectISSN:(NSString *)string;
+- (NSString *) detectTwitter:(NSString *)string;
 - (NSAttributedString *) emoticonStringWithName:(NSString *)name;
 - (void) highlightElements;
 
