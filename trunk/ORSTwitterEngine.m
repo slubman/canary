@@ -510,7 +510,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
-														 synchronously:YES]];
+														// synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -526,7 +527,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path 
-														 synchronously:YES]];
+											 // synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -644,7 +646,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
-														 synchronously:YES]];
+											 // synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -660,7 +663,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST"
 																atPath:path 
-														 synchronously:YES]];
+											 // synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -681,7 +685,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path 
-														 synchronously:YES]];
+											 // synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
@@ -697,7 +702,8 @@ static ORSTwitterEngine *sharedEngine = nil;
 	[path appendString:@".xml"];
 	NSXMLNode *node = [self getNodeFromData:[self executeRequestOfType:@"POST" 
 																atPath:path 
-														 synchronously:YES]];
+											 // synchronously:YES]];
+														 synchronously:NO]];
 	if ([[node name] isEqualToString:@"user"]) {
 		return YES;
 	} else {
