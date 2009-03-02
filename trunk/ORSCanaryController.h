@@ -167,6 +167,7 @@
 - (void) saveLastIDs;
 - (void) retweetStatus:(NSString *)statusText
 		fromUserWithID:(NSString *)userID;
+- (void) updateNewStatusTextField;
 - (IBAction) invokeActionOnUser:sender;
 - (void) showUserBlockAlertSheet:(NSString *)userScreenName;
 - (void) blockUserAlertDidEnd:(NSAlert *)alert

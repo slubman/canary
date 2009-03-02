@@ -1013,8 +1013,9 @@ sender {
 	[self insertStringTokenInNewStatusTextField:message];
 }
 
-// Delegate: Changes the green bar and enables/disables the tweet button.
-- (void) controlTextDidChange:(NSNotification *)aNotification {
+// Updates the new status text field and other related components when the 
+// user types or selects stuff in the text field
+- (void) updateNewStatusTextField {
 	NSText *fieldEditor = newStatusTextField.currentEditor;
 	self.realSelectedRange = fieldEditor.selectedRange;
 	
@@ -1026,54 +1027,8 @@ sender {
 	[charsLeftIndicator setWarningValue:(140*((charsWritten/140)+1))-15];
 	
 	[charsLeftIndicator setToolTip:[NSString 
-		stringWithFormat:@"Characters written: %i\nCharacters left: %i",
-			charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
-	if (charsWritten > 0) {
-		[tweetButton setEnabled:YES];
-	} else {
-		[tweetButton setEnabled:NO];
-	}
-	int charsLeft = 140 - charsWritten;
-	[charsLeftIndicator setIntValue:charsWritten];
-	if ([newStatusTextField.stringValue hasPrefix:@"d "] ||
-			[newStatusTextField.stringValue hasPrefix:@"D "]) {
-		[tweetButton setTitle:@"Message!"];
-		if (charsLeft < 0)
-			[tweetButton setEnabled:NO];
-		else {
-			if ([tweetButton isEnabled])
-				return;
-			else
-				[tweetButton setEnabled:YES];
-		}
-	} else {
-		if (charsLeft < 0)
-			[tweetButton setTitle:[NSString stringWithFormat:@"Twt ×%i", 
-								   (charsWritten / 140)+1]];
-		else {
-			if ([[tweetButton title] isEqualToString:@"Tweet!"])
-				return;
-			else
-				[tweetButton setTitle:@"Tweet!"];
-		}
-	}
-}
-
-// Delegate: Called when the selection range changes in a text view
-- (void) textDidEndEditing:(NSNotification *)notification {
-	NSText *fieldEditor = newStatusTextField.currentEditor;
-	self.realSelectedRange = fieldEditor.selectedRange;
-	
-	int charsWritten = newStatusTextField.stringValue.length;
-	
-	// Counter readjustment
-	[charsLeftIndicator setMaxValue:(140*((charsWritten/140)+1))];
-	[charsLeftIndicator setCriticalValue:(140*((charsWritten/140)+1))];
-	[charsLeftIndicator setWarningValue:(140*((charsWritten/140)+1))-15];
-	
-	[charsLeftIndicator setToolTip:[NSString 
-		stringWithFormat:@"Characters written: %i\nCharacters left: %i",
-			charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
+									stringWithFormat:@"Characters written: %i\nCharacters left: %i",
+									charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
 	if (charsWritten > 0) {
 		[tweetButton setEnabled:YES];
 	} else {
@@ -1103,6 +1058,16 @@ sender {
 				[tweetButton setTitle:@"Tweet!"];
 		}
 	}
+}
+
+// Delegate: Changes the green bar and enables/disables the tweet button.
+- (void) controlTextDidChange:(NSNotification *)aNotification {
+	[self updateNewStatusTextField];
+}
+
+// Delegate: Called when the selection range changes in a text view
+- (void) textDidEndEditing:(NSNotification *)notification {
+	[self updateNewStatusTextField];
 }
 
 // Used for enabling/disabling menu items according to the controller state
