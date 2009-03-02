@@ -1020,25 +1020,54 @@ sender {
 	self.realSelectedRange = fieldEditor.selectedRange;
 	
 	int charsWritten = newStatusTextField.stringValue.length;
+	int maxChars = 140;
 	
 	// Counter readjustment
-	[charsLeftIndicator setMaxValue:(140*((charsWritten/140)+1))];
-	[charsLeftIndicator setCriticalValue:(140*((charsWritten/140)+1))];
-	[charsLeftIndicator setWarningValue:(140*((charsWritten/140)+1))-15];
+	/*[charsLeftIndicator setMaxValue:(maxChars*((charsWritten/maxChars)+1))];
+	[charsLeftIndicator setCriticalValue:(maxChars*((charsWritten/maxChars)+1))];
+	[charsLeftIndicator setWarningValue:(maxChars*((charsWritten/maxChars)+1))-15];*/
 	
 	[charsLeftIndicator setToolTip:[NSString 
-									stringWithFormat:@"Characters written: %i\nCharacters left: %i",
-									charsWritten, (((charsWritten / 140)+1)*140 - charsWritten)]];
+		stringWithFormat:@"Characters written: %i\nCharacters left: %i",
+				charsWritten, (((charsWritten / maxChars)+1)*maxChars - charsWritten)]];
+	
 	if (charsWritten > 0) {
 		[tweetButton setEnabled:YES];
 	} else {
 		[tweetButton setEnabled:NO];
 	}
-	int charsLeft = 140 - charsWritten;
+	
+	int charsLeft = maxChars - charsWritten;
 	[charsLeftIndicator setIntValue:charsWritten];
+	
 	if ([newStatusTextField.stringValue hasPrefix:@"d "] ||
 		[newStatusTextField.stringValue hasPrefix:@"D "]) {
 		[tweetButton setTitle:@"Message!"];
+		[charsLeftIndicator setMaxValue:140];
+		[charsLeftIndicator setCriticalValue:140];
+		[charsLeftIndicator setWarningValue:125];
+		
+		NSString *scanString;
+		NSScanner *scanner = [NSScanner scannerWithString:[
+			newStatusTextField.stringValue substringFromIndex:2]];
+		NSCharacterSet *terminalCharacterSet = 
+			[NSCharacterSet whitespaceAndNewlineCharacterSet];
+		if (![scanner isAtEnd]) {
+			[scanner scanUpToCharactersFromSet:terminalCharacterSet
+									intoString:&scanString];
+			if (scanString) {
+				charsWritten = charsWritten - [scanString length] - 3;
+			} else {
+				charsWritten = charsWritten - 3;
+			}
+			charsLeft = maxChars - charsWritten;
+			[charsLeftIndicator setIntValue:charsWritten];
+			
+			[charsLeftIndicator setToolTip:[NSString 
+				stringWithFormat:@"Characters written: %i\nCharacters left: %i",
+					charsWritten, (((charsWritten / maxChars)+1)*maxChars - charsWritten)]];
+		}
+		
 		if (charsLeft < 0)
 			[tweetButton setEnabled:NO];
 		else {
@@ -1048,9 +1077,12 @@ sender {
 				[tweetButton setEnabled:YES];
 		}
 	} else {
+		[charsLeftIndicator setMaxValue:(maxChars*((charsWritten/maxChars)+1))];
+		[charsLeftIndicator setCriticalValue:(maxChars*((charsWritten/maxChars)+1))];
+		[charsLeftIndicator setWarningValue:(maxChars*((charsWritten/maxChars)+1))-15];
 		if (charsLeft < 0)
 			[tweetButton setTitle:[NSString stringWithFormat:@"Twt ×%i", 
-								   (charsWritten / 140)+1]];
+								   (charsWritten / maxChars)+1]];
 		else {
 			if ([[tweetButton title] isEqualToString:@"Tweet!"])
 				return;

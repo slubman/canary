@@ -282,7 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
+								<string>ORSCanaryController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NSMutableAttributedString+ORSCanaryAdditions.m</string>
+										<string>ORSCanaryController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0571134A0F5C690A000EBEBA</string>
+										<string>057113830F5C7A52000EBEBA</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -457,10 +457,10 @@
 											<string>057113180F5C5F34000EBEBA</string>
 											<string>0571132E0F5C6706000EBEBA</string>
 											<string>0571132F0F5C6706000EBEBA</string>
-											<string>057113300F5C6706000EBEBA</string>
-											<string>057113430F5C68E1000EBEBA</string>
-											<string>057113440F5C68E1000EBEBA</string>
-											<string>057113450F5C68E1000EBEBA</string>
+											<string>0571134C0F5C6C36000EBEBA</string>
+											<string>0571134D0F5C6C36000EBEBA</string>
+											<string>0571135A0F5C6C96000EBEBA</string>
+											<string>057113680F5C6E81000EBEBA</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -587,6 +587,18 @@
 											<string>05E21CEE0F5349DB0027A864</string>
 											<string>057113460F5C68E1000EBEBA</string>
 											<string>057113470F5C68E1000EBEBA</string>
+											<string>057113500F5C6C36000EBEBA</string>
+											<string>057113510F5C6C36000EBEBA</string>
+											<string>057113520F5C6C36000EBEBA</string>
+											<string>057113530F5C6C36000EBEBA</string>
+											<string>057113540F5C6C36000EBEBA</string>
+											<string>057113550F5C6C36000EBEBA</string>
+											<string>057113560F5C6C36000EBEBA</string>
+											<string>057113570F5C6C36000EBEBA</string>
+											<string>057113580F5C6C36000EBEBA</string>
+											<string>0571135C0F5C6C96000EBEBA</string>
+											<string>0571135D0F5C6C96000EBEBA</string>
+											<string>0571135E0F5C6C96000EBEBA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -895,7 +907,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>057113490F5C68E1000EBEBA</string>
 		<string>0571129D0F5BF753000EBEBA</string>
 		<string>0571129E0F5BF753000EBEBA</string>
 		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
