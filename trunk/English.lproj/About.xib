@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="17"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -72,21 +72,21 @@
 aWdodHMgUmVzZXJ2ZWQuCgpDb2RlIGFuZCB1c2VyIGludGVyZmFjZSBkZXNpZ24gYnkgTmljayBUb3Vt
 cGVsaXMuCgpDYW5hcnkgSWNvbiBkZXNpZ24gYnkgT25lIFRvYWQgRGVzaWduLgoKVXNlcyBGYW1GYW1G
 YW0gU2lsayBTZXQgb2YgSWNvbnMsIHYuIDEuMyBieSBNYXJrIEphbWVzLgoKVXNlcyBCV1Rvb2xraXQg
-ZnJhbWV3b3JrIDEuMC4xLCBDb3B5cmlnaHQgwqkgMjAwOCBCcmFuZG9uIFdhbGtpbi4KClVzZXMgR3Jv
-d2wgZnJhbWV3b3JrIDEuMS40LiBDb3B5cmlnaHQgwqkgVGhlICBHcm93bCBQcm9qZWN0LCAyMDA0LTIw
-MDguIEFsbCByaWdodHMgcmVzZXJ2ZWQuCgpVc2VzIFNwYXJrbGUgZnJhbWV3b3JrIDEuNWI2LiBDb3B5
-cmlnaHQgwqkgMjAwNi0yMDA5IEFuZHkgTWF0dXNjaGFrLgoKVVJMIHNob3J0ZW5pbmcgc2VydmljZXMg
-YnkgQWRqaXgsIEJpdC5seSwgQ2xpLmdzLCBJcy5nZCwgVGlueVVSTC4KCgpMRUdBTCBTVFVGRgoKQWxs
-IHN1cHBsZW1lbnRhcnkgbGljZW5zZXMgYXJlIGluY2x1ZGVkIGluIHRoZSAiTGljZW5zZXMiIGZvbGRl
-ciBpbiB0aGUgb3JpZ2luYWwgYXBwbGljYXRpb24gYXJjaGl2ZS4KClRoaXMgc29mdHdhcmUgaXMgcHJv
-dmlkZWQgIkFTIElTIiwgd2hpY2ggbWVhbnMgdGhhdCBubyBndWFyYW50ZWVzIGFyZSBtYWRlIGFib3V0
-IHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoaXMgc29mdHdhcmUsIHdpdGggYWxsIGl0cyBmYXVsdHMgYW5k
-IHdpdGhvdXQgd2FycmFudHkgb2YgYW55IGtpbmQuIEluIG5vIGV2ZW50IHNoYWxsLCBOaWNob2xhcyBU
-b3VtcGVsaXMgYmUgbGlhYmxlIGZvciBwZXJzb25hbCBpbmp1cnksIG9yIGFueSBpbmNpZGVudGFsLCBz
-cGVjaWFsLCBpbmRpcmVjdCBvciBjb25zZXF1ZW50aWFsIGRhbWFnZXMgd2hhdHNvZXZlciwgaW5jbHVk
-aW5nLCB3aXRob3V0IGxpbWl0YXRpb24sIGRhbWFnZXMgZm9yIGxvc3Mgb2YgcHJvZml0cywgbG9zcyBv
-ZiBkYXRhLCBidXNpbmVzcyBpbnRlcnJ1cHRpb24gb3IgYW55IG90aGVyIGNvbW1lcmNpYWwgZGFtYWdl
-cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
+ZnJhbWV3b3JrIDEuMSwgQ29weXJpZ2h0IMKpIDIwMDkgQnJhbmRvbiBXYWxraW4uCgpVc2VzIEdyb3ds
+IGZyYW1ld29yayAxLjEuNC4gQ29weXJpZ2h0IMKpIFRoZSAgR3Jvd2wgUHJvamVjdCwgMjAwNC0yMDA4
+LiBBbGwgcmlnaHRzIHJlc2VydmVkLgoKVXNlcyBTcGFya2xlIGZyYW1ld29yayAxLjViNi4gQ29weXJp
+Z2h0IMKpIDIwMDYtMjAwOSBBbmR5IE1hdHVzY2hhay4KClVSTCBzaG9ydGVuaW5nIHNlcnZpY2VzIGJ5
+IEFkaml4LCBCaXQubHksIENsaS5ncywgSXMuZ2QsIFRpbnlVUkwuCgoKTEVHQUwgU1RVRkYKCkFsbCBz
+dXBwbGVtZW50YXJ5IGxpY2Vuc2VzIGFyZSBpbmNsdWRlZCBpbiB0aGUgIkxpY2Vuc2VzIiBmb2xkZXIg
+aW4gdGhlIG9yaWdpbmFsIGFwcGxpY2F0aW9uIGFyY2hpdmUuCgpUaGlzIHNvZnR3YXJlIGlzIHByb3Zp
+ZGVkICJBUyBJUyIsIHdoaWNoIG1lYW5zIHRoYXQgbm8gZ3VhcmFudGVlcyBhcmUgbWFkZSBhYm91dCB0
+aGUgZnVuY3Rpb25hbGl0eSBvZiB0aGlzIHNvZnR3YXJlLCB3aXRoIGFsbCBpdHMgZmF1bHRzIGFuZCB3
+aXRob3V0IHdhcnJhbnR5IG9mIGFueSBraW5kLiBJbiBubyBldmVudCBzaGFsbCwgTmljaG9sYXMgVG91
+bXBlbGlzIGJlIGxpYWJsZSBmb3IgcGVyc29uYWwgaW5qdXJ5LCBvciBhbnkgaW5jaWRlbnRhbCwgc3Bl
+Y2lhbCwgaW5kaXJlY3Qgb3IgY29uc2VxdWVudGlhbCBkYW1hZ2VzIHdoYXRzb2V2ZXIsIGluY2x1ZGlu
+Zywgd2l0aG91dCBsaW1pdGF0aW9uLCBkYW1hZ2VzIGZvciBsb3NzIG9mIHByb2ZpdHMsIGxvc3Mgb2Yg
+ZGF0YSwgYnVzaW5lc3MgaW50ZXJydXB0aW9uIG9yIGFueSBvdGhlciBjb21tZXJjaWFsIGRhbWFnZXMg
+b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
 														</object>
 														<object class="NSMutableArray" key="NSAttributes">
 															<bool key="EncodedWithXMLCoder">YES</bool>
@@ -386,7 +386,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 																	<reference ref="626046944"/>
 																	<object class="NSURL">
 																		<nil key="NS.base"/>
-																		<string key="NS.relative">http://www.brandonwalkin.com/blog/</string>
+																		<string key="NS.relative">http://brandonwalkin.com/bwtoolkit/</string>
 																	</object>
 																	<object class="NSParagraphStyle">
 																		<int key="NSAlignment">3</int>
@@ -540,7 +540,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 															</object>
 														</object>
 														<object class="NSMutableData" key="NSAttributeInfo">
-															<bytes key="NS.bytes">EQAOAU8ADgEZAA8CLwAKAwgACQQ5AAUFWAAHBt4FAA</bytes>
+															<bytes key="NS.bytes">EQAOAU8ADgEZAA8CLwAKAwgACQQ3AAUFWAAHBt4FAA</bytes>
 														</object>
 														<nil key="NSDelegate"/>
 													</object>
@@ -617,6 +617,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 										</object>
 									</object>
 									<string key="NSFrame">{{1, 1}, {241, 121}}</string>
+									<string key="NSBounds">{{0, 86}, {241, 121}}</string>
 									<reference key="NSSuperview" ref="12079645"/>
 									<reference key="NSNextKeyView" ref="541845661"/>
 									<reference key="NSDocView" ref="541845661"/>
@@ -635,6 +636,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 									<bool key="NSEnabled">YES</bool>
 									<reference key="NSTarget" ref="12079645"/>
 									<string key="NSAction">_doScroller:</string>
+									<double key="NSCurValue">1.967800e-01</double>
 									<double key="NSPercent">2.164580e-01</double>
 								</object>
 								<object class="NSScroller" id="512425389">
@@ -645,7 +647,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="12079645"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">5.809130e-02</double>
+									<double key="NSCurValue">4.979255e-02</double>
 									<double key="NSPercent">9.456522e-01</double>
 								</object>
 							</object>
@@ -748,7 +750,7 @@ cyBvciBsb3NzZXMsIGFyaXNpbmcgb3V0IG9mIHRoZSB1c2Ugb2YgdGhpcyBzb2Z0d2FyZS4</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="626411159">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string type="base64-UTF8" key="NSContents">zrIxICgwLjYuMSk</string>
+								<string type="base64-UTF8" key="NSContents">zrIyICgwLjcpA</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.800000e+01</double>

@@ -40,6 +40,7 @@
 		055D60840DB6485000ED2B41 /* ORSTinyURLShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 055D60830DB6485000ED2B41 /* ORSTinyURLShortener.m */; };
 		056BD17E0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 056BD17D0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m */; };
 		056DC70D0ECB654000B9F0BB /* ORSCanaryAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */; };
+		057111C70F5BEFDC000EBEBA /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057111C60F5BEFDC000EBEBA /* BWToolkitFramework.framework */; };
 		0573D6D70DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */; };
 		0573D6DA0DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */; };
 		0573D6DD0DA662C1002D1CCF /* ORSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573D6DB0DA662C1002D1CCF /* ORSTwitterEngine.m */; };
@@ -59,8 +60,6 @@
 		0591A9600EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */; };
 		0592E7820EA13701002AC429 /* ORSUpdateDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0592E7810EA13701002AC429 /* ORSUpdateDispatcher.m */; };
 		0592EA800EA265F9002AC429 /* Canary.png in Resources */ = {isa = PBXBuildFile; fileRef = 0592EA7F0EA265F9002AC429 /* Canary.png */; };
-		0594912E0ED6036300874CB4 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */; };
-		059491310ED6037B00874CB4 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */; };
 		059746440F4F58C50092B310 /* urlborg.png in Resources */ = {isa = PBXBuildFile; fileRef = 059746430F4F58C50092B310 /* urlborg.png */; };
 		059746460F4F594A0092B310 /* trim.png in Resources */ = {isa = PBXBuildFile; fileRef = 059746450F4F594A0092B310 /* trim.png */; };
 		05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A5D7810F03F0D100B596A9 /* Quartz.framework */; };
@@ -131,7 +130,6 @@
 			files = (
 				0507EEAD0EF45CC900559018 /* Sparkle.framework in CopyFiles */,
 				05D6EEBC0EDB439400CBC4B6 /* Growl.framework in CopyFiles */,
-				059491310ED6037B00874CB4 /* BWToolkitFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +192,7 @@
 		056DC7080ECB64D800B9F0BB /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/About.xib; sourceTree = "<group>"; };
 		056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryAboutController.h; sourceTree = "<group>"; };
 		056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryAboutController.m; sourceTree = "<group>"; };
+		057111C60F5BEFDC000EBEBA /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = "Third-party Frameworks/BWToolkit/BWToolkitFramework.framework"; sourceTree = DEVELOPER_DIR; };
 		0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLNode+ORSTwitterStatusAdditions.h"; sourceTree = "<group>"; };
 		0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLNode+ORSTwitterStatusAdditions.m"; sourceTree = "<group>"; };
 		0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ORSCanaryAdditions.m"; sourceTree = "<group>"; };
@@ -225,7 +224,6 @@
 		0592E7810EA13701002AC429 /* ORSUpdateDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSUpdateDispatcher.m; sourceTree = "<group>"; };
 		0592EA670EA26342002AC429 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		0592EA7F0EA265F9002AC429 /* Canary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canary.png; sourceTree = "<group>"; };
-		0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = "Third-party Frameworks/BWToolkit/BWToolkitFramework.framework"; sourceTree = DEVELOPER_DIR; };
 		059746430F4F58C50092B310 /* urlborg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urlborg.png; sourceTree = "<group>"; };
 		059746450F4F594A0092B310 /* trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trim.png; sourceTree = "<group>"; };
 		05A5D7810F03F0D100B596A9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
@@ -309,11 +307,11 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */,
-				0594912E0ED6036300874CB4 /* BWToolkitFramework.framework in Frameworks */,
 				05D6EEB40EDB439000CBC4B6 /* Growl.framework in Frameworks */,
 				0507EEA40EF45CAC00559018 /* Sparkle.framework in Frameworks */,
 				05A5D7820F03F0D100B596A9 /* Quartz.framework in Frameworks */,
 				058530D30F293A24003DB512 /* ScriptingBridge.framework in Frameworks */,
+				057111C70F5BEFDC000EBEBA /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,10 +555,10 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				057111C60F5BEFDC000EBEBA /* BWToolkitFramework.framework */,
 				058530D20F293A24003DB512 /* ScriptingBridge.framework */,
 				0507EEA30EF45CAC00559018 /* Sparkle.framework */,
 				05D6EEB30EDB439000CBC4B6 /* Growl.framework */,
-				0594912D0ED6036300874CB4 /* BWToolkitFramework.framework */,
 				0573D7330DA6650B002D1CCF /* Security.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
