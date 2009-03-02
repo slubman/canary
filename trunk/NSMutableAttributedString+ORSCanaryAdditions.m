@@ -18,7 +18,7 @@
 	[charset addCharactersInString:@"±§$%^*(){}[];'\"\\|,<>`ÅÍÎÏ¡™£¢∞§¶"];
 	[charset addCharactersInString:@"•ªº≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ˘¿Â¯"];
 	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
-	[charset addCharactersInString:@"»¸˛Ç◊ı˜"];
+	[charset addCharactersInString:@"»¸˛Ç◊ı˜!"];
 	return charset;
 }
 
@@ -56,6 +56,11 @@
 - (NSString *) detectURL:(NSString *)string {	
 	NSRange range;
 	
+	range = [string rangeOfString:@"www.."];
+	if (range.location != NSNotFound) {
+		return nil;
+	}
+	
 	range = [string rangeOfString:@"http://"];
 	if (range.location != NSNotFound) {
 		NSString *substring = [string substringFromIndex:range.location];
@@ -69,7 +74,7 @@
 	}
 
 	range = [string rangeOfString:@"www."];
-	if (range.location != NSNotFound) {
+	if (range.location == 0) {
 		NSString *substring = [string substringFromIndex:range.location];
 		NSRange charsetRange = [substring 
 			rangeOfCharacterFromSet:[self httpDelimitingCharset]];
