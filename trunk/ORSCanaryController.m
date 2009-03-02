@@ -1022,11 +1022,6 @@ sender {
 	int charsWritten = newStatusTextField.stringValue.length;
 	int maxChars = 140;
 	
-	// Counter readjustment
-	/*[charsLeftIndicator setMaxValue:(maxChars*((charsWritten/maxChars)+1))];
-	[charsLeftIndicator setCriticalValue:(maxChars*((charsWritten/maxChars)+1))];
-	[charsLeftIndicator setWarningValue:(maxChars*((charsWritten/maxChars)+1))-15];*/
-	
 	[charsLeftIndicator setToolTip:[NSString 
 		stringWithFormat:@"Characters written: %i\nCharacters left: %i",
 				charsWritten, (((charsWritten / maxChars)+1)*maxChars - charsWritten)]];
