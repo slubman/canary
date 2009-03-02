@@ -15,7 +15,7 @@
 // Returns an HTTP URL delimiting character set
 - (NSCharacterSet *) httpDelimitingCharset {
 	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
-	[charset addCharactersInString:@"±§$%^*(){}[];'\"\\|,<>`~ÅÍÎÏ¡™£¢∞§¶"];
+	[charset addCharactersInString:@"±§$%^*(){}[];'\"\\|,<>`ÅÍÎÏ¡™£¢∞§¶"];
 	[charset addCharactersInString:@"•ªº≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ˘¿Â¯"];
 	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
 	[charset addCharactersInString:@"»¸˛Ç◊ı˜"];
