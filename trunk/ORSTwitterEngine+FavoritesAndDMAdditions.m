@@ -119,6 +119,7 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
+	[path appendString:@"&count=200"];
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {
@@ -147,6 +148,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"direct_messages/sent.xml?since="];
 	[path appendString:date];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];

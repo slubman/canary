@@ -21,6 +21,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/friends_timeline.xml?since="];
 	[path appendString:date];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -87,6 +88,7 @@
 	NSMutableString *path = [NSMutableString 
 			stringWithString:@"statuses/user_timeline.xml?since="];
 	[path appendString:date];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -162,6 +164,7 @@
 	[path appendString:userID];
 	[path appendString:@".xml?since_id="];
 	[path appendString:statusID];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
@@ -228,6 +231,7 @@
 	NSMutableString *path = [NSMutableString
 							 stringWithString:@"statuses/replies.xml?since="];
 	[path appendString:date];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path 
 								synchronously:synchronously];
