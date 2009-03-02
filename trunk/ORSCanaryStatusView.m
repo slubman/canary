@@ -32,8 +32,19 @@
 								blue:.919 
 							   alpha:1.0] setFill];
 		NSRectFill([self bounds]);
+	} else {
+		NSGradient *gradient = [[NSGradient alloc] 
+			initWithStartingColor:[NSColor colorWithDeviceRed:0.784 
+													  green:0.784 
+													   blue:0.784 
+													  alpha:1.0]
+								endingColor:[NSColor colorWithDeviceRed:0.988 
+													   green:0.988 
+														blue:0.988 
+													   alpha:1.0]];
+		[gradient drawInRect:[self bounds] angle:90.0];
 	}
-	[super drawRect:rect];
+	//[super drawRect:rect];
 }
 
 - (void) setSelected:(BOOL)flag {
