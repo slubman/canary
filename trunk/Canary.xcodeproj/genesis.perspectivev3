@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0571138B0F5C9259000EBEBA</string>
+										<string>05810C6C0F5DD8D400921927</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -460,7 +460,7 @@
 											<string>0571134C0F5C6C36000EBEBA</string>
 											<string>0571134D0F5C6C36000EBEBA</string>
 											<string>0571135A0F5C6C96000EBEBA</string>
-											<string>057113680F5C6E81000EBEBA</string>
+											<string>057113FC0F5DC1DA000EBEBA</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -585,20 +585,6 @@
 											<string>05E21CC50F5345DE0027A864</string>
 											<string>05E21CE70F53497D0027A864</string>
 											<string>05E21CEE0F5349DB0027A864</string>
-											<string>057113460F5C68E1000EBEBA</string>
-											<string>057113470F5C68E1000EBEBA</string>
-											<string>057113500F5C6C36000EBEBA</string>
-											<string>057113510F5C6C36000EBEBA</string>
-											<string>057113520F5C6C36000EBEBA</string>
-											<string>057113530F5C6C36000EBEBA</string>
-											<string>057113540F5C6C36000EBEBA</string>
-											<string>057113550F5C6C36000EBEBA</string>
-											<string>057113560F5C6C36000EBEBA</string>
-											<string>057113570F5C6C36000EBEBA</string>
-											<string>057113580F5C6C36000EBEBA</string>
-											<string>0571135C0F5C6C96000EBEBA</string>
-											<string>0571135D0F5C6C96000EBEBA</string>
-											<string>0571135E0F5C6C96000EBEBA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -612,14 +598,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {782, 611}}</string>
+								<string>{{0, 0}, {782, 610}}</string>
 								<key>RubberWindowFrame</key>
 								<string>205 122 1076 656 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>611pt</string>
+							<string>610pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
@@ -637,7 +623,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {782, 156}}</string>
+										<string>{{10, 27}, {782, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>205 122 1076 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -692,8 +680,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {782, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>205 122 1076 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -721,11 +707,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>057112450F5BF2BE000EBEBA</string>
+				<string>05810C6D0F5DD8D400921927</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>057112460F5BF2BE000EBEBA</string>
+				<string>05810C6E0F5DD8D400921927</string>
 				<string>0573D6CD0DA66271002D1CCF</string>
-				<string>057112470F5BF2BE000EBEBA</string>
+				<string>05810C6F0F5DD8D400921927</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -870,14 +856,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0571128B0F5BF356000EBEBA</string>
+				<string>057113E80F5D70F9000EBEBA</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>0571128C0F5BF356000EBEBA</string>
-				<string>0571128D0F5BF356000EBEBA</string>
-				<string>0571128E0F5BF356000EBEBA</string>
-				<string>0571128F0F5BF356000EBEBA</string>
-				<string>057112900F5BF356000EBEBA</string>
+				<string>057113E90F5D70F9000EBEBA</string>
+				<string>057113EA0F5D70F9000EBEBA</string>
+				<string>057113EB0F5D70F9000EBEBA</string>
+				<string>057113EC0F5D70F9000EBEBA</string>
+				<string>057113ED0F5D70F9000EBEBA</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -907,8 +893,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0571129D0F5BF753000EBEBA</string>
-		<string>0571129E0F5BF753000EBEBA</string>
 		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
