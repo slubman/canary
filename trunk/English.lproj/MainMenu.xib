@@ -8,8 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="372"/>
-			<integer value="462"/>
+			<integer value="380"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -93,7 +92,7 @@
 			</object>
 			<object class="NSCollectionViewItem" id="136294764"/>
 			<object class="NSView" id="77162958">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -598,7 +597,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{322, 87}</string>
-				<reference key="NSSuperview"/>
 			</object>
 			<object class="NSMenu" id="649796088">
 				<string key="NSTitle">Main Menu</string>
@@ -2402,6 +2400,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {324, 434}}</string>
 									<reference key="NSSuperview" ref="196338544"/>
+									<reference key="NSNextKeyView" ref="73709233"/>
 									<reference key="NSDocView" ref="73709233"/>
 									<object class="NSColor" key="NSBGColor">
 										<int key="NSColorSpace">1</int>
@@ -2416,7 +2415,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<reference key="NSSuperview" ref="196338544"/>
 									<reference key="NSTarget" ref="196338544"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">5.758334e-01</double>
+									<double key="NSCurValue">5.965707e-01</double>
 									<double key="NSPercent">8.965517e-01</double>
 								</object>
 								<object class="NSScroller" id="441622477">
@@ -2427,12 +2426,13 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="196338544"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">2.168433e-01</double>
+									<double key="NSCurValue">1.859791e-01</double>
 									<double key="NSPercent">6.315789e-01</double>
 								</object>
 							</object>
 							<string key="NSFrame">{{-1, 78}, {341, 436}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSNextKeyView" ref="475840668"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="213564487"/>
 							<reference key="NSHScroller" ref="441622477"/>
@@ -5992,6 +5992,22 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<int key="connectionID">2288</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">scrolled:</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="213564487"/>
+					</object>
+					<int key="connectionID">2297</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">scroller</string>
+						<reference key="source" ref="204190209"/>
+						<reference key="destination" ref="213564487"/>
+					</object>
+					<int key="connectionID">2298</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -9063,8 +9079,8 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{479, 142}, {339, 530}}</string>
-					<string>{{479, 142}, {339, 530}}</string>
+					<string>{{591, 128}, {339, 530}}</string>
+					<string>{{591, 128}, {339, 530}}</string>
 					<reference ref="9"/>
 					<string>{{828, 321}, {379, 523}}</string>
 					<reference ref="9"/>
@@ -9204,7 +9220,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">2296</int>
+			<int key="maxID">2298</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -9276,6 +9292,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>performInstaFiltering:</string>
 							<string>quitCall:</string>
 							<string>retypePreviousUpdate:</string>
+							<string>scrolled:</string>
 							<string>sendFeedback:</string>
 							<string>sendImageToTwitPic:</string>
 							<string>sendUpdate:</string>
@@ -9293,6 +9310,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -9358,6 +9376,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>receivedDMView</string>
 							<string>receivedDMsArrayController</string>
 							<string>receivedDMsCollectionViewItem</string>
+							<string>scroller</string>
 							<string>sentDMBox</string>
 							<string>sentDMButton</string>
 							<string>sentDMDateDifferenceTextField</string>
@@ -9411,6 +9430,7 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSView</string>
 							<string>NSArrayController</string>
 							<string>NSCollectionViewItem</string>
+							<string>NSScroller</string>
 							<string>NSBox</string>
 							<string>NSButton</string>
 							<string>NSTextField</string>

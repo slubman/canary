@@ -119,7 +119,7 @@
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if ([[node name] isEqualToString:@"direct-messages"]) {
 		return [self getAllDMsFromData:data];
 	} else {

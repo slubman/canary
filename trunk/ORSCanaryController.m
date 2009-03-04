@@ -2208,4 +2208,28 @@ sender {
 	}
 }
 
+- (IBAction) scrolled:sender {
+	float knobPosition;
+    switch ([scroller hitPart]) {
+        case NSScrollerIncrementLine:
+			// Include code here for the case where the down arrow is pressed
+            break;
+        case NSScrollerIncrementPage:
+			// Include code here for the case where CTRL + down arrow is pressed, or the space the scroll knob moves in is pressed
+            break;
+        case NSScrollerDecrementLine:
+			// Include code here for the case where the up arrow is pressed
+            break;
+        case NSScrollerDecrementPage:
+			// Include code here for the case where CTRL + up arrow is pressed, or the space the scroll knob moves in is pressed
+            break;
+        case NSScrollerKnob:
+			// This case is when the knob itself is pressed
+            knobPosition = [scroller floatValue];
+            // Do something with the view
+        default:
+            break;
+    }
+}
+
 @end

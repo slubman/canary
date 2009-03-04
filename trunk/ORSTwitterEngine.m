@@ -190,7 +190,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/public_timeline.xml?since_id="];
 	[path appendString:statusID];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -237,7 +237,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/friends_timeline.xml?since_id="];
 	[path appendString:statusID];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -307,7 +307,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"statuses/user_timeline.xml?since_id="];
 	[path appendString:statusID];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -387,7 +387,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString
 		stringWithString:@"statuses/replies.xml?since_id="];
 	[path appendString:statusID];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -438,7 +438,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"direct_messages.xml?since_id="];
 	[path appendString:dmID];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -484,7 +484,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"direct_messages/sent.xml?since_id="];
 	[path appendString:dmID]; 
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET" 
 										   atPath:path 
@@ -620,7 +620,7 @@ static ORSTwitterEngine *sharedEngine = nil;
 // gets the favorites for the current user since the given ID
 - (NSArray *) getFavoritesSinceStatus:(NSString *)statusID {
 	NSString *path = [NSString 
-		stringWithFormat:@"favorites.xml?since_id=%@&count=200", statusID];
+					  stringWithFormat:@"favorites.xml?since_id=%@", statusID];//&count=200", statusID];
 	if (synchronously) {
 		NSData *data = [self executeRequestOfType:@"GET"
 										   atPath:path 
