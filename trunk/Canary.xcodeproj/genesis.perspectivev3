@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>05B468400F5F349200015DBF</string>
+										<string>05B468740F5F3D4F00015DBF</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -450,17 +450,17 @@
 											<string>057113110F5C5F34000EBEBA</string>
 											<string>057113120F5C5F34000EBEBA</string>
 											<string>057113130F5C5F34000EBEBA</string>
-											<string>057113140F5C5F34000EBEBA</string>
 											<string>057113150F5C5F34000EBEBA</string>
-											<string>057113160F5C5F34000EBEBA</string>
 											<string>057113170F5C5F34000EBEBA</string>
-											<string>057113180F5C5F34000EBEBA</string>
-											<string>0571132E0F5C6706000EBEBA</string>
 											<string>0571132F0F5C6706000EBEBA</string>
 											<string>0571134C0F5C6C36000EBEBA</string>
-											<string>0571134D0F5C6C36000EBEBA</string>
 											<string>0571135A0F5C6C96000EBEBA</string>
-											<string>05810C6C0F5DD8D400921927</string>
+											<string>05B468520F5F3B4B00015DBF</string>
+											<string>05B468530F5F3B4B00015DBF</string>
+											<string>05B468540F5F3B4B00015DBF</string>
+											<string>05B468550F5F3B4B00015DBF</string>
+											<string>05B468700F5F3D4F00015DBF</string>
+											<string>05B468710F5F3D4F00015DBF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -585,6 +585,20 @@
 											<string>05E21CC50F5345DE0027A864</string>
 											<string>05E21CE70F53497D0027A864</string>
 											<string>05E21CEE0F5349DB0027A864</string>
+											<string>05B468570F5F3B4B00015DBF</string>
+											<string>05B468580F5F3B4B00015DBF</string>
+											<string>05B468590F5F3B4B00015DBF</string>
+											<string>05B4685A0F5F3B4B00015DBF</string>
+											<string>05B4685B0F5F3B4B00015DBF</string>
+											<string>05B4685C0F5F3B4B00015DBF</string>
+											<string>05B4685D0F5F3B4B00015DBF</string>
+											<string>05B4685E0F5F3B4B00015DBF</string>
+											<string>05B4685F0F5F3B4B00015DBF</string>
+											<string>05B468600F5F3B4B00015DBF</string>
+											<string>05B468610F5F3B4B00015DBF</string>
+											<string>05B468620F5F3B4B00015DBF</string>
+											<string>05B468720F5F3D4F00015DBF</string>
+											<string>05B468730F5F3D4F00015DBF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -623,9 +637,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {782, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>205 122 1076 656 0 0 1280 778 </string>
+										<string>{{10, 27}, {782, 156}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -642,6 +654,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {782, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>205 122 1076 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>

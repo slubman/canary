@@ -148,7 +148,7 @@
 	NSMutableString *path = [NSMutableString 
 		stringWithString:@"direct_messages/sent.xml?since="];
 	[path appendString:date];
-	[path appendString:@"&count=200"];
+	//[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];

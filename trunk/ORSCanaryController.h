@@ -104,8 +104,6 @@
 	IBOutlet NSSearchField *largeInstaFilterSearchField;
 	IBOutlet NSArrayController *filterArrayController;
 	
-	IBOutlet NSScroller *scroller;
-	
 	NSString *previousUpdateText; // The text of the last attempted update
 	NSArray *statuses;
 	NSArray *receivedDirectMessages;
@@ -253,7 +251,6 @@
 - (NSString *) receivedDMIDSinceLastExecution;
 
 - (IBAction) paste:sender;
-- (IBAction) scrolled:sender;
 
 @property(copy) NSArray *statuses;
 @property(copy) NSArray *receivedDirectMessages;

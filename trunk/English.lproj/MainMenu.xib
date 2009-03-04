@@ -5992,22 +5992,6 @@ ZGx5LCByZWxpYWJsZSBhbmQgc2VjdXJlIGV4cGVyaWVuY2UuA</string>
 					</object>
 					<int key="connectionID">2288</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">scrolled:</string>
-						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="213564487"/>
-					</object>
-					<int key="connectionID">2297</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">scroller</string>
-						<reference key="source" ref="204190209"/>
-						<reference key="destination" ref="213564487"/>
-					</object>
-					<int key="connectionID">2298</int>
-				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -9292,7 +9276,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>performInstaFiltering:</string>
 							<string>quitCall:</string>
 							<string>retypePreviousUpdate:</string>
-							<string>scrolled:</string>
 							<string>sendFeedback:</string>
 							<string>sendImageToTwitPic:</string>
 							<string>sendUpdate:</string>
@@ -9310,7 +9293,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -9376,7 +9358,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>receivedDMView</string>
 							<string>receivedDMsArrayController</string>
 							<string>receivedDMsCollectionViewItem</string>
-							<string>scroller</string>
 							<string>sentDMBox</string>
 							<string>sentDMButton</string>
 							<string>sentDMDateDifferenceTextField</string>
@@ -9430,7 +9411,6 @@ YXQgeW91IGhhdmUgaGlnaGxpZ2h0ZWQvc2VsZWN0ZWQuA</string>
 							<string>NSView</string>
 							<string>NSArrayController</string>
 							<string>NSCollectionViewItem</string>
-							<string>NSScroller</string>
 							<string>NSBox</string>
 							<string>NSButton</string>
 							<string>NSTextField</string>
