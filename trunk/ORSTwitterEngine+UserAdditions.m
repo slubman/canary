@@ -92,7 +92,7 @@
 	NSMutableString *path = [NSMutableString 
 							 stringWithString:@"statuses/friends.xml?since="];
 	[path appendString:date];
-	//[path appendString:@"&count=200"];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
@@ -145,7 +145,7 @@
 	[path appendString:userID];
 	[path appendString:@".xml?since="];
 	[path appendString:date];
-	//[path appendString:@"&count=200"];
+	[path appendString:@"&count=200"];
 	NSData *data = [self executeRequestOfType:@"GET" 
 									   atPath:path synchronously:synchronously];
 	NSXMLNode *node = [self getNodeFromData:data];
