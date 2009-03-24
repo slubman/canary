@@ -86,7 +86,7 @@ static ORSCanaryController *sharedCanaryController = nil;
 	[appDefaults setObject:[NSNumber numberWithFloat:530.0]
 					forKey:@"CanaryWindowHeight"];
 	[appDefaults setObject:@"Every minute" forKey:@"CanaryRefreshPeriod"];
-	[appDefaults setObject:@"250" forKey:@"CanaryMaxShownUpdates"];
+	[appDefaults setObject:@"80" forKey:@"CanaryMaxShownUpdates"];
 	[appDefaults setObject:@"Cli.gs" forKey:@"CanarySelectedURLShortener"];
 	[appDefaults setObject:[NSNumber numberWithBool:YES]
 					forKey:@"CanaryWillShortenPastedURLs"];
@@ -2117,7 +2117,7 @@ sender {
 	if (maxShownUpdatesString.integerValue != 40 ||
 		maxShownUpdatesString.integerValue != 80 ||
 		maxShownUpdatesString.integerValue != 120) {
-		return 120;
+		return 80;
 	} else {
 		return maxShownUpdatesString.integerValue;
 	}
