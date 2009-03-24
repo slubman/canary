@@ -2113,7 +2113,14 @@ sender {
 - (int) maxShownUpdates {
 	NSString *maxShownUpdatesString = (NSString *)[defaults 
 						objectForKey:@"CanaryMaxShownUpdates"];
-	return maxShownUpdatesString.integerValue;
+	// code to compensate for old preferences
+	if (maxShownUpdatesString.integerValue != 40 ||
+		maxShownUpdatesString.integerValue != 80 ||
+		maxShownUpdatesString.integerValue != 120) {
+		return 120;
+	} else {
+		return maxShownUpdatesString.integerValue;
+	}
 }
 
 // Returns the selected URL shortener
