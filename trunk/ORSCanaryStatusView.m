@@ -15,7 +15,7 @@
 	return YES;
 }
 
-- (NSView *) hitTest:(NSPoint)aPoint {
+/*- (NSView *) hitTest:(NSPoint)aPoint {
 	NSView *result = [super hitTest:aPoint];
 	if (result && !([result isKindOfClass:[NSButton class]] ||
 				   ([result isKindOfClass:[NSTextField class]]))) {
@@ -23,16 +23,16 @@
 	} else {
 		return result;
 	}
-}
+}*/
 
 - (void) drawRect:(NSRect)rect {
-	if ([self selected] && [self isKindOfClass:[ORSCanaryStatusView	class]]) {
+	/*if ([self selected] && [self isKindOfClass:[ORSCanaryStatusView	class]]) {
 		[[NSColor colorWithDeviceRed:.651
 							   green:.717
 								blue:.919 
 							   alpha:1.0] setFill];
 		NSRectFill([self bounds]);
-	} else {
+	} else {*/
 		NSGradient *gradient = [[NSGradient alloc] 
 			initWithStartingColor:[NSColor colorWithDeviceRed:0.784 
 													  green:0.784 
@@ -43,7 +43,7 @@
 														blue:0.988 
 													   alpha:1.0]];
 		[gradient drawInRect:[self bounds] angle:90.0];
-	}
+	//}
 	//[super drawRect:rect];
 }
 

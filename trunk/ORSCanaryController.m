@@ -16,7 +16,7 @@
 
 @implementation ORSCanaryController
 
-@synthesize statuses, receivedDirectMessages, sentDirectMessages, visibleUserID,
+@synthesize visibleUserID,
 			previousTimeline, authenticator, twitterEngine, urlShortener, 
 			updateDispatcher, cacheManager, aboutWindow, statusTextField, 
 			statusView, statusBox, dateDifferenceTextField, indicator,
@@ -29,6 +29,8 @@
 			refreshTimer, loginItem, prevUserID, prevPassword, spokenCommands,
 			recognizer, firstBackgroundReceivedDMRetrieval, showScreenNames,
 			statusBarImageView, statusBarTextField, statusBarButton;
+
+@dynamic statuses, receivedDirectMessages, sentDirectMessages;
 
 static ORSCanaryController *sharedCanaryController = nil;
 
@@ -307,42 +309,43 @@ sender {
 	if ([timelineButton.titleOfSelectedItem isEqualToString:@"Friends"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.followingStatusCache count] > 0) {
-			[self setStatuses:cacheManager.followingStatusCache];
+			//[self setStatuses:cacheManager.followingStatusCache];
+			self.statuses = cacheManager.followingStatusCache;
 		}
 		[self getFriendsTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Replies"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.repliesStatusCache count] > 0) {
-			[self setStatuses:cacheManager.repliesStatusCache];
+			self.statuses = cacheManager.repliesStatusCache;
 		}
 		[self getReplies];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Public"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.publicStatusCache count] > 0) {
-			[self setStatuses:cacheManager.publicStatusCache];
+			self.statuses = cacheManager.publicStatusCache;
 		}
 		[self getPublicTimeline];
 	} else if ([timelineButton.titleOfSelectedItem
 			   isEqualToString:@"Favorites"]) {
 		if ([sender isEqualTo:timelineButton] && 
 				[cacheManager.favoritesStatusCache count] > 0) {
-			[self setStatuses:cacheManager.favoritesStatusCache];
+			self.statuses = cacheManager.favoritesStatusCache;
 		}
 		[self getFavorites];
 	} else if ([timelineButton.titleOfSelectedItem
 				isEqualToString:@"Archive"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[cacheManager.archiveStatusCache count] > 0) {
-			[self setStatuses:cacheManager.archiveStatusCache];
+			self.statuses = cacheManager.archiveStatusCache;
 		}
 		[self getUserTimeline];
 	}  else if ([timelineButton.titleOfSelectedItem
 				 isEqualToString:@"Received messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[[cacheManager receivedMessagesCache] count] > 0) {
-			[self setReceivedDirectMessages:cacheManager.receivedMessagesCache];
+			self.receivedDirectMessages = cacheManager.receivedMessagesCache;
 		}
 		[self getReceivedMessages];
 		[statusBarTextField setHidden:YES];
@@ -353,7 +356,7 @@ sender {
 				isEqualToString:@"Sent messages"]) {
 		if ([sender isEqualTo:timelineButton] && 
 			[cacheManager.sentMessagesCache count] > 0) {
-			[self setSentDirectMessages:cacheManager.sentMessagesCache];
+			self.sentDirectMessages = cacheManager.sentMessagesCache;
 		}
 		[self getSentMessages];
 	}
@@ -477,20 +480,20 @@ sender {
 				cacheManager.firstFollowingCall = YES;
 				[self getFriendsTimeline];
 			} else {
-				[self setStatuses:newStatuses];
+				self.statuses = newStatuses;
 			}
 		} else {
-			[self setStatuses:[cacheManager 
+			self.statuses = [cacheManager 
 				setStatusesForTimelineCache:ORSFollowingTimelineCacheType
-										   withNotification:note]];
+										   withNotification:note];
 			[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
 		}
 		firstFollowingTimelineRun = NO;
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Archive"]) {
-		[self setStatuses:[cacheManager 
+		self.statuses = [cacheManager 
 			setStatusesForTimelineCache:ORSArchiveTimelineCacheType
-						 withNotification:note]];
+						 withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -505,9 +508,9 @@ sender {
 		[mainTimelineCollectionView setItemPrototype:statusTimelineCollectionViewItem];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Public"]) {
-		[self setStatuses:[cacheManager 
+		self.statuses = [cacheManager 
 						   setStatusesForTimelineCache:ORSPublicTimelineCacheType
-						   withNotification:note]];
+						   withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -523,9 +526,9 @@ sender {
 		[self performSelectorInBackground:@selector(postStatusUpdatesReceived:) withObject:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Replies"]) {
-		[self setStatuses:[cacheManager 
+		self.statuses = [cacheManager 
 				setStatusesForTimelineCache:ORSRepliesTimelineCacheType
-											withNotification:note]];
+											withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -541,9 +544,9 @@ sender {
 		[self performSelectorInBackground:@selector(postRepliesReceived:) withObject:note];
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Favorites"]) {
-		[self setStatuses:[cacheManager 
+		self.statuses = [cacheManager 
 			setStatusesForTimelineCache:ORSFavoritesTimelineCacheType 
-						   withNotification:note]];
+						   withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -604,9 +607,9 @@ sender {
 	if ([timelineButton.titleOfSelectedItem 
 			isEqualToString:@"Received messages"]) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-		[self setReceivedDirectMessages:[cacheManager 
+		self.receivedDirectMessages = [cacheManager 
 			setStatusesForTimelineCache:ORSReceivedMessagesTimelineCacheType 
-										 withNotification:note]];
+										 withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -634,9 +637,9 @@ sender {
 	} else if ([timelineButton.titleOfSelectedItem 
 				isEqualToString:@"Sent messages"]) {
 		oldScrollOrigin = mainTimelineScrollView.contentView.bounds.origin;
-		[self setSentDirectMessages:[cacheManager
+		self.sentDirectMessages = [cacheManager
 			setStatusesForTimelineCache:ORSSentMessagesTimelineCacheType
-								 withNotification:note]];
+								 withNotification:note];
 		[mainTimelineCollectionView unbind:@"content"];
 		[mainTimelineCollectionView unbind:@"selectionIndexes"];
 		[mainTimelineCollectionView setItemPrototype:NULL];
@@ -732,7 +735,7 @@ sender {
 			mainTimelineScrollView.contentView.bounds.origin;
 		NSMutableArray *cache = [NSMutableArray arrayWithArray:self.statuses];
 		[cache insertObject:note.object atIndex:0];
-		[self setStatuses:cache];
+		self.statuses = cache;
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 	}
 	
@@ -774,7 +777,7 @@ sender {
 							 arrayWithArray:self.sentDirectMessages];
 	
 		[cache insertObject:note.object atIndex:0];
-		[self setSentDirectMessages:cache];
+		self.sentDirectMessages = cache;
 		[mainTimelineScrollView.documentView scrollPoint:oldScrollOrigin];
 		[indicator stopAnimation:self];
 		[charsLeftIndicator setHidden:NO];
@@ -2110,13 +2113,14 @@ sender {
 }
 
 // Returns the number of number of updates kept in the timeline
-- (int) maxShownUpdates {
+- (NSUInteger) maxShownUpdates {
 	NSString *maxShownUpdatesString = (NSString *)[defaults 
 						objectForKey:@"CanaryMaxShownUpdates"];
 	// code to compensate for old preferences
-	if (maxShownUpdatesString.integerValue != 40 ||
-		maxShownUpdatesString.integerValue != 80 ||
-		maxShownUpdatesString.integerValue != 120) {
+	if (maxShownUpdatesString.integerValue != 40 &&
+		maxShownUpdatesString.integerValue != 80 &&
+		maxShownUpdatesString.integerValue != 120 &&
+		maxShownUpdatesString.integerValue != 160) {
 		return 80;
 	} else {
 		return maxShownUpdatesString.integerValue;
@@ -2185,34 +2189,92 @@ sender {
 }
 
 
+// ACTIONS
+
 // Action: paste
 - (IBAction) paste:sender {
 	if ([self.window isKeyWindow]) {
-		
-    NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
-    NSString *originalString = [generalPasteboard 
-								stringForType:NSStringPboardType];
-    if (originalString != nil) {
-		if ([originalString hasPrefix:@"http://"]) {
-			if ([(NSNumber *)[defaults 
-			objectForKey:@"CanaryWillShortenPastedURLs"] boolValue] == YES) {
-				NSString *shortenedURL = [[ORSCanaryController 
-					sharedController].urlShortener 
-										  generateURLFrom:originalString];
-				[self insertStringTokenInNewStatusTextField:shortenedURL];
+		NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
+		NSString *originalString = [generalPasteboard 
+									stringForType:NSStringPboardType];
+		if (originalString != nil) {
+			if ([originalString hasPrefix:@"http://"] ||
+					[originalString hasPrefix:@"https://"]) {
+				if ([(NSNumber *)[defaults 
+						objectForKey:@"CanaryWillShortenPastedURLs"] 
+							boolValue] == YES) {
+					NSString *shortenedURL = [[ORSCanaryController 
+						sharedController].urlShortener 
+											  generateURLFrom:originalString];
+					[self insertStringTokenInNewStatusTextField:shortenedURL];
+				} else {
+					[self insertStringTokenInNewStatusTextField:originalString];
+				}
 			} else {
 				[self insertStringTokenInNewStatusTextField:originalString];
 			}
-		} else {
-			[self insertStringTokenInNewStatusTextField:originalString];
 		}
-    }
 		
 	} else {
-		[NSApp sendAction:@selector(paste:) 
-					   to:nil 
-					 from:self];
+		[NSApp sendAction:@selector(paste:) to:nil from:self];
 	}
+}
+
+
+// ACCESSOR METHODS
+
+// Access methods for the status timeline array
+- (void) setStatuses:(NSArray *)theStatuses {
+	if (theStatuses.count > [self maxShownUpdates]) {
+		NSMutableArray *mutableStatuses = [NSMutableArray 
+										   arrayWithArray:theStatuses];
+		for (NSUInteger i = 20; i < mutableStatuses.count; i++) {
+			[mutableStatuses removeObjectAtIndex:i];
+		}
+		statuses = mutableStatuses;
+	} else {
+		statuses = theStatuses;
+	}
+}
+
+- (NSArray *) statuses {
+	return statuses;
+}
+
+// Access methods for the received direct messages array
+- (void) setReceivedDirectMessages:(NSArray *)receivedDMs {
+	if (receivedDMs.count > [self maxShownUpdates]) {
+		NSMutableArray *mutableReceivedDMs = [NSMutableArray 
+										   arrayWithArray:receivedDMs];
+		for (NSUInteger i = 20; i < mutableReceivedDMs.count; i++) {
+			[mutableReceivedDMs removeObjectAtIndex:i];
+		}
+		receivedDirectMessages = mutableReceivedDMs;
+	} else {
+		receivedDirectMessages = receivedDMs;
+	}
+}
+
+- (NSArray *) receivedDirectMessages {
+	return receivedDirectMessages;
+}
+
+// Access methods for the sent direct messages array
+- (void) setSentDirectMessages:(NSArray *)sentDMs {
+	if (sentDMs.count > [self maxShownUpdates]) {
+		NSMutableArray *mutableSentDMs = [NSMutableArray 
+											  arrayWithArray:sentDMs];
+		for (NSUInteger i = 20; i < mutableSentDMs.count; i++) {
+			[mutableSentDMs removeObjectAtIndex:i];
+		}
+		sentDirectMessages = mutableSentDMs;
+	} else {
+		sentDirectMessages = sentDMs;
+	}
+}
+
+- (NSArray *) sentDirectMessages {
+	return sentDirectMessages;
 }
 
 @end
