@@ -1846,7 +1846,7 @@ sender {
 
 // Action: Visit Canary website
 - (IBAction) visitCanaryWebsite:sender {
-	[self openUserURL:@"http://macsphere.wordpress.com"];
+	[self openUserURL:@"http://www.canaryapp.com"];
 }
 
 - (IBAction) switchFontSize:sender {
@@ -2228,8 +2228,9 @@ sender {
 	if (theStatuses.count > [self maxShownUpdates]) {
 		NSMutableArray *mutableStatuses = [NSMutableArray 
 										   arrayWithArray:theStatuses];
-		for (NSUInteger i = 20; i < mutableStatuses.count; i++) {
-			[mutableStatuses removeObjectAtIndex:i];
+		unsigned int count = mutableStatuses.count;
+		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
+			[mutableStatuses removeObjectAtIndex:[self maxShownUpdates]];
 		}
 		statuses = mutableStatuses;
 	} else {
@@ -2246,7 +2247,8 @@ sender {
 	if (receivedDMs.count > [self maxShownUpdates]) {
 		NSMutableArray *mutableReceivedDMs = [NSMutableArray 
 										   arrayWithArray:receivedDMs];
-		for (NSUInteger i = 20; i < mutableReceivedDMs.count; i++) {
+		unsigned int count = mutableReceivedDMs.count;
+		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
 			[mutableReceivedDMs removeObjectAtIndex:i];
 		}
 		receivedDirectMessages = mutableReceivedDMs;
@@ -2264,7 +2266,8 @@ sender {
 	if (sentDMs.count > [self maxShownUpdates]) {
 		NSMutableArray *mutableSentDMs = [NSMutableArray 
 											  arrayWithArray:sentDMs];
-		for (NSUInteger i = 20; i < mutableSentDMs.count; i++) {
+		unsigned int count = mutableSentDMs.count;
+		for (unsigned int i = [self maxShownUpdates]; i < count; i++) {
 			[mutableSentDMs removeObjectAtIndex:i];
 		}
 		sentDirectMessages = mutableSentDMs;

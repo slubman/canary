@@ -234,8 +234,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -284,9 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>72</integer>
-									<integer>67</integer>
-									<integer>0</integer>
+									<integer>88</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -318,12 +314,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>0573D6CD0DA66271002D1CCF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ORSCanaryStatusView.m</string>
+								<string>ORSCanaryController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>0573D6CE0DA66271002D1CCF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ORSCanaryStatusView.m</string>
+										<string>ORSCanaryController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0577BB560F7AB85100E31957</string>
+										<string>0577BBB30F7ADF0000E31957</string>
 										<key>history</key>
 										<array>
 											<string>05372D9D0E7EE8CC008ABD85</string>
@@ -435,7 +433,6 @@
 											<string>05845C540F5BE14A006F7306</string>
 											<string>05845C550F5BE14A006F7306</string>
 											<string>057111D20F5BF1E3000EBEBA</string>
-											<string>057111D30F5BF1E3000EBEBA</string>
 											<string>057112ED0F5C4011000EBEBA</string>
 											<string>057113110F5C5F34000EBEBA</string>
 											<string>057113120F5C5F34000EBEBA</string>
@@ -456,10 +453,11 @@
 											<string>0577BABF0F7A2E1900E31957</string>
 											<string>0577BAC00F7A2E1900E31957</string>
 											<string>0577BB050F7A9B1B00E31957</string>
-											<string>0577BB390F7AAD5C00E31957</string>
-											<string>0577BB4C0F7AB72C00E31957</string>
 											<string>0577BB4D0F7AB72C00E31957</string>
-											<string>0577BB4E0F7AB72C00E31957</string>
+											<string>0577BB590F7AB94E00E31957</string>
+											<string>0577BB620F7AC4E200E31957</string>
+											<string>0577BB630F7AC4E200E31957</string>
+											<string>0577BBA80F7ADE1C00E31957</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -607,6 +605,11 @@
 											<string>0577BB3C0F7AAD5C00E31957</string>
 											<string>0577BB4F0F7AB72C00E31957</string>
 											<string>0577BB500F7AB72C00E31957</string>
+											<string>0577BB5B0F7AB94E00E31957</string>
+											<string>0577BB650F7AC4E200E31957</string>
+											<string>0577BB660F7AC4E200E31957</string>
+											<string>0577BB670F7AC4E200E31957</string>
+											<string>0577BB680F7AC4E200E31957</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -646,6 +649,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {782, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>204 122 1076 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -700,8 +705,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {782, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>204 122 1076 656 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -917,7 +920,6 @@
 	<array>
 		<string>0577BAD80F7A2E6D00E31957</string>
 		<string>0577BAD90F7A2E6D00E31957</string>
-		<string>/Users/genesis/Projects/Canary/source/trunk/Canary.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>204 122 1076 656 0 0 1280 778 </string>

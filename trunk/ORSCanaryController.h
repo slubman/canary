@@ -259,11 +259,11 @@
 - (void) setSentDirectMessages:(NSArray *)sentDMs;
 - (NSArray *) sentDirectMessages;
 
-@property (copy) NSArray *statuses;
-@property (copy) NSArray *receivedDirectMessages;
-@property (copy) NSArray *sentDirectMessages;
-@property (copy) NSString *visibleUserID;
-@property (copy) NSString *previousTimeline;
+@property (assign) NSArray *statuses;
+@property (assign) NSArray *receivedDirectMessages;
+@property (assign) NSArray *sentDirectMessages;
+@property (assign) NSString *visibleUserID;
+@property (assign) NSString *previousTimeline;
 
 @property (assign) ORSCredentialsManager *authenticator;
 @property (assign) ORSTwitterEngine *twitterEngine;
