@@ -14,7 +14,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 896}}";
 			sepNavSelRange = "{387, 0}";
-			sepNavVisRange = "{350, 1422}";
+			sepNavVisRange = "{386, 1386}";
 		};
 	};
 	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
@@ -72,7 +72,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
 			sepNavSelRange = "{613, 0}";
-			sepNavVisRange = "{0, 1213}";
+			sepNavVisRange = "{59, 1160}";
 		};
 	};
 	050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */ = {
@@ -138,7 +138,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
 			sepNavSelRange = "{1040, 0}";
-			sepNavVisRange = "{0, 1264}";
+			sepNavVisRange = "{3, 1261}";
 		};
 	};
 	0505632C0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.m */ = {
@@ -171,7 +171,7 @@
 	};
 	0507E6FE0EED88A000559018 /* ORSTwitPicDispatcher.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{168, 0}";
 			sepNavVisRange = "{0, 413}";
 		};
@@ -251,7 +251,7 @@
 	};
 	0507EABD0EF2CA8400559018 /* ORSCanaryCollectionView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{86, 0}";
 			sepNavVisRange = "{0, 324}";
 		};
@@ -323,7 +323,7 @@
 	};
 	050996D40EEAF88C005848B8 /* ORSCanaryLoginController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 576}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
 			sepNavSelRange = "{292, 0}";
 			sepNavVisRange = "{0, 1008}";
 			sepNavWindowFrame = "{{107, 242}, {765, 847}}";
@@ -692,8 +692,8 @@
 	};
 	0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
-			sepNavSelRange = "{51, 133}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{316, 0}";
 			sepNavVisRange = "{0, 316}";
 		};
 	};
@@ -771,7 +771,7 @@
 	};
 	0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{241, 0}";
 			sepNavVisRange = "{0, 694}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
@@ -807,7 +807,7 @@
 	};
 	0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{336, 0}";
 			sepNavVisRange = "{0, 694}";
 		};
@@ -842,7 +842,7 @@
 	};
 	0555A5130EAA2F7E00B126BC /* ORSAdjixShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{499, 0}";
 			sepNavVisRange = "{0, 694}";
 		};
@@ -857,9 +857,9 @@
 	};
 	0555A5190EAA38AC00B126BC /* ORSShortenerFactory.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 944}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
 			sepNavSelRange = "{829, 7}";
-			sepNavVisRange = "{0, 921}";
+			sepNavVisRange = "{33, 888}";
 			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
 		};
 	};
@@ -873,8 +873,8 @@
 	};
 	0555A51C0EAA3B4700B126BC /* ORSShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
-			sepNavSelRange = "{208, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{553, 0}";
 			sepNavVisRange = "{0, 616}";
 		};
 	};
@@ -1056,7 +1056,7 @@
 	};
 	0555A65F0EAA509E00B126BC /* ORSIsgdShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{398, 0}";
 			sepNavVisRange = "{0, 621}";
 		};
@@ -1164,7 +1164,7 @@
 	};
 	055D60820DB6485000ED2B41 /* ORSTinyURLShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{379, 0}";
 			sepNavVisRange = "{0, 625}";
 		};
@@ -1204,7 +1204,7 @@
 	056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
-			sepNavSelRange = "{61, 133}";
+			sepNavSelRange = "{575, 0}";
 			sepNavVisRange = "{0, 575}";
 		};
 	};
@@ -1238,7 +1238,7 @@
 	};
 	056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{323, 0}";
 			sepNavVisRange = "{0, 402}";
 		};
@@ -1588,8 +1588,8 @@
 	0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
-			sepNavSelRange = "{821, 19}";
-			sepNavVisRange = "{45, 942}";
+			sepNavSelRange = "{987, 0}";
+			sepNavVisRange = "{0, 960}";
 			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
@@ -1628,9 +1628,9 @@
 	};
 	0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 1760}}";
-			sepNavSelRange = "{601, 0}";
-			sepNavVisRange = "{321, 753}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1632}}";
+			sepNavSelRange = "{741, 0}";
+			sepNavVisRange = "{2103, 1002}";
 		};
 	};
 	0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */ = {
@@ -1680,26 +1680,26 @@
 	};
 	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 5008}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 5088}}";
 			sepNavSelRange = "{9345, 0}";
-			sepNavVisRange = "{8742, 1508}";
+			sepNavVisRange = "{0, 1036}";
 			sepNavWindowFrame = "{{16, 67}, {765, 711}}";
 		};
 	};
 	0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{390, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{907, 522}\";\n            s = 0;\n        },\n                {\n            r = \"{1579, 445}\";\n            s = 0;\n        },\n                {\n            r = \"{2174, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{2675, 502}\";\n            s = 0;\n        },\n                {\n            r = \"{3317, 626}\";\n            s = 0;\n        },\n                {\n            r = \"{4025, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{4244, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4386}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {721, 672}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
 			sepNavSelRange = "{295, 0}";
-			sepNavVisRange = "{0, 1204}";
+			sepNavVisRange = "{0, 1176}";
 			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
 	0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 1488}}";
-			sepNavSelRange = "{846, 0}";
-			sepNavVisRange = "{4, 882}";
+			sepNavSelRange = "{410, 0}";
+			sepNavVisRange = "{1339, 789}";
 			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
 		};
 	};
@@ -3372,7 +3372,7 @@
 	};
 	05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{161, 0}";
 			sepNavVisRange = "{0, 493}";
 		};
@@ -3492,8 +3492,8 @@
 	0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
-			sepNavSelRange = "{562, 0}";
-			sepNavVisRange = "{54, 1255}";
+			sepNavSelRange = "{820, 0}";
+			sepNavVisRange = "{40, 1230}";
 		};
 	};
 	0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */ = {
@@ -3529,7 +3529,7 @@
 	};
 	0592E7800EA13701002AC429 /* ORSUpdateDispatcher.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{415, 0}";
 			sepNavVisRange = "{0, 621}";
 			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
@@ -3668,7 +3668,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {721, 816}}";
 			sepNavSelRange = "{1310, 0}";
-			sepNavVisRange = "{294, 1117}";
+			sepNavVisRange = "{299, 1112}";
 		};
 	};
 	05A5D9AF0F065A8200B596A9 /* ORSAbstractShortener.m */ = {
@@ -3701,7 +3701,7 @@
 	};
 	05A681420F35B5D80021D8AD /* ORSFilter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{27, 0}";
 			sepNavVisRange = "{0, 450}";
 		};
@@ -3735,7 +3735,7 @@
 	};
 	05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{177, 0}";
 			sepNavVisRange = "{0, 290}";
 		};
@@ -3780,8 +3780,8 @@
 	};
 	05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
-			sepNavSelRange = "{46, 136}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{229, 0}";
 			sepNavVisRange = "{0, 333}";
 		};
 	};
@@ -4168,9 +4168,9 @@
 	};
 	05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 912}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 848}}";
 			sepNavSelRange = "{791, 0}";
-			sepNavVisRange = "{0, 1131}";
+			sepNavVisRange = "{406, 1386}";
 		};
 	};
 	05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */ = {
@@ -4246,7 +4246,7 @@
 	};
 	05E21BFE0F532EC90027A864 /* ORSSnipURLShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{367, 0}";
 			sepNavVisRange = "{0, 695}";
 		};
@@ -4281,7 +4281,7 @@
 	};
 	05E21CAB0F5343BB0027A864 /* ORSTrimShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{388, 0}";
 			sepNavVisRange = "{0, 682}";
 		};
@@ -4316,7 +4316,7 @@
 	};
 	05E21CDE0F5349600027A864 /* ORSUrlborgShortener.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
 			sepNavSelRange = "{398, 0}";
 			sepNavVisRange = "{0, 696}";
 		};
