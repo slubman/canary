@@ -293,7 +293,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 174}, {272, 597}}</string>
+							<string>{{0, 0}, {272, 597}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -489,11 +489,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>059DF8B40F910E7D00454750</string>
+				<string>057E31FE0F9112080055B843</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>059DF8B50F910E7D00454750</string>
+				<string>057E31FF0F9112080055B843</string>
 				<string>0573D6CD0DA66271002D1CCF</string>
-				<string>059DF8B60F910E7D00454750</string>
+				<string>057E32000F9112080055B843</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -638,14 +638,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>056DD8900F89FD0A00A45CDB</string>
+				<string>057E32010F9112080055B843</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>056DD8910F89FD0A00A45CDB</string>
-				<string>056DD8920F89FD0A00A45CDB</string>
-				<string>056DD8930F89FD0A00A45CDB</string>
-				<string>056DD8940F89FD0A00A45CDB</string>
-				<string>056DD8950F89FD0A00A45CDB</string>
+				<string>057E32020F9112080055B843</string>
+				<string>057E32030F9112080055B843</string>
+				<string>057E32040F9112080055B843</string>
+				<string>057E32050F9112080055B843</string>
+				<string>057E32060F9112080055B843</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

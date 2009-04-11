@@ -26,7 +26,6 @@
 		05171DF60F1BECE000CA9812 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05171DF50F1BECE000CA9812 /* About.xib */; };
 		0535A4EF0F48A3A700513DC7 /* ORSCanaryController+Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */; };
 		053789AE0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */; };
-		053789FF0F3A3B2A003B86EF /* LightGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 053789FE0F3A3B2A003B86EF /* LightGradient.png */; };
 		0550D3C00F2B73C1002EA7AD /* ORSCanaryStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */; };
 		0550D4490F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */; };
 		0550D5CD0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */; };
@@ -51,6 +50,7 @@
 		0573D7200DA66483002D1CCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0573D71E0DA66483002D1CCF /* InfoPlist.strings */; };
 		0573D7340DA6650B002D1CCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573D7330DA6650B002D1CCF /* Security.framework */; };
 		057875CA0EF58553006A7E89 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 057875C90EF58553006A7E89 /* error.png */; };
+		057E320D0F9113040055B843 /* LightGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 057E320C0F9113040055B843 /* LightGradient.png */; };
 		05852F240F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */; };
 		058530130F292B4F003DB512 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 058530120F292B4F003DB512 /* information.png */; };
 		058530D30F293A24003DB512 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058530D20F293A24003DB512 /* ScriptingBridge.framework */; };
@@ -166,7 +166,6 @@
 		0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSCanaryController+Growl.h"; sourceTree = "<group>"; };
 		053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSScreenNameToBoolTransformer.h; sourceTree = "<group>"; };
 		053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSScreenNameToBoolTransformer.m; sourceTree = "<group>"; };
-		053789FE0F3A3B2A003B86EF /* LightGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LightGradient.png; path = ../../Misc/LightGradient.png; sourceTree = SOURCE_ROOT; };
 		0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryStatusView.h; sourceTree = "<group>"; };
 		0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSCanaryStatusView.m; sourceTree = "<group>"; };
 		0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSCanaryCollectionViewItem.h; sourceTree = "<group>"; };
@@ -211,6 +210,7 @@
 		0573D71F0DA66483002D1CCF /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0573D7330DA6650B002D1CCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		057875C90EF58553006A7E89 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		057E320C0F9113040055B843 /* LightGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightGradient.png; sourceTree = "<group>"; };
 		05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSAsyncTwitPicDispatcher.h; sourceTree = "<group>"; };
 		05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSAsyncTwitPicDispatcher.m; sourceTree = "<group>"; };
 		058530120F292B4F003DB512 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 				0591A9590EC8E25F00BF3CAD /* isgd.png */,
 				05EE98420ED5FE7200A860AC /* Gradient1.png */,
 				05EE98460ED5FF1C00A860AC /* Gradient2.png */,
-				053789FE0F3A3B2A003B86EF /* LightGradient.png */,
+				057E320C0F9113040055B843 /* LightGradient.png */,
 				05D6EF9A0EDDE51400CBC4B6 /* message.png */,
 				059746430F4F58C50092B310 /* urlborg.png */,
 				059746450F4F594A0092B310 /* trim.png */,
@@ -739,9 +739,9 @@
 				05A67E510F325A800021D8AD /* Sun.png in Resources */,
 				05A67E520F325A800021D8AD /* Undecided.png in Resources */,
 				05A67E530F325A800021D8AD /* Wink.png in Resources */,
-				053789FF0F3A3B2A003B86EF /* LightGradient.png in Resources */,
 				059746440F4F58C50092B310 /* urlborg.png in Resources */,
 				059746460F4F594A0092B310 /* trim.png in Resources */,
+				057E320D0F9113040055B843 /* LightGradient.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
