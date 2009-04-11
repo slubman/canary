@@ -1,0 +1,1420 @@
+// !$*UTF8*$!
+{
+	0505600B0EAB48A500FC28C3 /* ORSSession.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 896}}";
+			sepNavSelRange = "{387, 0}";
+			sepNavVisRange = "{386, 1386}";
+		};
+	};
+	0505600C0EAB48A500FC28C3 /* ORSSession.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{381, 110}\";\n            s = 0;\n        },\n                {\n            r = \"{548, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1037, 1857}\";\n            s = 0;\n        },\n                {\n            r = \"{3071, 1713}\";\n            s = 0;\n        },\n                {\n            r = \"{5076, 1403}\";\n            s = 0;\n        },\n                {\n            r = \"{6588, 605}\";\n            s = 0;\n        },\n                {\n            r = \"{7307, 102}\";\n            s = 0;\n        },\n                {\n            r = \"{7556, 133}\";\n            s = 0;\n        },\n                {\n            r = \"{7827, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{8100, 147}\";\n            s = 0;\n        },\n                {\n            r = \"{8582, 398}\";\n            s = 0;\n        },\n                {\n            r = \"{9157, 200}\";\n            s = 0;\n        },\n                {\n            r = \"{9524, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{9757, 149}\";\n            s = 0;\n        },\n                {\n            r = \"{10038, 1311}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 11357}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1424}}";
+			sepNavSelRange = "{2962, 0}";
+			sepNavVisRange = "{0, 1037}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	0505623C0EABB39800FC28C3 /* ORSTwitterEngine+HelpAndAccountAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{593, 0}";
+			sepNavVisRange = "{0, 593}";
+			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
+		};
+	};
+	0505623D0EABB39800FC28C3 /* ORSTwitterEngine+HelpAndAccountAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{470, 348}\";\n            s = 0;\n        },\n                {\n            r = \"{906, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{1327, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{1721, 247}\";\n            s = 0;\n        },\n                {\n            r = \"{2032, 245}\";\n            s = 0;\n        },\n                {\n            r = \"{2351, 279}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2638}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 672}}";
+			sepNavSelRange = "{471, 0}";
+			sepNavVisRange = "{0, 807}";
+		};
+	};
+	050562510EABC89400FC28C3 /* ORSTwitterEngine+FavoritesAndDMAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{364, 0}";
+			sepNavVisRange = "{0, 1004}";
+		};
+	};
+	050562520EABC89400FC28C3 /* ORSTwitterEngine+FavoritesAndDMAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{474, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{1002, 390}\";\n            s = 0;\n        },\n                {\n            r = \"{1548, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{2070, 379}\";\n            s = 0;\n        },\n                {\n            r = \"{2545, 254}\";\n            s = 0;\n        },\n                {\n            r = \"{2885, 376}\";\n            s = 0;\n        },\n                {\n            r = \"{4044, 406}\";\n            s = 0;\n        },\n                {\n            r = \"{5158, 406}\";\n            s = 0;\n        },\n                {\n            r = \"{5669, 746}\";\n            s = 0;\n        },\n                {\n            r = \"{6486, 379}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6873}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1392}}";
+			sepNavSelRange = "{2063, 0}";
+			sepNavVisRange = "{1666, 790}";
+			sepNavWindowFrame = "{{15, 62}, {1223, 711}}";
+		};
+	};
+	050562580EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 624}}";
+			sepNavSelRange = "{613, 0}";
+			sepNavVisRange = "{59, 1160}";
+		};
+	};
+	050562590EABCE6E00FC28C3 /* ORSTwitterEngine+UserAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{401, 314}\";\n            s = 0;\n        },\n                {\n            r = \"{809, 421}\";\n            s = 0;\n        },\n                {\n            r = \"{1329, 397}\";\n            s = 0;\n        },\n                {\n            r = \"{1827, 324}\";\n            s = 0;\n        },\n                {\n            r = \"{2277, 436}\";\n            s = 0;\n        },\n                {\n            r = \"{3393, 453}\";\n            s = 0;\n        },\n                {\n            r = \"{3970, 430}\";\n            s = 0;\n        },\n                {\n            r = \"{5104, 317}\";\n            s = 0;\n        },\n                {\n            r = \"{5519, 423}\";\n            s = 0;\n        },\n                {\n            r = \"{6045, 399}\";\n            s = 0;\n        },\n                {\n            r = \"{6549, 326}\";\n            s = 0;\n        },\n                {\n            r = \"{7015, 455}\";\n            s = 0;\n        },\n                {\n            r = \"{7602, 432}\";\n            s = 0;\n        },\n                {\n            r = \"{8126, 315}\";\n            s = 0;\n        },\n                {\n            r = \"{8538, 345}\";\n            s = 0;\n        },\n                {\n            r = \"{8999, 333}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 9340}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1696}}";
+			sepNavSelRange = "{1960, 0}";
+			sepNavVisRange = "{1634, 674}";
+			sepNavWindowFrame = "{{436, 67}, {719, 711}}";
+		};
+	};
+	0505632B0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 592}}";
+			sepNavSelRange = "{1040, 0}";
+			sepNavVisRange = "{3, 1261}";
+		};
+	};
+	0505632C0EABD3D100FC28C3 /* ORSTwitterEngine+StatusAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1130, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{1719, 407}\";\n            s = 0;\n        },\n                {\n            r = \"{2254, 415}\";\n            s = 0;\n        },\n                {\n            r = \"{3400, 413}\";\n            s = 0;\n        },\n                {\n            r = \"{3975, 477}\";\n            s = 0;\n        },\n                {\n            r = \"{4632, 476}\";\n            s = 0;\n        },\n                {\n            r = \"{5992, 475}\";\n            s = 0;\n        },\n                {\n            r = \"{6571, 367}\";\n            s = 0;\n        },\n                {\n            r = \"{7067, 413}\";\n            s = 0;\n        },\n                {\n            r = \"{8129, 367}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 8504}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 2048}}";
+			sepNavSelRange = "{3869, 0}";
+			sepNavVisRange = "{3501, 724}";
+		};
+	};
+	0507E6FE0EED88A000559018 /* ORSTwitPicDispatcher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{168, 0}";
+			sepNavVisRange = "{0, 413}";
+		};
+	};
+	0507E6FF0EED88A000559018 /* ORSTwitPicDispatcher.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{407, 3525}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3940}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 569}}";
+			sepNavSelRange = "{408, 0}";
+			sepNavVisRange = "{0, 416}";
+		};
+	};
+	0507E9D90EF07DA200559018 /* ORSCanaryDragView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{383, 0}";
+			sepNavVisRange = "{0, 701}";
+		};
+	};
+	0507E9DA0EF07DA300559018 /* ORSCanaryDragView.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{277, 460}\";\n            s = 0;\n        },\n                {\n            r = \"{1553, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{1700, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{1789, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{1903, 44}\";\n            s = 0;\n        },\n                {\n            r = \"{2010, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2429, 52}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2489}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 932}}";
+			sepNavSelRange = "{1041, 0}";
+			sepNavVisRange = "{401, 1022}";
+		};
+	};
+	0507EABD0EF2CA8400559018 /* ORSCanaryCollectionView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{86, 0}";
+			sepNavVisRange = "{0, 324}";
+		};
+	};
+	0507EABE0EF2CA8400559018 /* ORSCanaryCollectionView.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{292, 772}\";\n            s = 0;\n        },\n                {\n            r = \"{1086, 14}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1108}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {570, 592}}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{0, 324}";
+		};
+	};
+	0507EEB20EF461C600559018 /* dsa_pub.pem */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {614, 966}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1178}";
+		};
+	};
+	050996D40EEAF88C005848B8 /* ORSCanaryLoginController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 576}}";
+			sepNavSelRange = "{292, 0}";
+			sepNavVisRange = "{0, 1008}";
+			sepNavWindowFrame = "{{107, 242}, {765, 847}}";
+		};
+	};
+	050996D50EEAF88C005848B8 /* ORSCanaryLoginController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{312, 229}\";\n            s = 0;\n        },\n                {\n            r = \"{664, 225}\";\n            s = 0;\n        },\n                {\n            r = \"{963, 449}\";\n            s = 0;\n        },\n                {\n            r = \"{1545, 380}\";\n            s = 0;\n        },\n                {\n            r = \"{2027, 859}\";\n            s = 0;\n        },\n                {\n            r = \"{3097, 2189}\";\n            s = 0;\n        },\n                {\n            r = \"{5448, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{5612, 256}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5876}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 772}}";
+			sepNavSelRange = "{961, 0}";
+			sepNavVisRange = "{261, 958}";
+			sepNavWindowFrame = "{{130, 221}, {765, 847}}";
+		};
+	};
+	0535A4ED0F48A3A700513DC7 /* ORSCanaryController+Growl.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{313, 97}\";\n            s = 0;\n        },\n                {\n            r = \"{464, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{622, 107}\";\n            s = 0;\n        },\n                {\n            r = \"{853, 1357}\";\n            s = 0;\n        },\n                {\n            r = \"{2321, 1430}\";\n            s = 0;\n        },\n                {\n            r = \"{3859, 1526}\";\n            s = 0;\n        },\n                {\n            r = \"{5561, 1392}\";\n            s = 0;\n        },\n                {\n            r = \"{7070, 1144}\";\n            s = 0;\n        },\n                {\n            r = \"{8315, 1181}\";\n            s = 0;\n        },\n                {\n            r = \"{9554, 1304}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10866}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 688}}";
+			sepNavSelRange = "{1170, 0}";
+			sepNavVisRange = "{155, 1082}";
+		};
+	};
+	0535A4EE0F48A3A700513DC7 /* ORSCanaryController+Growl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{472, 0}";
+			sepNavVisRange = "{0, 824}";
+		};
+	};
+	05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05372D9E0E7EE8CC008ABD85 /* unistd.h */;
+		name = "unistd.h: 493";
+		rLen = 18;
+		rLoc = 17197;
+		rType = 0;
+		vrLen = 1543;
+		vrLoc = 16366;
+	};
+	05372D9E0E7EE8CC008ABD85 /* unistd.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = unistd.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/usr/include/unistd.h;
+		sourceTree = "<absolute>";
+	};
+	05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05372DA30E7EE8CC008ABD85 /* NSTextFieldCell.h */;
+		name = "NSTextFieldCell.h: 41";
+		rLen = 39;
+		rLoc = 1008;
+		rType = 0;
+		vrLen = 1135;
+		vrLoc = 0;
+	};
+	05372DA30E7EE8CC008ABD85 /* NSTextFieldCell.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSTextFieldCell.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSTextFieldCell.h;
+		sourceTree = "<absolute>";
+	};
+	05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05372DAC0E7EE8CC008ABD85 /* unistd.h */;
+		name = "unistd.h: 493";
+		rLen = 18;
+		rLoc = 17197;
+		rType = 0;
+		vrLen = 1543;
+		vrLoc = 16366;
+	};
+	05372DAC0E7EE8CC008ABD85 /* unistd.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = unistd.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/usr/include/unistd.h;
+		sourceTree = "<absolute>";
+	};
+	05372DB70E7EE8CC008ABD85 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05372DB80E7EE8CC008ABD85 /* NSTextFieldCell.h */;
+		name = "NSTextFieldCell.h: 41";
+		rLen = 39;
+		rLoc = 1008;
+		rType = 0;
+		vrLen = 1135;
+		vrLoc = 0;
+	};
+	05372DB80E7EE8CC008ABD85 /* NSTextFieldCell.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSTextFieldCell.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSTextFieldCell.h;
+		sourceTree = "<absolute>";
+	};
+	053789AC0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{305, 0}";
+			sepNavVisRange = "{0, 317}";
+		};
+	};
+	053789AD0F3A2733003B86EF /* ORSScreenNameToBoolTransformer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 576}}";
+			sepNavSelRange = "{593, 0}";
+			sepNavVisRange = "{401, 355}";
+		};
+	};
+	0550D3BE0F2B73C1002EA7AD /* ORSCanaryStatusView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{203, 0}";
+			sepNavVisRange = "{0, 326}";
+		};
+	};
+	0550D3BF0F2B73C1002EA7AD /* ORSCanaryStatusView.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{296, 14}\";\n            s = 0;\n        },\n                {\n            r = \"{1265, 23}\";\n            s = 0;\n        },\n                {\n            r = \"{1310, 23}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1341}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 848}}";
+			sepNavSelRange = "{1188, 0}";
+			sepNavVisRange = "{300, 984}";
+		};
+	};
+	0550D4470F2C8777002EA7AD /* ORSCanaryCollectionViewItem.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{316, 0}";
+			sepNavVisRange = "{0, 316}";
+		};
+	};
+	0550D4480F2C8777002EA7AD /* ORSCanaryCollectionViewItem.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{184, 0}";
+			sepNavVisRange = "{0, 581}";
+		};
+	};
+	0550D5CB0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{186, 0}";
+			sepNavVisRange = "{0, 280}";
+		};
+	};
+	0550D5CC0F2CF40C002EA7AD /* ORSCanaryUnderlinedButtonCell.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{320, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{418, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{570, 10}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 588}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{368, 0}";
+			sepNavVisRange = "{0, 475}";
+		};
+	};
+	0555A4AF0EAA1BAF00B126BC /* ORSBitlyShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{241, 0}";
+			sepNavVisRange = "{0, 694}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	0555A4B00EAA1BAF00B126BC /* ORSBitlyShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{409, 360}\";\n            s = 0;\n        },\n                {\n            r = \"{997, 993}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1998}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{639, 0}";
+			sepNavVisRange = "{0, 647}";
+		};
+	};
+	0555A4D50EAA1E4D00B126BC /* ORSCligsShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{336, 0}";
+			sepNavVisRange = "{0, 694}";
+		};
+	};
+	0555A4D60EAA1E4D00B126BC /* ORSCligsShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{409, 387}\";\n            s = 0;\n        },\n                {\n            r = \"{1024, 402}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1434}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{249, 0}";
+			sepNavVisRange = "{0, 647}";
+		};
+	};
+	0555A5130EAA2F7E00B126BC /* ORSAdjixShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{499, 0}";
+			sepNavVisRange = "{0, 694}";
+		};
+	};
+	0555A5140EAA2F7E00B126BC /* ORSAdjixShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{409, 236}\";\n            s = 0;\n        },\n                {\n            r = \"{873, 984}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1865}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{411, 0}";
+			sepNavVisRange = "{0, 647}";
+		};
+	};
+	0555A5190EAA38AC00B126BC /* ORSShortenerFactory.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 960}}";
+			sepNavSelRange = "{829, 7}";
+			sepNavVisRange = "{33, 888}";
+			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
+		};
+	};
+	0555A51A0EAA38AC00B126BC /* ORSShortenerFactory.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{393, 657}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1058}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{402, 0}";
+			sepNavVisRange = "{0, 402}";
+		};
+	};
+	0555A51C0EAA3B4700B126BC /* ORSShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{553, 0}";
+			sepNavVisRange = "{0, 616}";
+		};
+	};
+	0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A6000EAA45DA00B126BC /* Cocoa.h */;
+		name = "Cocoa.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 485;
+		vrLoc = 0;
+	};
+	0555A6000EAA45DA00B126BC /* Cocoa.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Cocoa.h;
+		path = /System/Library/Frameworks/Cocoa.framework/Versions/A/Headers/Cocoa.h;
+		sourceTree = "<absolute>";
+	};
+	0555A6010EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A6020EAA45DA00B126BC /* NSString.h */;
+		name = "NSString.h: 22";
+		rLen = 1120;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 2544;
+		vrLoc = 128;
+	};
+	0555A6020EAA45DA00B126BC /* NSString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSString.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	0555A6040EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A6050EAA45DA00B126BC /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 115";
+		rLen = 33;
+		rLoc = 3726;
+		rType = 0;
+		vrLen = 2099;
+		vrLoc = 2788;
+	};
+	0555A6050EAA45DA00B126BC /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSObjCRuntime.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+	};
+	0555A60B0EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A60C0EAA45DA00B126BC /* Cocoa.h */;
+		name = "Cocoa.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 485;
+		vrLoc = 0;
+	};
+	0555A60C0EAA45DA00B126BC /* Cocoa.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Cocoa.h;
+		path = /System/Library/Frameworks/Cocoa.framework/Versions/A/Headers/Cocoa.h;
+		sourceTree = "<absolute>";
+	};
+	0555A60E0EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A60F0EAA45DA00B126BC /* NSString.h */;
+		name = "NSString.h: 22";
+		rLen = 1120;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 2544;
+		vrLoc = 128;
+	};
+	0555A60F0EAA45DA00B126BC /* NSString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSString.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	0555A6120EAA45DA00B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A6130EAA45DA00B126BC /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 115";
+		rLen = 33;
+		rLoc = 3726;
+		rType = 0;
+		vrLen = 2099;
+		vrLoc = 2788;
+	};
+	0555A6130EAA45DA00B126BC /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSObjCRuntime.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+	};
+	0555A61E0EAA469400B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A61F0EAA469400B126BC /* NSString.h */;
+		name = "NSString.h: 84";
+		rLen = 71;
+		rLoc = 3887;
+		rType = 0;
+		vrLen = 1647;
+		vrLoc = 2899;
+	};
+	0555A61F0EAA469400B126BC /* NSString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSString.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	0555A6230EAA469400B126BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0555A6240EAA469400B126BC /* NSString.h */;
+		name = "NSString.h: 84";
+		rLen = 71;
+		rLoc = 3887;
+		rType = 0;
+		vrLen = 1670;
+		vrLoc = 0;
+	};
+	0555A6240EAA469400B126BC /* NSString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSString.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	0555A65F0EAA509E00B126BC /* ORSIsgdShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{398, 0}";
+			sepNavVisRange = "{0, 621}";
+		};
+	};
+	0555A6600EAA509E00B126BC /* ORSIsgdShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{406, 560}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 974}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{407, 0}";
+			sepNavVisRange = "{0, 415}";
+		};
+	};
+	0558A2B20E9A840D000EC2B2 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0558A2990E9A68DD000EC2B2 /* Canary.icns */;
+	};
+	0558A30A0E9AAF3B000EC2B2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558A30B0E9AAF3B000EC2B2 /* NSValueTransformer.h */;
+		name = "NSValueTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2178;
+		vrLoc = 0;
+	};
+	0558A30B0E9AAF3B000EC2B2 /* NSValueTransformer.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSValueTransformer.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSValueTransformer.h;
+		sourceTree = "<absolute>";
+	};
+	0558A32B0E9AAF3B000EC2B2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0558A32C0E9AAF3B000EC2B2 /* NSValueTransformer.h */;
+		name = "NSValueTransformer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2178;
+		vrLoc = 0;
+	};
+	0558A32C0E9AAF3B000EC2B2 /* NSValueTransformer.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSValueTransformer.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSValueTransformer.h;
+		sourceTree = "<absolute>";
+	};
+	0558C1AB0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRange = "{0, 316}";
+		};
+	};
+	0558C1AC0E980B5F006BBA76 /* NSString+ORSCanaryAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{358, 2777}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3143}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {592, 570}}";
+			sepNavSelRange = "{359, 0}";
+			sepNavVisRange = "{0, 367}";
+		};
+	};
+	055D60820DB6485000ED2B41 /* ORSTinyURLShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{379, 0}";
+			sepNavVisRange = "{0, 625}";
+		};
+	};
+	055D60830DB6485000ED2B41 /* ORSTinyURLShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{415, 576}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 999}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{416, 0}";
+			sepNavVisRange = "{0, 424}";
+		};
+	};
+	05685B4C0F1D07D600F409C5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0592EA7F0EA265F9002AC429 /* Canary.png */;
+	};
+	056BD17C0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{575, 0}";
+			sepNavVisRange = "{0, 575}";
+		};
+	};
+	056BD17D0EBFA5A600F6D5E8 /* ORSDateDifferenceFormatter.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2680, 14}\";\n            s = 0;\n        },\n                {\n            r = \"{2822, 122}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2952}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 1888}}";
+			sepNavSelRange = "{773, 0}";
+			sepNavVisRange = "{196, 974}";
+		};
+	};
+	056DC70B0ECB654000B9F0BB /* ORSCanaryAboutController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{323, 0}";
+			sepNavVisRange = "{0, 402}";
+		};
+	};
+	056DC70C0ECB654000B9F0BB /* ORSCanaryAboutController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{379, 150}\";\n            s = 0;\n        },\n                {\n            r = \"{569, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{777, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{853, 410}\";\n            s = 0;\n        },\n                {\n            r = \"{1289, 445}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1742}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{380, 0}";
+			sepNavVisRange = "{0, 557}";
+		};
+	};
+	0573D6C10DA6626D002D1CCF /* Canary */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+			{
+				active = YES;
+				name = CFZombieLevel;
+				value = 16;
+			},
+			{
+				active = YES;
+				name = NSZombieEnabled;
+				value = YES;
+			},
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Canary;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+			$cs = 1;
+			$ds = 1;
+			$eax = 1;
+			$ebp = 1;
+			$ebx = 1;
+			$ecx = 1;
+			$edi = 1;
+			$edx = 1;
+			$eflags = 1;
+			$eip = 1;
+			$es = 1;
+			$esi = 1;
+			$esp = 1;
+			$gs = 1;
+			$mm0 = 1;
+			$mm1 = 1;
+			$mm2 = 1;
+			$mm3 = 1;
+			$mm4 = 1;
+			$mm5 = 1;
+			$mm6 = 1;
+			$mm7 = 1;
+			$mxcsr = 1;
+			$ss = 1;
+			$xmm0 = 1;
+			$xmm1 = 1;
+			$xmm2 = 1;
+			$xmm3 = 1;
+			$xmm4 = 1;
+			$xmm5 = 1;
+			$xmm6 = 1;
+			$xmm7 = 1;
+		};
+	};
+	0573D6D30DA66271002D1CCF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryName = "";
+		};
+	};
+	0573D6D40DA66271002D1CCF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0573D6D50DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
+			sepNavSelRange = "{987, 0}";
+			sepNavVisRange = "{0, 960}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
+		};
+	};
+	0573D6D60DA662A2002D1CCF /* NSXMLNode+ORSTwitterStatusAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{452, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{753, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{925, 349}\";\n            s = 0;\n        },\n                {\n            r = \"{1347, 218}\";\n            s = 0;\n        },\n                {\n            r = \"{1612, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{1728, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{1850, 62}\";\n            s = 0;\n        },\n                {\n            r = \"{1981, 134}\";\n            s = 0;\n        },\n                {\n            r = \"{2200, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{2362, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{2526, 79}\";\n            s = 0;\n        },\n                {\n            r = \"{2669, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{2784, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{2915, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{3048, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{3184, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{3333, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{3462, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{3590, 139}\";\n            s = 0;\n        },\n                {\n            r = \"{3824, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{3985, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{4178, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4320}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 1376}}";
+			sepNavSelRange = "{2035, 0}";
+			sepNavVisRange = "{1231, 811}";
+		};
+	};
+	0573D6D80DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{440, 344}\";\n            s = 0;\n        },\n                {\n            r = \"{908, 357}\";\n            s = 0;\n        },\n                {\n            r = \"{1393, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{1857, 356}\";\n            s = 0;\n        },\n                {\n            r = \"{2321, 1294}\";\n            s = 0;\n        },\n                {\n            r = \"{3697, 1169}\";\n            s = 0;\n        },\n                {\n            r = \"{4938, 1189}\";\n            s = 0;\n        },\n                {\n            r = \"{6191, 1233}\";\n            s = 0;\n        },\n                {\n            r = \"{7488, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{8796, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{10105, 1243}\";\n            s = 0;\n        },\n                {\n            r = \"{11414, 1246}\";\n            s = 0;\n        },\n                {\n            r = \"{12724, 1242}\";\n            s = 0;\n        },\n                {\n            r = \"{14083, 467}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 22313}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 4160}}";
+			sepNavSelRange = "{2167, 119}";
+			sepNavVisRange = "{1659, 1433}";
+			sepNavWindowFrame = "{{61, 284}, {765, 847}}";
+		};
+	};
+	0573D6D90DA662AD002D1CCF /* NSMutableAttributedString+ORSCanaryAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{865, 0}";
+			sepNavVisRange = "{0, 986}";
+		};
+	};
+	0573D6DB0DA662C1002D1CCF /* ORSTwitterEngine.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{572, 136}\";\n            s = 0;\n        },\n                {\n            r = \"{765, 138}\";\n            s = 0;\n        },\n                {\n            r = \"{1108, 361}\";\n            s = 0;\n        },\n                {\n            r = \"{1524, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1717, 40}\";\n            s = 0;\n        },\n                {\n            r = \"{1824, 29}\";\n            s = 0;\n        },\n                {\n            r = \"{1945, 44}\";\n            s = 0;\n        },\n                {\n            r = \"{2131, 275}\";\n            s = 0;\n        },\n                {\n            r = \"{2580, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{3036, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{3426, 48}\";\n            s = 0;\n        },\n                {\n            r = \"{3588, 41}\";\n            s = 0;\n        },\n                {\n            r = \"{3776, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{3966, 46}\";\n            s = 0;\n        },\n                {\n            r = \"{4157, 53}\";\n            s = 0;\n        },\n                {\n            r = \"{4394, 489}\";\n            s = 0;\n        },\n                {\n            r = \"{5807, 490}\";\n            s = 0;\n        },\n                {\n            r = \"{7190, 487}\";\n            s = 0;\n        },\n                {\n            r = \"{7800, 594}\";\n            s = 0;\n        },\n                {\n            r = \"{9283, 994}\";\n            s = 0;\n        },\n                {\n            r = \"{10365, 481}\";\n            s = 0;\n        },\n                {\n            r = \"{11742, 482}\";\n            s = 0;\n        },\n                {\n            r = \"{13071, 488}\";\n            s = 0;\n        },\n                {\n            r = \"{14456, 417}\";\n            s = 0;\n        },\n                {\n            r = \"{14968, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{15519, 458}\";\n            s = 0;\n        },\n                {\n            r = \"{16092, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{16444, 232}\";\n            s = 0;\n        },\n                {\n            r = \"{16803, 467}\";\n            s = 0;\n        },\n                {\n            r = \"{18096, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{18589, 410}\";\n            s = 0;\n        },\n                {\n            r = \"{19150, 406}\";\n            s = 0;\n        },\n                {\n            r = \"{19643, 406}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 20057}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 5488}}";
+			sepNavSelRange = "{8899, 0}";
+			sepNavVisRange = "{8291, 391}";
+			sepNavWindowFrame = "{{276, 67}, {765, 711}}";
+		};
+	};
+	0573D6DC0DA662C1002D1CCF /* ORSTwitterEngine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1632}}";
+			sepNavSelRange = "{741, 0}";
+			sepNavVisRange = "{2103, 1002}";
+		};
+	};
+	0573D6DE0DA662D3002D1CCF /* ORSCanaryTextFieldCell.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{404, 1068}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1479}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{311, 0}";
+			sepNavVisRange = "{0, 412}";
+			sepNavWindowFrame = "{{84, 276}, {765, 847}}";
+		};
+	};
+	0573D6DF0DA662D3002D1CCF /* ORSCanaryTextFieldCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{221, 0}";
+			sepNavVisRange = "{0, 458}";
+		};
+	};
+	0573D6EC0DA662F9002D1CCF /* ORSCanaryController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1371, 156}\";\n            s = 0;\n        },\n                {\n            r = \"{1584, 158}\";\n            s = 0;\n        },\n                {\n            r = \"{1797, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{1850, 1898}\";\n            s = 0;\n        },\n                {\n            r = \"{3772, 3649}\";\n            s = 0;\n        },\n                {\n            r = \"{7465, 1450}\";\n            s = 0;\n        },\n                {\n            r = \"{9055, 340}\";\n            s = 0;\n        },\n                {\n            r = \"{9544, 63}\";\n            s = 0;\n        },\n                {\n            r = \"{9698, 438}\";\n            s = 0;\n        },\n                {\n            r = \"{10181, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{10344, 2329}\";\n            s = 0;\n        },\n                {\n            r = \"{12729, 386}\";\n            s = 0;\n        },\n                {\n            r = \"{13204, 1999}\";\n            s = 0;\n        },\n                {\n            r = \"{15301, 339}\";\n            s = 0;\n        },\n                {\n            r = \"{15765, 122}\";\n            s = 0;\n        },\n                {\n            r = \"{16000, 96}\";\n            s = 0;\n        },\n                {\n            r = \"{16194, 5238}\";\n            s = 0;\n        },\n                {\n            r = \"{21524, 448}\";\n            s = 0;\n        },\n                {\n            r = \"{22060, 4876}\";\n            s = 0;\n        },\n                {\n            r = \"{27039, 1381}\";\n            s = 0;\n        },\n                {\n            r = \"{28529, 1397}\";\n            s = 0;\n        },\n                {\n            r = \"{29987, 298}\";\n            s = 0;\n        },\n                {\n            r = \"{30340, 323}\";\n            s = 0;\n        },\n                {\n            r = \"{30722, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{31056, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{31380, 319}\";\n            s = 0;\n        },\n                {\n            r = \"{31762, 293}\";\n            s = 0;\n        },\n                {\n            r = \"{32110, 272}\";\n            s = 0;\n        },\n                {\n            r = \"{32475, 128}\";\n            s = 0;\n        },\n                {\n            r = \"{32713, 124}\";\n            s = 0;\n        },\n                {\n            r = \"{32958, 167}\";\n            s = 0;\n        },\n                {\n            r = \"{33226, 459}\";\n            s = 0;\n        },\n                {\n            r = \"{33792, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{34045, 684}\";\n            s = 0;\n        },\n                {\n            r = \"{34812, 1762}\";\n            s = 0;\n        },\n                {\n            r = \"{36716, 152}\";\n            s = 0;\n        },\n                {\n            r = \"{37031, 2297}\";\n            s = 0;\n        },\n                {\n            r = \"{39793, 1289}\";\n            s = 0;\n        },\n                {\n            r = \"{41212, 2169}\";\n            s = 0;\n        },\n                {\n            r = \"{43481, 619}\";\n            s = 0;\n        },\n                {\n            r = \"{44279, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{44551, 151}\";\n            s = 0;\n        },\n                {\n            r = \"{44821, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{45109, 469}\";\n            s = 0;\n        },\n                {\n            r = \"{45671, 181}\";\n            s = 0;\n        },\n                {\n            r = \"{46013, 39}\";\n            s = 0;\n        },\n                {\n            r = \"{46172, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46377, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{46580, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{46829, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{47119, 208}\";\n            s = 0;\n        },\n                {\n            r = \"{47473, 90}\";\n            s = 0;\n        },\n                {\n            r = \"{47657, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{47924, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{48044, 143}\";\n            s = 0;\n        },\n                {\n            r = \"{48319, 524}\";\n            s = 0;\n        },\n                {\n            r = \"{48952, 1656}\";\n            s = 0;\n        },\n                {\n            r = \"{50724, 575}\";\n            s = 0;\n        },\n                {\n            r = \"{51487, 375}\";\n            s = 0;\n        },\n                {\n            r = \"{51947, 418}\";\n            s = 0;\n        },\n                {\n            r = \"{52520, 953}\";\n            s = 0;\n        },\n                {\n            r = \"{53627, 896}\";\n            s = 0;\n        },\n                {\n            r = \"{54678, 748}\";\n            s = 0;\n        },\n                {\n            r = \"{55580, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{56396, 700}\";\n            s = 0;\n        },\n                {\n            r = \"{57252, 425}\";\n            s = 0;\n        },\n                {\n            r = \"{57789, 277}\";\n            s = 0;\n        },\n                {\n            r = \"{58181, 282}\";\n            s = 0;\n        },\n                {\n            r = \"{58578, 285}\";\n            s = 0;\n        },\n                {\n            r = \"{58976, 281}\";\n            s = 0;\n        },\n                {\n            r = \"{59376, 289}\";\n            s = 0;\n        },\n                {\n            r = \"{59792, 444}\";\n            s = 0;\n        },\n                {\n            r = \"{60395, 2222}\";\n            s = 0;\n        },\n                {\n            r = \"{62716, 1088}\";\n            s = 0;\n        },\n                {\n            r = \"{63908, 1089}\";\n            s = 0;\n        },\n                {\n            r = \"{65064, 170}\";\n            s = 0;\n        },\n                {\n            r = \"{65271, 184}\";\n            s = 0;\n        },\n                {\n            r = \"{65488, 180}\";\n            s = 0;\n        },\n                {\n            r = \"{65757, 597}\";\n            s = 0;\n        },\n                {\n            r = \"{66428, 49}\";\n            s = 0;\n        },\n                {\n            r = \"{66641, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{66789, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67232, 412}\";\n            s = 0;\n        },\n                {\n            r = \"{67732, 1894}\";\n            s = 0;\n        },\n                {\n            r = \"{69712, 370}\";\n            s = 0;\n        },\n                {\n            r = \"{70235, 290}\";\n            s = 0;\n        },\n                {\n            r = \"{70662, 589}\";\n            s = 0;\n        },\n                {\n            r = \"{71368, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{72074, 578}\";\n            s = 0;\n        },\n                {\n            r = \"{72740, 583}\";\n            s = 0;\n        },\n                {\n            r = \"{73435, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{73596, 76}\";\n            s = 0;\n        },\n                {\n            r = \"{73781, 603}\";\n            s = 0;\n        },\n                {\n            r = \"{74510, 691}\";\n            s = 0;\n        },\n                {\n            r = \"{75779, 791}\";\n            s = 0;\n        },\n                {\n            r = \"{76684, 64}\";\n            s = 0;\n        },\n                {\n            r = \"{76830, 329}\";\n            s = 0;\n        },\n                {\n            r = \"{77284, 312}\";\n            s = 0;\n        },\n                {\n            r = \"{77656, 881}\";\n            s = 0;\n        },\n                {\n            r = \"{79674, 33}\";\n            s = 0;\n        },\n                {\n            r = \"{80231, 29}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 80268}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1015, 6656}}";
+			sepNavSelRange = "{12803, 0}";
+			sepNavVisRange = "{12517, 488}";
+			sepNavWindowFrame = "{{670, 67}, {765, 711}}";
+		};
+	};
+	0573D6ED0DA662F9002D1CCF /* ORSCanaryController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 5104}}";
+			sepNavSelRange = "{9345, 0}";
+			sepNavVisRange = "{0, 1117}";
+			sepNavWindowFrame = "{{16, 67}, {765, 711}}";
+		};
+	};
+	0573D6F50DA66309002D1CCF /* ORSCredentialsManager.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{390, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{907, 522}\";\n            s = 0;\n        },\n                {\n            r = \"{1579, 445}\";\n            s = 0;\n        },\n                {\n            r = \"{2174, 352}\";\n            s = 0;\n        },\n                {\n            r = \"{2675, 502}\";\n            s = 0;\n        },\n                {\n            r = \"{3317, 626}\";\n            s = 0;\n        },\n                {\n            r = \"{4025, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{4244, 134}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4386}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 640}}";
+			sepNavSelRange = "{295, 0}";
+			sepNavVisRange = "{0, 1176}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
+		};
+	};
+	0573D6F60DA66309002D1CCF /* ORSCredentialsManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1536}}";
+			sepNavSelRange = "{1752, 0}";
+			sepNavVisRange = "{0, 887}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
+		};
+	};
+	0573D7050DA66396002D1CCF /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {628, 966}}";
+			sepNavSelRange = "{837, 0}";
+			sepNavVisRange = "{514, 323}";
+			sepNavVisRect = "{{0, 0}, {628, 966}}";
+			sepNavWindowFrame = "{{61, 149}, {719, 982}}";
+		};
+	};
+	0573D71F0DA66483002D1CCF /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{102, 0}";
+			sepNavVisRange = "{0, 102}";
+			sepNavVisRect = "{{0, 0}, {702, 997}}";
+		};
+	};
+	05845BC10F59A823006F7306 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05C60A6D0F482FA8002B59D0 /* AERegistry.h */;
+		name = "AERegistry.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2023;
+		vrLoc = 4398;
+	};
+	05852F220F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 493}";
+		};
+	};
+	05852F230F28FA4A003DB512 /* ORSAsyncTwitPicDispatcher.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 2464}}";
+			sepNavSelRange = "{4995, 90}";
+			sepNavVisRange = "{4566, 794}";
+		};
+	};
+	058530150F292BB8003DB512 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Canary_Prefix.pch */;
+		name = "Canary_Prefix.pch: 9";
+		rLen = 0;
+		rLoc = 245;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	058530B60F2933E4003DB512 /* iTunes.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 7840}}";
+			sepNavSelRange = "{6705, 0}";
+			sepNavVisRange = "{1198, 908}";
+			sepNavWindowFrame = "{{15, 67}, {719, 711}}";
+		};
+	};
+	0591A9400EC8E0DA00BF3CAD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0591A9340EC8DFDE00BF3CAD /* bitly.png */;
+	};
+	0591A95E0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 704}}";
+			sepNavSelRange = "{820, 0}";
+			sepNavVisRange = "{40, 1230}";
+		};
+	};
+	0591A95F0EC8E6A600BF3CAD /* ORSCanaryPreferencesController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{443, 168}\";\n            s = 0;\n        },\n                {\n            r = \"{651, 188}\";\n            s = 0;\n        },\n                {\n            r = \"{878, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{939, 99}\";\n            s = 0;\n        },\n                {\n            r = \"{1098, 434}\";\n            s = 0;\n        },\n                {\n            r = \"{1558, 510}\";\n            s = 0;\n        },\n                {\n            r = \"{2120, 56}\";\n            s = 0;\n        },\n                {\n            r = \"{2224, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{2339, 1238}\";\n            s = 0;\n        },\n                {\n            r = \"{3611, 550}\";\n            s = 0;\n        },\n                {\n            r = \"{4196, 270}\";\n            s = 0;\n        },\n                {\n            r = \"{4506, 160}\";\n            s = 0;\n        },\n                {\n            r = \"{4710, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{4872, 120}\";\n            s = 0;\n        },\n                {\n            r = \"{5114, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{5304, 210}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5522}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 880}}";
+			sepNavSelRange = "{762, 0}";
+			sepNavVisRange = "{302, 956}";
+			sepNavWindowFrame = "{{15, 67}, {765, 711}}";
+		};
+	};
+	0592E7800EA13701002AC429 /* ORSUpdateDispatcher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{415, 0}";
+			sepNavVisRange = "{0, 621}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	0592E7810EA13701002AC429 /* ORSUpdateDispatcher.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{306, 109}\";\n            s = 0;\n        },\n                {\n            r = \"{459, 1774}\";\n            s = 0;\n        },\n                {\n            r = \"{2292, 292}\";\n            s = 0;\n        },\n                {\n            r = \"{2639, 303}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2950}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 569}}";
+			sepNavSelRange = "{307, 0}";
+			sepNavVisRange = "{0, 476}";
+			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
+		};
+	};
+	0592EA9B0EA276FD002AC429 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0592EA7F0EA265F9002AC429 /* Canary.png */;
+	};
+	05A5D9AE0F065A8200B596A9 /* ORSAbstractShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 816}}";
+			sepNavSelRange = "{1310, 0}";
+			sepNavVisRange = "{299, 1112}";
+		};
+	};
+	05A5D9AF0F065A8200B596A9 /* ORSAbstractShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{446, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{679, 403}\";\n            s = 0;\n        },\n                {\n            r = \"{1345, 449}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1802}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{875, 29}";
+			sepNavVisRange = "{0, 938}";
+		};
+	};
+	05A681420F35B5D80021D8AD /* ORSFilter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{27, 0}";
+			sepNavVisRange = "{0, 450}";
+		};
+	};
+	05A681430F35B5D80021D8AD /* ORSFilter.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {577, 640}}";
+			sepNavSelRange = "{1073, 0}";
+			sepNavVisRange = "{19, 1080}";
+		};
+	};
+	05A6843B0F363C5B0021D8AD /* ORSFilterTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{177, 0}";
+			sepNavVisRange = "{0, 290}";
+		};
+	};
+	05A6843C0F363C5B0021D8AD /* ORSFilterTransformer.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{284, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{359, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{414, 1161}\";\n            s = 0;\n        },\n                {\n            r = \"{1620, 852}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2480}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavSelRange = "{412, 0}";
+			sepNavVisRange = "{0, 420}";
+		};
+	};
+	05A684900F374BDD0021D8AD /* ORSFilterArrayTransformer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{229, 0}";
+			sepNavVisRange = "{0, 333}";
+		};
+	};
+	05A684910F374BDD0021D8AD /* ORSFilterArrayTransformer.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{299, 29}\";\n            s = 0;\n        },\n                {\n            r = \"{369, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{424, 347}\";\n            s = 0;\n        },\n                {\n            r = \"{816, 405}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1229}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {577, 592}}";
+			sepNavSelRange = "{427, 0}";
+			sepNavVisRange = "{0, 435}";
+		};
+	};
+	05A951F10E8959F6000B98BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A951F20E8959F6000B98BC /* NSRange.h */;
+		name = "NSRange.h: 19";
+		rLen = 0;
+		rLoc = 361;
+		rType = 0;
+		vrLen = 469;
+		vrLoc = 0;
+	};
+	05A951F20E8959F6000B98BC /* NSRange.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSRange.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h;
+		sourceTree = "<absolute>";
+	};
+	05A951F50E8959F6000B98BC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05A951F60E8959F6000B98BC /* NSRange.h */;
+		name = "NSRange.h: 19";
+		rLen = 0;
+		rLoc = 361;
+		rType = 0;
+		vrLen = 469;
+		vrLoc = 0;
+	};
+	05A951F60E8959F6000B98BC /* NSRange.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSRange.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h;
+		sourceTree = "<absolute>";
+	};
+	05BF6BA50E11880900F77093 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Canary_Prefix.pch */;
+		name = "Canary_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 143;
+		vrLoc = 0;
+	};
+	05C60A6D0F482FA8002B59D0 /* AERegistry.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AERegistry.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/Headers/AERegistry.h;
+		sourceTree = "<absolute>";
+	};
+	05C60A720F482FA8002B59D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05C60A730F482FA8002B59D0 /* AERegistry.h */;
+		name = "AERegistry.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 0;
+	};
+	05C60A730F482FA8002B59D0 /* AERegistry.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AERegistry.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/Headers/AERegistry.h;
+		sourceTree = "<absolute>";
+	};
+	05C60A8A0F485A65002B59D0 /* ORSImageView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{165, 0}";
+			sepNavVisRange = "{0, 241}";
+		};
+	};
+	05C60A8B0F485A65002B59D0 /* ORSImageView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{471, 0}";
+			sepNavVisRange = "{0, 472}";
+		};
+	};
+	05CDAF7A0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{231, 0}";
+			sepNavVisRange = "{0, 447}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	05CDAF7B0DB94D4200481566 /* ORSCanaryNewStatusTextFieldCell.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{340, 218}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 566}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{342, 0}";
+			sepNavVisRange = "{0, 349}";
+			sepNavWindowFrame = "{{38, 305}, {765, 847}}";
+		};
+	};
+	05D6EB680ED8B05C00CBC4B6 /* ORSTimelineCacheManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 848}}";
+			sepNavSelRange = "{791, 0}";
+			sepNavVisRange = "{406, 1386}";
+		};
+	};
+	05D6EB690ED8B05C00CBC4B6 /* ORSTimelineCacheManager.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{748, 1031}\";\n            s = 0;\n        },\n                {\n            r = \"{1807, 479}\";\n            s = 0;\n        },\n                {\n            r = \"{2414, 1917}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4339}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{910, 0}";
+			sepNavVisRange = "{0, 915}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	05D6EEBF0EDB439F00CBC4B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 05D6EEC00EDB439F00CBC4B6 /* GrowlApplicationBridge.h */;
+		name = "GrowlApplicationBridge.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1836;
+		vrLoc = 0;
+	};
+	05D6EEC00EDB439F00CBC4B6 /* GrowlApplicationBridge.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = GrowlApplicationBridge.h;
+		path = "/Users/genesis/Projects/Other Open Source/Transmission/macosx/Growl.framework/Versions/A/Headers/GrowlApplicationBridge.h";
+		sourceTree = "<absolute>";
+	};
+	05D6EEC50EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {576, 569}}";
+			sepNavSelRange = "{444, 0}";
+			sepNavVisRange = "{0, 486}";
+		};
+	};
+	05E21BFE0F532EC90027A864 /* ORSSnipURLShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{367, 0}";
+			sepNavVisRange = "{0, 695}";
+		};
+	};
+	05E21BFF0F532EC90027A864 /* ORSSnipURLShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{415, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{701, 563}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1272}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{99, 0}";
+			sepNavVisRange = "{0, 653}";
+		};
+	};
+	05E21CAB0F5343BB0027A864 /* ORSTrimShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{388, 0}";
+			sepNavVisRange = "{0, 682}";
+		};
+	};
+	05E21CAC0F5343BB0027A864 /* ORSTrimShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{406, 467}\";\n            s = 0;\n        },\n                {\n            r = \"{1101, 624}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1733}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{636, 0}";
+			sepNavVisRange = "{0, 644}";
+		};
+	};
+	05E21CDE0F5349600027A864 /* ORSUrlborgShortener.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{398, 0}";
+			sepNavVisRange = "{0, 696}";
+		};
+	};
+	05E21CDF0F5349600027A864 /* ORSUrlborgShortener.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{415, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{701, 837}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 1545}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 594}}";
+			sepNavSelRange = "{645, 0}";
+			sepNavVisRange = "{0, 652}";
+		};
+	};
+	05E246390EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 570}}";
+			sepNavSelRange = "{607, 0}";
+			sepNavVisRange = "{0, 929}";
+			sepNavWindowFrame = "{{15, 326}, {765, 847}}";
+		};
+	};
+	05E2463A0EC369D100410548 /* NSXMLNode+ORSTwitterDMAdditions.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{698, 65}\";\n            s = 0;\n        },\n                {\n            r = \"{830, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{976, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1133, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{1274, 67}\";\n            s = 0;\n        },\n                {\n            r = \"{1413, 71}\";\n            s = 0;\n        },\n                {\n            r = \"{1562, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1725, 84}\";\n            s = 0;\n        },\n                {\n            r = \"{1871, 66}\";\n            s = 0;\n        },\n                {\n            r = \"{2018, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{2175, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{2324, 70}\";\n            s = 0;\n        },\n                {\n            r = \"{2472, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{2630, 77}\";\n            s = 0;\n        },\n                {\n            r = \"{2802, 87}\";\n            s = 0;\n        },\n                {\n            r = \"{2957, 69}\";\n            s = 0;\n        },\n                {\n            r = \"{3113, 75}\";\n            s = 0;\n        },\n                {\n            r = \"{3279, 81}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3368}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {721, 1264}}";
+			sepNavSelRange = "{423, 125}";
+			sepNavVisRange = "{0, 998}";
+		};
+	};
+	05E806DC0ED87463001D643A /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0558A2990E9A68DD000EC2B2 /* Canary.icns */;
+	};
+	05E806DE0ED87463001D643A /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0591A9340EC8DFDE00BF3CAD /* bitly.png */;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 0573D6C10DA6626D002D1CCF /* Canary */;
+		activeSDKPreference = macosx10.5;
+		activeTarget = 8D1107260486CEB800E47090 /* Canary */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Canary */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 0573D6D40DA66271002D1CCF /* Code sense */;
+		executables = (
+			0573D6C10DA6626D002D1CCF /* Canary */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA23EDF0692099D00951B8B" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					211,
+					20,
+					148,
+					148,
+					146,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					208,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					281,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					324,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					543,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					405,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					376,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					368,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					503,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 261164661;
+			PBXWorkspaceStateSaveDate = 261164661;
+		};
+		perUserProjectItems = {
+			05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */ = 05372D9D0E7EE8CC008ABD85 /* PBXTextBookmark */;
+			05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */ = 05372DA20E7EE8CC008ABD85 /* PBXTextBookmark */;
+			05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */ = 05372DAB0E7EE8CC008ABD85 /* PBXTextBookmark */;
+			05372DB70E7EE8CC008ABD85 /* PBXTextBookmark */ = 05372DB70E7EE8CC008ABD85 /* PBXTextBookmark */;
+			0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */ = 0555A5FF0EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A6010EAA45DA00B126BC /* PBXTextBookmark */ = 0555A6010EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A6040EAA45DA00B126BC /* PBXTextBookmark */ = 0555A6040EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A60B0EAA45DA00B126BC /* PBXTextBookmark */ = 0555A60B0EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A60E0EAA45DA00B126BC /* PBXTextBookmark */ = 0555A60E0EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A6120EAA45DA00B126BC /* PBXTextBookmark */ = 0555A6120EAA45DA00B126BC /* PBXTextBookmark */;
+			0555A61E0EAA469400B126BC /* PBXTextBookmark */ = 0555A61E0EAA469400B126BC /* PBXTextBookmark */;
+			0555A6230EAA469400B126BC /* PBXTextBookmark */ = 0555A6230EAA469400B126BC /* PBXTextBookmark */;
+			0558A2B20E9A840D000EC2B2 /* PBXBookmark */ = 0558A2B20E9A840D000EC2B2 /* PBXBookmark */;
+			0558A30A0E9AAF3B000EC2B2 /* PBXTextBookmark */ = 0558A30A0E9AAF3B000EC2B2 /* PBXTextBookmark */;
+			0558A32B0E9AAF3B000EC2B2 /* PBXTextBookmark */ = 0558A32B0E9AAF3B000EC2B2 /* PBXTextBookmark */;
+			05685B4C0F1D07D600F409C5 /* PBXBookmark */ = 05685B4C0F1D07D600F409C5 /* PBXBookmark */;
+			05845BC10F59A823006F7306 /* PBXTextBookmark */ = 05845BC10F59A823006F7306 /* PBXTextBookmark */;
+			058530150F292BB8003DB512 /* PBXTextBookmark */ = 058530150F292BB8003DB512 /* PBXTextBookmark */;
+			0591A9400EC8E0DA00BF3CAD /* PBXBookmark */ = 0591A9400EC8E0DA00BF3CAD /* PBXBookmark */;
+			0592EA9B0EA276FD002AC429 /* PBXBookmark */ = 0592EA9B0EA276FD002AC429 /* PBXBookmark */;
+			05A951F10E8959F6000B98BC /* PBXTextBookmark */ = 05A951F10E8959F6000B98BC /* PBXTextBookmark */;
+			05A951F50E8959F6000B98BC /* PBXTextBookmark */ = 05A951F50E8959F6000B98BC /* PBXTextBookmark */;
+			05BF6BA50E11880900F77093 /* PBXTextBookmark */ = 05BF6BA50E11880900F77093 /* PBXTextBookmark */;
+			05C60A720F482FA8002B59D0 /* PBXTextBookmark */ = 05C60A720F482FA8002B59D0 /* PBXTextBookmark */;
+			05D6EEBF0EDB439F00CBC4B6 /* PBXTextBookmark */ = 05D6EEBF0EDB439F00CBC4B6 /* PBXTextBookmark */;
+			05E806DC0ED87463001D643A /* PBXBookmark */ = 05E806DC0ED87463001D643A /* PBXBookmark */;
+			05E806DE0ED87463001D643A /* PBXBookmark */ = 05E806DE0ED87463001D643A /* PBXBookmark */;
+		};
+		sourceControlManager = 0573D6D30DA66271002D1CCF /* Source Control */;
+		userBuildSettings = {
+			OBJROOT = "$(SYMROOT)";
+			SYMROOT = /Users/genesis/Projects/Canary/build;
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {721, 593}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 287}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Canary_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {576, 592}}";
+			sepNavSelRange = "{245, 0}";
+			sepNavVisRange = "{0, 301}";
+		};
+	};
+	8D1107260486CEB800E47090 /* Canary */ = {
+		activeExec = 0;
+		executables = (
+			0573D6C10DA6626D002D1CCF /* Canary */,
+		);
+	};
+}
