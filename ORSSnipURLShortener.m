@@ -2,10 +2,10 @@
 //  ORSSnipURLShortener.m
 //  URL Shorteners
 //
-//  Created by Nicholas Toumpelis on 23/02/2009.
+//  Created by Nicholas Toumpelis on 12/04/2009.
 //  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.6 - 23/02/2009
+//  Version 0.7
 
 #import "ORSSnipURLShortener.h"
 

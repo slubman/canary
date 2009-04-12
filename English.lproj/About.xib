@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="17"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -62,31 +62,39 @@
 										<object class="NSTextView" id="541845661">
 											<reference key="NSNextResponder" ref="1019171422"/>
 											<int key="NSvFlags">2322</int>
-											<string key="NSFrameSize">{241, 559}</string>
+											<string key="NSFrameSize">{241, 884}</string>
 											<reference key="NSSuperview" ref="1019171422"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="459043301">
 												<object class="NSLayoutManager" key="NSLayoutManager">
 													<object class="NSTextStorage" key="NSTextStorage">
 														<object class="NSMutableString" key="NSString">
-															<bytes key="NS.bytes">Q29weXJpZ2h0IMKpIDIwMDkgTmljayBUb3VtcGVsaXMsIE9jZWFuIFJvYWQgU29mdHdhcmUuIEFsbCBS
-aWdodHMgUmVzZXJ2ZWQuCgpDb2RlIGFuZCB1c2VyIGludGVyZmFjZSBkZXNpZ24gYnkgTmljayBUb3Vt
-cGVsaXMuCgpDYW5hcnkgSWNvbiBkZXNpZ24gYnkgT25lIFRvYWQgRGVzaWduLgoKVXNlcyBGYW1GYW1G
-YW0gU2lsayBTZXQgb2YgSWNvbnMsIHYuIDEuMyBieSBNYXJrIEphbWVzLgoKVXNlcyBCV1Rvb2xraXQg
-ZnJhbWV3b3JrIDEuMSwgQ29weXJpZ2h0IMKpIDIwMDkgQnJhbmRvbiBXYWxraW4uCgpVc2VzIEdyb3ds
-IGZyYW1ld29yayAxLjEuNC4gQ29weXJpZ2h0IMKpIFRoZSAgR3Jvd2wgUHJvamVjdCwgMjAwNC0yMDA4
-LiBBbGwgcmlnaHRzIHJlc2VydmVkLgoKVXNlcyBTcGFya2xlIGZyYW1ld29yayAxLjViNi4gQ29weXJp
-Z2h0IMKpIDIwMDYtMjAwOSBBbmR5IE1hdHVzY2hhay4KClVSTCBzaG9ydGVuaW5nIHNlcnZpY2VzIGJ5
-IEFkaml4LCBCaXQubHksIENsaS5ncywgSXMuZ2QsIFRpbnlVUkwuCgoKTEVHQUwgU1RVRkYKCkFsbCBz
-dXBwbGVtZW50YXJ5IGxpY2Vuc2VzIGFyZSBpbmNsdWRlZCBpbiB0aGUgIkxpY2Vuc2VzIiBmb2xkZXIg
-aW4gdGhlIG9yaWdpbmFsIGFwcGxpY2F0aW9uIGFyY2hpdmUuCgpUaGlzIHNvZnR3YXJlIGlzIHByb3Zp
-ZGVkICJBUyBJUyIsIHdoaWNoIG1lYW5zIHRoYXQgbm8gZ3VhcmFudGVlcyBhcmUgbWFkZSBhYm91dCB0
-aGUgZnVuY3Rpb25hbGl0eSBvZiB0aGlzIHNvZnR3YXJlLCB3aXRoIGFsbCBpdHMgZmF1bHRzIGFuZCB3
-aXRob3V0IHdhcnJhbnR5IG9mIGFueSBraW5kLiBJbiBubyBldmVudCBzaGFsbCwgTmljaG9sYXMgVG91
-bXBlbGlzIGJlIGxpYWJsZSBmb3IgcGVyc29uYWwgaW5qdXJ5LCBvciBhbnkgaW5jaWRlbnRhbCwgc3Bl
-Y2lhbCwgaW5kaXJlY3Qgb3IgY29uc2VxdWVudGlhbCBkYW1hZ2VzIHdoYXRzb2V2ZXIsIGluY2x1ZGlu
-Zywgd2l0aG91dCBsaW1pdGF0aW9uLCBkYW1hZ2VzIGZvciBsb3NzIG9mIHByb2ZpdHMsIGxvc3Mgb2Yg
-ZGF0YSwgYnVzaW5lc3MgaW50ZXJydXB0aW9uIG9yIGFueSBvdGhlciBjb21tZXJjaWFsIGRhbWFnZXMg
-b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
+															<bytes key="NS.bytes">Q29weXJpZ2h0IMKpIDIwMDkgTmljayBUb3VtcGVsaXMsIE9jZWFuIFJvYWQgU29mdHdhcmUuCgpDb2Rl
+IGFuZCB1c2VyIGludGVyZmFjZSBkZXNpZ24gYnkgTmljayBUb3VtcGVsaXMuCgpDYW5hcnkgSWNvbiBk
+ZXNpZ24gYnkgT25lIFRvYWQgRGVzaWduLgoKVXNlcyBGYW1GYW1GYW0gU2lsayBTZXQgb2YgSWNvbnMs
+IHYuIDEuMyBieSBNYXJrIEphbWVzLgoKVXNlcyBCV1Rvb2xraXQgZnJhbWV3b3JrIDEuMSwgQ29weXJp
+Z2h0IMKpIDIwMDkgQnJhbmRvbiBXYWxraW4uCgpVc2VzIEdyb3dsIGZyYW1ld29yayAxLjEuNC4gQ29w
+eXJpZ2h0IMKpIFRoZSAgR3Jvd2wgUHJvamVjdCwgMjAwNC0yMDA4LiBBbGwgcmlnaHRzIHJlc2VydmVk
+LgoKVXNlcyBTcGFya2xlIGZyYW1ld29yayAxLjViNi4gQ29weXJpZ2h0IMKpIDIwMDYtMjAwOSBBbmR5
+IE1hdHVzY2hhay4KClVSTCBzaG9ydGVuaW5nIHNlcnZpY2VzIGJ5IEFkaml4LCBCaXQubHksIENsaS5n
+cywgSXMuZ2QsIFRpbnlVUkwuCgoKCgpDYW5hcnkgTGljZW5zZQoKQ29weXJpZ2h0IMKpIDIwMDkgTmlj
+ayBUb3VtcGVsaXMKClBlcm1pc3Npb24gaXMgaGVyZWJ5IGdyYW50ZWQsIGZyZWUgb2YgY2hhcmdlLCB0
+byBhbnkgcGVyc29uIG9idGFpbmluZyBhIGNvcHkgb2YgdGhpcyBzb2Z0d2FyZSBhbmQgYXNzb2NpYXRl
+ZCBkb2N1bWVudGF0aW9uIGZpbGVzICh0aGUgIlNvZnR3YXJlIiksIHRvIGRlYWwgaW4gdGhlIFNvZnR3
+YXJlIHdpdGhvdXQgcmVzdHJpY3Rpb24sIGluY2x1ZGluZyB3aXRob3V0IGxpbWl0YXRpb24gdGhlIHJp
+Z2h0cyB0byB1c2UsIGNvcHksIG1vZGlmeSwgbWVyZ2UsIHB1Ymxpc2gsIGRpc3RyaWJ1dGUsIHN1Ymxp
+Y2Vuc2UsIGFuZC9vciBzZWxsIGNvcGllcyBvZiB0aGUgU29mdHdhcmUsIGFuZCB0byBwZXJtaXQgcGVy
+c29ucyB0byB3aG9tIHRoZSBTb2Z0d2FyZSBpcyBmdXJuaXNoZWQgdG8gZG8gc28sIHN1YmplY3QgdG8g
+dGhlIGZvbGxvd2luZyBjb25kaXRpb25zOgoKVGhlIGFib3ZlIGNvcHlyaWdodCBub3RpY2UgYW5kIHRo
+aXMgcGVybWlzc2lvbiBub3RpY2Ugc2hhbGwgYmUgaW5jbHVkZWQgaW4gYWxsIGNvcGllcyBvciBzdWJz
+dGFudGlhbCBwb3J0aW9ucyBvZiB0aGUgU29mdHdhcmUuCgpUSEUgU09GVFdBUkUgSVMgUFJPVklERUQg
+IkFTIElTIiwgV0lUSE9VVCBXQVJSQU5UWSBPRiBBTlkgS0lORCwgRVhQUkVTUyBPUiBJTVBMSUVELCBJ
+TkNMVURJTkcgQlVUIE5PVCBMSU1JVEVEIFRPIFRIRSBXQVJSQU5USUVTIE9GIE1FUkNIQU5UQUJJTElU
+WSwgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UgQU5EIE5PTklORlJJTkdFTUVOVC4gSU4g
+Tk8gRVZFTlQgU0hBTEwgVEhFIEFVVEhPUlMgT1IgQ09QWVJJR0hUIEhPTERFUlMgQkUgTElBQkxFIEZP
+UiBBTlkgQ0xBSU0sIERBTUFHRVMgT1IgT1RIRVIgTElBQklMSVRZLCBXSEVUSEVSIElOIEFOIEFDVElP
+TiBPRiBDT05UUkFDVCwgVE9SVCBPUiBPVEhFUldJU0UsIEFSSVNJTkcgRlJPTSwgT1VUIE9GIE9SIElO
+IENPTk5FQ1RJT04gV0lUSCBUSEUgU09GVFdBUkUgT1IgVEhFIFVTRSBPUiBPVEhFUiBERUFMSU5HUyBJ
+TiBUSEUgU09GVFdBUkUuA</bytes>
 														</object>
 														<object class="NSMutableArray" key="NSAttributes">
 															<bool key="EncodedWithXMLCoder">YES</bool>
@@ -538,9 +546,84 @@ b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
 																	</object>
 																</object>
 															</object>
+															<object class="NSDictionary">
+																<bool key="EncodedWithXMLCoder">YES</bool>
+																<object class="NSMutableArray" key="dict.sortedKeys">
+																	<bool key="EncodedWithXMLCoder">YES</bool>
+																	<string>NSFont</string>
+																	<string>NSParagraphStyle</string>
+																</object>
+																<object class="NSMutableArray" key="dict.values">
+																	<bool key="EncodedWithXMLCoder">YES</bool>
+																	<object class="NSFont">
+																		<string key="NSName">Helvetica-Bold</string>
+																		<double key="NSSize">1.400000e+01</double>
+																		<int key="NSfFlags">16</int>
+																	</object>
+																	<object class="NSParagraphStyle" id="616805396">
+																		<int key="NSAlignment">4</int>
+																		<object class="NSArray" key="NSTabStops">
+																			<bool key="EncodedWithXMLCoder">YES</bool>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">2.830000e+01</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">5.665000e+01</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">8.500000e+01</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">1.133500e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">1.417000e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">1.700500e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">1.984000e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">2.267500e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">2.551000e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">2.834500e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">3.118000e+02</double>
+																			</object>
+																			<object class="NSTextTab">
+																				<double key="NSLocation">3.401500e+02</double>
+																			</object>
+																		</object>
+																	</object>
+																</object>
+															</object>
+															<object class="NSDictionary">
+																<bool key="EncodedWithXMLCoder">YES</bool>
+																<object class="NSMutableArray" key="dict.sortedKeys">
+																	<bool key="EncodedWithXMLCoder">YES</bool>
+																	<string>NSFont</string>
+																	<string>NSParagraphStyle</string>
+																</object>
+																<object class="NSMutableArray" key="dict.values">
+																	<bool key="EncodedWithXMLCoder">YES</bool>
+																	<object class="NSFont">
+																		<string key="NSName">Helvetica</string>
+																		<double key="NSSize">1.200000e+01</double>
+																		<int key="NSfFlags">16</int>
+																	</object>
+																	<reference ref="616805396"/>
+																</object>
+															</object>
 														</object>
 														<object class="NSMutableData" key="NSAttributeInfo">
-															<bytes key="NS.bytes">EQAOAU8ADgEZAA8CLwAKAwgACQQ3AAUFWAAHBt4FAA</bytes>
+															<bytes key="NS.bytes">EQAOAToADgEZAA8CLwAKAwgACQQ3AAUFWAAHBnwAEQehCAg</bytes>
 														</object>
 														<nil key="NSDelegate"/>
 													</object>
@@ -617,9 +700,7 @@ b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
 										</object>
 									</object>
 									<string key="NSFrame">{{1, 1}, {241, 121}}</string>
-									<string key="NSBounds">{{0, 86}, {241, 121}}</string>
 									<reference key="NSSuperview" ref="12079645"/>
-									<reference key="NSNextKeyView" ref="541845661"/>
 									<reference key="NSDocView" ref="541845661"/>
 									<reference key="NSBGColor" ref="728174033"/>
 									<object class="NSCursor" key="NSCursor">
@@ -636,8 +717,7 @@ b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
 									<bool key="NSEnabled">YES</bool>
 									<reference key="NSTarget" ref="12079645"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">1.967800e-01</double>
-									<double key="NSPercent">2.164580e-01</double>
+									<double key="NSPercent">1.368778e-01</double>
 								</object>
 								<object class="NSScroller" id="512425389">
 									<reference key="NSNextResponder" ref="12079645"/>
@@ -647,13 +727,12 @@ b3IgbG9zc2VzLCBhcmlzaW5nIG91dCBvZiB0aGUgdXNlIG9mIHRoaXMgc29mdHdhcmUuA</bytes>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="12079645"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">4.979255e-02</double>
+									<double key="NSCurValue">3.360996e-01</double>
 									<double key="NSPercent">9.456522e-01</double>
 								</object>
 							</object>
 							<string key="NSFrame">{{211, 20}, {258, 123}}</string>
 							<reference key="NSSuperview" ref="652800899"/>
-							<reference key="NSNextKeyView" ref="1019171422"/>
 							<int key="NSsFlags">82</int>
 							<reference key="NSVScroller" ref="295780961"/>
 							<reference key="NSHScroller" ref="512425389"/>

@@ -2,10 +2,10 @@
 //  ORSCanaryController+Growl.h
 //  Canary
 //
-//  Created by Nick Toumpelis on 15/02/2009.
+//  Created by Nicholas Toumpelis on 12/04/2009.
 //  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.7 - 15/02/2009
+//  Version 0.7
 
 #import <Cocoa/Cocoa.h>
 #import "ORSCanaryController.h"

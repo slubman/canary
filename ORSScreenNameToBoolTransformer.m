@@ -2,10 +2,10 @@
 //  ORSScreenNameToBoolTransformer.m
 //  Canary
 //
-//  Created by Nicholas Toumpelis on 04/02/2009.
-//  Copyright 2008 Ocean Road Software. All rights reserved.
+//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.7 - 04/02/2009
+//  Version 0.7
 
 #import "ORSScreenNameToBoolTransformer.h"
 

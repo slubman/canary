@@ -2,10 +2,10 @@
 //  ORSTinyURLShortener.m
 //  URL Shorteners
 //
-//  Created by Nicholas Toumpelis on 18/10/2008.
-//  Copyright 2008 Ocean Road Software. All rights reserved.
+//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.6 - 18/10/2008
+//  Version 0.7
 
 #import "ORSTinyURLShortener.h"
 

@@ -2,15 +2,10 @@
 //  ORSCanaryController.h
 //  Canary
 //
-//  Created by Nicholas Toumpelis on 20/02/2008.
-//  Copyright 2008 Ocean Road Software. All rights reserved.
+//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.2 - 16/04/2008
-//  0.3 - 13/09/2008
-//  0.4 - 23/09/2008
-//  0.5 - 03/10/2008
-//  0.6 - 10/11/2008
-//  0.7 - 18/01/2008
+//  Version 0.7
 
 #import <Cocoa/Cocoa.h>
 #import <CoreFoundation/CoreFoundation.h>
@@ -259,8 +254,8 @@
 - (void) setSentDirectMessages:(NSArray *)sentDMs;
 - (NSArray *) sentDirectMessages;
 
-@property (assign) NSArray *statuses;
-@property (assign) NSArray *receivedDirectMessages;
+@property (copy) NSArray *statuses;
+@property (copy) NSArray *receivedDirectMessages;
 @property (assign) NSArray *sentDirectMessages;
 @property (assign) NSString *visibleUserID;
 @property (assign) NSString *previousTimeline;

@@ -2,9 +2,9 @@
  @header ORSUrlborgShortener
  @abstract Represents a urlBorg shortener.
  @author Nicholas Toumpelis
- @copyright Ocean Road Software
- @version 0.6
- @updated 2009-02-24
+ @copyright Nicholas Toumpelis, Ocean Road Software
+ @version 0.7
+ @updated 2009-04-12
  */
 
 #import <Cocoa/Cocoa.h>

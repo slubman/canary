@@ -3,9 +3,9 @@
  @abstract Abstract superclass used for defining URL shorteners. All shorteners
  should be subclasses of this.
  @author Nicholas Toumpelis
- @copyright Ocean Road Software
- @version 0.6
- @updated 2008-12-27
+ @copyright Nicholas Toumpelis, Ocean Road Software
+ @version 0.7
+ @updated 2009-04-12
  */
 
 #import <Cocoa/Cocoa.h>

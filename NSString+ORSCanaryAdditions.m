@@ -2,9 +2,10 @@
 //  NSString+ORSCanaryAdditions.m
 //  Canary
 //
-//  Created by Nicholas Toumpelis on 04/10/2008.
-//  Copyright 2008 Ocean Road Software. All rights reserved.
+//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Copyright 2009 Ocean Road Software. All rights reserved.
 //
+//  Version 0.7
 
 #import "NSString+ORSCanaryAdditions.h"
 

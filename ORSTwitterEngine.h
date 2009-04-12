@@ -2,16 +2,10 @@
 //  ORSTwitterEngine.h
 //  Twitter Engine
 //
-//  Created by Nicholas Toumpelis on 19/03/2008.
-//  Copyright 2008 Ocean Road Software. All rights reserved.
+//  Created by Nicholas Toumpelis on 12/04/2009.
+//  Copyright 2009 Ocean Road Software. All rights reserved.
 //
-//  0.1 
-//  0.2 - 16/04/2008
-//  0.3 - 07/09/2008
-//  0.4 - 12/09/2008
-//  0.5 - 03/10/2008
-//  0.6 - 19/10/2008
-//  0.7 - 21/01/2009
+//  Version 0.7
 
 #import <Cocoa/Cocoa.h>
 #import "ORSSession.h"
