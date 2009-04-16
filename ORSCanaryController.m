@@ -897,7 +897,8 @@ sender {
 
 // Action: opens the user's home page (if they are logged in)
 - (IBAction) goHome:sender {
-	NSURL *homeURL = [[NSURL alloc] initWithString:@"http://twitter.com/home"];
+	/*NSURL *homeURL = [[NSURL alloc] initWithString:@"http://twitter.com/home"];*/
+	NSURL *homeURL = [[NSURL alloc] initWithString:@"http://identi.ca/"];
 	[[NSWorkspace sharedWorkspace] openURL:homeURL];
 }
 
@@ -1180,7 +1181,9 @@ sender {
 		[self openUserURL:userURL];
 	} else if ([[sender titleOfSelectedItem] 
 				isEqualToString:@"Go to Twitter page"]) {
-		[self openUserURL:[NSString stringWithFormat:@"http://twitter.com/%@",
+		/*[self openUserURL:[NSString stringWithFormat:@"http://twitter.com/%@",
+						   userScreenName]];*/
+		[self openUserURL:[NSString stringWithFormat:@"http://identi.ca/%@",
 						   userScreenName]];
 	} else if ([[sender titleOfSelectedItem] isEqualToString:@"Retweet this"]) {
 		[self retweetStatus:[(NSXMLNode *)[sender toolTip] text]
@@ -1319,7 +1322,8 @@ sender {
 
 // Action: This creates a new Twitter account
 - (IBAction) createNewTwitterAccount:sender {
-	[self openUserURL:@"https://twitter.com/signup"];
+	/*[self openUserURL:@"https://twitter.com/signup"];*/
+	[self openUserURL:@"https://identi.ca/signup"];
 }
 
 // This gets called when the main application window is called and the

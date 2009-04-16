@@ -90,7 +90,8 @@
 	OSStatus result;
 	@synchronized(self) {
 		result = SecKeychainFindInternetPassword(NULL, 11, 
-			"twitter.com", 0, NULL, 
+			/*"twitter.com", 0, NULL, */
+			"identi.ca", 0, NULL, 
 			[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
 			[username cStringUsingEncoding:NSASCIIStringEncoding], 1, "/", 0,
 			kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 
@@ -109,7 +110,8 @@
 	if (![username isEqualToString:lastCheckedTwitterUsername]) {
 		twitterPasswordData = nil;
 		@synchronized(self) {
-			SecKeychainFindInternetPassword(NULL, 11, "twitter.com", 0, NULL,
+			/*SecKeychainFindInternetPassword(NULL, 11, "twitter.com", 0, NULL,*/
+			SecKeychainFindInternetPassword(NULL, 11, "identi.ca", 0, NULL,
 				[username lengthOfBytesUsingEncoding:NSASCIIStringEncoding],
 				[username cStringUsingEncoding:NSASCIIStringEncoding], 1, "/", 
 				0, kSecProtocolTypeHTTPS, kSecAuthenticationTypeDefault, 

@@ -472,8 +472,10 @@
 		
 		// Twitter usernames
 		if (username = [self detectUsername:scanString]) {
+			/*NSMutableString *userLinkString = [NSMutableString 
+				stringWithString:@"http://twitter.com/"];*/
 			NSMutableString *userLinkString = [NSMutableString 
-				stringWithString:@"http://twitter.com/"];
+				stringWithString:@"http://identi.ca/"];
 			[userLinkString appendString:[username substringFromIndex:1]];
 			foundURL = [NSURL URLWithString:userLinkString];
 			usernameAttr = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -489,8 +491,10 @@
 		
 		// Hashtags
 		if (hashtag = [self detectHashtag:scanString]) {
+			/*NSMutableString *hashtagString = [NSMutableString 
+				stringWithString:@"http://search.twitter.com/search?q=%23"];*/
 			NSMutableString *hashtagString = [NSMutableString 
-				stringWithString:@"http://search.twitter.com/search?q=%23"];
+				stringWithString:@"http://identi.ca/search?q=%23"];
 			[hashtagString appendString:[hashtag substringFromIndex:1]];
 			foundURL = [NSURL URLWithString:hashtagString];
 			hashtagAttr = [NSDictionary dictionaryWithObjectsAndKeys:

@@ -39,8 +39,10 @@
 					synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
+/*		NSMutableString *requestURL = [NSMutableString 
+			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];*/
 		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+			stringWithFormat:@"https://%@:%@@identi.ca/api/", userID, password];
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
@@ -103,8 +105,10 @@
 							 synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
+		/*NSMutableString *requestURL = [NSMutableString 
+			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];*/
 		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+			stringWithFormat:@"https://%@:%@@identi.ca/api/", userID, password];
 		
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
@@ -165,8 +169,10 @@
 					  synchronously:(BOOL)synchr {
 	@synchronized(self) {
 		// Forming the first part of the request URL
+		/*NSMutableString *requestURL = [NSMutableString 
+			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];*/
 		NSMutableString *requestURL = [NSMutableString 
-			stringWithFormat:@"https://%@:%@@twitter.com/", userID, password];
+			stringWithFormat:@"https://%@:%@@identi.ca/api/", userID, password];
 	
 		// Appending the second part of the request URL, the "path"
 		[requestURL appendString:path];
