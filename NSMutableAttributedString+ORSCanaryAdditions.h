@@ -14,9 +14,11 @@
 - (NSCharacterSet *) httpDelimitingCharset;
 - (NSCharacterSet *) fullDelimitingCharset;
 - (NSCharacterSet *) usernameDelimitingCharset;
+- (NSCharacterSet *) groupDelimitingCharset;
 - (NSCharacterSet *) hashtagDelimitingCharset;
 - (NSString *) detectURL:(NSString *)string;
 - (NSString *) detectUsername:(NSString *)string;
+- (NSString *) detectGroup:(NSString *)string;
 - (NSString *) detectHashtag:(NSString *)string;
 - (NSString *) detectDOI:(NSString *)string;
 - (NSString *) detectHDL:(NSString *)string;

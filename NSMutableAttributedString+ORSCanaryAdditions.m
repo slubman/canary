@@ -42,6 +42,16 @@
 }
 
 // Returns a delimiting character set for twitter hashtag
+- (NSCharacterSet *) groupDelimitingCharset {
+	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
+	[charset addCharactersInString:@"±§$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
+	[charset addCharactersInString:@"¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ"];
+	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷⁄€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
+	[charset addCharactersInString:@"»¸˛Ç◊ı˜Â¯˘¿"];
+	return charset;
+}
+
+// Returns a delimiting character set for twitter hashtag
 - (NSCharacterSet *) hashtagDelimitingCharset {
 	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
 	[charset addCharactersInString:@"±§!$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
@@ -128,6 +138,46 @@
 					substringFromIndex:range.location];
 				NSRange charsetRange = [substring 
 					rangeOfCharacterFromSet:[self usernameDelimitingCharset]];
+				if (charsetRange.location == NSNotFound) {
+					return substring;
+				} else {
+					return [substring substringToIndex:charsetRange.location];
+				}
+			}
+		}
+	}
+}
+
+// Detects identica groups
+- (NSString *) detectGroup:(NSString *)string {
+	//return NULL;
+	NSRange range = [string rangeOfString:@"!"];
+	if (range.location == NSNotFound) {
+		return NULL;
+	} else {
+		if (range.location == 0) {
+			NSString *substring = [string substringFromIndex:range.location];
+			NSRange charsetRange = [substring 
+				rangeOfCharacterFromSet:[self groupDelimitingCharset]];
+			if (charsetRange.location == NSNotFound) {
+				return substring;
+			} else {
+				return [substring substringToIndex:charsetRange.location];
+			}
+		} else {
+			NSString *previousSubstring = [string 
+				substringToIndex:range.location];
+			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
+								alphanumericCharacterSet];
+			unichar lastChar = [previousSubstring 
+				characterAtIndex:([previousSubstring length]-1)];
+			if ([alphanumericCharset characterIsMember:lastChar]) {
+				return NULL;
+			} else {
+				NSString *substring = [string 
+					substringFromIndex:range.location];
+				NSRange charsetRange = [substring 
+					rangeOfCharacterFromSet:[self groupDelimitingCharset]];
 				if (charsetRange.location == NSNotFound) {
 					return substring;
 				} else {
@@ -433,9 +483,9 @@
 	NSString *scanString;
 	NSCharacterSet *terminalCharacterSet;
 	NSURL *foundURL;
-	NSString *foundURLString, *username, *hashtag, *doi, *hdl, *isbn, *issn,
+	NSString *foundURLString, *username, *group, *hashtag, *doi, *hdl, *isbn, *issn,
 		*ietf, *nbn;
-	NSDictionary *linkAttr, *usernameAttr, *hashtagAttr, *doiAttr, *hdlAttr, 
+	NSDictionary *linkAttr, *usernameAttr, *groupAttr, *hashtagAttr, *doiAttr, *hdlAttr, 
 		*isbnAttr, *issnAttr, *ietfAttr, *nbnAttr;
 	
 	scanner = [NSScanner scannerWithString:[self string]];
@@ -487,6 +537,23 @@
 			attrRange.location = scanRange.location + newRange.location;
 			attrRange.length = newRange.length;
 			[self addAttributes:usernameAttr range:attrRange];
+		}
+		
+		// identi.ca groups
+		if (group = [self detectGroup:scanString]) {
+			NSMutableString *groupLinkString = [NSMutableString 
+				stringWithString:@"http://identi.ca/group/"];
+			[groupLinkString appendString:[group substringFromIndex:1]];
+			foundURL = [NSURL URLWithString:groupLinkString];
+			groupAttr = [NSDictionary dictionaryWithObjectsAndKeys:
+				foundURL, NSLinkAttributeName, 
+					[NSColor darkGrayColor], 
+						NSForegroundColorAttributeName, NULL];
+			NSRange newRange = [scanString rangeOfString:group];
+			NSRange attrRange;
+			attrRange.location = scanRange.location + newRange.location;
+			attrRange.length = newRange.length;
+			[self addAttributes:groupAttr range:attrRange];
 		}
 		
 		// Hashtags
