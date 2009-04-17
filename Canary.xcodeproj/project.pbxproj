@@ -17,7 +17,6 @@
 		0507EABF0EF2CA8400559018 /* ORSCanaryCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0507EABE0EF2CA8400559018 /* ORSCanaryCollectionView.m */; };
 		0507EEA40EF45CAC00559018 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0507EEA30EF45CAC00559018 /* Sparkle.framework */; };
 		0507EEAD0EF45CC900559018 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0507EEA30EF45CAC00559018 /* Sparkle.framework */; };
-		0507EEB30EF461C600559018 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 0507EEB20EF461C600559018 /* dsa_pub.pem */; };
 		050996D20EEAF80D005848B8 /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050996D10EEAF80D005848B8 /* LoginWindow.xib */; };
 		050996D60EEAF88C005848B8 /* ORSCanaryLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050996D50EEAF88C005848B8 /* ORSCanaryLoginController.m */; };
 		05171B6B0F16A84600CA9812 /* picture_link.png in Resources */ = {isa = PBXBuildFile; fileRef = 05171B6A0F16A84600CA9812 /* picture_link.png */; };
@@ -609,7 +608,6 @@
 				05D6EEC60EDB46BB00CBC4B6 /* Growl Registration Ticket.growlRegDict in Resources */,
 				05D6EF9B0EDDE51400CBC4B6 /* message.png in Resources */,
 				050996D20EEAF80D005848B8 /* LoginWindow.xib in Resources */,
-				0507EEB30EF461C600559018 /* dsa_pub.pem in Resources */,
 				057875CA0EF58553006A7E89 /* error.png in Resources */,
 				05B8B6A30F156D0D006B4B93 /* fave_star.png in Resources */,
 				05B8B6A60F156DB2006B4B93 /* user.png in Resources */,
