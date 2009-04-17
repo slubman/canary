@@ -41,10 +41,10 @@
 	return charset;
 }
 
-// Returns a delimiting character set for twitter hashtag
+// Returns a delimiting character set for identica group
 - (NSCharacterSet *) groupDelimitingCharset {
 	NSMutableCharacterSet *charset = [NSMutableCharacterSet new];
-	[charset addCharactersInString:@"±§$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
+	[charset addCharactersInString:@"±§!$%^&*()-+={}[];:'\"\\|,./<>?`~ÅÍÎÏ"];
 	[charset addCharactersInString:@"¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘åß∂ƒ©˙∆˚¬…æ«ÓÔ"];
 	[charset addCharactersInString:@"Ω≈ç√∫˜µ≤≥÷⁄€‹›ﬁﬂ‡°·—Œ„´‰ˇÁ¨ˆØ∏”’˝ÒÚÆ"];
 	[charset addCharactersInString:@"»¸˛Ç◊ı˜Â¯˘¿"];
@@ -156,36 +156,21 @@
 		return NULL;
 	} else {
 		if (range.location == 0) {
-			NSString *substring = [string substringFromIndex:range.location];
+			NSString *substring = [string substringFromIndex:range.location+1];
 			NSRange charsetRange = [substring 
 				rangeOfCharacterFromSet:[self groupDelimitingCharset]];
 			if (charsetRange.location == NSNotFound) {
-				return substring;
-			} else {
-				return [substring substringToIndex:charsetRange.location];
-			}
-		} else {
-			NSString *previousSubstring = [string 
-				substringToIndex:range.location];
-			NSCharacterSet *alphanumericCharset = [NSCharacterSet 
-								alphanumericCharacterSet];
-			unichar lastChar = [previousSubstring 
-				characterAtIndex:([previousSubstring length]-1)];
-			if ([alphanumericCharset characterIsMember:lastChar]) {
-				return NULL;
-			} else {
-				NSString *substring = [string 
-					substringFromIndex:range.location];
-				NSRange charsetRange = [substring 
-					rangeOfCharacterFromSet:[self groupDelimitingCharset]];
-				if (charsetRange.location == NSNotFound) {
-					return substring;
+				if ([string compare:@"!"] == NSOrderedSame) { // the ! is alone
+					return NULL;
 				} else {
-					return [substring substringToIndex:charsetRange.location];
+					return string;
 				}
+			} else {
+				return [string substringToIndex:charsetRange.location+1];
 			}
 		}
 	}
+	return NULL;
 }
 
 // Detects hashtags
